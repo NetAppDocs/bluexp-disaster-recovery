@@ -5,13 +5,12 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
 ---
 
-= Failback
+= Fail back applications to the original source 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-== Fail back applications to the original source 
 
 After a disaster has been resolved, fail back from the disaster recovery site to the source site to return to normal operations. You can select the Snapshot from which to recover. 
 
