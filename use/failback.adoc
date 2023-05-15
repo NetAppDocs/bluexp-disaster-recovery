@@ -11,4 +11,29 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 :imagesdir: ../media/use/
 
 [.lead]
-abc
+== Fail back applications to the original source 
+
+After a disaster has been resolved, fail back from the disaster recovery site to the source site to return to normal operations. You can select the Snapshot from which to recover. 
+
+In this workflow, BlueXP disaster recovery replicates (resyncs) any changes back to the original source virtual machine before reversing the replication direction. This process starts from a relationship that has completed failing over to a target and involves the following steps:
+
+* On the target site, the virtual machines are powered off and unregistered, and volumes are unmounted.  
+* The SnapMirror relationship on the original source is broken to make it read/write.
+* The SnapMirror relationship is resynchronized to reverse the replication.
+* The source virtual machines are powered on and registered, and volumes are mounted on the source. 
+
+.Steps 
+
+. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*.
+
+. From the BlueXP disaster recovery top menu, select *Replication plans*. 
+
+. Select the disaster recovery plan.
+
+. On the right, select the *Actions* ellipses … and select *Fail back*.
+
+. Enter the disaster recovery plan name to confirm and start the failback. 
+  
+. Choose the Snapshot for the datastore from which to recover.  The default is the latest. 
+
+. To check the progress, in the top menu, select *Job monitoring*.

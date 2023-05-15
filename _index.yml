@@ -7,14 +7,14 @@ indexpage:
     - title: Learn about BlueXP disaster recovery
       url: /get-started/dr-intro.html
     - title: What's new in BlueXP disaster recovery
-      url: /release-notes/whats-new.html
+      url: /release-notes/dr-whats-new.html
 #   - title: Release notes
 #     url: /release-notes/rn_overview.html
     - title: Quick start
       url: /get-started/dr-quick-start.html
     - title: Prerequisites
       url: /get-started/dr-prerequisites.html
-    - title: Log in to BlueXP disaster recovery 
+    - title: Access BlueXP disaster recovery 
       url: /get-started/dr-login.html
     - title: FAQ
       url: /get-started/dr-faq.html 
