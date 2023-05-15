@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: use/failback.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter
+summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+---
+
+= Failback
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+abc

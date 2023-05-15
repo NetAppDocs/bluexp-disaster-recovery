@@ -30,12 +30,12 @@ In AWS, you'll need to do the following steps:
 * Deploy VMware Cloud
 * Configure Amazon FSx for ONTAP
 
-=== In AWS, deploy VMware Cloud 
+=== Deploy VMware Cloud
 https://www.vmware.com/products/vmc-on-aws.html[VMware Cloud on AWS^] provides a cloud-native experience for VMware-based workloads in the AWS ecosystem. Each VMware software-defined data center (SDDC) runs in an Amazon Virtual Private Cloud (VPC) and provides a full VMware stack (including vCenter Server), NSX-T software-defined networking, vSAN software-defined storage, and one or more ESXi hosts that provide compute and storage resources to the workloads. 
 
 To configure a VMC environment on AWS, follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html[link^]. A pilot-light cluster can also be used for disaster recovery purposes.
 
-=== In AWS, configure FSx for ONTAP
+=== Configure Amazon FSx for ONTAP
 
 Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage built on the popular NetApp ONTAP file system. Follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.htm[link^] to provision and configure FSx for ONTAP.
 
@@ -50,7 +50,7 @@ A BlueXP Connector includes credentials to NetApp ONTAP machines.
 To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a connector^]. 
 
 
-=== Deploy and configure SnapMirror to FSx for ONTAP
+=== Configure SnapMirror for Amazon FSx for ONTAP
 
 The next step is to set up disaster recovery in BlueXP. 
 

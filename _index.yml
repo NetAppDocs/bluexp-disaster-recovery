@@ -20,8 +20,6 @@ indexpage:
       url: /get-started/dr-faq.html 
   - title: Use BlueXP disaster recovery
     links:
-    - title: Use BlueXP disaster recovery overview 
-      url: /use/use-overview.html
     - title: Add vCenter sites 
       url: /use/sites-add.html
     - title: Create a disaster recovery plan
@@ -33,14 +31,12 @@ indexpage:
     - title: Fail back applications to the original source site
       url: /use/failback.html 
     - title: Manage sites, plans, datastores, and virtual machines information 
-      url: /use/manage-overview.html
+      url: /use/manage.html
     - title: Monitor disaster recovery jobs
       url: /use/monitor-jobs.html 
   - title: Blogs & community
     links:
     - title: NetApp Community
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: Cloud Tiering blog
-      url: https://bluexp.netapp.com/blog/topic/cloud-tiering
     - title: Cloud webinars
       url: https://bluexp.netapp.com/events       

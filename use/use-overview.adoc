@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: use/use-overview.html
+keywords: disaster recovery remediate, disaster recovery, failover, failback, replication
+summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+---
+
+= Use BlueXP disaster recovery overview
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+Using BlueXP disaster recovery, you can accomplish the following goals: 
+
+* link:../use/sites-add.html[Add vCenter sites].
+* link:../use/drplan-create.html[Create a disaster recovery plan].
+* link:../use/replicate.html[Replicate VMware apps] on your primary site to a disaster recovery remote site in the cloud using SnapMirror replication.
+* link:../use/failover.html[Test the fail over] without disrupting the original virtual machines. 
+* In case of disaster, link:../use/failover.html[fail over your primary site] to a NetApp cloud volume in VMware Cloud on AWS. 
+* After the disaster has been resolved, link:../use/failback.html[fail back] from the disaster recovery site to the primary site.
+* link:../use/monitor.html[Monitor disaster recovery operations] on the Job Monitoring page.
+

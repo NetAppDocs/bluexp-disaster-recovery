@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: get-started/dr-intro.html
-keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp
+keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, replicate, failover, failback, fail over, fail back
 summary: With BlueXP disaster recovery for VMware, you can protect machine-critical business VMware applications by using VMware Cloud (VMC) as a disaster recovery site. In case of a disaster, use BlueXP disaster recovery to fail over applications to the cloud with near-zero recovery time. 
 
 ---
@@ -20,21 +20,16 @@ The beta enables you to achieve disaster recovery with VMware workloads on NFS.
 
 BlueXP disaster recovery uses ONTAP SnapMirror technology as the replication transport to the cloud. This enables industry-best storage efficiency (compression and deduplication) on primary and secondary sites. 
 
-== Benefits of using BlueXP disaster recovery for VMware
+== Benefits of using BlueXP disaster recovery for VMware beta
 
 BlueXP disaster recovery offers the following benefits:
 
-* Reduced cost of operations because there is no need for a second datacenter
-* Ability to create and adjust disaster recovery plans with minimal resources
-* Simplified vCenter discovery and recovery of applications 
-* Use of a NetApp-managed service in BlueXP
-* Multiple point-in-time recovery
-* Continuous disaster recovery readiness with virtual failover testing that does not disrupt operations providing failover success assurance
-* Ability to adapt to changing IT environments faster
-* On-demand or subscription-based disaster recovery hosted in the cloud
+* Simplified user experience for vCenter discovery and recovery of applications with multiple point-in-time recovery operations 
+* Lower total cost of ownership with reduced cost of operations and ability to create and adjust disaster recovery plans with minimal resources
+* Continuous disaster recovery readiness with virtual failover testing that does not disrupt operations
+* Faster time to value with dynamic changes in your IT environment and ability to address it in your disaster recovery plans
 
-
-== What you can do with BlueXP disaster recovery beta 
+== What you can do with BlueXP disaster recovery for VMware beta 
 The BlueXP disaster recovery beta provides you with full use of several NetApp technologies to accomplish the following goals: 
 
 * Replicate VMware apps on your production site to a disaster recovery remote site in the cloud using SnapMirror replication.
