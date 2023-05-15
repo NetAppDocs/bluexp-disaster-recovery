@@ -1,9 +1,46 @@
 indexpage:
-  lead: # single paragraph, shown on the page
+  lead: Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events (for example, ransomware). With BlueXP disaster recovery for VMware, you can protect machine-critical business VMware applications by using VMware Cloud (VMC) as a disaster recovery site. In case of a disaster, use BlueXP disaster recovery to fail over applications to the cloud with near-zero recovery time. 
   tiles:
-    # one or more tile definitions for the page
-  - title: # short string (tile title)
+  - title: Get started
+    #image: ./media/outline_directions_run_black_18dp.png
     links:
-      # one or more links on the tile
-      - title: # short string (link title)
-        url: # single file name or external URL
+    - title: Learn about BlueXP disaster recovery
+      url: /get-started/dr-intro.html
+    - title: What's new in BlueXP disaster recovery
+      url: /release-notes/whats-new.html
+#   - title: Release notes
+#     url: /release-notes/rn_overview.html
+    - title: Quick start
+      url: /get-started/dr-quick-start.html
+    - title: Prerequisites
+      url: /get-started/dr-prerequisites.html
+    - title: Log in to BlueXP disaster recovery 
+      url: /get-started/dr-login.html
+    - title: FAQ
+      url: /get-started/dr-faq.html 
+  - title: Use BlueXP disaster recovery
+    links:
+    - title: Use BlueXP disaster recovery overview 
+      url: /use/use-overview.html
+    - title: Add vCenter sites 
+      url: /use/sites-add.html
+    - title: Create a disaster recovery plan
+      url: /use/drplan-create.html
+    - title: Replicate to another site 
+      url: /use/replicate.html
+    - title: Fail over to a remote site
+      url: /use/failover.html
+    - title: Fail back applications to the original source site
+      url: /use/failback.html 
+    - title: Manage sites, plans, datastores, and virtual machines information 
+      url: /use/manage-overview.html
+    - title: Monitor disaster recovery jobs
+      url: /use/monitor-jobs.html 
+  - title: Blogs & community
+    links:
+    - title: NetApp Community
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: Cloud Tiering blog
+      url: https://bluexp.netapp.com/blog/topic/cloud-tiering
+    - title: Cloud webinars
+      url: https://bluexp.netapp.com/events       

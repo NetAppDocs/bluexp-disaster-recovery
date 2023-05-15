@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: get-started/dr-prerequisites.html
+keywords: what are bluexp disaster recovery requirements, disaster recovery prerequisites
+summary: Get started with BlueXP disaster recovery by verifying support for your environment, network access, login and web browser.
+---
+
+= BlueXP disaster recovery prerequisites
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/get-started/
+
+[.lead]
+Get started by verifying the readiness of your operational environment, login, network access, and web browser.
+
+To use BlueXP disaster recovery, you should ensure that your environment meets all requirements. 
+
+* On-premise VMware working environment with NetApp storage
+* On AWS: 
+** An Amazon FSx for ONTAP file system. Refer to Amazon FSx for ONTAP documentation on https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[how to get started]. 
+
+** A VMware account with a software-defined data center (SDDC) on AWS, also referred to as Virtual Machines Cloud (VMS). Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Virtual Machines Cloud documentation]. 
+
+** Link the SDDC with Amazon FSx for ONTAP. Refer to https://vmc.techzone.vmware.com/fsx-guide#overview[VMware Cloud on AWS integration with Amazon FSx for NetApp ONTAP].
+
+
+* In BlueXP: 
+
+**	The BlueXP Connector needs to be set up in NetApp BlueXP. Use the BlueXP AWS Connector, which has access to both on-premises vCenter and the cloud. The BlueXP Connector requires credentials for both the source and target vCenter servers. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[BlueXP Quick start^] and https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html[BlueXP networking information^]. 
+
+** Amazon FSx for ONTAP and AWS credentials added to the BlueXP working environment
+
+
+
+
+

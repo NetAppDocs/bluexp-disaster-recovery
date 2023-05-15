@@ -3,9 +3,9 @@ layout: landing-page
 sidebar: sidebar
 permalink: index.html
 # lead: Use only if indexpage.lead is not present in _index.yml
-summary: "summary, used for search results"
+summary: "With BlueXP disaster recovery for VMware, you can protect machine-critical business VMware applications by using VMware Cloud (VMC) as a disaster recovery site. In case of a disaster, use BlueXP disaster recovery to fail over applications to the cloud with near-zero recovery time. "
 ---
-= replace with repository name
+= BlueXP disaster recovery
 :hardbreaks:
 :nofooter:
 :icons: font

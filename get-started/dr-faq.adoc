@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: get-started/dr-faq.html
+keywords: disaster recovery faq, disaster recovery frequently asked questions
+summary: This FAQ can help if you're just looking for a quick answer to a question.
+---
+
+= Frequently asked questions for BlueXP disaster recovery
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This FAQ can help if you're just looking for a quick answer to a question.
+
+
+
+*What's the BlueXP disaster recovery URL?*
+For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/^] to access the BlueXP console. 
+
+
+*Do you need a license to use BlueXP disaster recovery?*
+A NetApp License File (NLF) is not required.
+
+*How do you enable BlueXP Disaster recovery?*
+BlueXP disaster recovery does not require any enablement. The disaster recovery option is automatically enabled on the BlueXP left navigation.  
+
+

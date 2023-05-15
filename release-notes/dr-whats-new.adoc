@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: release-notes/dr-whats-new.html
+keywords: disaster recovery faq, bluexp, disaster recovery frequently asked questions
+summary: BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+---
+
+= What's new
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn what’s new in BlueXP disaster recovery beta.
+
+//tag::whats-new[]
+== 018 May 2023 
+
+With the new BlueXP disaster recovery beta service for VMware, you can protect machine-critical business VMware applications by using VMware Cloud (VMC) as a disaster recovery site. In case of a disaster, use BlueXP disaster recovery to fail over applications to the cloud with near-zero recovery time. 
+
+BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery beta you can protect your on-premises VMware workloads on NetApp storage to the cloud (VMware Cloud on AWS with Amazon FSx for ONTAP).
+
+
+The beta enables you to achieve disaster recovery with VMware workloads on NFS. 
+
+
+link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html[Learn more about BlueXP disaster recovery]. 
+//include 3 most recent releases
+//end::whats-new[]
