@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: use/monitor-jobs.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter
+summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+---
+
+= Monitor disaster recovery jobs
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+You can monitor all disaster recovery jobs and determine their progress. 
+
+.Steps 
+
+. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*. 
+. From the top menu, select *Job monitoring*. 
+
+. Explore all jobs related to Failover and Failback and review their timestamps and status.
