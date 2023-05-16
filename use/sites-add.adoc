@@ -29,7 +29,7 @@ A VMC is one of the sites.
 
 . To accept self-signed certificates for the source vCenter, check the box. 
 +
-NOTE: Self-signed certificates are not as secure as other certificates. If your vCenter is *NOT* configured with CA signed certificates, you should check this box; otherwise, the connection to the vCenter will not work.  
+NOTE: Self-signed certificates are not as secure as other certificates. If your vCenter is *NOT* configured with certificate authority (CA) certificates, you should check this box; otherwise, the connection to the vCenter will not work.  
 
 . Select *Add*. 
 +

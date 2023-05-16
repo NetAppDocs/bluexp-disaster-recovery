@@ -41,8 +41,8 @@ After you set up the service, here's what you might do next.
 * link:../use/drplan-create.html[Create a disaster recovery plan^].
 * link:../use/replicate.html[Replicate applications to another site^].
 * link:../use/failover.html[Fail over applications to a remote site^].
-* link:../use/failback.html[Fail back applications to the original source site^]
-* link:../use/manage-overview.html[Manage sites, plans, datastores, and virtual machines information^]
-* link:../use/monitor-jobs.html[Monitor disaster recovery operations^]
+* link:../use/failback.html[Fail back applications to the original source site^].
+* link:../use/manage-overview.html[Manage sites, plans, datastores, and virtual machines information^].
+* link:../use/monitor-jobs.html[Monitor disaster recovery operations^].
 
 
