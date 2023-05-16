@@ -9,7 +9,7 @@ summary: With BlueXP disaster recovery for VMware, you can protect machine-criti
 = Learn about BlueXP disaster recovery for VMware beta
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/concepts/
+:imagesdir: ../media/get-started/
 
 [.lead]
 Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events (for example, ransomware). With BlueXP disaster recovery for VMware, you can protect machine-critical business VMware applications by using VMware Cloud (VMC) as a disaster recovery site. In case of a disaster, use BlueXP disaster recovery to fail over applications to the cloud with near-zero recovery time. 
@@ -50,6 +50,8 @@ The BlueXP disaster recovery service can be either on demand with Pay-As-You-Go 
 == How BlueXP disaster recovery works
 
 BlueXP disaster recovery can be used to recover workloads replicated from on-premises to Amazon FSx for ONTAP. This service automates the recovery from the SnapMirror level, through virtual machine registration to Virtual Machine Cloud (VMC), and to network mappings directly on NSX-T. This feature is included with all VMC environments.
+
+image:dr-architecture-diagram-70.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
 
 When there is a disaster, this service helps you recover virtual machines in the VMC by breaking the SnapMirror relationships and making the destination site active. 
 
