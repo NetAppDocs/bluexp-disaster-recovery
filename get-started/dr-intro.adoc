@@ -51,7 +51,9 @@ The BlueXP disaster recovery service can be either on demand with Pay-As-You-Go 
 
 == How BlueXP disaster recovery works
 
-BlueXP disaster recovery can be used to recover workloads replicated from on-premises to Amazon FSx for ONTAP. This service automates the recovery from the SnapMirror level, through virtual machine registration to Virtual Machine Cloud (VMC), and to network mappings directly on NSX-T. This feature is included with all VMC environments.
+BlueXP disaster recovery can recover workloads replicated from on-premises to Amazon FSx for ONTAP. This service automates the recovery from the SnapMirror level, through virtual machine registration to Virtual Machine Cloud (VMC), and to network mappings directly on the VMware network virtualization and security platform, NSX-T. This feature is included with all Virtual Machine Cloud environments.
+
+BlueXP disaster recovery uses ONTAP SnapMirror technology, which provides highly efficient replication and preserves the ONTAP incremental-forever Snapshot efficiencies. SnapMirror replication ensures that application-consistent Snapshot copies are always in sync and the data is usable immediately after a failover. 
 
 image:dr-architecture-diagram-70.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
 
