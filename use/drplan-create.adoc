@@ -32,6 +32,8 @@ First, you select the source vCenter and then select the target vCenter.
 . From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*.
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. Or, if you are just beginning to use the service, from the Dashboard, select *Add replication plan*. 
++
+image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add plan page]
 
 . Create a name for the disaster recovery plan. 
 
@@ -48,6 +50,9 @@ The next step is to group the required virtual machines into functional resource
 
 +
 The selected virtual machine is automatically added to group 1 and a new group 2 is started. Each time you add a virtual machine to the last group, another group is added. 
+
++
+image:dr-plan-create-apps-vms.png[Screenshot showing the Add replication plan > Applications to replicate page]
 
 . Optionally, do any of the following: 
 ** To change groups, click the group *Edit* icon. 
@@ -85,7 +90,14 @@ NOTE: SnapMirror is at the volume level. So, all virtual machines are replicated
 * Virtual machines
 * Datastores 
 
-. Under the Virtual machines details, you can optionally resize the VM’s CPU and RAM parameters. 
++
+image:dr-plan-create-mapping.png[Screenshot showing Add replication plan > Resource mapping]
+
+. Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters.
+
++
+image:dr-plan-create-mapping-vms.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
+
 +
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. Also, you can modify the boot order for all the selected virtual machines across the resource groups. 
 +
@@ -101,10 +113,13 @@ Select whether you want to migrate data (a one-time move) to another target or m
 
 .Steps 
 
-. In the Recurrence page, select *Migrate* or *Mirror*. 
+. In the Recurrence page, select *Migrate* or *Replicate*. 
 +
 * *Migrate*: Select to move the application to the target location. 
-* *Mirror*: Keep the target copy up to date with changes from the source copy. Enter how often the mirroring should take place. 
+* *Replicate*: Keep the target copy up to date with changes from the source copy in a recurring replication. Enter how often the replication should take place. 
+
++
+image:dr-plan-create-recurrence.png[Screenshot showing Add replication plan > Recurrence]
 
 . To adjust the existing storage settings to match this replication interval, check the box. 
 

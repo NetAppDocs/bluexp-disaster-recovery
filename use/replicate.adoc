@@ -15,7 +15,7 @@ Replicate VMware apps on your source site to a disaster recovery remote site in 
 
 .Steps
 
-. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*.
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 . From the top menu, select *Replication plans*. 
 . Select the disaster recovery plan.
 . On the right, select the *Actions* option … and select *Replicate*. 

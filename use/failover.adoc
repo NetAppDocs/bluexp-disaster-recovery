@@ -29,7 +29,7 @@ When you finish the test, you should reset the virtual machines with the *Clean 
 
 .Steps 
 
-. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*.
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. 
 
@@ -37,9 +37,10 @@ When you finish the test, you should reset the virtual machines with the *Clean 
 
 . On the right, select the *Actions* ellipses … and select *Test failover*.
 
-. In the Test failover page, enter “Test failover” and select *Test failover*.  
+. In the Test failover page, enter “Test failover” and select *Test fail over*.  
 
-. After the test is complete, clean up the test environment. Refer to link:../use/failover.html#clean_up_the_test_environment_after_a_failover_test
+. After the test is complete, clean up the test environment.
+
 
 == Clean up the test environment after a failover test
 
@@ -73,7 +74,7 @@ TIP: After the failover starts, the recovered items can be seen in the VMC vCent
 
 .Steps 
 
-. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*.
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. 
 
@@ -81,7 +82,7 @@ TIP: After the failover starts, the recovered items can be seen in the VMC vCent
 
 . On the right, select the *Actions* ellipses … and select *Fail over*.
 
-. In the Test failover page, enter the disaster recovery plan name to confirm and select *Failover*.  
+. In the Test failover page, enter the disaster recovery plan name to confirm and select *Fail over*.  
 
 . Choose the Snapshot for the datastore from which to recover.  The default is the latest. 
 

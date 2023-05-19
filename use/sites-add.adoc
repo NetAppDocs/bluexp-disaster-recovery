@@ -17,11 +17,15 @@ After they are added, BlueXP disaster recovery performs a deep discovery of the 
 
 .Steps
 
-. Log in to BlueXP and select *Protection* > *Disaster recovery* > *Virtual machines* from the left nav. 
+. Log in to BlueXP and select *Protection* > *Disaster recovery* from the left nav. 
 +
 You’ll land on BlueXP disaster recovery Dashboard page. When you first start with the service, you need to add vCenter information. Later, the Dashboard displays data about your sites and replication plans. 
 
 . Select *Discover vCenter servers* to enter information about the source vCenter site.  
++
+TIP: If some vCenter sites already exist and you want to add more, from the top menu, select *Sites* and then select *Add*. 
++
+image:vcenter-add.png[Add vCenter server screenshot ]
 
 . Add a site, select the BlueXP Connector, and provide vCenter credentials. 
 +

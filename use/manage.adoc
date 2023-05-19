@@ -16,8 +16,6 @@ You can get a quick glance of all your Disaster recovery resources or look at ea
 * Dashboard
 * Sites
 * Replication plans
-* Datastores
-* Virtual machines
 * Resource groups
 
 == View the BlueXP disaster recovery Dashboard
@@ -26,12 +24,12 @@ Use the Dashboard to get an at-a-glance view of all the BlueXP disaster recovery
 
 .Steps 
 
-. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*. 
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
 . From the top menu, select *Dashboard*. 
 
 . Explore all disaster recovery plans, compliance, vCenters, virtual machines, and resource groups in the Dashboard.
 
-. To view the resource, select *View*. 
+. To view the resource, select the arrow to the right. 
 . To view all resource groups, select *View resource groups*. 
 
 == Manage vCenter sites
@@ -40,7 +38,8 @@ You can edit the vCenter site name the the site type (on-premises or AWS).
 .Steps 
 
 . From the top menu, select *Sites*. 
-. Edit the vCenter site name and site type. 
+. Select the *Actions* icon on the right of the vCenter name and select *Edit*. 
+. Edit the vCenter site name and location. 
 
 == Manage replication plans 
 
@@ -66,18 +65,19 @@ You can disable, enable and delete replication plans.
 
 You can view information about how many datastores exist on the source and on the target. 
 
-.Steps 
 
-. From the top menu, select *Datastores*. 
+. From the top menu, select *Dashboard*. 
+. Select the vCenter in the site row. 
+. Select *Datastores*. 
 . View the datastores information. 
 
 == View virtual machines information 
 
 You can view information about how many virtual machines exist on the source and on the target along with CPU, memory, and available capacity. 
 
-.Steps 
-
-. From the top menu, select *Virtual machines*. 
+. From the top menu, select *Dashboard*. 
+. Select the vCenter in the site row. 
+. Select *Virtual machines*. 
 . View the virtual machines information. 
 
 == Manage resource groups 
@@ -90,4 +90,4 @@ You can also edit and delete resource groups.
 
 . From the top menu, select *Resource groups*. 
 . To add a resource group, select *Add group*.  
-. To perform actions with the resource group, select the *Actions* … menu at the top and select any of the options, such as *Edit resource group* or *Delete resource group*. 
+. To perform actions with the resource group, select the *Actions* … menu at the right and select any of the options, such as *Edit resource group* or *Delete resource group*. 

@@ -23,7 +23,7 @@ In this workflow, BlueXP disaster recovery replicates (resyncs) any changes back
 
 .Steps 
 
-. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*.
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. 
 
