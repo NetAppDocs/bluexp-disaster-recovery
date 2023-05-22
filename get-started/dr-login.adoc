@@ -25,4 +25,6 @@ The NetApp BlueXP login page appears.
 . From the BlueXP left navigation, select *Protection* > *Disaster recovery*. 
 +
 The BlueXP disaster recovery Dashboard appears.
- 
+
++
+NOTE: If you have a BlueXP Connector, you can start to use BlueXP disaster recovery. If you don't or you have one and it's not the one for this Beta, you might need to contact NetApp Support to activate one for this Beta. 
