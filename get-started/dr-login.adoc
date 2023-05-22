@@ -22,7 +22,7 @@ To log in to BlueXP, you can use your NetApp Support Site credentials or you can
 The NetApp BlueXP login page appears.
 
 . Log in to BlueXP. 
-. From the BlueXP left navigation, select *Protection* > *Disaster recovery* > *Virtual machines*. 
+. From the BlueXP left navigation, select *Protection* > *Disaster recovery*. 
 +
 The BlueXP disaster recovery Dashboard appears.
  

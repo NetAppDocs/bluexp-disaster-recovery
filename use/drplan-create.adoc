@@ -29,7 +29,7 @@ First, you select the source vCenter and then select the target vCenter.
 
 .Steps 
 
-. From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Virtual machines*.
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. Or, if you are just beginning to use the service, from the Dashboard, select *Add replication plan*. 
 +
