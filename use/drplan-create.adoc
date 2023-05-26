@@ -18,7 +18,7 @@ Such plans are sometimes called _blueprints_.
 A wizard takes you through these steps: 
 
 * Select vCenter servers
-* Select the applications you want to replicate and assign groups
+* Select the VMs you want to replicate and assign groups
 * Map how resources from the source environment map to the target. 
 * Identify recurrence 
 * Review the plan
@@ -90,8 +90,6 @@ NOTE: SnapMirror is at the volume level. So, all virtual machines are replicated
 * Virtual machines
 * Datastores 
 
-+
-image:dr-plan-create-mapping.png[Screenshot showing Add replication plan > Resource mapping]
 
 . Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters.
 
@@ -109,21 +107,25 @@ TIP: You can later test the entire plan. Right now, you are setting up the mappi
 
 == Identify the recurrence 
 
-Select whether you want to migrate data (a one-time move) to another target or mirror it. If you want to mirror it, identify how often data should be mirrored. 
+Select whether you want to migrate data (a one-time move) to another target or replicate it at the SnapMirror frequency. If you want to replicate it, identify how often data should be mirrored. 
+
+NOTE: In this beta, configure the frequency outside of the BlueXP disaster recovery service. 
 
 .Steps 
 
 . In the Recurrence page, select *Migrate* or *Replicate*. 
 +
 * *Migrate*: Select to move the application to the target location. 
-* *Replicate*: Keep the target copy up to date with changes from the source copy in a recurring replication. Enter how often the replication should take place. 
+* *Replicate*: Keep the target copy up to date with changes from the source copy in a recurring replication. 
 
 +
 image:dr-plan-create-recurrence.png[Screenshot showing Add replication plan > Recurrence]
 
-. To adjust the existing storage settings to match this replication interval, check the box. 
-
 . Select *Next*. 
+
+
+// To adjust the existing storage settings to match this replication interval, check the box. 
+
 
 == Confirm the replication plan
 

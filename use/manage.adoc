@@ -33,7 +33,7 @@ Use the Dashboard to get an at-a-glance view of all the BlueXP disaster recovery
 . To view all resource groups, select *View resource groups*. 
 
 == Manage vCenter sites
-You can edit the vCenter site name the the site type (on-premises or AWS).
+You can edit the vCenter site name and the site type (on-premises or AWS).
 
 .Steps 
 

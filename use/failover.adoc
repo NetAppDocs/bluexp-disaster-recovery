@@ -11,19 +11,21 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 :imagesdir: ../media/use/
 
 [.lead]
-In case of a disaster, fail over your primary on-prem site to a NetApp cloud volume in VMware Cloud on AWS. Or, fail over your primary cloud site to another cloud site. 
+In case of a disaster, fail over your primary on-prem site to VMware Cloud on an AWS site with FSx for NetApp ONTAP. 
 
 During the failover, the most recent SnapMirror snapshot copy is used. Or, you can select a specific Snapshot copy from a point-in-time Snapshot copy (per the retention policy of SnapMirror). The point-in-time option can be helpful if you are facing a corruption event such as ransomware, where the most recent replicas are already compromised or encrypted. BlueXP disaster recovery shows all available points in time. 
 
-This procedure breaks the replication relationship, places the vCenter source site offline, and enables read/write on the target site. 
+This procedure breaks the replication relationship, places the vCenter source VMs offline, and enables read/write on the target site. 
 
 Before you start the failover, you can test the process, ensuring success when you need it. The test does not place the virtual machines offline. 
 
 == Test the failover process
 
-Before you start an actual failover, you should test the replication plans. 
+Before you start an actual failover, you should test the failover process. 
 
-During a failover test, virtual machines are temporarily created. BlueXP disaster recovery does not map the target volume. Instead, it makes a FlexClone copy of the required SnapMirror (or Snapshot) instance and exposes the FlexClone instance. This process doesn’t consume additional physical capacity for Amazon FSx for ONTAP. The original source volume is not modified and replica jobs can continue even during disaster recovery.
+During a failover test, virtual machines are temporarily created. BlueXP disaster recovery does not map the target volume. Instead, it makes a new FlexClone volume from the selected snapshot, and a temporary datastore backing the FlexClone volume is mapped to the ESXi hosts.
+
+This process doesn’t consume additional physical capacity for Amazon FSx for NetApp ONTAP. The original source volume is not modified and replica jobs can continue even during disaster recovery.
 
 When you finish the test, you should reset the virtual machines with the *Clean up test* option. While this is recommended, it is not required. 
 
@@ -58,7 +60,7 @@ After the failover test finishes, you should clean up the test environment. This
 
 == Fail over the source site to a disaster recovery site
 
-In case of disaster, fail over your source site on demand to a NetApp cloud volume in VMware Cloud on AWS. 
+In case of disaster, fail over your source site on demand to VMware Cloud on an AWS site with FSx for NetApp ONTAP. 
 
 The failover process involves in the following operations: 
 

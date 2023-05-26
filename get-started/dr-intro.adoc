@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: get-started/dr-intro.html
 keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, replicate, failover, failback, fail over, fail back
-summary: With BlueXP disaster recovery for VMware, you can protect machine-critical business VMware applications by using VMware Cloud (VMC) as a disaster recovery site. In case of a disaster, use BlueXP disaster recovery to fail over applications to the cloud with near-zero recovery time. 
+summary: Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events (for example, ransomware). With BlueXP disaster recovery for VMware, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in public clouds as a disaster recovery site using NetApp cloud storage.
 
 ---
 
@@ -12,15 +12,15 @@ summary: With BlueXP disaster recovery for VMware, you can protect machine-criti
 :imagesdir: ../media/get-started/
 
 [.lead]
-Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events (for example, ransomware). With BlueXP disaster recovery for VMware, you can protect machine-critical business VMware applications by using VMware Cloud (VMC) as a disaster recovery site. In case of a disaster, use BlueXP disaster recovery to fail over applications to the cloud with near-zero recovery time. 
+Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events (for example, ransomware). With BlueXP disaster recovery for VMware, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in a public cloud as a disaster recovery site using NetApp cloud storage.
 
-BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery beta you can protect your on-premises VMware workloads on NetApp storage to the cloud (VMware Cloud on AWS with Amazon FSx for NetApp ONTAP).
-
-The beta enables you to achieve disaster recovery with VMware workloads on NFS. 
+BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery beta you can protect your on-premises, NFS-based VMware workloads running NetApp storage to VMware Cloud (VMC) on AWS with Amazon FSx for NetApp ONTAP).
 
 BlueXP disaster recovery uses ONTAP SnapMirror technology as the replication transport to the cloud. This enables industry-best storage efficiency (compression and deduplication) on primary and secondary sites. 
 
-image:dr-overview-diagram-beta.png[Diagram showing components of the BlueXP disaster recovery for VMware]
+The beta supports disaster recovery for on-premises workloads to the cloud. 
+
+image:draas-onprem-to-cloud.png[Diagram showing components of the BlueXP disaster recovery for VMware]
 
 == Benefits of using BlueXP disaster recovery for VMware beta
 
@@ -38,7 +38,7 @@ The BlueXP disaster recovery beta provides you with full use of several NetApp t
 * In case of disaster, fail over your primary site on demand to a NetApp cloud volume in VMware Cloud on AWS.
 * After the disaster has been resolved, fail back on demand from the disaster recovery site to the primary site.
 
-With NetApp SnapMirror technology, on-premises VMware workloads (for NFS) can be replicated to FSx for ONTAP running in AWS.
+With NetApp SnapMirror technology, on-premises VMware workloads (for NFS) can be replicated to FSx for NetApp ONTAP running in AWS.
 
 NOTE: Configuration of vSphere server is done outside of BlueXP disaster recovery in vSphere Server. 
 
@@ -47,7 +47,7 @@ NOTE: Configuration of vSphere server is done outside of BlueXP disaster recover
 
 NetApp doesn’t charge you for using the beta version of BlueXP disaster recovery.
 
-The BlueXP disaster recovery service can be either on demand with Pay-As-You-Go pricing or as an annual subscription-based plan hosted in the cloud. 
+The BlueXP disaster recovery service, upon general availability, is expected to offer Pay-As-You-Go pricing or an annual subscription-based plan. 
 
 == How BlueXP disaster recovery works
 

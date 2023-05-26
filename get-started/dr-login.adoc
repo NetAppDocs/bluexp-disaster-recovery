@@ -27,4 +27,8 @@ The NetApp BlueXP login page appears.
 The BlueXP disaster recovery Dashboard appears.
 
 +
-NOTE: If you have a BlueXP Connector, you can start to use BlueXP disaster recovery. If you don't or you have one and it's not the one for this Beta, you might need to contact NetApp Support to activate one for this Beta. 
+If you don't have a BlueXP Connector or it's not the one for this beta, you might need to contact NetApp Support or follow messages to sign up for this beta. 
+
+* If you are new to BlueXP and haven't used any Connector, when you select "Disaster recovery", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your beta request. 
+* If you are a BlueXP user an an existing Connector, when you select "Disaster recovery", a message appears about signing up. 
+* If you are already participating in the beta, when you select "Disaster recovery", you can proceed with the service. 

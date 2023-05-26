@@ -11,7 +11,7 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 :imagesdir: ../media/use/
 
 [.lead]
-Before you can create a disaster recovery plan, you need to add a primary vCenter site and a target vCenter disaster recovery site to BlueXP. 
+Before you can create a disaster recovery plan, you need to add a primary vCenter site and a target vCenter disaster recovery site in BlueXP. 
 
 After they are added, BlueXP disaster recovery performs a deep discovery of the vCenter environments, including vCenter clusters, ESXi hosts, datastores, storage foot print, virtual machine details, SnapMirror replicas, and virtual machine networks.
 
@@ -28,8 +28,7 @@ TIP: If some vCenter sites already exist and you want to add more, from the top 
 image:vcenter-add.png[Add vCenter server screenshot ]
 
 . Add a site, select the BlueXP Connector, and provide vCenter credentials. 
-+
-A VMC is one of the sites.
+
 
 . To accept self-signed certificates for the source vCenter, check the box. 
 +
