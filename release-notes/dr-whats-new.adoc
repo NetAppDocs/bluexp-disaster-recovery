@@ -22,11 +22,15 @@ NOTE: With this beta offering, NetApp reserves the right to modify offering deta
 
 This release includes the following updates: 
 
-* *Resource groups update for boot order*: When you create a disaster recovery plan, you can add virtual machines into functional resource groups. Resource groups enable you to put a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain boot order that can be executed upon recovery. With this release, each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them in the plan.
+* *Resource groups update for boot order*: When you create a disaster recovery plan, you can add virtual machines into functional resource groups. Resource groups enable you to put a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain boot order that can be executed upon recovery. With this release, each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them in the plan. Refer to link:../use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups[Select applications to replicate and assign resource groups].
+ 
 
-* *Replication verification*: After you create the disaster recovery plan, identify the recurrence in the wizard, and initiate a replication to a disaster recovery site, every 30 minutes BlueXP disaster recovery verifies that the replication is actually occurring according to the plan. You can monitor the check in the Job Monitor page. 
+* *Replication verification*: After you create the disaster recovery plan, identify the recurrence in the wizard, and initiate a replication to a disaster recovery site, every 30 minutes BlueXP disaster recovery verifies that the replication is actually occurring according to the plan. You can monitor the check in the Job Monitor page. Refer to link:../use/replicate.html[Replicate applications to another site].
 
-* *Job Monitor update*: The Job Monitor page now includes a Refresh option so that you can get an up-to-date status of operations. 
+
+* *Job Monitor update*: The Job Monitor page now includes a Refresh option so that you can get an up-to-date status of operations. Refer to link:../use/monitor-jobs.html[Monitor disaster recovery jobs].
+
+
 
 .Steps
 
