@@ -20,3 +20,4 @@ You can monitor all disaster recovery jobs and determine their progress.
 
 . Explore all jobs related to operations and review their timestamps and status.
 . To view details of a particular job, select that row. 
+. To refresh information, select *Refresh*. 

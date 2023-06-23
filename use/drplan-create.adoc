@@ -44,6 +44,8 @@ image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add 
 
 The next step is to group the required virtual machines into functional resource groups. Resource groups enable you to group a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain boot order that can be executed upon recovery.
 
+TIP: Each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them here.
+
 .Steps
 
 . On the left side of the Applications page, select the virtual machines that you want to replicate and assign to the selected group. 
@@ -61,7 +63,7 @@ image:dr-plan-create-apps-vms.png[Screenshot showing the Add replication plan > 
 
 . When you have multiple resource groups, ensure that the sequence of the groups matches the operational sequence that should occur. 
 +
-Each virtual machine in a group is started in sequence based on the order here. Two groups are started in parallel. 
+Each virtual machine within a group is started in sequence based on the order here. Two groups are started in parallel. 
 
 . Optionally, rename the group by clicking the *Edit* icon. 
 

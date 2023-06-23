@@ -13,6 +13,8 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 [.lead]
 Replicate VMware apps on your source site to a disaster recovery remote site in the cloud using SnapMirror replication.
 
+TIP: After the customer creates the disaster recovery plan, identifies the recurrence in the wizard, and initiates a replication to a disaster recovery site, BlueXP disaster recovery service checks every 30 minutes that the replication is actually occurring according to the plan. You can monitor the check in the Job Monitor page. 
+
 .Steps
 
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*.
