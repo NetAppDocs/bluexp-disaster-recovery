@@ -14,7 +14,7 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 Learn what’s new in the BlueXP disaster recovery beta.
 
 //tag::whats-new[]
-== 4 July 2023 
+== 30 June 2023 
 
 BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery beta, you can protect your on-premises, NFS-based VMware workloads running NetApp storage to VMware Cloud (VMC) on AWS with Amazon FSx for ONTAP. 
 
