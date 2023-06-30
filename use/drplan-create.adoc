@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. After you’ve added vCenter sites, you’re ready to create a disaster recovery or replication plan. 
 ---
 
-= Create a disaster recovery or replication plan 
+= Create a replication plan 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
@@ -35,7 +35,7 @@ First, you select the source vCenter and then select the target vCenter.
 +
 image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add plan page]
 
-. Create a name for the disaster recovery plan. 
+. Create a name for the replication plan. 
 
 . Select the source and target vCenters from the Source and Target vCenter lists. 
 . Select *Next*.

@@ -37,7 +37,7 @@ When you finish the test, you should reset the virtual machines with the *Clean 
 
 . Select the disaster recovery plan.
 
-. On the right, select the *Actions* ellipses … and select *Test failover*.
+. On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Test failover*.
 
 . In the Test failover page, enter “Test failover” and select *Test fail over*.  
 
@@ -54,7 +54,7 @@ After the failover test finishes, you should clean up the test environment. This
 
 . Select the disaster recovery plan.
 
-. On the right, select the *Actions* ellipses … and select *Clean up failover test*.
+. On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  and select *Clean up failover test*.
 
 . In the Test failover page, enter “Clean up failover” and select *Clean up failover test*.  
 
@@ -82,7 +82,7 @@ TIP: After the failover starts, the recovered items can be seen in the VMC vCent
 
 . Select the disaster recovery plan.
 
-. On the right, select the *Actions* ellipses … and select *Fail over*.
+. On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Fail over*.
 
 . In the Test failover page, enter the disaster recovery plan name to confirm and select *Fail over*.  
 

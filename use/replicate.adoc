@@ -20,5 +20,5 @@ TIP: After you create the disaster recovery plan, identify the recurrence in the
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 . From the top menu, select *Replication plans*. 
 . Select the disaster recovery plan.
-. On the right, select the *Actions* option … and select *Replicate*. 
+. On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Replicate*. 
 

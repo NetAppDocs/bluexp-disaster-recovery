@@ -8,7 +8,7 @@ summary: Known limitations identify platforms, devices, or functions that are no
 = Limitations
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ../media/use/
 
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
@@ -29,7 +29,7 @@ Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connecto
 +
 Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[Create an Amazon FSx for NetApp ONTAP file system^].
 
-. From BlueXP disaster recovery, select *Sites*, on the vCenter row select the *Actions* menu, and from the Actions menu, select *Refresh* to refresh the FSx discovery in BlueXP disaster recovery. 
+. From BlueXP disaster recovery, select *Sites*, on the vCenter row select the *Actions* option image:../use/icon-vertical-dots.png[Actions menu icon in BlueXP disaster recovery service], and from the Actions menu, select *Refresh* to refresh the FSx discovery in BlueXP disaster recovery. 
 +
 This rediscovers the datastore, its virtual machines, and its destination relationship. 
 

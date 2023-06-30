@@ -29,7 +29,7 @@ In this workflow, BlueXP disaster recovery replicates (resyncs) any changes back
 
 . Select the disaster recovery plan.
 
-. On the right, select the *Actions* ellipses … and select *Fail back*.
+. On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  and select *Fail back*.
 
 . Enter the disaster recovery plan name to confirm and start the failback. 
   

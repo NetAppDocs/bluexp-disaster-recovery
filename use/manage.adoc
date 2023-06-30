@@ -38,7 +38,7 @@ You can edit the vCenter site name and the site type (on-premises or AWS).
 .Steps 
 
 . From the top menu, select *Sites*. 
-. Select the *Actions* icon on the right of the vCenter name and select *Edit*. 
+. Select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  on the right of the vCenter name and select *Edit*. 
 . Edit the vCenter site name and location. 
 
 == Manage replication plans 
@@ -51,7 +51,7 @@ You can disable, enable and delete replication plans.
 .Steps 
 
 . From the top menu, select *Replication plans*. 
-. To view the plan details, select the *Actions* … icon and select *View plan details*.  
+. To view the plan details, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *View plan details*.  
 
 . Do any of the following: 
 +
@@ -59,7 +59,7 @@ You can disable, enable and delete replication plans.
 * To edit the resource mappings, select the *Failover mapping* tab and select the *Edit* icon. 
 * To add or edit the virtual machines, select the *Virtual machine* tab and select the *Edit* icon. 
 
-. To perform actions with the plan, select the *Actions* … menu at the top and select any of the options, such as *Test failover*, *Fail over*, *Fail back*, *Disable*, *Enable*, or *Delete*. 
+. To perform actions with the plan, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  at the top and select any of the options, such as *Test failover*, *Fail over*, *Fail back*, *Disable*, *Enable*, or *Delete*. 
 
 == View datastores information 
 
@@ -90,4 +90,4 @@ You can also edit and delete resource groups.
 
 . From the top menu, select *Resource groups*. 
 . To add a resource group, select *Add group*.  
-. To perform actions with the resource group, select the *Actions* … menu at the right and select any of the options, such as *Edit resource group* or *Delete resource group*. 
+. To perform actions with the resource group, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  at the right and select any of the options, such as *Edit resource group* or *Delete resource group*. 
