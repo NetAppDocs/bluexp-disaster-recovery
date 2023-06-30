@@ -29,7 +29,7 @@ Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connecto
 +
 Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[Create an Amazon FSx for NetApp ONTAP file system^].
 
-. From BlueXP disaster recovery, select *Sites*, select the vCenter, select the *Actions* menu, and from the Actions menu, select *Refresh* to refresh the FSx discovery in BlueXP disaster recovery. 
+. From BlueXP disaster recovery, select *Sites*, on the vCenter row select the *Actions* menu, and from the Actions menu, select *Refresh* to refresh the FSx discovery in BlueXP disaster recovery. 
 +
 This rediscovers the datastore, its virtual machines, and its destination relationship. 
 
