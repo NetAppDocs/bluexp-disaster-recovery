@@ -6,13 +6,13 @@ summary: Disaster recovery to the cloud is a resilient and cost-effective way of
 
 ---
 
-= Learn about BlueXP disaster recovery for VMware beta
+= Learn about BlueXP disaster recovery for VMware Beta
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/get-started/
 
 [.lead]
-Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events (for example, ransomware). With BlueXP disaster recovery for VMware, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in a public cloud as a disaster recovery site using NetApp cloud storage.
+Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events (for example, ransomware). With BlueXP disaster recovery for VMware Beta, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in a public cloud as a disaster recovery site using NetApp cloud storage.
 
 BlueXP disaster recovery Beta is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery beta you can protect your on-premises, NFS-based VMware workloads running NetApp storage to VMware Cloud (VMC) on AWS with Amazon FSx for NetApp ONTAP.
 

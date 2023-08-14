@@ -20,6 +20,8 @@ BlueXP disaster recovery Beta is a cloud-based disaster recovery service that au
 
 NOTE: With this Beta offering, NetApp reserves the right to modify offering details, contents and timeline before General Availability.   
 
+link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
+
 //end::whats-new[]
 
 == 30 June 2023 
