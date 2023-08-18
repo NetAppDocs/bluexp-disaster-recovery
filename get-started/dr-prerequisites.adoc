@@ -17,11 +17,11 @@ To use BlueXP disaster recovery, you should ensure that your environment meets a
 
 * On-premise VMware working environment with NetApp storage
 * On AWS: 
-** An Amazon FSx for NetApp ONTAP file system. Refer to Amazon FSx for ONTAP documentation on https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[how to get started]. 
+** An Amazon FSx for NetApp ONTAP file system. Refer to Amazon FSx for ONTAP documentation on https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[how to get started^]. 
 
-** A VMware account with a software-defined data center (SDDC) on AWS, also referred to as Virtual Machines Cloud (VMS). In VMware Cloud Console, use service roles of Administrator and NSX Cloud Admin, both roles on VMWare Cloud on AWS. Also use the Organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Virtual Machines Cloud documentation]. 
+** A VMware account with a software-defined data center (SDDC) on AWS, also referred to as Virtual Machines Cloud (VMS). In VMware Cloud Console, use service roles of Administrator and NSX Cloud Admin, both roles on VMWare Cloud on AWS. Also use the Organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Virtual Machines Cloud documentation^]. 
 
-** Link the SDDC with Amazon FSx for NetApp ONTAP. Refer to https://vmc.techzone.vmware.com/fsx-guide#overview[VMware Cloud on AWS integration with Amazon FSx for NetApp ONTAP].
+** Link the SDDC with Amazon FSx for NetApp ONTAP. Refer to https://vmc.techzone.vmware.com/fsx-guide#overview[VMware Cloud on AWS integration with Amazon FSx for NetApp ONTAP^].
 
 
 * In BlueXP: 

@@ -38,7 +38,7 @@ To configure a VMC environment on AWS, follow the steps at this https://docs.net
 
 === Configure Amazon FSx for NetApp ONTAP
 
-Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage built on the popular NetApp ONTAP file system. Follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.htm[link^] to provision and configure FSx for NetApp ONTAP.
+Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage built on the popular NetApp ONTAP file system. Follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html[link^] to provision and configure FSx for NetApp ONTAP.
 
 
 == Set up in BlueXP

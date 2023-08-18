@@ -24,11 +24,11 @@ indexpage:
       url: /use/sites-add.html
     - title: Create a disaster recovery plan
       url: /use/drplan-create.html
-    - title: Replicate to another site 
+    - title: Replicate apps to another site 
       url: /use/replicate.html
-    - title: Fail over to a remote site
+    - title: Fail over apps to a remote site
       url: /use/failover.html
-    - title: Fail back applications to the original source site
+    - title: Fail back apps to the original source site
       url: /use/failback.html 
     - title: Manage sites, plans, datastores, and virtual machines information 
       url: /use/manage.html
