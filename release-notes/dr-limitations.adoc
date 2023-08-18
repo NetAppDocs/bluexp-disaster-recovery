@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: release-notes/dr-limitations.html
+keywords: disaster recovery, bluexp
+summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
+---
+
+= Limitations
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
+
+== BlueXP might not discover Amazon FSx for NetApp ONTAP
+
+Sometimes, BlueXP does not discover Amazon FSx for NetApp ONTAP clusters. This might be because the FSx credentials were not correct. 
+
+*Workaround*: Add the Amazon FSx for NetApp ONTAP cluster in BlueXP and periodically refresh the cluster to display any changes. 
+
+If you need to remove the ONTAP FSx cluster from BlueXP disaster recovery service, complete the following steps: 
+
+. In the BlueXP Connector, use the connectivity options from your cloud provider, connect to the Linux VM that the Connector runs on, restart the "occm" service using the `docker restart occm` command.
++
+Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm[Manage existing Connectors^]. 
+
+. In the BlueXP Canvas, add the Amazon FSx for ONTAP environment again and provide the FSx credentials.
++
+Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[Create an Amazon FSx for NetApp ONTAP file system^].
+
+. From BlueXP disaster recovery, select *Sites*, on the vCenter row select the *Actions* option image:../use/icon-vertical-dots.png[Actions menu icon in BlueXP disaster recovery service], and from the Actions menu, select *Refresh* to refresh the FSx discovery in BlueXP disaster recovery. 
++
+This rediscovers the datastore, its virtual machines, and its destination relationship. 
+
+
