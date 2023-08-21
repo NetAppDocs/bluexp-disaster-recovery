@@ -1,0 +1,144 @@
+---
+sidebar: sidebar
+permalink: use/drplan-create.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, replication plan
+summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. After you’ve added vCenter sites, you’re ready to create a disaster recovery or replication plan. 
+---
+
+= Create a replication plan 
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+After you’ve added vCenter sites, you’re ready to create a disaster recovery or replication plan. Select the source and target vCenters, pick the resource groups, and group how applications should be restored and powered on. For example, you might group virtual machines associated with one application or you might group applications that have similar tiers. 
+
+Such plans are sometimes called _blueprints_. 
+
+A wizard takes you through these steps: 
+
+* Select vCenter servers
+* Select the VMs you want to replicate and assign groups
+* Map how resources from the source environment map to the target. 
+* Identify recurrence 
+* Review the plan
+
+ 
+== Select vCenter servers
+First, you select the source vCenter and then select the target vCenter. 
+
+.Steps 
+
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*.
+
+. From the BlueXP disaster recovery top menu, select *Replication plans*. Or, if you are just beginning to use the service, from the Dashboard, select *Add replication plan*. 
++
+image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add plan page]
+
+. Create a name for the replication plan. 
+
+. Select the source and target vCenters from the Source and Target vCenter lists. 
+. Select *Next*.
+
+== Select applications to replicate and assign resource groups
+
+The next step is to group the required virtual machines into functional resource groups. Resource groups enable you to group a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain boot order that can be executed upon recovery.
+
+TIP: Each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them here.
+
+.Steps
+
+. On the left side of the Applications page, select the virtual machines that you want to replicate and assign to the selected group. 
+
++
+The selected virtual machine is automatically added to group 1 and a new group 2 is started. Each time you add a virtual machine to the last group, another group is added. 
+
++
+image:dr-plan-create-apps-vms.png[Screenshot showing the Add replication plan > Applications to replicate page]
+
+. Optionally, do any of the following: 
+** To change groups, click the group *Edit* icon. 
+** To remove a virtual machine from a group, select *X*. 
+** To move a virtual machine to a different group, drag and drop it in the new group. 
+
+. When you have multiple resource groups, ensure that the sequence of the groups matches the operational sequence that should occur. 
++
+Each virtual machine within a group is started in sequence based on the order here. Two groups are started in parallel. 
+
+. Optionally, rename the group by clicking the *Edit* icon. 
+
+. Select *Next*. 
+
+== Map source resources to the target 
+
+In the Resource mapping step, specify how the resources from the source environment should map to the target. 
+
+* Select the network mapping to the appropriate segment. 
++
+The segments should already be provisioned within VMC, so select the appropriate segment to map the virtual machine. 
+ 
+* Based on the selection of virtual machines, datastore mappings are automatically selected. 
++
+NOTE: SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
+
+.Steps 
+
+. In the Resource mapping page, to use the same mappings for both failover and test operations, check the box. 
+
+. In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each: 
++
+* Compute resources
+* Virtual networks
+* Virtual machines
+* Datastores 
+
+
+. Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters.
+
++
+image:dr-plan-create-mapping-vms.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
+
++
+This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. Also, you can modify the boot order for all the selected virtual machines across the resource groups. 
++
+By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. 
+
+. To set different mappings for the test environment, uncheck the box and select the *Test mappings* tab. Go through each tab as before, but this time for the test environment. 
++
+TIP: You can later test the entire plan. Right now, you are setting up the mappings for the test environment. 
+
+== Identify the recurrence 
+
+Select whether you want to migrate data (a one-time move) to another target or replicate it at the SnapMirror frequency. If you want to replicate it, identify how often data should be mirrored. 
+
+NOTE: In this beta, configure the frequency outside of the BlueXP disaster recovery service. 
+
+.Steps 
+
+. In the Recurrence page, select *Migrate* or *Replicate*. 
++
+* *Migrate*: Select to move the application to the target location. 
+* *Replicate*: Keep the target copy up to date with changes from the source copy in a recurring replication. 
+
++
+image:dr-plan-create-recurrence.png[Screenshot showing Add replication plan > Recurrence]
+
+. Select *Next*. 
+
+
+// To adjust the existing storage settings to match this replication interval, check the box. 
+
+
+== Confirm the replication plan
+
+Finally, take a few moments to confirm the replication plan. 
+
+TIP: You can later disable or delete the replication plan.
+
+.Steps
+
+. Review information in each tab: Plan Details, Failover Mapping, Virtual Machines.  
+
+. Select *Add plan*. 
++
+The plan is added to the list of plans.
