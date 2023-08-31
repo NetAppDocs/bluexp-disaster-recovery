@@ -21,26 +21,28 @@ After they are added, BlueXP disaster recovery performs a deep discovery of the 
 +
 You’ll land on BlueXP disaster recovery Dashboard page. When you first start with the service, you need to add vCenter information. Later, the Dashboard displays data about your sites and replication plans. 
 
-. Select *Discover vCenter servers* to enter information about the source vCenter site.  
+. *Source*: Select *Discover vCenter servers* to enter information about the source vCenter site.  
 +
 TIP: If some vCenter sites already exist and you want to add more, from the top menu, select *Sites* and then select *Add*. 
 +
 image:vcenter-add.png[Add vCenter server screenshot ]
 
-. Add a site, select the BlueXP Connector, and provide vCenter credentials. 
+.. Add a site, select the BlueXP Connector, and provide vCenter credentials. 
 
 
-. To accept self-signed certificates for the source vCenter, check the box. 
+.. To accept self-signed certificates for the source vCenter, check the box. 
 +
 NOTE: Self-signed certificates are not as secure as other certificates. If your vCenter is *NOT* configured with certificate authority (CA) certificates, you should check this box; otherwise, the connection to the vCenter will not work.  
 
-. Select *Add*. 
+.. Select *Add*. 
 +
 Next, you will add a target vCenter. 
 
-. Choose the target site and the location. If the target is cloud, select *AWS*.  
+. *Target*: 
 
-. Select *Add*. 
+.. Choose the target site and the location. If the target is cloud, select *AWS*.  
+
+.. Select *Add*. 
 +
 The source and target vCenters appear on the list of sites. 
 

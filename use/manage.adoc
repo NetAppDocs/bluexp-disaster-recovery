@@ -27,7 +27,7 @@ Use the Dashboard to get an at-a-glance view of all the BlueXP disaster recovery
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
 . From the top menu, select *Dashboard*. 
 
-. Explore all disaster recovery plans, compliance, vCenters, virtual machines, and resource groups in the Dashboard.
+. Explore all replication plans, compliance, vCenters, virtual machines, and resource groups in the Dashboard.
 
 . To view the resource, select the arrow to the right. 
 . To view all resource groups, select *View resource groups*. 

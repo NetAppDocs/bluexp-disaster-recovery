@@ -23,7 +23,7 @@ Before you start the failover, you can test the process, ensuring success when y
 
 Before you start an actual failover, you should test the failover process. 
 
-During a failover test, virtual machines are temporarily created. BlueXP disaster recovery does not map the target volume. Instead, it makes a new FlexClone volume from the selected snapshot, and a temporary datastore backing the FlexClone volume is mapped to the ESXi hosts.
+During a failover test, virtual machines are temporarily created. BlueXP disaster recovery does not map the target volume. Instead, it makes a new FlexClone volume from the selected Snapshot, and a temporary datastore backing the FlexClone volume is mapped to the ESXi hosts.
 
 This process doesn’t consume additional physical capacity for Amazon FSx for NetApp ONTAP. The original source volume is not modified and replica jobs can continue even during disaster recovery.
 
@@ -68,11 +68,11 @@ The failover process involves in the following operations:
 * The source virtual machines are powered down. 
 * The SnapMirror relationship is broken and the target  volume is made read/write. 
 * Based on the selection of the Snapshot, the active file system is restored to the specified Snapshot (latest or selected) 
-* Datastores are created and mounted to VMC cluster or host based on the information captured in the disaster recovery plan.
+* Datastores are created and mounted to the VMC cluster or host based on the information captured in the replication plan.
 * The target virtual machines are registered and powered on based on the order captured in the Resource groups page.  
 * The SnapMirror relationship is reversed from target to source virtual machine. 
 
-TIP: After the failover starts, the recovered items can be seen in the VMC vCenter (VMs, networks, and datastores). By default, the virtual machines are recovered to the Workload folder.
+TIP: After the failover starts, the recovered items can be seen in the VMC vCenter (virtual machines, networks, and datastores). By default, the virtual machines are recovered to the Workload folder.
 
 .Steps 
 
@@ -80,11 +80,11 @@ TIP: After the failover starts, the recovered items can be seen in the VMC vCent
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. 
 
-. Select the disaster recovery plan.
+. Select the replication plan.
 
 . On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Fail over*.
 
-. In the Test failover page, enter the disaster recovery plan name to confirm and select *Fail over*.  
+. In the Test failover page, enter the replication plan name to confirm and select *Fail over*.  
 
 . Choose the Snapshot for the datastore from which to recover.  The default is the latest. 
 

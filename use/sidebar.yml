@@ -5,7 +5,7 @@ entries:
     url: /use/use-overview.html
   - title: Add vCenter sites 
     url: /use/sites-add.html
-  - title: Create a disaster recovery plan
+  - title: Create a replication plan
     url: /use/drplan-create.html
   - title: Replicate to another site 
     url: /use/replicate.html
