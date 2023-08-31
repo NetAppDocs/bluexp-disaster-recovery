@@ -13,7 +13,7 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 [.lead]
 In case of a disaster, fail over your primary on-prem site to VMware Cloud on an AWS site with FSx for NetApp ONTAP. 
 
-During the failover, the most recent SnapMirror snapshot copy is used. Or, you can select a specific Snapshot copy from a point-in-time Snapshot copy (per the retention policy of SnapMirror). The point-in-time option can be helpful if you are facing a corruption event such as ransomware, where the most recent replicas are already compromised or encrypted. BlueXP disaster recovery shows all available points in time. 
+During the failover, the most recent SnapMirror Snapshot copy is used. Or, you can select a specific Snapshot copy from a point-in-time Snapshot copy (per the retention policy of SnapMirror). The point-in-time option can be helpful if you are facing a corruption event such as ransomware, where the most recent replicas are already compromised or encrypted. BlueXP disaster recovery shows all available points in time. 
 
 This procedure breaks the replication relationship, places the vCenter source VMs offline, and enables read/write on the target site. 
 
@@ -35,7 +35,7 @@ When you finish the test, you should reset the virtual machines with the *Clean 
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. 
 
-. Select the disaster recovery plan.
+. Select the replication plan.
 
 . On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Test failover*.
 
@@ -52,7 +52,7 @@ After the failover test finishes, you should clean up the test environment. This
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. 
 
-. Select the disaster recovery plan.
+. Select the replication plan.
 
 . On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  and select *Clean up failover test*.
 
