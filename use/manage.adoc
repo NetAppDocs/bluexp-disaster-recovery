@@ -13,24 +13,10 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 [.lead]
 You can get a quick glance of all your Disaster recovery resources or look at each in detail: 
 
-* Dashboard
 * Sites
 * Replication plans
 * Resource groups
 
-== View the BlueXP disaster recovery Dashboard
-
-Use the Dashboard to get an at-a-glance view of all the BlueXP disaster recovery resources and activities. The Activity pane shows up-to-date job operation activity. 
-
-.Steps 
-
-. From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
-. From the top menu, select *Dashboard*. 
-
-. Explore all replication plans, compliance, vCenters, virtual machines, and resource groups in the Dashboard.
-
-. To view the resource, select the arrow to the right. 
-. To view all resource groups, select *View resource groups*. 
 
 == Manage vCenter sites
 You can edit the vCenter site name and the site type (on-premises or AWS).
@@ -59,7 +45,9 @@ You can disable, enable and delete replication plans.
 * To edit the resource mappings, select the *Failover mapping* tab and select the *Edit* icon. 
 * To add or edit the virtual machines, select the *Virtual machine* tab and select the *Edit* icon. 
 
-. To perform actions with the plan, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  at the top and select any of the options, such as *Test failover*, *Fail over*, *Fail back*, *Disable*, *Enable*, or *Delete*. 
+. Return to the list of plans by selecting "Replication plans" in the breadcrumbs at the top left. 
+
+. To perform actions with the plan, from the list of replication plans, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select any of the options, such as *Edit schedules*, *Test failover*, *Fail over*, *Fail back*, *Disable*, *Enable*, or *Delete*. 
 
 == View datastores information 
 

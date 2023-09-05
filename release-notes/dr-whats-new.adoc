@@ -18,11 +18,31 @@ Learn what’s new in the BlueXP disaster recovery Beta.
 
 This release of BlueXP disaster recovery includes the following updates: 
 
-* *Consistency Group*: The service now supports virtual machines with multiple datastores or volumes on the source location. You can select multiple virtual machines that spread over multiple volumes. BlueXP disaster recovery shows the mapping of virtual machines to datastores and volumes. Recovery occurs at Consistency Group level; all virtual machines in a Consistency Group must be recovered at the same time.  
+* *Dashboard updates*: You can now click into the options on the Dashboard, making it easier for you to review the information quickly. Also, the Dashboard now shows the status of failovers and migrations.  
++
+Refer to link:../use/dashboard-view.html[View the health of your disaster recovery plans on the Dashboard].
+
+
 
 * *App consistency for SQL and Oracle*: The BlueXP service now supports disaster recovery for an app that spreads over one or more datastores in a Consistency Group on the source location to one or more datastores on the target location. You can see the app-to-virtual machine relationship and can select an app for protection. Recovery occurs at the app level; all virtual machines associated with an app are recovered at the same time so that the app is usable on the disaster recovery site.  
 
-* *Networking enhancements*: When you are mapping networking between source and target locations, BlueXP disaster recovery now offers two options: DHCP or static IP. Previously, just DHCP was supported. For static IPs, you configure the subnet, gateway, and DNS servers. 
+
+* *Replication plan updates*: 
+** *RPO*: You can now enter the Recovery Point Objective (RPO) and Retention count in the Datastores section of the Replication plan. This indicates the amount of data that must exist that is not older than the set time. If, for example, you set it at 5 minutes, the system can lose up to 5 minutes of data if there’s a disaster without impacting business critical needs. 
++
+Refer to link:../use/drplan-create.html[Create a replication plan].
+
+** *Consistency Group*: The service now supports virtual machines with multiple datastores or volumes on the source location. When you are creating the replication plan, you can select multiple virtual machines that spread over multiple volumes. BlueXP disaster recovery shows the mapping of virtual machines to datastores and volumes. Recovery occurs at Consistency Group level; all virtual machines in a Consistency Group must be recovered at the same time.  
++
+Refer to link:../use/drplan-create.html[Create a replication plan].
+
+** *Networking enhancements*: When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery now offers two options: DHCP or static IP. Previously, just DHCP was supported. For static IPs, you configure the subnet, gateway, and DNS servers. Additionally, you can now enter credentials for virtual machines. 
++
+Refer to link:../use/drplan-create.html[Create a replication plan].
+
+** *Edit schedules*: You can now update the replication plan schedules. 
++
+Refer to link:../use/manage.html[Manage resources].
 
 * *SnapMirror automation*: While you are creating the replication plan in this release, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 

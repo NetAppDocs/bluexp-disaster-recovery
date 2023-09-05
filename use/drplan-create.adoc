@@ -87,21 +87,23 @@ NOTE: SnapMirror is at the volume level. So, all virtual machines are replicated
 
 . In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each: 
 +
-* Compute resources
-* Virtual networks
-* Virtual machines
-* Datastores 
-
-
-. Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters.
-
+* *Compute resources*
+* *Virtual networks*
+* *Virtual machines*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters.
 +
 image:dr-plan-create-mapping-vms.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
-
 +
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. Also, you can modify the boot order for all the selected virtual machines across the resource groups. 
 +
 By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. 
++
+When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet, gateway, and DNS servers. Additionally, enter credentials for virtual machines. 
++
+You can also set whether to create app-consistent replicas. 
+
+* *Datastores*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 2 hours, the recovery must have data that is not older than 2 hours at all times. If there is a disaster, you are allowing the loss of up to 2 hours of data. Also enter the number of Snapshot copies to retain for all datastores. 
+
+
 
 . To set different mappings for the test environment, uncheck the box and select the *Test mappings* tab. Go through each tab as before, but this time for the test environment. 
 +
@@ -109,7 +111,9 @@ TIP: You can later test the entire plan. Right now, you are setting up the mappi
 
 == Identify the recurrence 
 
-Select whether you want to migrate data (a one-time move) to another target or replicate it at the SnapMirror frequency. If you want to replicate it, identify how often data should be mirrored. 
+Select whether you want to migrate data (a one-time move) to another target or replicate it at the SnapMirror frequency. 
+
+If you want to replicate it, identify how often data should be mirrored. 
 
 NOTE: In this beta, configure the frequency outside of the BlueXP disaster recovery service. 
 
