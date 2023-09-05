@@ -44,13 +44,14 @@ Refer to link:../use/drplan-create.html[Create a replication plan].
 +
 Refer to link:../use/manage.html[Manage resources].
 
-* *SnapMirror automation*: While you are creating the replication plan in this release, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
+** *SnapMirror automation*: While you are creating the replication plan in this release, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 
-* 1 to 1
-* 1 to many fanout
-* Many to 1 Consistency Group
-* Many to many 
-
+*** 1 to 1
+*** 1 to many fanout
+*** Many to 1 Consistency Group
+*** Many to many 
++
+Refer to link:../use/drplan-create.html[Create a replication plan].
 
 
 == 1 August 2023
