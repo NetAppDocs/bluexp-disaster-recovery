@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+permalink: use/dashboard-view.html
+keywords: disaster recovery remediate, disaster recovery, failover, failback, replication
+summary: NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+---
+
+= View the health of your disaster recovery plans on the Dashboard
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+Using the BlueXP disaster recovery Dashboard, you can determine the health of your disaster recovery sites and replication plans. You can quickly ascertain which sites and plans are healthy, disconnected, or degraded. 
+
+.Steps 
+
+. From the BlueXP left nav, select *Protection* > *Disaster recovery*.
+
+. From the BlueXP disaster recovery top menu, select *Dashboard*. 
+
+. Review the following information on the Dashboard: 
+
+* *Sites*: View the health of your sites. A site can have one of the following statuses: 
+
+** *Healthy*: 
+** *Disconnected*: 
+** *Degraded*: 
++ 
+To see site details, select *View all* for a status or *View sites* to see them all. 
+
+* *Replication plans*: View the health of your sites. A site can have one of the following statuses: 
+
+** *Healthy*: 
+** *Disconnected*: 
+** *Degraded*: 
++ 
+To review replication plan details, select *View all* for a status or *View replication plans* to see them all. 
+
+* * *Resource groups*: View the health of your sites. A site can have one of the following statuses: 
+
+** *Protected VMs*: 
+** *Unprotected VMs*: 
++ 
+To review resource group details, select *View all* for a status or *View resource groups* to see them all.
+
+* The number of failovers, test failovers, and migrations.  
+
+. Review all operations in the Activity pane. To view all operations on the Job Monitor, select *View all jobs*. 

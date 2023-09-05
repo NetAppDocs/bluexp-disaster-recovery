@@ -3,6 +3,8 @@ title: Use BlueXP disaster recovery
 entries:
   - title: Use BlueXP disaster recovery overview 
     url: /use/use-overview.html
+  - title: View the health of your disaster recovery plans on the Dashboard
+    url: /use/dashboard-view.html 
   - title: Add vCenter sites 
     url: /use/sites-add.html
   - title: Create a replication plan

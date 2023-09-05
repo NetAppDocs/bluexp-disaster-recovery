@@ -14,6 +14,25 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 Learn what’s new in the BlueXP disaster recovery Beta.
 
 //tag::whats-new[]
+== 27 September 2023
+
+This release of BlueXP disaster recovery includes the following updates: 
+
+* *Consistency Group*: The service now supports virtual machines with multiple datastores or volumes on the source location. You can select multiple virtual machines that spread over multiple volumes. BlueXP disaster recovery shows the mapping of virtual machines to datastores and volumes. Recovery occurs at Consistency Group level; all virtual machines in a Consistency Group must be recovered at the same time.  
+
+* *App consistency for SQL and Oracle*: The BlueXP service now supports disaster recovery for an app that spreads over one or more datastores in a Consistency Group on the source location to one or more datastores on the target location. You can see the app-to-virtual machine relationship and can select an app for protection. Recovery occurs at the app level; all virtual machines associated with an app are recovered at the same time so that the app is usable on the disaster recovery site.  
+
+* *Networking enhancements*: When you are mapping networking between source and target locations, BlueXP disaster recovery now offers two options: DHCP or static IP. Previously, just DHCP was supported. For static IPs, you configure the subnet, gateway, and DNS servers. 
+
+* *SnapMirror automation*: While you are creating the replication plan in this release, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
+
+* 1 to 1
+* 1 to many fanout
+* Many to 1 Consistency Group
+* Many to many 
+
+
+
 == 1 August 2023
 
 BlueXP disaster recovery Beta is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery Beta, you can protect your on-premises, NFS-based VMware workloads running NetApp storage to VMware Cloud (VMC) on AWS with Amazon FSx for ONTAP. 

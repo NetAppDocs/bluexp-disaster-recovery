@@ -43,7 +43,11 @@ Next, you will add a target vCenter.
 .. Choose the target site and the location. If the target is cloud, select *AWS*.  
 
 .. Select *Add*. 
+
 +
 The source and target vCenters appear on the list of sites. 
+
++
+image:sites-list.png[Sites page screenshot]
 
 . To see the progress of the operation, from the top menu, select *Job monitoring*. 
