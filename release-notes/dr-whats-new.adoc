@@ -20,29 +20,22 @@ This release of BlueXP disaster recovery includes the following updates:
 
 * *Dashboard updates*: You can now click into the options on the Dashboard, making it easier for you to review the information quickly. Also, the Dashboard now shows the status of failovers and migrations.  
 +
-Refer to link:../use/dashboard-view.html[View the health of your disaster recovery plans on the Dashboard].
-
-
-
-* *App consistency for SQL and Oracle*: The BlueXP service now supports disaster recovery for an app that spreads over one or more datastores in a Consistency Group on the source location to one or more datastores on the target location. You can see the app-to-virtual machine relationship and can select an app for protection. Recovery occurs at the app level; all virtual machines associated with an app are recovered at the same time so that the app is usable on the disaster recovery site.  
+Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html[View the health of your disaster recovery plans on the Dashboard].
 
 
 * *Replication plan updates*: 
 ** *RPO*: You can now enter the Recovery Point Objective (RPO) and Retention count in the Datastores section of the Replication plan. This indicates the amount of data that must exist that is not older than the set time. If, for example, you set it at 5 minutes, the system can lose up to 5 minutes of data if there’s a disaster without impacting business critical needs. 
 +
-Refer to link:../use/drplan-create.html[Create a replication plan].
+Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-** *Consistency Group*: The service now supports virtual machines with multiple datastores or volumes on the source location. When you are creating the replication plan, you can select multiple virtual machines that spread over multiple volumes. BlueXP disaster recovery shows the mapping of virtual machines to datastores and volumes. Recovery occurs at Consistency Group level; all virtual machines in a Consistency Group must be recovered at the same time.  
-+
-Refer to link:../use/drplan-create.html[Create a replication plan].
 
 ** *Networking enhancements*: When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery now offers two options: DHCP or static IP. Previously, just DHCP was supported. For static IPs, you configure the subnet, gateway, and DNS servers. Additionally, you can now enter credentials for virtual machines. 
 +
-Refer to link:../use/drplan-create.html[Create a replication plan].
+Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-** *Edit schedules*: You can now update the replication plan schedules. 
+** *Edit schedules*: You can now update replication plan schedules. 
 +
-Refer to link:../use/manage.html[Manage resources].
+Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage resources].
 
 ** *SnapMirror automation*: While you are creating the replication plan in this release, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 
@@ -51,7 +44,7 @@ Refer to link:../use/manage.html[Manage resources].
 *** Many to 1 Consistency Group
 *** Many to many 
 +
-Refer to link:../use/drplan-create.html[Create a replication plan].
+Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 
 == 1 August 2023
@@ -60,20 +53,21 @@ BlueXP disaster recovery Beta is a cloud-based disaster recovery service that au
 
 NOTE: With this Beta offering, NetApp reserves the right to modify offering details, contents and timeline before General Availability.   
 
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
 
-This release includes he following updates: 
+This release includes the following updates: 
 
-* *Resource groups update for boot order*: When you create a disaster recovery or replication plan, you can add virtual machines into functional resource groups. Resource groups enable you to put a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain boot order that can be executed upon recovery. With this release, each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them in the plan. Refer to link:../use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups[Select applications to replicate and assign resource groups].
+* *Resource groups update for boot order*: When you create a disaster recovery or replication plan, you can add virtual machines into functional resource groups. Resource groups enable you to put a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain boot order that can be executed upon recovery. With this release, each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them in the plan. Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups[Select applications to replicate and assign resource groups].
  
 
-* *Replication verification*: After you create the disaster recovery or replication plan, identify the recurrence in the wizard, and initiate a replication to a disaster recovery site, every 30 minutes BlueXP disaster recovery verifies that the replication is actually occurring according to the plan. You can monitor the progress in the Job Monitor page. Refer to link:../use/replicate.html[Replicate applications to another site].
 
-* *Replication plan shows recovery point objective (RPO) transfer schedules*: When you create a disaster recovery or replication plan, you select the VMs. In this release, you can now view the SnapMirror associated with each of the volumes that are associated with the datastore or VM. You can also see the RPO transfer schedules that are associated with the SnapMirror schedule. RPO helps you determine whether your backup schedule is enough to recover after a disaster. Refer to link:../use/drplan-create.html[Create a replication plan].
+* *Replication verification*: After you create the disaster recovery or replication plan, identify the recurrence in the wizard, and initiate a replication to a disaster recovery site, every 30 minutes BlueXP disaster recovery verifies that the replication is actually occurring according to the plan. You can monitor the progress in the Job Monitor page. Refer to  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html[Replicate applications to another site].
 
-* *Job Monitor update*: The Job Monitor page now includes a Refresh option so that you can get an up-to-date status of operations. Refer to link:../use/monitor-jobs.html[Monitor disaster recovery jobs].
+* *Replication plan shows recovery point objective (RPO) transfer schedules*: When you create a disaster recovery or replication plan, you select the VMs. In this release, you can now view the SnapMirror associated with each of the volumes that are associated with the datastore or VM. You can also see the RPO transfer schedules that are associated with the SnapMirror schedule. RPO helps you determine whether your backup schedule is enough to recover after a disaster. Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+
+* *Job Monitor update*: The Job Monitor page now includes a Refresh option so that you can get an up-to-date status of operations. Refer to  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html[Monitor disaster recovery jobs].
 
 
-link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
 
 
 == 18 May 2023 
