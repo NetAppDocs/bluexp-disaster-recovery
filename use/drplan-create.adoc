@@ -26,7 +26,7 @@ A wizard takes you through these steps:
 While you are creating the replication plan, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 
 *** 1 to 1
-*** 1 to many, fanout
+*** 1 to many in a fanout architecture
 *** Many to 1 in a Consistency Group
 *** Many to many 
  
