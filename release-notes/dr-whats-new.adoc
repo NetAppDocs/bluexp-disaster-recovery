@@ -16,7 +16,7 @@ Learn what’s new in the BlueXP disaster recovery preview.
 //tag::whats-new[]
 == 27 September 2023
 
-This release of BlueXP disaster recovery includes the following updates: 
+This preview release of BlueXP disaster recovery includes the following updates: 
 
 * *Dashboard updates*: You can now click into the options on the Dashboard, making it easier for you to review the information quickly. Also, the Dashboard now shows the status of failovers and migrations.  
 +
@@ -40,8 +40,8 @@ Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[
 ** *SnapMirror automation*: While you are creating the replication plan in this release, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 
 *** 1 to 1
-*** 1 to many fanout
-*** Many to 1 Consistency Group
+*** 1 to many in a fanout architecture
+*** Many to 1 as a Consistency Group
 *** Many to many 
 +
 Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].

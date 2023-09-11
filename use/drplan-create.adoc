@@ -105,7 +105,8 @@ By default, the boot order selected during resource-group selection is used; how
 //You can also set whether to create app-consistent replicas. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
 
 * *Datastores*: Based on the selection of virtual machines, datastore mappings are automatically selected.
-// Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 2 hours, the recovery must have data that is not older than 2 hours at all times. If there is a disaster, you are allowing the loss of up to 2 hours of data. Also enter the number of Snapshot copies to retain for all datastores. 
++
+Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 2 hours, the recovery must have data that is not older than 2 hours at all times. If there is a disaster, you are allowing the loss of up to 2 hours of data. Also enter the number of Snapshot copies to retain for all datastores. 
 
 
 
