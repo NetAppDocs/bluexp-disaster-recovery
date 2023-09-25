@@ -92,7 +92,7 @@ In the Resource mapping step, specify how the resources from the source environm
 +
 NOTE: SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
 +
-Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters.
+Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. Also, you can select IP address, Subnet Mask, DNS, and Gateway if you want to configure the network information about a VM. VM guest OS credentials should be supplied to either the global level or at each VM level.
 //+
 //image:dr-plan-create-mapping-vms.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
 +
