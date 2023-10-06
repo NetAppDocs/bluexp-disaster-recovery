@@ -35,6 +35,7 @@ BlueXP disaster recovery preview offers the following benefits:
 The BlueXP disaster recovery preview provides you with full use of several NetApp technologies to accomplish the following goals: 
 
 * Replicate VMware apps on your production site to a disaster recovery remote site in the cloud using SnapMirror replication.
+* Migrate VMware workloads from your original site to another site. 
 * In case of disaster, fail over your primary site on demand to a NetApp cloud volume in VMware Cloud on AWS.
 * After the disaster has been resolved, fail back on demand from the disaster recovery site to the primary site.
 
