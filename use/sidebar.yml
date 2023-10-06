@@ -9,6 +9,8 @@ entries:
     url: /use/drplan-create.html
   - title: Replicate to another site 
     url: /use/replicate.html
+  - title: Migrate to another site
+    url: /use/migrate.html
   - title: Fail over to a remote site
     url: /use/failover.html
   - title: Fail back applications to the original source site

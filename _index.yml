@@ -26,6 +26,8 @@ indexpage:
       url: /use/drplan-create.html
     - title: Replicate apps to another site 
       url: /use/replicate.html
+    - title: Migrate apps to another site
+      url: /use/migrate.html 
     - title: Fail over apps to a remote site
       url: /use/failover.html
     - title: Fail back apps to the original source site
