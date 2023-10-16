@@ -11,7 +11,7 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 :imagesdir: ../media/use/
 
 [.lead]
-In case of a disaster, fail over your primary on-prem site to VMware Cloud on an AWS site with FSx for NetApp ONTAP. 
+In case of a disaster, fail over your primary on-premises VMware site to another on-premises VMware site or VMware Cloud on AWS. 
 
 During the failover, the most recent SnapMirror Snapshot copy is used. Or, you can select a specific Snapshot copy from a point-in-time Snapshot copy (per the retention policy of SnapMirror). The point-in-time option can be helpful if you are facing a corruption event such as ransomware, where the most recent replicas are already compromised or encrypted. BlueXP disaster recovery shows all available points in time. 
 
@@ -25,7 +25,7 @@ Before you start an actual failover, you should test the failover process.
 
 During a failover test, virtual machines are temporarily created. BlueXP disaster recovery does not map the target volume. Instead, it makes a new FlexClone volume from the selected Snapshot, and a temporary datastore backing the FlexClone volume is mapped to the ESXi hosts.
 
-This process doesn’t consume additional physical capacity for Amazon FSx for NetApp ONTAP. The original source volume is not modified and replica jobs can continue even during disaster recovery.
+This process doesn’t consume additional physical capacity on on-premises ONTAP storage or FSx for NetApp ONTAP storage in AWS. The original source volume is not modified and replica jobs can continue even during disaster recovery.
 
 When you finish the test, you should reset the virtual machines with the *Clean up test* option. While this is recommended, it is not required. 
 
@@ -60,7 +60,7 @@ After the failover test finishes, you should clean up the test environment. This
 
 == Fail over the source site to a disaster recovery site
 
-In case of disaster, fail over your source site on demand to VMware Cloud on an AWS site with FSx for NetApp ONTAP. 
+In case of a disaster, fail over your primary on-premises VMware site on demand to another on-premises VMware site or VMware Cloud on AWS with FSx for NetApp ONTAP. 
 
 The failover process involves in the following operations: 
 
@@ -68,11 +68,11 @@ The failover process involves in the following operations:
 * The source virtual machines are powered down. 
 * The SnapMirror relationship is broken and the target  volume is made read/write. 
 * Based on the selection of the Snapshot, the active file system is restored to the specified Snapshot (latest or selected) 
-* Datastores are created and mounted to the VMC cluster or host based on the information captured in the replication plan.
+* Datastores are created and mounted to the VMware or VMC cluster or host based on the information captured in the replication plan.
 * The target virtual machines are registered and powered on based on the order captured in the Resource groups page.  
 * The SnapMirror relationship is reversed from target to source virtual machine. 
 
-TIP: After the failover starts, the recovered items can be seen in the VMC vCenter (virtual machines, networks, and datastores). By default, the virtual machines are recovered to the Workload folder.
+TIP: After the failover starts, the recovered VMs can be seen in the vCenter of the disaster recovery site(virtual machines, networks, and datastores). By default, the virtual machines are recovered to the Workload folder.
 
 .Steps 
 
