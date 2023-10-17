@@ -28,6 +28,8 @@ To use BlueXP disaster recovery, you should ensure that your environment meets a
 
 **	The BlueXP Connector needs to be set up in NetApp BlueXP. Use the BlueXP AWS Connector, which has access to both on-premises vCenter and the cloud. The BlueXP Connector requires credentials for both the source and target vCenter servers. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[BlueXP Quick start^] and https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html[BlueXP networking information^]. 
 
+** Use the BlueXP OnPremises Connector or the BlueXP AWS Connector, which has access to the source on-premises vCenter and the destination on-premises vCenter.
+
 ** Amazon FSx for ONTAP and AWS credentials added to the BlueXP working environment
 
 
