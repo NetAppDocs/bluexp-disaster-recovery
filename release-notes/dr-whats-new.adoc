@@ -17,7 +17,7 @@ Learn what’s new in the BlueXP disaster recovery preview.
 == 20 October 2023 
 This preview release of BlueXP disaster recovery includes the following updates. 
 
-Now with BlueXP disaster recovery, you can protect (against disasters) your on-premises, NFS-based VMware workloads to another on-premises, NFS-based VMware environment. BlueXP disaster recovery addresses the full orchestration of disaster recovery plans and completion.  
+Now with BlueXP disaster recovery, you can protect your on-premises, NFS-based VMware workloads against disasters to another on-premises, NFS-based VMware environment in addition to the public cloud. BlueXP disaster recovery orchestrates the completion of the disaster recovery plans.  
 
 
 
