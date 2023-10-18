@@ -27,11 +27,11 @@ In this workflow, BlueXP disaster recovery replicates (resyncs) any changes back
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*. 
 
-. Select the disaster recovery plan.
+. Select the replication plan.
 
 . On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  and select *Fail back*.
 
-. Enter the disaster recovery plan name to confirm and start the failback. 
+. Enter the replication plan name to confirm and start the failback. 
   
 . Choose the Snapshot for the datastore from which to recover.  The default is the latest. 
 
