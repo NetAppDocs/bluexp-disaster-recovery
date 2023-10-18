@@ -11,25 +11,18 @@ summary: To use BlueXP disaster recovery, perform a few steps to set it up.
 :imagesdir: ../media/get-started/
 
 [.lead]
-To use BlueXP disaster recovery, perform a few steps to set it up.  
+To use BlueXP disaster recovery, perform a few steps to set it up both in AWS and in BlueXP.  
 
+TIP: Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
-* Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure that your environment is ready.
-* In AWS: 
-** Deploy and configure VMware Cloud on AWS.
-** Create an Amazon FSx for ONTAP file system. Provision and configure FSx for ONTAP. 
-** Use a VMware account and provision the software-defined data center (SDDC). Ensure that the SDDC has connectivity with FSx for ONTAP.
-* In BlueXP: 
-** Deploy and configure SnapMirror to FSx for ONTAP
-** Add the on-premises ONTAP storage working environment to BlueXP. This is the source ONTAP cluster. 
-** Add a BlueXP account, add FSxN to the working environment, and add AWS credentials for FSx for ONTAP. 
 
 
 == Set up in AWS
 In AWS, you'll need to do the following steps: 
 
-* Deploy VMware Cloud
-* Configure Amazon FSx for ONTAP
+* Deploy and configure VMware Cloud on AWS.
+* Create an Amazon FSx for ONTAP file system. Provision and configure FSx for ONTAP. 
+* Use a VMware account and provision the software-defined data center (SDDC). Ensure that the SDDC has connectivity with FSx for ONTAP.
 
 === Deploy VMware Cloud
 https://www.vmware.com/products/vmc-on-aws.html[VMware Cloud on AWS^] provides a cloud-native experience for VMware-based workloads in the AWS ecosystem. Each VMware software-defined data center (SDDC) runs in an Amazon Virtual Private Cloud (VPC) and provides a full VMware stack (including vCenter Server), NSX-T software-defined networking, vSAN software-defined storage, and one or more ESXi hosts that provide compute and storage resources to the workloads. 
@@ -44,13 +37,18 @@ Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reli
 == Set up in BlueXP
 The next step is to set up disaster recovery in BlueXP. 
 
+* Create a Connector in BlueXP.
+* Deploy and configure SnapMirror for Amazon FSx for NetApp ONTAP.
+* Add the on-premises ONTAP storage working environment to BlueXP. This is the source ONTAP cluster. 
+* Add a BlueXP account, add FSxN to the working environment, and add AWS credentials for FSx for ONTAP. 
+
 
 === Create a Connector in BlueXP
 You need to sign up for the preview or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the disaster recovery service. 
 
 To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a connector^]. 
 
-Use the BlueXP OnPremises Connector or the BlueXP AWS Connector, which has access to the source on-premises vCenter and the destination on-premises vCenter.
+Use the BlueXP on-premises Connector or the BlueXP AWS Connector, which has access to the source on-premises vCenter and the destination on-premises vCenter.
 
 === Configure SnapMirror for Amazon FSx for NetApp ONTAP
 
