@@ -14,6 +14,20 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 Learn what’s new in the BlueXP disaster recovery preview.
 
 //tag::whats-new[]
+== 13 December 2023 
+
+This is the General Availability release of BlueXP disaster recovery. 
+
+This release includes the following updates: 
+
+* Custom scripts can now be included as pre and post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script before and after a failover process. For example, you can use a custom script to pause all database transactions before a failover and resume transactions after the failover is complete.  
++
+For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over to a remote site].
+* tbd
+* tbd
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
+
 == 20 October 2023 
 This preview release of BlueXP disaster recovery includes the following updates. 
 
@@ -56,6 +70,8 @@ Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[
 +
 Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
+//include 3 most recent releases
+//end::whats-new[]
 
 == 1 August 2023
 
@@ -79,7 +95,6 @@ This release includes the following updates:
 
 
 
-
 == 18 May 2023 
 
 This is the initial release of BlueXP disaster recovery. 
@@ -89,6 +104,5 @@ BlueXP disaster recovery is a cloud-based disaster recovery service that automat
 
 link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
 
-//include 3 most recent releases
 
-//end::whats-new[]
+
