@@ -88,10 +88,11 @@ In the Resource mapping step, specify how the resources from the source environm
 +
 * *Compute resources*
 * *Virtual networks*
+. In the Failover mappings tab, select the down arrow to the right of each resource: 
+
 * *Virtual machines*: Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the virtual machine.
 +
 SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
-
 +
 ** *VM CPU and RAM*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
 +
