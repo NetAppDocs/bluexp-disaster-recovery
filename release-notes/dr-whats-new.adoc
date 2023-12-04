@@ -27,6 +27,9 @@ This release includes the following updates:
 ** DHCP: If you choose this option, you provide credentials for the VM. 
 ** Static IP: You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address, subnet mask, DNS, and gateway information.  
 
++
+For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+
 * *Custom scripts* can now be included as pre and post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script before and after a failover process. For example, you can use a custom script to pause all database transactions before a failover and resume transactions after the failover is complete.  
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over to a remote site].
@@ -42,8 +45,12 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 * *VM power-on delay option*: When you create a replication plan, you can add VMs to a Resource Group. With Resource Groups, you can set a delay on each VM so that they power up on a delayed sequence. 
++
+For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 * *Application-consistent Snapshot copies*: You can specify to create application-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
++
+For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 == 20 October 2023 
 This preview release of BlueXP disaster recovery includes the following updates. 
