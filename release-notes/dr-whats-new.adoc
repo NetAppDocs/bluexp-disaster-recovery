@@ -30,7 +30,8 @@ This release includes the following updates:
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-* *Custom scripts* can now be included as pre and post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script before and after a failover process. For example, you can use a custom script to pause all database transactions before a failover and resume transactions after the failover is complete.  
+* *Custom scripts* can now be included as post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script after a failover process. For example, you can use a custom script to resume all database transactions after the failover is complete.  
+//to pause all database transactions before a failover 
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over to a remote site].
 
