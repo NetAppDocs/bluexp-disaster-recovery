@@ -14,11 +14,12 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 Learn what’s new in the BlueXP disaster recovery preview.
 
 //tag::whats-new[]
-== 11 January 2024
+
+
+
+== 28 February 2024
 
 This is the General Availability release of BlueXP disaster recovery. 
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
 
 This release includes the following updates: 
 
@@ -53,6 +54,21 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
+* *Licensing updates*: With this release, BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
+
++
+For details about setting up licensing for BlueXP disaster recovery, *TBD*. For details about managing licenses for all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BlueXP licenses].
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
+
+== 11 January 2024
+This release of BlueXP disaster recovery includes the following updates: 
+
+* With this release, you can click several links in the Dashboard to access information quickly. 
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
+
+
 == 20 October 2023 
 This preview release of BlueXP disaster recovery includes the following updates. 
 
@@ -62,6 +78,8 @@ NOTE: With this preview offering, NetApp reserves the right to modify offering d
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
 
+//include 3 most recent releases
+//end::whats-new[]
 
 == 27 September 2023
 
@@ -95,8 +113,7 @@ Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[
 +
 Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-//include 3 most recent releases
-//end::whats-new[]
+
 
 == 1 August 2023
 
