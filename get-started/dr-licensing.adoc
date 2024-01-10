@@ -1,0 +1,103 @@
+---
+sidebar: sidebar
+permalink: get-started/dr-licensing.html
+keywords: bluexp license, disaster recovery licensing
+summary: With BlueXP disaster recovery, you can use a Bring Your Own License (BYOL) or a NetApp Support Site (NSS) license. 
+---
+
+= Set up licensing for BlueXP disaster recovery
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/get-started/
+
+[.lead]
+With BlueXP disaster recovery, you can use a Bring Your Own License (BYOL) or a NetApp Support Site (NSS) license. 
+
+BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
+
+NOTE: Capacity for a failed over datastore is not included in the capacity allowance. 
+
+Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active subscription for the service in the BlueXP digital wallet.
+
+
+
+=== 90-day free trial
+You can try BlueXP disaster recovery out by using a 90-day free trial.
+
+NOTE: A capacity limit is not enforced during the trial.  
+
+You can subscribe at any time and you will not be charged until the 90-day trial ends. The *Subscribe Now* button makes it easy to subscribe when you are ready.
+
+To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp. 
+
+After the trial ends, you can still do the following in the service:
+
+* Delete a workload
+* Delete data from a workload
+
+== Purchase a BlueXP disaster recovery BYOL license
+
+
+If you don't have a BlueXP disaster recovery license, contact us to purchase one. 
+
+.Steps 
+. Do one of the following: 
+
+* Send mailto:ng-contact-disaster-recovery@netapp.com?Subject=Licensing email to purchase a license.
+* Click the chat icon in the lower-right of BlueXP to request a license.
+
+== Obtain your BlueXP disaster recovery license file
+
+After you've purchased your BlueXP disaster recovery license, you activate the license in BlueXP by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account, or by uploading the NetApp License File (NLF). 
+
+.Before you begin
+
+You'll need to have the following information before you start:
+
+* BlueXP disaster recovery serial number
++
+Locate this number from your Sales Order, or contact the account team for this information.
+* BlueXP Account ID
++
+You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then clicking *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
+
+.Steps to get an NLF license file
+
+. Sign in to the https://mysupport.netapp.com[NetApp Support Site^]  and select *Systems* > *Software Licenses*.
+. Enter your BlueXP disaster recovery license serial number.
+. Under the License Key column, select *Get NetApp License File*.
+. Enter your BlueXP Account ID (this is called a Tenant ID on the support site) and select *Submit* to download the license file.
+
+== Add BlueXP disaster recovery BYOB license to your BlueXP digital wallet account
+
+After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
+
+.Steps
+. From the BlueXP menu, select *Governance* > *Digital wallet* and then select the *Data Services Licenses* tab.
+
+. Select *Add License*.
+
+. In the Add License dialog, enter the license information and select *Add License*:
++
+* If you have the BlueXP license serial number and know your NSS account, select the Enter Serial Number option and enter that information.
++
+If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to BlueXP^].
+* If you have the BlueXP license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
+
+== Update your BlueXP BYOL license when it expires
+
+If your licensed term is nearing the expiration date, or if your licensed capacity is reaching the limit, you'll be notified in the BlueXP disaster recovery UI. You can update your BlueXP disaster recovery license before it expires so that there is no interruption in your ability to access your scanned data.
+
+TIP: This message also appears in BlueXP digital wallet and in https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center[Notifications]. 
+
+.Steps
+
+. Select the chat icon in the lower-right of BlueXP to request an extension to your term or additional capacity to your license for the particular serial number. You can also send an email to request an update to your license.
++
+After you pay for the license and it is registered with the NetApp Support Site, BlueXP automatically updates the license in the BlueXP digital wallet and the Data Services Licenses page will reflect the change in 5 to 10 minutes.
+
+. If BlueXP can't automatically update the license (for example, when installed in a dark site), then you'll need to manually upload the license file.
++
+.. You can obtain the license file from the NetApp Support Site.
+.. On the BlueXP digital wallet page in the Data Services Licenses tab, select the *More* icon for the service serial number you are updating, and select *Update License*.
+

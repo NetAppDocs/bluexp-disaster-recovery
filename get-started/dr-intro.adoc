@@ -51,6 +51,25 @@ NetApp doesn’t charge you for using the preview version of BlueXP disaster rec
 
 The BlueXP disaster recovery service, upon general availability, is expected to offer Pay-As-You-Go pricing or an annual subscription-based plan. 
 
+== Licensing 
+
+With BlueXP disaster recovery, you can use a Bring Your Own License (BYOL) or a NetApp Support Site (NSS) license. 
+
+BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
+
+NOTE: Capacity for a failed over datastore is not included in the capacity allowance. 
+
+Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active subscription for the service in the BlueXP digital wallet.
+
+For details about setting up licensing for BlueXP disaster recovery, https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]
+
+=== 90-day free trial
+You can try BlueXP disaster recovery out by using a 90-day free trial. You can subscribe at any time and you will not be charged until the 90-day trial ends. The *Subscribe Now* button makes it easy to subscribe when you are ready.
+
+To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp.
+
+
+
 == How BlueXP disaster recovery preview works
 
 BlueXP disaster recovery preview can recover workloads replicated from an on-premises site to Amazon FSx for ONTAP or to another on-premises site. This service automates the recovery from the SnapMirror level, through virtual machine registration to Virtual Machine Cloud (VMC), and to network mappings directly on the VMware network virtualization and security platform, NSX-T. This feature is included with all Virtual Machine Cloud environments.

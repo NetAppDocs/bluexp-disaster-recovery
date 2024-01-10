@@ -54,10 +54,12 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-* *Licensing updates*: With this release, BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
+* *Licensing updates*: With this release, you can sign up for a 90-day free trial or use a Bring Your Own License (BYOL). BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
 
 +
-For details about setting up licensing for BlueXP disaster recovery, *TBD*. For details about managing licenses for all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BlueXP licenses].
+For details about setting up licensing for BlueXP disaster recovery, https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
++
+For details about managing licenses for all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage licenses for all BlueXP services].
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
 
