@@ -11,9 +11,7 @@ summary: With BlueXP disaster recovery, you can use a Bring Your Own License (BY
 :imagesdir: ../media/get-started/
 
 [.lead]
-With BlueXP disaster recovery, you can use a Bring Your Own License (BYOL) or a NetApp Support Site (NSS) license. 
-
-BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
+With BlueXP disaster recovery, you can use a Bring Your Own License (BYOL) or a NetApp Support Site (NSS) license. BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
 
 NOTE: Capacity for a failed over datastore is not included in the capacity allowance. 
 
@@ -21,14 +19,12 @@ Licenses for all BlueXP services are managed by the BlueXP digital wallet servic
 
 
 
-=== 90-day free trial
+== Try it out using a 90-day free trial
 You can try BlueXP disaster recovery out by using a 90-day free trial.
 
 NOTE: A capacity limit is not enforced during the trial.  
 
-You can subscribe at any time and you will not be charged until the 90-day trial ends. The *Subscribe Now* button makes it easy to subscribe when you are ready.
-
-To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp. 
+You can subscribe at any time and you will not be charged until the 90-day trial ends. To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp. The *Subscribe Now* button makes it easy to subscribe when you are ready.
 
 After the trial ends, you can still do the following in the service:
 
@@ -43,7 +39,8 @@ If you don't have a BlueXP disaster recovery license, contact us to purchase one
 .Steps 
 . Do one of the following: 
 
-* Send mailto:ng-contact-disaster-recovery@netapp.com?Subject=Licensing email to purchase a license.
+* Send email to ng-contact-disaster-recovery@netapp.com to purchase a license.
+//* Send mailto:ng-contact-disaster-recovery@netapp.com?Subject=Licensing 
 * Click the chat icon in the lower-right of BlueXP to request a license.
 
 == Obtain your BlueXP disaster recovery license file
