@@ -27,7 +27,6 @@ This release includes the following updates:
 
 ** DHCP: If you choose this option, you provide credentials for the VM. 
 ** Static IP: You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address, subnet mask, DNS, and gateway information.  
-
 //+
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 +
@@ -66,9 +65,9 @@ For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
 * *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
 +
-For details about setting up licensing for BlueXP disaster recovery, link:../get-started/dr-licensing.html[Set up licensing].
+For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up licensing].
 //+
-//For details about setting up licensing for BlueXP disaster recovery, https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
+//For details about setting up licensing for BlueXP disaster recovery, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
 +
 For details about managing licenses for *all* BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage licenses for all BlueXP services].
 
