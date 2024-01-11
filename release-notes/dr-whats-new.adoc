@@ -28,45 +28,56 @@ This release includes the following updates:
 ** DHCP: If you choose this option, you provide credentials for the VM. 
 ** Static IP: You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address, subnet mask, DNS, and gateway information.  
 
+//+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 +
-For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
 * *Custom scripts* can now be included as post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script after a failover process. For example, you can use a custom script to resume all database transactions after the failover is complete.  
 //to pause all database transactions before a failover 
+//+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over to a remote site].
 +
-For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over to a remote site].
-
+For details, refer to link:../use/failover.html[Fail over to a remote site].
 
 
 * *SnapMirror relationship*: You can now create a SnapMirror relationship while developing the replication plan. Previously, you had to create the relationship outside of BlueXP disaster recovery. 
+//+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 +
-For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
 * *Consistency groups*: When you create a replication plan, you can include VMs that are from different volumes and different SVMs. BlueXP disaster recovery creates a Consistency Group Snapshot by including all the volumes and updates all the secondary locations. 
-+
-For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+//+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
 * *VM power-on delay option*: When you create a replication plan, you can add VMs to a Resource Group. With Resource Groups, you can set a delay on each VM so that they power up on a delayed sequence. 
+//+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 +
-For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
 * *Application-consistent Snapshot copies*: You can specify to create application-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
+//+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 +
-For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
-* *Licensing updates*: With this release, you can sign up for a 90-day free trial or use a Bring Your Own License (BYOL). BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
-
+* *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
 +
-For details about setting up licensing for BlueXP disaster recovery, https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
+For details about setting up licensing for BlueXP disaster recovery, link:../get-started/dr-licensing.html[Set up licensing].
+//+
+//For details about setting up licensing for BlueXP disaster recovery, https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
 +
-For details about managing licenses for all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage licenses for all BlueXP services].
+For details about managing licenses for *all* BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage licenses for all BlueXP services].
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
 
 == 11 January 2024
 This release of BlueXP disaster recovery includes the following updates: 
 
-* With this release, you can click several links in the Dashboard to access information quickly. 
+* With this release, you can access information on other pages from the Dashboard more quickly. 
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
 

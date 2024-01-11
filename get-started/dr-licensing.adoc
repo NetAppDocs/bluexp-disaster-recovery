@@ -11,7 +11,7 @@ summary: With BlueXP disaster recovery, you can use a Bring Your Own License (BY
 :imagesdir: ../media/get-started/
 
 [.lead]
-With BlueXP disaster recovery, you can use a Bring Your Own License (BYOL) or a NetApp Support Site (NSS) license. BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
+With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
 
 NOTE: Capacity for a failed over datastore is not included in the capacity allowance. 
 
@@ -28,11 +28,11 @@ You can subscribe at any time and you will not be charged until the 90-day trial
 
 After the trial ends, you can still do the following in the service:
 
-* Delete a workload
-* Delete data from a workload
+* Delete a workload.
+* Delete data from a workload.
+* Run all scheduled operations. 
 
 == Purchase a BlueXP disaster recovery BYOL license
-
 
 If you don't have a BlueXP disaster recovery license, contact us to purchase one. 
 
@@ -43,7 +43,7 @@ If you don't have a BlueXP disaster recovery license, contact us to purchase one
 //* Send mailto:ng-contact-disaster-recovery@netapp.com?Subject=Licensing 
 * Click the chat icon in the lower-right of BlueXP to request a license.
 
-== Obtain your BlueXP disaster recovery license file
+== Obtain your BlueXP disaster recovery BYOL license file
 
 After you've purchased your BlueXP disaster recovery license, you activate the license in BlueXP by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account, or by uploading the NetApp License File (NLF). 
 
@@ -58,14 +58,14 @@ Locate this number from your Sales Order, or contact the account team for this i
 +
 You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then clicking *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
 
-.Steps to get an NLF license file
+.Steps to get a BYOL NLF license file
 
 . Sign in to the https://mysupport.netapp.com[NetApp Support Site^]  and select *Systems* > *Software Licenses*.
 . Enter your BlueXP disaster recovery license serial number.
 . Under the License Key column, select *Get NetApp License File*.
 . Enter your BlueXP Account ID (this is called a Tenant ID on the support site) and select *Submit* to download the license file.
 
-== Add BlueXP disaster recovery BYOB license to your BlueXP digital wallet account
+== Add BlueXP disaster recovery BYOL license to your BlueXP digital wallet account
 
 After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
 

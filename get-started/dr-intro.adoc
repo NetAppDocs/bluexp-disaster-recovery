@@ -53,7 +53,11 @@ The BlueXP disaster recovery service offers Pay-As-You-Go pricing or an annual s
 
 == Licensing 
 
-With BlueXP disaster recovery, you can use a Bring Your Own License (BYOL) or a NetApp Support Site (NSS) license. 
+With BlueXP disaster recovery, you can use one of the following: 
+
+* Sign up for a 90-day free trial.
+* Purchase a pay-as-you-go (PAYGO) annual subscription for 1, 2, or 3 years.
+* Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS).  
 
 BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
 
@@ -73,11 +77,11 @@ To continue after the 90-day trial, you'll need to purchase a BYOL license from 
 
 
 
-== How BlueXP disaster recovery preview works
+== How BlueXP disaster recovery works
 
-BlueXP disaster recovery preview can recover workloads replicated from an on-premises site to Amazon FSx for ONTAP or to another on-premises site. This service automates the recovery from the SnapMirror level, through virtual machine registration to Virtual Machine Cloud (VMC), and to network mappings directly on the VMware network virtualization and security platform, NSX-T. This feature is included with all Virtual Machine Cloud environments.
+BlueXP disaster recovery can recover workloads replicated from an on-premises site to Amazon FSx for ONTAP or to another on-premises site. This service automates the recovery from the SnapMirror level, through virtual machine registration to Virtual Machine Cloud (VMC), and to network mappings directly on the VMware network virtualization and security platform, NSX-T. This feature is included with all Virtual Machine Cloud environments.
 
-BlueXP disaster recovery preview uses ONTAP SnapMirror technology, which provides highly efficient replication and preserves the ONTAP incremental-forever Snapshot efficiencies. SnapMirror replication ensures that application-consistent Snapshot copies are always in sync and the data is usable immediately after a failover. 
+BlueXP disaster recovery uses ONTAP SnapMirror technology, which provides highly efficient replication and preserves the ONTAP incremental-forever Snapshot efficiencies. SnapMirror replication ensures that application-consistent Snapshot copies are always in sync and the data is usable immediately after a failover. 
 
 image:dr-architecture-diagram-70.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
 
