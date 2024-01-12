@@ -121,7 +121,7 @@ image:draas-trial-end.png[End free trial page]
 
 
 
-== Use an AWS Marketplace pay-as-you-go (PAYGO) license
+== Use an AWS pay-as-you-go (PAYGO) license
 
 If you choose to use an AWS Marketplace PAYGO license, you'll need to set it up in AWS first and then in BlueXP. 
 
@@ -265,10 +265,9 @@ You can customize the columns you see on the Subscriptions page. You might want 
 . Select *Apply*. 
 
 
-== Use a bring-your-own-license (BYOL)
-If you use a BYOL license, the set up includes purchasing the license, getting the NetApp Llicense File (NLF), and adding the license to BlueXP digital wallet. 
+== Bring your own license (BYOL)
 
-
+If you bring your own license (BYOL), the set up includes purchasing the license, getting the NetApp Llicense File (NLF), and adding the license to BlueXP digital wallet. 
 
 === Purchase a BlueXP disaster recovery license
 
