@@ -125,12 +125,13 @@ image:draas-trial-end.png[End free trial page]
 
 If you choose to use an AWS Marketplace PAYGO license, you'll need to set it up in AWS first and then in BlueXP. 
 
-There are two parts to set up a PAYGO license in AWS: 
+To set up a PAYGO license in AWS, complete the following procedures: 
 
 * <<Part 1 Configure a PAYGO license in AWS>>
-* <<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials>> or 
+* <<Part 2 Configure your AWS Marketplace subscription in BlueXP>>
+* <<Part 3a Associate the new SaaS Marketplace subscription with AWS credentials>> or 
 +
-<<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
+<<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
 
 === Part 1 Configure a PAYGO license in AWS
 Here is a high level summary of the steps to configure a PAYGO license in AWS. 
@@ -161,7 +162,8 @@ If the offer uses a contract listing, also enter the number of units per service
 +
 If the offer uses a contract listing, select *View purchase options* and then *Set up your account*. 
 
-=== Configure your AWS Marketplace subscription in BlueXP (Part 1)
+=== Part 2 Configure your AWS Marketplace subscription in BlueXP
+
 After you've accepted the Private offer in the AWS console, you'll be directed to the BlueXP console. 
 
 .Steps
@@ -176,16 +178,16 @@ NOTE: The replace option is limited to a single NetApp BlueXP account. If you ha
 NOTE: If a set of cloud credentials was never associated with a SaaS Marketplace subscription, you should configure it by following the next part of this procedure. 
 
 . Select *Save* and *Done*. 
-. Continue with Part 2 next: 
-** <<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials>>
-** <<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
+. Continue with Part 3 next: 
+** <<Part 3a Associate the new SaaS Marketplace subscription with AWS credentials>>
+** <<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
 
-=== Part 2 Associate the new SaaS Marketplace subscription with AWS credentials
+=== Part 3a Associate the new SaaS Marketplace subscription with AWS credentials
 
-This Part 2 of setting up a license in AWS. 
+This Part 3 of setting up a license in AWS. 
 
-NOTE: If you have an annual contract, continue with Part 2 here: 
-<<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
+NOTE: If you have an annual contract, continue here instead: 
+<<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
 
 .Steps
 
@@ -220,7 +222,7 @@ NOTE: The Marketplace charges relating to these AWS credentials will now be bill
 .. For AWS credentials in other BlueXP accounts, use the *Account* option at the top of the BlueXP console to switch accounts and repeat the steps. 
 .. For AWS credentials related to other BlueXP Connectors, use the *Connector* option at the top of the BlueXP console to switch connectors and repeat the steps. 
 
-=== Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts
+=== Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts
 
 If you use an annual contract, the information in BlueXP digital wallet appears somewhat differently. 
 

@@ -34,7 +34,7 @@ BlueXP disaster recovery offers the following benefits:
 * Faster time to value with dynamic changes in your IT environment and ability to address it in your disaster recovery plans
 
 == What you can do with BlueXP disaster recovery for VMware 
-The BlueXP disaster recovery provides you with full use of several NetApp technologies to accomplish the following goals: 
+BlueXP disaster recovery provides you with full use of several NetApp technologies to accomplish the following goals: 
 
 * Replicate VMware apps on your on-premises production site to a disaster recovery remote site in the cloud or on-premises using SnapMirror replication.
 * Migrate VMware workloads from your original site to another site. 
@@ -71,9 +71,9 @@ For details about setting up licensing for BlueXP disaster recovery, refer to li
 //https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing].
 
 === 90-day free trial
-You can try BlueXP disaster recovery out by using a 90-day free trial. You can subscribe at any time and you will not be charged until the 90-day trial ends. The *Subscribe Now* button makes it easy to subscribe when you are ready.
+You can try BlueXP disaster recovery out by using a 90-day free trial. You can subscribe at any time and you will not be charged until the 90-day trial ends. 
 
-To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp.
+To continue after the 90-day trial, you'll need to subscribe from your cloud provider or purchase a license from NetApp.
 
 
 
