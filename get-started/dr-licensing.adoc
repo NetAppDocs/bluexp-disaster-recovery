@@ -16,54 +16,142 @@ With BlueXP disaster recovery, you can use different licensing plans including a
 You can use any of the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services Marketplace.
+* Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services (AWS) Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). 
 
 NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. 
 
 Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active subscription for the service in the BlueXP digital wallet.
 
+After the free trial ends or the license expires, you can still do the following in the service:
 
+* Delete a workload.
+* Delete data from a workload.
+* Run all scheduled operations.
 
 == Try it out using a 90-day free trial
 You can try BlueXP disaster recovery out by using a 90-day free trial.
 
 NOTE: A capacity limit is not enforced during the trial.  
 
-You can subscribe at any time and you will not be charged until the 90-day trial ends. To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp. 
+You can subscribe at any time and you will not be charged until the 90-day trial ends. To continue after the 90-day trial, you'll need to purchase a BYOL or PAYGO license from NetApp. 
 
-After the trial ends, you can still do the following in the service:
+During the trial, you have full functionality. 
 
-* Delete a workload.
-* Delete data from a workload.
-* Run all scheduled operations. 
 
 .Steps
 
-. 
+. Access the https://console.bluexp.netapp.com/[BlueXP console^].
+. Log in to BlueXP. 
+. From the BlueXP left navigation, select *Protection* > *Disaster recovery*. 
++
+If this is your first time logging in to this service, the landing page appears. 
+
++
+image:draas-landing.png[Landing page screenshot for BlueXP disaster recovery]
+. If you haven't already added a Connector for other services, add one. 
++ 
+To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
+. After you set up a Connector, in the BlueXP disaster recovery landing page, select *Start free trial*. 
++
+image:draas-landing-trial.png[Landing page screenshot for BlueXP disaster recovery]
+. Review the free trial information and select *Let's go*. 
+
+
+=== After the trial ends, subscribe
+
+After the free trial ends, you can either subscribe through AWS Marketplace or purchase a license from NetApp. 
+
+==== Subscribe through AWS
+You can subscribe to the NetApp BlueXP disaster recovery service directly in the AWS Marketplace. 
+
+.Steps
+. In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*. 
++
+image:draas-license-subscribe.png[The BlueXP disaster recovery Subscribe or purchase license page]
+. In AWS Marketplace, select *View purchase options*. 
+. Use AWS Marketplace to subscribe. 
+ 
+. When you return to BlueXP disaster recovery, a message states that you are subscribed. To view subscription details in BlueXP digital wallet, select *View subscription details*. 
+
++
+image:digital-wallet-subscriptions.png[The BlueXP digital wallet Subscriptions tab]
+
+==== Purchase license through NetApp
+
+You can purchase a license through your NetApp Sales Rep or Tech Support. 
+
+.Steps
+
+. Contact your NetApp Sales Rep or NetApp Support to purchase a license. 
+. After you obtain the license, return to BlueXP disaster recovery and in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
++
+The Subscribe or purchase license page appears. 
++
+image:draas-license-subscribe-NetApp-option.png[The BlueXP disaster recovery Subscribe or purchase license page]
+
+. Select *Add license to BlueXP*. You will be directed to BlueXP digital wallet. 
++
+image:digital-wallet-data-services-licenses-tab.png[The BlueXP disaster recovery Subscribe or purchase license page]
+. In BlueXP digital wallet, from the Data services licenses tab, select *Add license*. 
+. In the Add License page, either enter the serial number or upload the NetApp License File (NLF).
+
++
+image:byol-digital-wallet-license-add.png[The BlueXP digital wallet Add License page]
+
+. To view subscription details in BlueXP digital wallet, select *View subscription details*. 
++
+image:digital-wallet-subscriptions.png[The BlueXP digital wallet Subscriptions tab]
+
+=== End the free trial
+
+You can stop the free trial at any time or you can wait until it expires. 
+
+.Steps
+. In BlueXP disaster recovery, at the top right, select *Free trial - View details*. 
+
+. In the drop-down details, select *End free trial*. 
++
+image:draas-trial-end.png[End free trial page]
+
+. If you want to delete all data, check *Delete all data when my trial ends*. 
+
+. Type "end trial" in the text box. 
+. Select *End*. 
+
+
 
 == Use an AWS Marketplace pay-as-you-go (PAYGO) license
 
 If you choose to use an AWS Marketplace PAYGO license, you'll need to set it up in AWS first and then in BlueXP. 
 
-=== Configure a PAYGO license in AWS
+There are two parts to set up a PAYGO license in AWS: 
+
+* <<Part 1 Configure a PAYGO license in AWS>>
+* <<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials>> or 
++
+<<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
+
+=== Part 1 Configure a PAYGO license in AWS
 Here is a high level summary of the steps to configure a PAYGO license in AWS. 
 
 For additional details, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and marketplace subscriptions for BlueXP^]. 
 
 .Before you begin
 
-You must have already worked with NetApp Sales team and obtained the offer link and you must have permissions to accept the offer as described in https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html[Controlling access to AWS Marketplace subscriptions].
+You must have already worked with NetApp Sales team and obtained the offer link and you must have permissions to accept the offer as described in https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html[Controlling access to AWS Marketplace subscriptions^].
 
 .Steps
 . Accept the AWS Marketplace Private offer for NetApp BlueXP in the AWS console. 
 + 
 Refer to the following information: 
 +
-* https://aws.amazon.com/blogs/awsmarketplace/access-your-private-offers-aws-marketplace-console/[Access your private offers through the AWS Marketplace console].
-* https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-offers-page.html#private-offers-page-permissions[Required permissions to view the Private offers page].
+* https://aws.amazon.com/blogs/awsmarketplace/access-your-private-offers-aws-marketplace-console/[Access your private offers through the AWS Marketplace console^].
+* https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-offers-page.html#private-offers-page-permissions[Required permissions to view the Private offers page^].
 
-. Review the Private offer details and validate that is matches your agreement. Because the billing starts once you click *Subscribe*, if any information is incorrect, *do not* accept the Private offer and instead contact your NetApp Sale Representative. 
+. Review the Private offer details and validate that is matches your agreement. 
++
+CAUTION: Because the billing starts once you click *Subscribe*, if any information is incorrect, *do not* accept the Private offer and instead contact your NetApp Sale Representative. 
 
 . After you confirm that the offer information is correct, select *Subscribe*. 
 +
@@ -88,8 +176,18 @@ NOTE: The replace option is limited to a single NetApp BlueXP account. If you ha
 NOTE: If a set of cloud credentials was never associated with a SaaS Marketplace subscription, you should configure it by following the next part of this procedure. 
 
 . Select *Save* and *Done*. 
+. Continue with Part 2 next: 
+** <<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials>>
+** <<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
 
-=== Associate the new SaaS Marketplace subscription with AWS credentials (Part 2)
+=== Part 2 Associate the new SaaS Marketplace subscription with AWS credentials
+
+This Part 2 of setting up a license in AWS. 
+
+NOTE: If you have an annual contract, continue with Part 2 here: 
+<<Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
+
+.Steps
 
 . Access the https://console.bluexp.netapp.com[NetApp BlueXP console]. 
 . Validate the subscription details: 
@@ -122,9 +220,9 @@ NOTE: The Marketplace charges relating to these AWS credentials will now be bill
 .. For AWS credentials in other BlueXP accounts, use the *Account* option at the top of the BlueXP console to switch accounts and repeat the steps. 
 .. For AWS credentials related to other BlueXP Connectors, use the *Connector* option at the top of the BlueXP console to switch connectors and repeat the steps. 
 
-=== Associate the new SaaS Marketplace subscription with AWS credentials (Part 2) if you have an annual contract
+=== Part 2 Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts
 
-If you use an annual contract, the information in BlueXP appears somewhat differently. 
+If you use an annual contract, the information in BlueXP digital wallet appears somewhat differently. 
 
 . Access the https://console.bluexp.netapp.com[NetApp BlueXP console]. 
 . Validate the subscription details: 
@@ -154,7 +252,7 @@ NOTE: The Marketplace charges relating to these AWS credentials will now be bill
 .. For AWS credentials in other BlueXP accounts, use the *Account* option at the top of the BlueXP console to switch accounts and repeat the steps. 
 .. For AWS credentials related to other BlueXP Connectors, use the *Connector* option at the top of the BlueXP console to switch connectors and repeat the steps. 
 
-=== Change the subscription view to see more columns
+=== Change the BlueXP digital wallet Subscriptions view to see more columns
 You can customize the columns you see on the Subscriptions page. You might want to do this to see the Term information, for example. 
 
 .Steps
@@ -167,6 +265,7 @@ You can customize the columns you see on the Subscriptions page. You might want 
 
 == Use a bring-your-own-license (BYOL)
 If you use a BYOL license, the set up includes purchasing the license, getting the NetApp Llicense File (NLF), and adding the license to BlueXP digital wallet. 
+
 
 
 === Purchase a BlueXP disaster recovery BYOL license
@@ -193,13 +292,17 @@ You'll need to have the following information before you start:
 Locate this number from your Sales Order, or contact the account team for this information.
 * BlueXP Account ID
 +
-You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then clicking *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
+You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
 
 .Steps to get a BYOL NLF license file
 
 . Sign in to the https://mysupport.netapp.com[NetApp Support Site^]  and select *Systems* > *Software Licenses*.
++
+image:byol-nss-licenses.png[NetApp Support Site Software Licenses page]
 . Enter your BlueXP disaster recovery license serial number.
 . Under the License Key column, select *Get NetApp License File*.
++
+image:byol-nss-licenses-get.png[NetApp Support Site Software Licenses page]
 . Enter your BlueXP Account ID (this is called a Tenant ID on the support site) and select *Submit* to download the license file.
 
 === Add BlueXP disaster recovery BYOL license to your BlueXP digital wallet account
@@ -207,16 +310,23 @@ You can find your BlueXP Account ID by selecting the *Account* drop-down from th
 After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
 
 .Steps
-. From the BlueXP menu, select *Governance* > *Digital wallet* and then select the *Data Services Licenses* tab.
-
-. Select *Add License*.
-
-. In the Add License dialog, enter the license information and select *Add License*:
+. From the BlueXP menu, select *Governance* > *Digital wallet* > *Data Services Licenses*.
 +
-* If you have the BlueXP license serial number and know your NSS account, select the Enter Serial Number option and enter that information.
+image:byol-digital-wallet-dataserviceslicenses-tab.png[NetApp BlueXP digital wallet Data Services Licenses tab]
+. Select *Add License*.
++
+image:byol-digital-wallet-license-add.png[NetApp BlueXP digital wallet Add License page]
+. In the Add License page, enter the license information and select *Add License*:
++
+* If you have the BlueXP license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
 +
 If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to BlueXP^].
 * If you have the BlueXP license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
+
+.Result
+BlueXP digital wallet now shows Disaster recovery with a license. 
+
+image:byol-digital-wallet-licenses-added.png[NetApp BlueXP digital wallet]
 
 === Update your BlueXP BYOL license when it expires
 
@@ -233,5 +343,7 @@ After you pay for the license and it is registered with the NetApp Support Site,
 . If BlueXP can't automatically update the license (for example, when installed in a dark site), then you'll need to manually upload the license file.
 +
 .. You can obtain the license file from the NetApp Support Site.
-.. On the BlueXP digital wallet page in the Data Services Licenses tab, select the *More* icon for the service serial number you are updating, and select *Update License*.
+.. On the BlueXP digital wallet page in the Data Services Licenses tab, select the *Actions ...* icon for the service serial number you are updating, and select *Update License*.
++
+image:digital-wallet-licenses-expired.png[NetApp BlueXP digital wallet showing expired license]
 

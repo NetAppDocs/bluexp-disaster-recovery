@@ -32,8 +32,9 @@ image:draas-landing.png[Landing page screenshot for BlueXP disaster recovery]
 + 
 Otherwise, the BlueXP disaster recovery Dashboard appears.
 +
-* If you don't have a BlueXP Connector or it's not the one for this preview, you might need to contact NetApp Support or follow messages to sign up for this preview. 
+* If you don't have a BlueXP Connector or it's not the one for this service, you might need to contact NetApp Support or follow messages to sign up for this service. 
++ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
 
-* If you are new to BlueXP and haven't used any Connector, when you select "Disaster recovery", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your preview request. 
+* If you are new to BlueXP and haven't used any Connector, when you select "Disaster recovery", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your request. 
 * If you are a BlueXP user with an an existing Connector, when you select "Disaster recovery", a message appears about signing up. 
-* If you are already participating in the preview, when you select "Disaster recovery", you can proceed with the service. 
+* If you are already using the preview, when you select "Disaster recovery", you can proceed. 
