@@ -133,7 +133,7 @@ To set up a PAYGO license in AWS, complete the following procedures:
 +
 <<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
 
-=== Part 1 Configure a PAYGO license in AWS
+==== Part 1 Configure a PAYGO license in AWS
 Here is a high level summary of the steps to configure a PAYGO license in AWS. 
 
 For additional details, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and marketplace subscriptions for BlueXP^]. 
@@ -162,7 +162,7 @@ If the offer uses a contract listing, also enter the number of units per service
 +
 If the offer uses a contract listing, select *View purchase options* and then *Set up your account*. 
 
-=== Part 2 Configure your AWS Marketplace subscription in BlueXP
+==== Part 2 Configure your AWS Marketplace subscription in BlueXP
 
 After you've accepted the Private offer in the AWS console, you'll be directed to the BlueXP console. 
 
@@ -182,7 +182,7 @@ NOTE: If a set of cloud credentials was never associated with a SaaS Marketplace
 ** <<Part 3a Associate the new SaaS Marketplace subscription with AWS credentials>>
 ** <<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
 
-=== Part 3a Associate the new SaaS Marketplace subscription with AWS credentials
+==== Part 3a Associate the new SaaS Marketplace subscription with AWS credentials
 
 This Part 3 of setting up a license in AWS. 
 
@@ -222,7 +222,7 @@ NOTE: The Marketplace charges relating to these AWS credentials will now be bill
 .. For AWS credentials in other BlueXP accounts, use the *Account* option at the top of the BlueXP console to switch accounts and repeat the steps. 
 .. For AWS credentials related to other BlueXP Connectors, use the *Connector* option at the top of the BlueXP console to switch connectors and repeat the steps. 
 
-=== Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts
+==== Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts
 
 If you use an annual contract, the information in BlueXP digital wallet appears somewhat differently. 
 
@@ -254,7 +254,7 @@ NOTE: The Marketplace charges relating to these AWS credentials will now be bill
 .. For AWS credentials in other BlueXP accounts, use the *Account* option at the top of the BlueXP console to switch accounts and repeat the steps. 
 .. For AWS credentials related to other BlueXP Connectors, use the *Connector* option at the top of the BlueXP console to switch connectors and repeat the steps. 
 
-=== Change the BlueXP digital wallet Subscriptions view to see more columns
+==== Change the BlueXP digital wallet Subscriptions view to see more columns
 You can customize the columns you see on the Subscriptions page. You might want to do this to see the Term information, for example. 
 
 .Steps
@@ -270,20 +270,19 @@ If you use a BYOL license, the set up includes purchasing the license, getting t
 
 
 
-=== Purchase a BlueXP disaster recovery BYOL license
+=== Purchase a BlueXP disaster recovery license
 
 If you don't have a BlueXP disaster recovery license, contact us to purchase one. 
 
-.Steps 
 . Do one of the following: 
 
 * Contact NetApp Sales to purchase a license.
 //* Send mailto:ng-contact-disaster-recovery@netapp.com?Subject=Licensing 
 * Click the chat icon in the lower-right of BlueXP to request a license.
 
-=== Obtain your BlueXP disaster recovery BYOL license file
+=== Obtain your BlueXP disaster recovery license file
 
-After you've purchased your BlueXP disaster recovery license, you activate the license in BlueXP by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account, or by uploading the NetApp License File (NLF). 
+After you've purchased your BlueXP disaster recovery license, you activate the license by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account, or by uploading the NetApp License File (NLF). 
 
 .Before you begin
 
@@ -296,7 +295,7 @@ Locate this number from your Sales Order, or contact the account team for this i
 +
 You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
 
-.Steps to get a BYOL NLF license file
+.Steps to get an NLF license file
 
 . Sign in to the https://mysupport.netapp.com[NetApp Support Site^]  and select *Systems* > *Software Licenses*.
 +
@@ -307,7 +306,7 @@ image:byol-nss-licenses.png[NetApp Support Site Software Licenses page]
 image:byol-nss-licenses-get.png[NetApp Support Site Software Licenses page]
 . Enter your BlueXP Account ID (this is called a Tenant ID on the support site) and select *Submit* to download the license file.
 
-=== Add BlueXP disaster recovery BYOL license to your BlueXP digital wallet account
+=== Add BlueXP disaster recovery license to BlueXP digital wallet
 
 After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
 
@@ -330,7 +329,7 @@ BlueXP digital wallet now shows Disaster recovery with a license.
 
 image:byol-digital-wallet-licenses-added.png[NetApp BlueXP digital wallet]
 
-=== Update your BlueXP BYOL license when it expires
+=== Update your BlueXP license when it expires
 
 If your licensed term is nearing the expiration date, or if your licensed capacity is reaching the limit, you'll be notified in the BlueXP disaster recovery UI. You can update your BlueXP disaster recovery license before it expires so that there is no interruption in your ability to access your scanned data.
 
