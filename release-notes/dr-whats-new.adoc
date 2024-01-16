@@ -66,7 +66,7 @@ For details, refer to link:../use/drplan-create.html[Create a replication plan].
 +
 For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
-* *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Marketplace, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). You can upload the NLF directly in BlueXP digital wallet or use the license serial number to get the BYOL activated in BlueXP digital wallet. BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
+* *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Marketplace, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep or from the NetApp Support Site (NSS). You can upload the NLF directly in BlueXP digital wallet or use the license serial number to get the BYOL activated in BlueXP digital wallet. BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
 +
 For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up licensing].
 //+
