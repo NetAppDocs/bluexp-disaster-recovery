@@ -49,21 +49,20 @@ NOTE: Configuration of vSphere server is done outside of BlueXP disaster recover
 
 NetApp doesn’t charge you for using the trial version of BlueXP disaster recovery.
 
-The BlueXP disaster recovery service offers Pay-As-You-Go pricing or an annual subscription-based plan. 
+The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services Marketplace. 
 
 == Licensing 
 
-With BlueXP disaster recovery, you can use one of the following: 
+You can use any of the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) annual subscription for 1, 2, or 3 years.
-* Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS).  
+* Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services (AWS) Marketplace.
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). You can upload the NLF directly in BlueXP digital wallet or use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
-BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. 
+NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
-NOTE: Capacity for a failed over datastore is not included in the capacity allowance. 
 
-Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active subscription for the service in the BlueXP digital wallet.
+Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active license or subscription for the service in the BlueXP digital wallet.
 
 For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
 
@@ -73,7 +72,7 @@ For details about setting up licensing for BlueXP disaster recovery, refer to li
 === 90-day free trial
 You can try BlueXP disaster recovery out by using a 90-day free trial. You can subscribe at any time and you will not be charged until the 90-day trial ends. 
 
-To continue after the 90-day trial, you'll need to subscribe from your cloud provider or purchase a license from NetApp.
+To continue after the 90-day trial, you'll need to obtain a Pay-as-you-go (PAYGO) subscription from your cloud provider or purchase a BYOL license from NetApp.
 
 
 

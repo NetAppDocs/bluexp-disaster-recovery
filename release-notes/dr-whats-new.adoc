@@ -21,6 +21,9 @@ Learn what’s new in the BlueXP disaster recovery preview.
 
 This is the General Availability release of BlueXP disaster recovery. 
 
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn about BlueXP disaster recovery].
+
+
 This release includes the following updates: 
 
 * *Network enhancement*: With this release, you can now resize the VM CPU and RAM values. You can also now select a network DHCP or static IP address for the VM.  
@@ -63,7 +66,7 @@ For details, refer to link:../use/drplan-create.html[Create a replication plan].
 +
 For details, refer to link:../use/drplan-create.html[Create a replication plan].
 
-* *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Marketplace, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
+* *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Marketplace, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS). You can upload the NLF directly in BlueXP digital wallet or use the license serial number to get the BYOL activated in BlueXP digital wallet. BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
 +
 For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up licensing].
 //+
@@ -71,14 +74,13 @@ For details about setting up licensing for BlueXP disaster recovery, refer to li
 +
 For details about managing licenses for *all* BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage licenses for all BlueXP services].
 
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
 
 == 11 January 2024
 This release of BlueXP disaster recovery includes the following updates: 
 
 * With this release, you can access information on other pages from the Dashboard more quickly. 
 
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery].
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn about BlueXP disaster recovery].
 
 
 == 20 October 2023 
