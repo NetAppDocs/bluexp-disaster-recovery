@@ -57,7 +57,7 @@ You can use any of the following license types:
 
 * Sign up for a 90-day free trial.
 * Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services (AWS) Marketplace.
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales rep or from the NetApp Support Site (NSS). You can upload the NLF directly in BlueXP digital wallet or use the license serial number to get the BYOL activated in BlueXP digital wallet.
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep or from the NetApp Support Site (NSS). You can upload the NLF directly in BlueXP digital wallet or use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
