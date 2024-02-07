@@ -19,10 +19,10 @@ This FAQ can help if you're just looking for a quick answer to a question.
 For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/^] to access the BlueXP console. 
 
 
-*Do you need a license to use BlueXP disaster recovery?*
-A BlueXP disaster recovery license is required for complete access. However, you can try it out with the free trial. 
+//*Do you need a license to use BlueXP disaster recovery?*
+//A BlueXP disaster recovery license is required for complete access. However, you can try it out with the free trial. 
 
-For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
+//For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
 
 
 *How do you access BlueXP Disaster recovery?*
