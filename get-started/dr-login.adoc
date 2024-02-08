@@ -27,7 +27,7 @@ The NetApp BlueXP login page appears.
 If this is your first time logging in to this service, the landing page appears. 
 
 +
-image:draas-landing.png[Landing page screenshot for BlueXP disaster recovery]
+image:draas-landing2.png[Landing page screenshot for BlueXP disaster recovery]
 
 + 
 Otherwise, the BlueXP disaster recovery Dashboard appears.
