@@ -48,7 +48,7 @@ image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add 
 
 == Select applications to replicate and assign resource groups
 
-The next step is to group the required virtual machines into functional resource groups. Resource groups enable you to group a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain boot order that can be executed upon recovery.
+The next step is to group the required virtual machines into functional resource groups. Resource groups enable you to group a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain delayed boot orders that can be run upon recovery.
 
 TIP: Each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them here.
 
@@ -88,26 +88,40 @@ In the Resource mapping step, specify how the resources from the source environm
 +
 * *Compute resources*
 * *Virtual networks*
+. In the Failover mappings tab, select the down arrow to the right of each resource: 
+
 * *Virtual machines*: Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the virtual machine.
 +
-NOTE: SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
+SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
 +
-Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. Also, you can select IP address, Subnet Mask, DNS, and Gateway if you want to configure the network information about a VM. VM guest OS credentials should be supplied to either the global level or at each VM level.
-//+
-//image:dr-plan-create-mapping-vms.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
+** *VM CPU and RAM*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
 +
-This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. Also, you can modify the boot order for all the selected virtual machines across the resource groups. 
+** *Boot order delay*: Also, you can modify the boot order for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. 
 +
-By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. 
-//+
-//When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet, gateway, and DNS servers. Additionally, enter credentials for virtual machines. 
-//+
-//You can also set whether to create app-consistent replicas. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
+** *DHCP or static IP*: When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet, gateway, and DNS servers. Additionally, enter credentials for virtual machines. 
++
+*** *DHCP*: If you choose this option, you provide just the credentials for the VM. 
+*** *Static IP*: You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address of the VM, subnet mask, DNS, and gateway information. VM guest OS credentials should be supplied to either the global level or at each VM level.
++
+image:dr-plan-create-mapping-vms.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
++
+This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. 
++
+* *App-consistent replicas*: Indicate whether to create app-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
 
 * *Datastores*: Based on the selection of virtual machines, datastore mappings are automatically selected.
 +
-Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 2 hours, the recovery must have data that is not older than 2 hours at all times. If there is a disaster, you are allowing the loss of up to 2 hours of data. Also enter the number of Snapshot copies to retain for all datastores. 
+** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 2 hours, the recovery must have data that is not older than 2 hours at all times. If there is a disaster, you are allowing the loss of up to 2 hours of data. Also enter the number of Snapshot copies to retain for all datastores. 
++
+** *SnapMirror relationships*: If a volume has a SnapMirror relationship already established, you can select the corresponding source and target datastores. If you select a volume that does not have a SnapMirror relationship, you can create one now by selecting the working environment and its peer SVM. 
 
+* *Consistency Groups*: When you create a replication plan, you can include VMs that are from different volumes and different SVMs. BlueXP disaster recovery creates a Consistency Group Snapshot.
++
+** If you specify the Recovery Point Objective (RPO), the service schedules a primary backup based on the RPO and updates the secondary destinations.  
+** If the VMs are from same volume and same SVM, then the service performs a standard ONTAP Snapshot and updates the secondary destinations.
+** If the VMs are from different volume and same SVM, the service creates a Consistency Group Snapshot by including all the volumes and updates the secondary destinations.
+** If the VMs are from different volume and different SVM, the service performs a Consistency Group start phase and commit phase Snapshot by including all the volumes in the same or different cluster and updates the secondary destinations.
+** During the failover, you can select any Snapshot. If you select the latest Snapshot, the service creates on on-demand backup, updates the destination, and uses that Snapshot for the failover.
 
 
 . To set different mappings for the test environment, uncheck the box and select the *Test mappings* tab. Go through each tab as before, but this time for the test environment. 
