@@ -62,9 +62,11 @@ The next step is to set up disaster recovery in BlueXP.
 
 === Set up licensing 
 
-With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS).  
+With BlueXP disaster recovery, you can sign up for a 90-day free trial.
 
-For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
+//purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from the NetApp Support Site (NSS).  
+
+//For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
 
 
 

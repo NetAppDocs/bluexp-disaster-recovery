@@ -69,7 +69,7 @@ NetApp doesn’t charge you for using the trial version of BlueXP disaster recov
 //https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing].
 
 == 90-day free trial
-You can try BlueXP disaster recovery out by using a 90-day free trial. 
+You can try out BlueXP disaster recovery by using a 90-day free trial. 
 
 //You can subscribe at any time and you will not be charged until the 90-day trial ends. 
 
