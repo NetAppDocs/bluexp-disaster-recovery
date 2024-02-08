@@ -39,3 +39,6 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 * If you are new to BlueXP and haven't used any Connector, when you select "Disaster recovery," a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your request. 
 * If you are a BlueXP user with an an existing Connector, when you select "Disaster recovery," a message appears about signing up. 
 * If you are already using the service, when you select "Disaster recovery," you can proceed. 
+
++
+image:dr-dashboard-preview.png[BlueXP disaster recovery Dashboard]
