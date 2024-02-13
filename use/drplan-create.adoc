@@ -15,13 +15,15 @@ After you’ve added vCenter sites, you’re ready to create a disaster recovery
 
 Such plans are sometimes called _blueprints_. 
 
+You can create a replication plan and also edit schedules for compliance and testing. 
+
+== Create the plan
 A wizard takes you through these steps: 
 
 * Select vCenter servers
 * Select the VMs you want to replicate and assign groups
 * Map how resources from the source environment map to the destination. 
 * Identify recurrence 
-* Edit schedules 
 * Review the plan
 
 
@@ -32,7 +34,8 @@ While you are creating the replication plan, you can define the SnapMirror relat
 *** Many to 1 in a Consistency Group
 *** Many to many 
  
-== Select vCenter servers
+
+=== Select vCenter servers
 First, you select the source vCenter and then select the destination vCenter. 
 
 .Steps 
@@ -48,7 +51,7 @@ image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add 
 . Select the source and target vCenters from the Source and Target vCenter lists. 
 . Select *Next*.
 
-== Select applications to replicate and assign resource groups
+=== Select applications to replicate and assign resource groups
 
 The next step is to group the required virtual machines into functional resource groups. Resource groups enable you to group a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain delayed boot orders that can be run upon recovery.
 
@@ -77,7 +80,7 @@ Each virtual machine within a group is started in sequence based on the order he
 
 . Select *Next*. 
 
-== Map source resources to the target 
+=== Map source resources to the target 
 
 In the Resource mapping step, specify how the resources from the source environment should map to the target.
 
@@ -130,7 +133,7 @@ This can be very helpful when recovering large environments to smaller target cl
 +
 TIP: You can later test the entire plan. Right now, you are setting up the mappings for the test environment. 
 
-== Identify the recurrence 
+=== Identify the recurrence 
 
 Select whether you want to migrate data (a one-time move) to another target or replicate it at the SnapMirror frequency. 
 
@@ -154,7 +157,7 @@ image:dr-plan-create-recurrence.png[Screenshot showing Add replication plan > Re
 // To adjust the existing storage settings to match this replication interval, check the box. 
 
 
-== Confirm the replication plan
+=== Confirm the replication plan
 
 Finally, take a few moments to confirm the replication plan. 
 
@@ -168,7 +171,7 @@ TIP: You can later disable or delete the replication plan.
 +
 The plan is added to the list of plans.
 
-= Edit schedules to test compliance and ensure failover tests work
+== Edit schedules to test compliance and ensure failover tests work
 
 You might want to set up schedules to test compliance and failover tests so that you ensure that they will work correctly should you need them. 
 
