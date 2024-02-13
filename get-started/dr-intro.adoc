@@ -49,20 +49,25 @@ NOTE: Configuration of vSphere server is done outside of BlueXP disaster recover
 
 NetApp doesn’t charge you for using the trial version of BlueXP disaster recovery.
 
-The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services Marketplace. 
+The full version of BlueXP disaster recovery service can be used with a NetApp license. 
+
+//The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services Marketplace. 
 
 == Licensing 
 
-You can use any of the following license types:
+You can use the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services (AWS) Marketplace.
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep or from the NetApp Support Site (NSS). You can upload the NLF directly in BlueXP digital wallet or use the license serial number to get the BYOL activated in BlueXP digital wallet.
-
-NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
-
+//* Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services (AWS) Marketplace.
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active license or subscription for the service in the BlueXP digital wallet.
+
+//NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
+
+NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license or upgrade the license in BlueXP digital wallet.  
+
+
 
 For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
 
@@ -72,8 +77,9 @@ You can try out BlueXP disaster recovery by using a 90-day free trial.
 
 You can subscribe at any time and you will not be charged until the 90-day trial ends. 
 
-To continue after the 90-day trial, you'll need to obtain a Pay-as-you-go (PAYGO) subscription from your cloud provider or purchase a BYOL license from NetApp.
+//To continue after the 90-day trial, you'll need to obtain a Pay-as-you-go (PAYGO) subscription from your cloud provider or purchase a BYOL license from NetApp.
 
+To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp.
 
 
 == How BlueXP disaster recovery works
