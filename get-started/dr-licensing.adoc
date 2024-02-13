@@ -48,7 +48,7 @@ During the trial, you have full functionality.
 If this is your first time logging in to this service, the landing page appears. 
 
 +
-image:draas-landing.png[Landing page screenshot for BlueXP disaster recovery]
+image:draas-landing2.png[Landing page screenshot for BlueXP disaster recovery]
 . If you haven't already added a Connector for other services, add one. 
 + 
 To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
