@@ -27,7 +27,7 @@ NOTE: BlueXP disaster recovery charges are based on provisioned capacity of data
 
 //After you set up your BYOL or purchase a subscription in AWS, you can see the license in the BlueXP digital wallet *Data service Licenses* tab or the active subscription in the BlueXP digital wallet *Subscriptions* tab.
 
-After you set up your BYOL, you can see the license in the BlueXP digital wallet *Data service licenses* tab.
+After you set up your BYOL, you can see the license in the BlueXP digital wallet *Data Service Licenses* tab.
 
 //After the free trial ends or the license or AWS subscription expires, you can still do the following in the service:
 
@@ -100,12 +100,12 @@ image:draas-license-subscribe-NetApp-option.png[The BlueXP disaster recovery Sub
 
 . Select *Add license to BlueXP*. You will be directed to BlueXP digital wallet. 
 +
-image:digital-wallet-data-services-licenses-tab.png[The BlueXP digital wallet Data Services Licenses tab]
+image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet Data Services Licenses tab]
 . In BlueXP digital wallet, from the *Data Services Licenses* tab, select *Add license*. 
 . In the Add License page, enter the serial number and NetApp Support Site account information.
 
 +
-image:byol-digital-wallet-license-add.png[The BlueXP digital wallet Add License page]
+image:byol-digital-wallet-license-add2.png[The BlueXP digital wallet Add License page]
 . Select *Add License*. 
 
 
@@ -117,8 +117,8 @@ You can stop the free trial at any time or you can wait until it expires.
 . In BlueXP disaster recovery, at the top right, select *Free trial - View details*. 
 
 . In the drop-down details, select *End free trial*. 
-+
-image:draas-trial-end.png[End free trial page]
+//+
+//image:draas-trial-end2.png[End free trial page]
 
 . If you want to delete all data, check *Delete all data when my trial ends*. 
 +
@@ -184,11 +184,11 @@ After you purchase a BlueXP disaster recovery license for your BlueXP account, y
 .Steps
 . From the BlueXP menu, select *Governance* > *Digital wallet* > *Data Services Licenses*.
 +
-image:digital-wallet-data-services-licenses-tab.png[The BlueXP digital wallet Data Services Licenses tab]
+image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet Data Services Licenses tab]
 
 . Select *Add License*.
 +
-image:byol-digital-wallet-license-add.png[NetApp BlueXP digital wallet Add License page]
+image:byol-digital-wallet-license-add2.png[NetApp BlueXP digital wallet Add License page]
 . In the Add License page, enter the license information and select *Add License*:
 +
 * If you have the BlueXP license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
