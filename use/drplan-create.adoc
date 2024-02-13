@@ -21,7 +21,9 @@ A wizard takes you through these steps:
 * Select the VMs you want to replicate and assign groups
 * Map how resources from the source environment map to the destination. 
 * Identify recurrence 
+* Edit schedules 
 * Review the plan
+
 
 While you are creating the replication plan, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 
@@ -111,7 +113,7 @@ This can be very helpful when recovering large environments to smaller target cl
 
 * *Datastores*: Based on the selection of virtual machines, datastore mappings are automatically selected.
 +
-** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 2 hours, the recovery must have data that is not older than 2 hours at all times. If there is a disaster, you are allowing the loss of up to 2 hours of data. Also enter the number of Snapshot copies to retain for all datastores. 
+** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of Snapshot copies to retain for all datastores. 
 +
 ** *SnapMirror relationships*: If a volume has a SnapMirror relationship already established, you can select the corresponding source and target datastores. If you select a volume that does not have a SnapMirror relationship, you can create one now by selecting the working environment and its peer SVM. 
 
@@ -165,3 +167,28 @@ TIP: You can later disable or delete the replication plan.
 . Select *Add plan*. 
 +
 The plan is added to the list of plans.
+
+= Edit schedules to test compliance and ensure failover tests work
+
+You might want to set up schedules to test compliance and failover tests so that you ensure that they will work correctly should you need them. 
+
+.Steps 
+
+. From the BlueXP disaster recovery top menu, select *Replication plans*. 
++
+image:dr-plan-list.png[Screenshot showing the list of replication plans]
+
+. Select the *Actions* image:icon-horizontal-dots.png[Horizontal dots Actions menu] icon and select *Edit schedules*. 
+
+. Enter how frequently in minutes that you want BlueXP disaster recovery to check test compliance. 
+
+. To check that your failover tests are healthy, check *Run failovers on a monthly schedule*. 
+.. Select the day of the month and time you want these tests to run. 
+.. Enter the date in yyyy-mm-dd format when you want the test to start. 
++
+image:dr-plan-schedule-edit.png[Screenshot showing where you can edit schedules]
+. To clean up the test environment after the failover test finishes, check *Automatically clean up after test failover*.
++
+NOTE: This process removes the temporary VMs from the test location, the FlexClones, and the temporary datastores. 
+
+. Select *Save*.
