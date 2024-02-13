@@ -130,9 +130,9 @@ To set up a PAYGO subscription in AWS, complete the following procedures:
 
 * <<Part 1 Configure your PAYGO subscription in AWS>>
 * <<Part 2 Configure your PAYGO subscription in BlueXP>>
-* <<Part 3a Associate the new SaaS Marketplace subscription with AWS credentials>> or 
+* <<Part 3a Associate the new Marketplace subscription with AWS credentials>> or 
 +
-<<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
+<<Part 3b Associate the new Marketplace subscription with AWS credentials for annual contracts>>.
 
 ==== Part 1 Configure your PAYGO subscription in AWS
 Here is a high level summary of the steps to configure a PAYGO subscription in AWS. 
