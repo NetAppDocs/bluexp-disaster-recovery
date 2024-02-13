@@ -188,7 +188,7 @@ NOTE: If a set of cloud credentials was never associated with a SaaS Marketplace
 This Part 3 of setting up a license in AWS. 
 
 NOTE: If you have an annual contract, continue here instead: 
-<<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>.
+<<Part 3b Associate the new Marketplace subscription with AWS credentials for annual contracts>>.
 
 .Steps
 
