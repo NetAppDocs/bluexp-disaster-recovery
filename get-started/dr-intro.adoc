@@ -75,11 +75,12 @@ For details about setting up licensing for BlueXP disaster recovery, refer to li
 == 90-day free trial
 You can try out BlueXP disaster recovery by using a 90-day free trial. 
 
-You can subscribe at any time and you will not be charged until the 90-day trial ends. 
 
 //To continue after the 90-day trial, you'll need to obtain a Pay-as-you-go (PAYGO) subscription from your cloud provider or purchase a BYOL license from NetApp.
 
 To continue after the 90-day trial, you'll need to purchase a BYOL license from NetApp.
+
+You can purchase a license at any time and you will not be charged until the 90-day trial ends. 
 
 
 == How BlueXP disaster recovery works
