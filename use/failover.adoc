@@ -17,6 +17,8 @@ During the failover, the most recent SnapMirror Snapshot copy is used. Or, you c
 
 This procedure breaks the replication relationship, places the vCenter source VMs offline, and enables read/write on the target site. 
 
+You can include custom scripts in .sh, .bat, or .ps1 format as post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script after a failover process. For example, you can use a custom script to resume all database transactions after the failover is complete.
+
 Before you start the failover, you can test the process, ensuring success when you need it. The test does not place the virtual machines offline. 
 
 == Test the failover process
@@ -72,7 +74,7 @@ The failover process involves in the following operations:
 * The target virtual machines are registered and powered on based on the order captured in the Resource groups page.  
 * The SnapMirror relationship is reversed from target to source virtual machine. 
 
-TIP: After the failover starts, the recovered VMs can be seen in the vCenter of the disaster recovery site(virtual machines, networks, and datastores). By default, the virtual machines are recovered to the Workload folder.
+TIP: After the failover starts, the recovered VMs can be seen in the vCenter of the disaster recovery site (virtual machines, networks, and datastores). By default, the virtual machines are recovered to the Workload folder.
 
 .Steps 
 
