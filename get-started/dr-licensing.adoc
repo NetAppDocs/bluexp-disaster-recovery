@@ -94,7 +94,7 @@ After the trial ends, you can purchase a license through your NetApp Sales Rep.
 .Steps
 
 . Contact your NetApp Sales Rep to purchase a license. 
-. After you obtain the license, return to BlueXP disaster recovery and in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
+. After you obtain the license, return to BlueXP disaster recovery. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
 +
 image:draas-license-subscribe-NetApp-option2.png[The BlueXP disaster recovery Subscribe or purchase license page]
 
