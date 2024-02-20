@@ -17,7 +17,7 @@ TIP: Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure t
 
 
 
-== Set up in AWS
+== Set up AWS
 In AWS, you'll need to do the following steps: 
 
 * Deploy and configure VMware Cloud on AWS.
@@ -34,7 +34,7 @@ To configure a VMC environment on AWS, follow the steps at this https://docs.net
 Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage built on the popular NetApp ONTAP file system. Follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html[link^] to provision and configure FSx for NetApp ONTAP.
 
 
-== Set up in BlueXP
+== Set up BlueXP disaster recovery 
 The next step is to set up disaster recovery in BlueXP. 
 
 * Create a Connector in BlueXP.

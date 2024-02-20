@@ -31,6 +31,11 @@ This process doesn’t consume additional physical capacity on on-premises ONTAP
 
 When you finish the test, you should reset the virtual machines with the *Clean up test* option. While this is recommended, it is not required. 
 
+A test failover operation does _not_ impact production workloads, the SnapMirror relationship used on the test site, and protected workloads that must continue to operate normally. 
+
+
+
+
 .Steps 
 
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*.

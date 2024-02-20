@@ -63,6 +63,8 @@ image:draas-landing2.png[Landing page screenshot for BlueXP disaster recovery]
 + 
 To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
 . After you set up a Connector, in the BlueXP disaster recovery landing page, the button to add a Connector changes to a button for starting a free trial. Select *Start free trial*. 
++
+image:draas-landing-startthefreetrial.png[Landing page screenshot for BlueXP disaster recovery showing Start the Free Trial]
 
 . Review the free trial information and select *Let's go*. 
 
@@ -94,9 +96,7 @@ After the trial ends, you can purchase a license through your NetApp Sales Rep.
 . Contact your NetApp Sales Rep to purchase a license. 
 . After you obtain the license, return to BlueXP disaster recovery and in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
 +
-The Subscribe or purchase license page appears. 
-+
-image:draas-license-subscribe-NetApp-option.png[The BlueXP disaster recovery Subscribe or purchase license page]
+image:draas-license-subscribe-NetApp-option2.png[The BlueXP disaster recovery Subscribe or purchase license page]
 
 . Select *Add license to BlueXP*. You will be directed to BlueXP digital wallet. 
 +
@@ -117,8 +117,8 @@ You can stop the free trial at any time or you can wait until it expires.
 . In BlueXP disaster recovery, at the top right, select *Free trial - View details*. 
 
 . In the drop-down details, select *End free trial*. 
-//+
-//image:draas-trial-end2.png[End free trial page]
++
+image:draas-trial-end3.png[End free trial page]
 
 . If you want to delete all data, check *Delete all data when my trial ends*. 
 +
