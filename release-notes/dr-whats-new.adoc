@@ -31,7 +31,7 @@ For details about managing licenses for *all* BlueXP services, refer to https://
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create the replication plan].
 
-* *Terminology change*: In the UI, the "Backups" label has been changed to "Snapshots".
+//* *Terminology change*: In the UI, the "Backups" label has been changed to "Snapshots".
 
 == 1 February 2024
 
