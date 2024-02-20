@@ -139,7 +139,6 @@ Select whether you want to migrate data (a one-time move) to another target or r
 
 If you want to replicate it, identify how often data should be mirrored. 
 
-NOTE: In this preview, configure the frequency outside of the BlueXP disaster recovery service. 
 
 .Steps 
 

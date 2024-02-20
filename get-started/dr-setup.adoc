@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: get-started/dr-setup.html
-keywords: bluexp, disaster recovery, 
+keywords: bluexp, disaster recovery, aws, amazon web services
 summary: To use BlueXP disaster recovery, perform a few steps to set it up.    
 ---
 
@@ -11,7 +11,7 @@ summary: To use BlueXP disaster recovery, perform a few steps to set it up.
 :imagesdir: ../media/get-started/
 
 [.lead]
-To use BlueXP disaster recovery, perform a few steps to set it up both in AWS and in BlueXP.  
+To use BlueXP disaster recovery, perform a few steps to set it up both in Amazon Web Services (AWS) and in BlueXP.  
 
 TIP: Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
@@ -44,7 +44,7 @@ The next step is to set up disaster recovery in BlueXP.
 
 
 === Create a Connector in BlueXP
-You need to sign up for the preview or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the disaster recovery service. 
+You need to reach out to your NetApp Sales Rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the disaster recovery service. 
 
 To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a connector^]. 
 

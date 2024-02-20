@@ -11,7 +11,7 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 :imagesdir: ../media/
 
 [.lead]
-Learn what’s new in the BlueXP disaster recovery preview.
+Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
@@ -35,7 +35,7 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 
 == 1 February 2024
 
-This BlueXP disaster recovery release includes the following updates: 
+This BlueXP disaster recovery preview release includes the following updates: 
 
 * *Network enhancement*: With this release, you can now resize the VM CPU and RAM values. You can also now select a network DHCP or static IP address for the VM.  
 
@@ -74,7 +74,7 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 
 
 == 11 January 2024
-This release of BlueXP disaster recovery includes the following updates: 
+This preview release of BlueXP disaster recovery includes the following updates: 
 
 * With this release, you can access information on other pages from the Dashboard more quickly. 
 
