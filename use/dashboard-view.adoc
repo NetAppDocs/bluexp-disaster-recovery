@@ -18,6 +18,8 @@ Using the BlueXP disaster recovery Dashboard, you can determine the health of yo
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 
 . From the BlueXP disaster recovery top menu, select *Dashboard*. 
++
+image:dr-dashboard-preview.png[BlueXP disaster recovery Dashboard]
 
 . Review the following information on the Dashboard: 
 
