@@ -32,6 +32,8 @@ To use BlueXP disaster recovery, you should ensure that your environment meets t
 
 ** Amazon FSx for ONTAP and AWS credentials added to the BlueXP working environment
 
+** The on-premises and cloud Connector should have connectivity to both the on-premises and VMware Cloud (VMC) VCenter with ESXis. This enables the failover, failback and migration features to work properly with the needed networking and script features.
+
 
 
 
