@@ -63,8 +63,6 @@ image:draas-landing2.png[Landing page screenshot for BlueXP disaster recovery]
 + 
 To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
 . After you set up a Connector, in the BlueXP disaster recovery landing page, the button to add a Connector changes to a button for starting a free trial. Select *Start free trial*. 
-+
-image:draas-landing-startthefreetrial.png[Landing page screenshot for BlueXP disaster recovery showing Start the Free Trial]
 
 . Review the free trial information and select *Let's go*. 
 
