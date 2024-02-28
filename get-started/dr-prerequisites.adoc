@@ -15,26 +15,28 @@ Get started by verifying the readiness of your operational environment, login, n
 
 To use BlueXP disaster recovery, you should ensure that your environment meets the following requirements: 
 
-* On-premise VMware working environment with NetApp storage
+* On-premises VMware working environment with NetApp storage
 * On AWS: 
 ** An Amazon FSx for NetApp ONTAP file system. Refer to Amazon FSx for ONTAP documentation on https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[how to get started^]. 
 
-** A VMware account with a software-defined data center (SDDC) on AWS, also referred to as Virtual Machines Cloud. In the VMware Cloud Console, use the service roles of Administrator and NSX Cloud Administrator, both roles on VMWare Cloud on AWS. Also use the Organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Virtual Machines Cloud documentation^]. 
+** A VMware account with a software-defined data center (SDDC) on AWS, also referred to as Virtual Machines Cloud. In the VMware Cloud Console, use the service roles of Administrator and NSX Cloud Administrator. Also use the organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Virtual Machines Cloud documentation^]. 
 
 ** Link the SDDC with Amazon FSx for NetApp ONTAP. Refer to https://vmc.techzone.vmware.com/fsx-guide#overview[VMware Cloud on AWS integration with Amazon FSx for NetApp ONTAP^].
 
 
 * In BlueXP: 
 
-**	The BlueXP Connector needs to be set up in NetApp BlueXP. Use the BlueXP AWS Connector, which has access to both the on-premises vCenter and the cloud. The BlueXP Connector requires credentials for both the source and target vCenter servers. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[BlueXP Quick start^] and https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html[BlueXP networking information^]. 
+** Amazon FSx for ONTAP and AWS credentials added to the BlueXP working environment.
 
-** Use the BlueXP on-premises Connector or the BlueXP AWS Connector, which has access to the source on-premises vCenter and the destination on-premises vCenter.
+** The BlueXP Connector needs to be set up in BlueXP. The on-premises and cloud Connector should have connectivity to both the on-premises and VMware Cloud (VMC) VCenter with ESXis. This enables the backup, failover, failback and migration features to work properly with the needed networking and script features.
++ 
+The BlueXP Connector requires credentials for both the source and target vCenter servers. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[BlueXP Quick start^] and https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html[BlueXP networking information^]. 
 
-** Amazon FSx for ONTAP and AWS credentials added to the BlueXP working environment
+** To ensure that application-consistency processes are successful, ensure the following prerequisites are met: 
 
-** The on-premises and cloud Connector should have connectivity to both the on-premises and VMware Cloud (VMC) VCenter with ESXis. This enables the failover, failback and migration features to work properly with the needed networking and script features.
-
-
+*** Ensure that VMware tools (or Open VM tools) are running on the VMs that will be protected. 
+*** For Windows VMs running SQL or Oracle or both, the databases should have their VSS Writers enabled and the databases should be in a stable state. 
+*** Oracle databases that are running on a Linux operating system should have the operating system user authentication enabled for the Oracle database SYSDBA role.  
 
 
 

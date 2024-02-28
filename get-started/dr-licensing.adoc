@@ -197,7 +197,7 @@ If your NetApp Support Site account isn't available from the drop-down list, htt
 .Result
 BlueXP digital wallet now shows Disaster recovery with a license. 
 
-//image:byol-digital-wallet-licenses-added.png[NetApp BlueXP digital wallet]
+image:byol-digital-wallet-licenses-added.png[NetApp BlueXP digital wallet]
 
 === Update your BlueXP license when it expires
 

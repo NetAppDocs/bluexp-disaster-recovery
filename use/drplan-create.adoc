@@ -34,6 +34,10 @@ While you are creating the replication plan, you can define the SnapMirror relat
 *** Many to 1 in a Consistency Group
 *** Many to many 
  
+.Before you begin
+
+If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery. 
+
 
 === Select vCenter servers
 First, you select the source vCenter and then select the destination vCenter. 
@@ -84,6 +88,11 @@ Each virtual machine within a group is started in sequence based on the order he
 
 In the Resource mapping step, specify how the resources from the source environment should map to the target.
 
+.Before you begin
+
+If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery. 
+
+
 
 .Steps 
 
@@ -119,6 +128,8 @@ This can be very helpful when recovering large environments to smaller target cl
 ** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of Snapshot copies to retain for all datastores. 
 +
 ** *SnapMirror relationships*: If a volume has a SnapMirror relationship already established, you can select the corresponding source and target datastores. If you select a volume that does not have a SnapMirror relationship, you can create one now by selecting the working environment and its peer SVM. 
++
+NOTE: If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery.  
 
 * *Consistency Groups*: When you create a replication plan, you can include VMs that are from different volumes and different SVMs. BlueXP disaster recovery creates a Consistency Group Snapshot.
 +
