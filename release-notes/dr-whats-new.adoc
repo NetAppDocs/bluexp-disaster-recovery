@@ -15,7 +15,7 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
-== 28 February 2024
+== 4 March 2024
 This is the General Availability release of BlueXP disaster recovery, which includes the following updates. 
 
 * *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
