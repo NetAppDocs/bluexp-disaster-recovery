@@ -28,10 +28,14 @@ You can monitor all disaster recovery jobs and determine their progress.
 If a job is in progress and you don't want it to continue, you can cancel it. You might want to cancel a job if it is stuck in the same state and you want to free up the next operation in the queue. You might want cancel a job before it times out. 
 
 .Before you begin
-To cancel a job, you must have the Account ID and the Bearer token. 
+To cancel a job, you must have the Account ID and the security bearer token. 
+
+
 
 .Steps 
-
+. After you login to BlueXP, copy the security token, also called the _bearer token_, from the browser window. 
++
+For details, see Swagger documentation https://swagger.io/docs/specification/authentication/bearer-authentication[Bearer Authentication (swagger.io)^].
 . In the Job monitor page, note the ID of the job you want to cancel. 
 . Access the Disaster recovery Swagger URL: "https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_"  
 + 
