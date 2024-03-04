@@ -21,3 +21,22 @@ You can monitor all disaster recovery jobs and determine their progress.
 . Explore all jobs related to operations and review their timestamps and status.
 . To view details of a particular job, select that row. 
 . To refresh information, select *Refresh*. 
+
+
+== Cancel a job
+
+If a job is in progress and you don't want it to continue, you can cancel it. You might want to cancel a job if it is stuck in the same state and you want to free up the next operation in the queue. You might want cancel a job before it times out. 
+
+.Before you begin
+To cancel a job, you must have the Account ID and the Bearer token. 
+
+.Steps 
+
+. In the Job monitor page, note the ID of the job you want to cancel. 
+. Access the Disaster recovery Swagger URL: "https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_"  
++ 
+image:dr-swagger-job-cancel.png[Swagger page showing how to cancel a job]
+
+. Enter the Account ID and Job ID. 
+. Select *Try it out*.
+
