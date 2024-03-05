@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html</loc>
+        
+      
+      <lastmod>2024-02-20T15:50:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-faq.html</loc>
+        
+      
+      <lastmod>2024-02-09T17:11:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html</loc>
+        
+      
+      <lastmod>2024-02-14T14:50:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html</loc>
+        
+      
+      <lastmod>2024-02-28T17:43:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/release-notes/dr-limitations.html</loc>
+        
+      
+      <lastmod>2024-03-04T17:20:54+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-login.html</loc>
+        
+      
+      <lastmod>2024-02-20T15:50:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-prerequisites.html</loc>
+        
+      
+      <lastmod>2024-02-28T17:43:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-quick-start.html</loc>
+        
+      
+      <lastmod>2024-02-09T17:11:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html</loc>
+        
+      
+      <lastmod>2024-02-20T15:56:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/release-notes/dr-whats-new.html</loc>
+        
+      
+      <lastmod>2024-03-05T15:23:54+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html</loc>
+        
+      
+      <lastmod>2024-02-28T17:43:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failback.html</loc>
+        
+      
+      <lastmod>2023-08-31T19:19:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html</loc>
+        
+      
+      <lastmod>2024-02-20T14:49:01+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/</loc>
+        
+      
+      <lastmod>2024-02-06T16:45:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/legal-notices.html</loc>
+        
+      
+      <lastmod>2023-05-13T02:25:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html</loc>
+        
+      
+      <lastmod>2024-02-20T18:39:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/migrate.html</loc>
+        
+      
+      <lastmod>2023-10-09T14:41:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html</loc>
+        
+      
+      <lastmod>2024-03-05T15:19:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html</loc>
+        
+      
+      <lastmod>2023-10-06T17:40:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery//search.html</loc>
+        
+      
+      <lastmod>2024-03-05T15:37:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html</loc>
+        
+      
+      <lastmod>2023-09-05T14:05:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/support/task-get-help.html</loc>
+        
+      
+      <lastmod>2023-08-14T20:15:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/support/task-support-registration.html</loc>
+        
+      
+      <lastmod>2023-08-14T20:15:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/use-overview.html</loc>
+        
+      
+      <lastmod>2023-10-18T18:22:43+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
