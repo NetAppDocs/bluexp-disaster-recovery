@@ -15,6 +15,9 @@ After you’ve added vCenter sites, you’re ready to create a disaster recovery
 
 Such plans are sometimes called _blueprints_. 
 
+You can create a replication plan and also edit schedules for compliance and testing. 
+
+== Create the plan
 A wizard takes you through these steps: 
 
 * Select vCenter servers
@@ -23,6 +26,7 @@ A wizard takes you through these steps:
 * Identify recurrence 
 * Review the plan
 
+
 While you are creating the replication plan, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 
 *** 1 to 1
@@ -30,7 +34,12 @@ While you are creating the replication plan, you can define the SnapMirror relat
 *** Many to 1 in a Consistency Group
 *** Many to many 
  
-== Select vCenter servers
+.Before you begin
+
+If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery. 
+
+
+=== Select vCenter servers
 First, you select the source vCenter and then select the destination vCenter. 
 
 .Steps 
@@ -46,7 +55,7 @@ image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add 
 . Select the source and target vCenters from the Source and Target vCenter lists. 
 . Select *Next*.
 
-== Select applications to replicate and assign resource groups
+=== Select applications to replicate and assign resource groups
 
 The next step is to group the required virtual machines into functional resource groups. Resource groups enable you to group a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain delayed boot orders that can be run upon recovery.
 
@@ -75,9 +84,14 @@ Each virtual machine within a group is started in sequence based on the order he
 
 . Select *Next*. 
 
-== Map source resources to the target 
+=== Map source resources to the target 
 
 In the Resource mapping step, specify how the resources from the source environment should map to the target.
+
+.Before you begin
+
+If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery. 
+
 
 
 .Steps 
@@ -111,9 +125,11 @@ This can be very helpful when recovering large environments to smaller target cl
 
 * *Datastores*: Based on the selection of virtual machines, datastore mappings are automatically selected.
 +
-** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 2 hours, the recovery must have data that is not older than 2 hours at all times. If there is a disaster, you are allowing the loss of up to 2 hours of data. Also enter the number of Snapshot copies to retain for all datastores. 
+** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of Snapshot copies to retain for all datastores. 
 +
 ** *SnapMirror relationships*: If a volume has a SnapMirror relationship already established, you can select the corresponding source and target datastores. If you select a volume that does not have a SnapMirror relationship, you can create one now by selecting the working environment and its peer SVM. 
++
+NOTE: If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery.  
 
 * *Consistency Groups*: When you create a replication plan, you can include VMs that are from different volumes and different SVMs. BlueXP disaster recovery creates a Consistency Group Snapshot.
 +
@@ -128,13 +144,12 @@ This can be very helpful when recovering large environments to smaller target cl
 +
 TIP: You can later test the entire plan. Right now, you are setting up the mappings for the test environment. 
 
-== Identify the recurrence 
+=== Identify the recurrence 
 
 Select whether you want to migrate data (a one-time move) to another target or replicate it at the SnapMirror frequency. 
 
 If you want to replicate it, identify how often data should be mirrored. 
 
-NOTE: In this preview, configure the frequency outside of the BlueXP disaster recovery service. 
 
 .Steps 
 
@@ -152,7 +167,7 @@ image:dr-plan-create-recurrence.png[Screenshot showing Add replication plan > Re
 // To adjust the existing storage settings to match this replication interval, check the box. 
 
 
-== Confirm the replication plan
+=== Confirm the replication plan
 
 Finally, take a few moments to confirm the replication plan. 
 
@@ -165,3 +180,37 @@ TIP: You can later disable or delete the replication plan.
 . Select *Add plan*. 
 +
 The plan is added to the list of plans.
+
+== Edit schedules to test compliance and ensure failover tests work
+
+You might want to set up schedules to test compliance and failover tests so that you ensure that they will work correctly should you need them. 
+
+* *Compliance time impact*: When a replication plan is created, the service creates a compliance schedule by default. The default compliance time is 30 minutes. To change this time, you can use edit the schedule in the replication plan.
+
+* *Test failover impact*: You can test a failover process on demand or by a schedule. This lets you test the failover of virtual machines to a destination that is specified in a replication plan. 
++
+A test failover creates a FlexClone volume, mounts the datastore, and moves the workload on that datastore. A test failover operation does _not_ impact production workloads, the SnapMirror relationship used on the test site, and protected workloads that must continue to operate normally. 
+
+Based on the schedule, the failover test runs and ensures that workloads are moving to the destination specified by the replication plan. 
+
+.Steps 
+
+. From the BlueXP disaster recovery top menu, select *Replication plans*. 
++
+image:dr-plan-list.png[Screenshot showing the list of replication plans]
+
+. Select the *Actions* image:icon-horizontal-dots.png[Horizontal dots Actions menu] icon and select *Edit schedules*. 
+
+. Enter how frequently in minutes that you want BlueXP disaster recovery to check test compliance. 
+
+. To check that your failover tests are healthy, check *Run failovers on a monthly schedule*. 
+.. Select the day of the month and time you want these tests to run. 
+.. Enter the date in yyyy-mm-dd format when you want the test to start. 
++
+image:dr-plan-schedule-edit.png[Screenshot showing where you can edit schedules]
+. To clean up the test environment after the failover test finishes, check *Automatically clean up after test failover*.
++
+NOTE: This process unregisters the temporary VMs from the test location, deletes the FlexClone volume that was created, and unmounts the temporary datastores. 
+
+
+. Select *Save*.

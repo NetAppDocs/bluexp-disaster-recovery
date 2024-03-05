@@ -41,4 +41,4 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 * If you are already using the service, when you select "Disaster recovery," you can proceed. 
 
 +
-image:dr-dashboard-preview.png[BlueXP disaster recovery Dashboard]
+image:dr-dashboard.png[BlueXP disaster recovery Dashboard]
