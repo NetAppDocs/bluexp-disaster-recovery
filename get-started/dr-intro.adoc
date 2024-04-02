@@ -93,7 +93,7 @@ image:dr-architecture-diagram-70.png[Diagram showing architecture of the BlueXP 
 
 The following diagram shows the architecture of on-premises to on-premises disaster recovery plans.
 
-image:dr-architecture-diagram-onprem-to-onprem.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
+image:dr-architecture-diagram-onprem-to-onprem2.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
 
 When there is a disaster, this service helps you recover virtual machines in the other on-premises VMware environment or VMC by breaking the SnapMirror relationships and making the destination site active. 
 
