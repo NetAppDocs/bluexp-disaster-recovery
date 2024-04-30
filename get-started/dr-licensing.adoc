@@ -11,14 +11,12 @@ summary: With BlueXP disaster recovery, you can use different licensing plans in
 :imagesdir: ../media/get-started/
 
 [.lead]
-With BlueXP disaster recovery, you can use the service in a free trial or bring your own license. 
-
-//With BlueXP disaster recovery, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
+With BlueXP disaster recovery, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
 You can use the following license types:
 
 * Sign up for a 90-day free trial.
-//* Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services (AWS) Marketplace.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 //NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
@@ -67,22 +65,22 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 . Review the free trial information and select *Let's go*. 
 
 
-//=== After the trial ends, subscribe through AWS Marketplace
+=== After the trial ends, subscribe through AWS Marketplace
 
-//After the free trial ends, you can either purchase a license from NetApp or subscribe through AWS Marketplace. This procedure provides a high level overview of how to subscribe directly in the AWS Marketplace. 
+After the free trial ends, you can either purchase a license from NetApp or subscribe through AWS Marketplace. This procedure provides a high level overview of how to subscribe directly in the AWS Marketplace. 
 
-//.Steps
-//. In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*. 
-//+
-//image:draas-license-subscribe.png[The BlueXP disaster recovery Subscribe or purchase license page]
-//. In the Subscribe or purchase license page, select *Subscribe in AWS Marketplace*. 
-//. In AWS Marketplace, select *View purchase options*. 
-//. Use AWS Marketplace to subscribe to BlueXP disaster recovery.  
+.Steps
+. In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*. 
++
+image:draas-license-subscribe.png[The BlueXP disaster recovery Subscribe or purchase license page]
+. In the Subscribe or purchase license page, select *Subscribe in AWS Marketplace*. 
+. In AWS Marketplace, select *View purchase options*. 
+. Use AWS Marketplace to subscribe to BlueXP disaster recovery.  
  
-//. When you return to BlueXP disaster recovery, a message states that you are subscribed. To view subscription details in BlueXP digital wallet, select *View subscription details* and view the active subscription on the *Subscriptions* page. 
+. When you return to BlueXP disaster recovery, a message states that you are subscribed. To view subscription details in BlueXP digital wallet, select *View subscription details* and view the active subscription on the *Subscriptions* page. 
 
-//+
-//image:digital-wallet-subscriptions.png[The BlueXP digital wallet Subscriptions tab]
++
+image:digital-wallet-subscriptions.png[The BlueXP digital wallet Subscriptions tab]
 
 
 === After the trial ends, purchase a BYOL license through NetApp
