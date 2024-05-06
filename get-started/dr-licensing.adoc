@@ -74,7 +74,7 @@ After the free trial ends, you can either purchase a license from NetApp or subs
 .Steps
 . In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*. 
 +
-image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment metnods page]
+image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment methods page]
 . Select *Subscribe in AWS Marketplace*. 
 . In AWS Marketplace, select *View purchase options*. 
 . Use AWS Marketplace to subscribe to BlueXP disaster recovery.  
@@ -84,7 +84,7 @@ image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment metnods 
 To view subscription details in BlueXP digital wallet, select *View subscription details* and view the active subscription on the *Subscriptions* page. 
 
 +
-image:digital-wallet-subscriptions.png[The BlueXP digital wallet Subscriptions tab]
+image:digital-wallet-subscriptions2.png[The BlueXP digital wallet Subscriptions tab]
 
 
 == After the trial ends, purchase a BYOL license through NetApp
@@ -119,7 +119,7 @@ image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment metnods 
 
 . Select *Add license to BlueXP*. You will be directed to BlueXP digital wallet. 
 +
-image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet Data Services Licenses tab]
+image:digital-wallet-data-services-licenses-tab3.png[The BlueXP digital wallet Data Services Licenses tab]
 . In BlueXP digital wallet, from the *Data services licenses* tab, select *Add License*. 
 . In the Add License page, enter the serial number and NetApp Support Site account information.
 
