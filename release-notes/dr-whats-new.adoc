@@ -22,8 +22,8 @@ This BlueXP disaster recovery release includes the following updates:
 
 * *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription with Amazon Marketplace, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep or from the NetApp Support Site (NSS). 
 +
-//For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up licensing].
-For details about setting up licensing for BlueXP disaster recovery, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
+For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up licensing].
+//For details about setting up licensing for BlueXP disaster recovery, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
 
