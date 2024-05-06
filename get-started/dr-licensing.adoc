@@ -25,7 +25,7 @@ NOTE: BlueXP disaster recovery charges are based on provisioned capacity of data
 
 //After you set up your BYOL or purchase a subscription in AWS, you can see the license in the BlueXP digital wallet *Data service Licenses* tab or the active subscription in the BlueXP digital wallet *Subscriptions* tab.
 
-After you set up your BYOL, you can see the license in the BlueXP digital wallet *Data Service Licenses* tab.
+After you set up your BYOL, you can see the license in the BlueXP digital wallet *Data service licenses* tab.
 
 //After the free trial ends or the license or AWS subscription expires, you can still do the following in the service:
 
@@ -67,7 +67,7 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 For details, see link:sites-add.html[Add vCenter sites].
 
 
-=== After the trial ends, subscribe through AWS Marketplace
+== After the trial ends, subscribe through AWS Marketplace
 
 After the free trial ends, you can either purchase a license from NetApp or subscribe through AWS Marketplace. This procedure provides a high level overview of how to subscribe directly in the AWS Marketplace. 
 
@@ -87,15 +87,33 @@ To view subscription details in BlueXP digital wallet, select *View subscription
 image:digital-wallet-subscriptions.png[The BlueXP digital wallet Subscriptions tab]
 
 
-=== After the trial ends, purchase a BYOL license through NetApp
+== After the trial ends, purchase a BYOL license through NetApp
 
 After the trial ends, you can purchase a license through your NetApp Sales Rep. 
 
-.Steps
+If you bring your own license (BYOL), the set up includes purchasing the license, getting the NetApp License File (NLF), and adding the license to BlueXP digital wallet. 
 
-. Contact your NetApp Sales Rep to purchase a license. 
-. After you obtain the license, return to BlueXP disaster recovery. Select the *View payment methods* option in the upper right. Or, in the message that the fr
-ee trial is expiring, select *Subscribe or purchase a license*. 
+*Activate the license* 
+After you've purchased your BlueXP disaster recovery license from your NetApp Sales Rep, you activate the license by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account information. 
+
+//After you've purchased your BlueXP disaster recovery license, you activate the license by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account, or by uploading the NetApp License File (NLF). 
+
+//You can obtain the NLF either through your NetApp Sales Rep or from the NetApp Support Site. 
+
+You'll need to have the following information before you start:
+
+* BlueXP disaster recovery serial number
++
+Locate this number from your Sales Order, or contact the account team for this information.
+* BlueXP Account ID
++
+You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
+
+*Add the license to BlueXP digital wallet*
+After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
+
+
+. After you obtain the license, return to BlueXP disaster recovery. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
 +
 image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment metnods page]
 
@@ -109,100 +127,16 @@ image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet D
 image:byol-digital-wallet-license-add2.png[The BlueXP digital wallet Add License page]
 . Select *Add License*. 
 
-
-=== End the free trial
-
-You can stop the free trial at any time or you can wait until it expires. 
-
-.Steps
-. In BlueXP disaster recovery, at the top right, select *Free trial - View details*. 
-
-. In the drop-down details, select *End free trial*. 
-+
-image:draas-trial-end3.png[End free trial page]
-
-. If you want to delete all data, check *Delete all data when my trial ends*. 
-+
-This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
-+
-NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP disaster recovery deletes all of your data. 
-
-. Type "end trial" in the text box. 
-. Select *End*. 
-
-
-
-
-== Bring your own license (BYOL)
-
-If you bring your own license (BYOL), the set up includes purchasing the license, getting the NetApp License File (NLF), and adding the license to BlueXP digital wallet. 
-
-=== Purchase a BlueXP disaster recovery license
-
-If you don't have a BlueXP disaster recovery license, contact us to purchase one. 
-
-. Do one of the following: 
-
-* Contact NetApp Sales to purchase a license.
-//* Send mailto:ng-contact-disaster-recovery@netapp.com?Subject=Licensing 
-* Click the chat icon in the lower-right of BlueXP to request a license.
-
-=== Obtain your BlueXP disaster recovery license file
-
-After you've purchased your BlueXP disaster recovery license from your NetApp Sales Rep, you activate the license by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account information. 
-
-//After you've purchased your BlueXP disaster recovery license, you activate the license by entering the BlueXP disaster recovery serial number and NetApp Support Site (NSS) account, or by uploading the NetApp License File (NLF). 
-
-//You can obtain the NLF either through your NetApp Sales Rep or from the NetApp Support Site. 
-
-
-.Before you begin
-
-You'll need to have the following information before you start:
-
-* BlueXP disaster recovery serial number
-+
-Locate this number from your Sales Order, or contact the account team for this information.
-* BlueXP Account ID
-+
-You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
-
-//.Steps to get an NLF license file from the Support Site
-
-//. Sign in to the https://mysupport.netapp.com[NetApp Support Site^]  and select *Systems* > *Software Licenses*.
-//+
-//image:byol-nss-licenses.png[NetApp Support Site Software Licenses page]
-//. Enter your BlueXP disaster recovery license serial number.
-//. Under the License Key column, select *Get NetApp License File*.
-//+
-//image:byol-nss-licenses-get.png[NetApp Support Site Software Licenses page]
-//. Enter your BlueXP Account ID (this is called a Tenant ID on the support site) and select *Submit* to download the license file.
-
-=== Add BlueXP disaster recovery license to BlueXP digital wallet
-
-After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
-
-.Steps
-. From the BlueXP menu, select *Governance* > *Digital wallet* > *Data services licenses*.
-+
-image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet Data Services Licenses tab]
-
-. Select *Add License*.
-+
-image:byol-digital-wallet-license-add2.png[NetApp BlueXP digital wallet Add License page]
-. In the Add License page, enter the license information and select *Add License*:
-+
-* If you have the BlueXP license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
-+
-If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to BlueXP^].
-* If you have the BlueXP license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
-
 .Result
 BlueXP digital wallet now shows Disaster recovery with a license. 
 
 image:byol-digital-wallet-licenses-added.png[NetApp BlueXP digital wallet]
 
-=== Update your BlueXP license when it expires
+
+
+
+
+== Update your BlueXP license when it expires
 
 If your licensed term is nearing the expiration date, or if your licensed capacity is reaching the limit, you'll be notified in the BlueXP disaster recovery UI. You can update your BlueXP disaster recovery license before it expires so that there is no interruption in your ability to access your scanned data.
 
@@ -222,3 +156,22 @@ After you pay for the license and it is registered with the NetApp Support Site,
 //+
 //image:digital-wallet-licenses-expired.png[NetApp BlueXP digital wallet showing expired license]
 
+== End the free trial
+
+You can stop the free trial at any time or you can wait until it expires. 
+
+.Steps
+. In BlueXP disaster recovery, at the top right, select *Free trial - View details*. 
+
+. In the drop-down details, select *End free trial*. 
++
+image:draas-trial-end3.png[End free trial page]
+
+. If you want to delete all data, check *Delete all data when my trial ends*. 
++
+This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
++
+NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP disaster recovery deletes all of your data. 
+
+. Type "end trial" in the text box. 
+. Select *End*. 
