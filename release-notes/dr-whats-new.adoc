@@ -18,9 +18,15 @@ Learn what’s new in BlueXP disaster recovery.
 == 10 May 2024 
 This BlueXP disaster recovery release includes the following updates: 
 
-* *Replicating VMware workloads from on-premises to on-premises* is now released as a general availability feature. Previously, it was a tech preview with limited functionality
+* *Replicating VMware workloads from on-premises to on-premises* is now released as a general availability feature. Previously, it was a technology preview with limited functionality.
 
 * *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription with Amazon Marketplace, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep or from the NetApp Support Site (NSS). 
++
+//For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up licensing].
+For details about setting up licensing for BlueXP disaster recovery, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
+
 
 == 5 March 2024
 This is the General Availability release of BlueXP disaster recovery, which includes the following updates. 
@@ -77,6 +83,8 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
+//include 3 most recent releases
+//end::whats-new[]
 
 
 
@@ -97,8 +105,6 @@ NOTE: With this preview offering, NetApp reserves the right to modify offering d
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
 
-//include 3 most recent releases
-//end::whats-new[]
 
 == 27 September 2023
 

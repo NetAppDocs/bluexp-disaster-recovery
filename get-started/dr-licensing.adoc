@@ -62,7 +62,9 @@ image:draas-landing2.png[Landing page screenshot for BlueXP disaster recovery]
 To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
 . After you set up a Connector, in the BlueXP disaster recovery landing page, the button to add a Connector changes to a button for starting a free trial. Select *Start free trial*. 
 
-. Review the free trial information and select *Let's go*. 
+. Begin by adding vCenters. 
++
+For details, see link:sites-add.html[Add vCenter sites].
 
 
 === After the trial ends, subscribe through AWS Marketplace
@@ -72,12 +74,14 @@ After the free trial ends, you can either purchase a license from NetApp or subs
 .Steps
 . In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*. 
 +
-image:draas-license-subscribe.png[The BlueXP disaster recovery Subscribe or purchase license page]
-. In the Subscribe or purchase license page, select *Subscribe in AWS Marketplace*. 
+image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment metnods page]
+. Select *Subscribe in AWS Marketplace*. 
 . In AWS Marketplace, select *View purchase options*. 
 . Use AWS Marketplace to subscribe to BlueXP disaster recovery.  
  
-. When you return to BlueXP disaster recovery, a message states that you are subscribed. To view subscription details in BlueXP digital wallet, select *View subscription details* and view the active subscription on the *Subscriptions* page. 
+. When you return to BlueXP disaster recovery, a message states that you are subscribed. 
++
+To view subscription details in BlueXP digital wallet, select *View subscription details* and view the active subscription on the *Subscriptions* page. 
 
 +
 image:digital-wallet-subscriptions.png[The BlueXP digital wallet Subscriptions tab]
@@ -90,14 +94,15 @@ After the trial ends, you can purchase a license through your NetApp Sales Rep.
 .Steps
 
 . Contact your NetApp Sales Rep to purchase a license. 
-. After you obtain the license, return to BlueXP disaster recovery. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
+. After you obtain the license, return to BlueXP disaster recovery. Select the *View payment methods* option in the upper right. Or, in the message that the fr
+ee trial is expiring, select *Subscribe or purchase a license*. 
 +
-image:draas-license-subscribe-NetApp-option2.png[The BlueXP disaster recovery Subscribe or purchase license page]
+image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment metnods page]
 
 . Select *Add license to BlueXP*. You will be directed to BlueXP digital wallet. 
 +
 image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet Data Services Licenses tab]
-. In BlueXP digital wallet, from the *Data Services Licenses* tab, select *Add license*. 
+. In BlueXP digital wallet, from the *Data services licenses* tab, select *Add License*. 
 . In the Add License page, enter the serial number and NetApp Support Site account information.
 
 +
@@ -178,7 +183,7 @@ You can find your BlueXP Account ID by selecting the *Account* drop-down from th
 After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
 
 .Steps
-. From the BlueXP menu, select *Governance* > *Digital wallet* > *Data Services Licenses*.
+. From the BlueXP menu, select *Governance* > *Digital wallet* > *Data services licenses*.
 +
 image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet Data Services Licenses tab]
 
@@ -213,7 +218,7 @@ After you pay for the license and it is registered with the NetApp Support Site,
 +
 .. You can obtain the license file from the NetApp Support Site.
 .. Access the BlueXP digital wallet.
-.. Select the *Data Services Licenses* tab, select the *Actions ...* icon for the service serial number you are updating, and select *Update License*.
+.. Select the *Data dervices licenses* tab, select the *Actions ...* icon for the service serial number you are updating, and select *Update License*.
 //+
 //image:digital-wallet-licenses-expired.png[NetApp BlueXP digital wallet showing expired license]
 
