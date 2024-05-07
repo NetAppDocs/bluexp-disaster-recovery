@@ -107,7 +107,9 @@ You'll need to have the following information before you start:
 Locate this number from your Sales Order, or contact the account team for this information.
 * BlueXP Account ID
 +
-You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
+You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. 
+
+//For private mode site without internet access, use *account-DARKSITE1*.
 
 *Add the license to BlueXP digital wallet*
 After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
