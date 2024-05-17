@@ -84,11 +84,11 @@ BlueXP disaster recovery can recover workloads replicated from an on-premises si
 
 BlueXP disaster recovery uses ONTAP SnapMirror technology, which provides highly efficient replication and preserves the ONTAP incremental-forever Snapshot efficiencies. SnapMirror replication ensures that application-consistent Snapshot copies are always in sync and the data is usable immediately after a failover. 
 
-image:dr-architecture-diagram-70.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
+image:dr-architecture-diagram-70-2.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
 
 The following diagram shows the architecture of on-premises to on-premises disaster recovery plans.
 
-image:dr-architecture-diagram-onprem-to-onprem2.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
+image:dr-architecture-diagram-onprem-to-onprem3.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
 
 When there is a disaster, this service helps you recover virtual machines in the other on-premises VMware environment or VMC by breaking the SnapMirror relationships and making the destination site active. 
 

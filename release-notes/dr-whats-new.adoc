@@ -15,7 +15,7 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
-== 10 May 2024 
+== 15 May 2024 
 This BlueXP disaster recovery release includes the following updates: 
 
 * *Replicating VMware workloads from on-premises to on-premises* is now released as a general availability feature. Previously, it was a technology preview with limited functionality.
