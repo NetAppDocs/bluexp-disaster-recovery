@@ -64,7 +64,7 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 
 . Begin by adding vCenters. 
 +
-For details, see link:sites-add.html[Add vCenter sites].
+For details, see link:../use/sites-add.html[Add vCenter sites].
 
 
 == After the trial ends, subscribe through AWS Marketplace
