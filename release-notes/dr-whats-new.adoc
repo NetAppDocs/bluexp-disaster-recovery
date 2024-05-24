@@ -15,6 +15,17 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
+== 27 June 2024
+
+This BlueXP disaster recovery release includes the following updates: 
+
+* *Replication plan updates*: You can add a replication plan more easily by filtering VMs by datastore on the Applications page and by selecting more target details on the Resource mapping page. 
++
+Refer to link:../use/drplan-create.html[Create a replication plan].
+
+* *Edit replication plans*: With this release, the Failover mappings page has been enhanced for better clarity. 
+
+
 == 15 May 2024 
 This BlueXP disaster recovery release includes the following updates: 
 
@@ -45,6 +56,9 @@ For details about managing licenses for *all* BlueXP services, refer to https://
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create the replication plan].
 
 //* *Terminology change*: In the UI, the "Backups" label has been changed to "Snapshots".
+
+//include 3 most recent releases
+//end::whats-new[]
 
 == 1 February 2024
 
@@ -83,8 +97,7 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 +
 For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-//include 3 most recent releases
-//end::whats-new[]
+
 
 
 
