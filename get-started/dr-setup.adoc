@@ -42,9 +42,10 @@ To configure a VMC environment on AWS, follow the steps at this https://docs.net
 The next step is to set up disaster recovery in BlueXP. 
 
 * <<Create a Connector in BlueXP>>.
+* <<Add a BlueXP account>>. 
 * <<Configure SnapMirror for Amazon FSx for NetApp ONTAP>>.
 * <<Add the on-premises ONTAP storage>> working environment to BlueXP. This is the source ONTAP cluster. 
-* <<Add a BlueXP account>>. 
+
 * <<Set up licensing>>.
 
 
