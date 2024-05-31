@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: get-started/dr-setup.html
-keywords: bluexp, disaster recovery, aws, amazon web services
+keywords: bluexp, disaster recovery, aws, amazon web services, amazon fsx for netapp ontap
 summary: To use BlueXP disaster recovery, perform a few steps to set it up.    
 ---
 
