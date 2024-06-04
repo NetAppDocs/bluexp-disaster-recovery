@@ -31,10 +31,11 @@ You can edit the vCenter site name and the site type (on-premises or AWS).
 
 == Manage replication plans 
 
-You can disable, enable and delete replication plans. 
+You can disable, enable and delete replication plans. You can change schedules. 
 
 * If you want to pause a replication plan temporarily, you can disable it and later enable it. 
 * If you no longer need the plan, you can delete it.
+
 
 .Steps 
 
@@ -47,11 +48,17 @@ image:../use/dr-plan-list2.png[Replication plan list]
 +
 * To edit the plan details (change the recurrence), select the *Plan details* tab and select the *Edit* icon to the right. 
 * To edit the resource mappings, select the *Failover mapping* tab and select the *Edit* icon. 
-* To add or edit the virtual machines, select the *Virtual machine* tab and select the *Edit* icon. 
+* To add or edit the virtual machines, select the *Virtual machines* tab and select the *Add VMs* option or *Edit* icon. 
 
 . Return to the list of plans by selecting "Replication plans" in the breadcrumbs at the top left. 
 
 . To perform actions with the plan, from the list of replication plans, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select any of the options, such as *Edit schedules*, *Test failover*, *Fail over*, *Fail back*, *Disable*, *Enable*, or *Delete*. 
+
+. To set or change a test failover schedule, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select *Edit schedules*.
+
+.. Check *Run test failovers on a schedule*. 
+.. In the Repeat option, select the daily, weekly, or monthly schedule. 
+.. Select *Save*.
 
 == View datastores information 
 

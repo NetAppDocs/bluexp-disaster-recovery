@@ -99,6 +99,8 @@ If you want to create a SnapMirror relationship in this service, the cluster and
 .Steps 
 
 . In the Resource mapping page, to use the same mappings for both failover and test operations, check the box. 
++
+image:dr-plan-resource-mapping.png[Replication plan, Resource mapping tab]
 
 . In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each: 
 +
@@ -113,6 +115,8 @@ If you want to create a SnapMirror relationship in this service, the cluster and
 . In the Failover mappings tab, select the down arrow to the right of each resource: 
 
 * *Virtual machines*: Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the virtual machine.
++
+This section might be enabled or disabled depending on your selection. 
 +
 SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
 +
@@ -132,6 +136,8 @@ This can be very helpful when recovering large environments to smaller target cl
 * *App-consistent replicas*: Indicate whether to create app-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
 
 * *Datastores*: Based on the selection of virtual machines, datastore mappings are automatically selected.
++
+This section might be enabled or disabled depending on your selection.
 +
 ** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of Snapshot copies to retain for all datastores. 
 +
