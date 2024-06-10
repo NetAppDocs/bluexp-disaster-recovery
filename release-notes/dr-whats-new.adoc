@@ -38,9 +38,13 @@ Refer to link:../use/manage.html[Manage plans].
 +
 Refer to link:../use/manage.html[Manage VMs].
 
-* *Fail over* process enables you to take a snapshot now or choose the snapshots. 
+* *Fail over updates*: Before you initiate a failover, you can now determine the status of VMs and whether they are powered on or off. The failover process now enables you to take a snapshot now or choose the snapshots.
 +
 Refer to link:../use/failover.html[Fail over applications to a remote site].
+
+* *Failover test schedules*: You can now edit the failover tests and set daily, weekly, and monthly schedules for the failover test. 
++
+Refer to link:../use/manage.html[Manage plans].
 
 == 15 May 2024 
 This BlueXP disaster recovery release includes the following updates: 

@@ -54,7 +54,9 @@ image:../use/dr-plan-list2.png[Replication plan list]
 
 . To perform actions with the plan, from the list of replication plans, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select any of the options, such as *Edit schedules*, *Test failover*, *Fail over*, *Fail back*, *Disable*, *Enable*, or *Delete*. 
 
-. To set or change a test failover schedule, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select *Edit schedules*.
+. To set or change a test failover schedule or set the compliance frequency check, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select *Edit schedules*.
+
+.. In the Edit schedules page, enter how often in minutes you want the failover compliance check to occur. 
 
 .. Check *Run test failovers on a schedule*. 
 .. In the Repeat option, select the daily, weekly, or monthly schedule. 
