@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: release-notes/dr-whats-new.html
-keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter
+keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter, draas
 summary: BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. With BlueXP disaster recovery for VMware, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in public clouds as a disaster recovery site using NetApp cloud storage.
 ---
 
