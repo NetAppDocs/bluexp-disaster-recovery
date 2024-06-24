@@ -15,7 +15,7 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
-== 27 June 2024
+== 3 July 2024
 
 This BlueXP disaster recovery release includes the following updates: 
 
@@ -29,22 +29,33 @@ This BlueXP disaster recovery release includes the following updates:
 * *Replication plan updates*: You can add a replication plan more easily by filtering VMs by datastore on the Applications page and by selecting more target details on the Resource mapping page. 
 +
 Refer to link:../use/drplan-create.html[Create a replication plan].
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+
 
 * *Edit replication plans*: With this release, the Failover mappings page has been enhanced for better clarity. 
 +
 Refer to link:../use/manage.html[Manage plans].
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage plans].
 
 * *Edit VMs*: With this release, the process for editing VMs in the plan included some minor UI improvements. 
 +
 Refer to link:../use/manage.html[Manage VMs].
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage VMs].
 
 * *Fail over updates*: Before you initiate a failover, you can now determine the status of VMs and whether they are powered on or off. The failover process now enables you to take a snapshot now or choose the snapshots.
 +
 Refer to link:../use/failover.html[Fail over applications to a remote site].
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over applications to a remote site].
 
 * *Failover test schedules*: You can now edit the failover tests and set daily, weekly, and monthly schedules for the failover test. 
 +
 Refer to link:../use/manage.html[Manage plans].
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/manage.html[Manage plans].
+
+* *Updates to prerequisite information*: Information about the BlueXP disaster recovery prerequisites has been updated.
++
+Refer to link:../get-started/dr-prerequisites.html[BlueXP disaster recovery prerequisites]. 
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-prerequisites.html[BlueXP disaster recovery prerequisites]. 
 
 == 15 May 2024 
 This BlueXP disaster recovery release includes the following updates: 
