@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: use/manage.html
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter
-summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, replication plans, resource groups
+summary: You can get a quick glance of all your BlueXP disaster recovery resources and manage vCenter sites, resource groups, and replication plans.
 ---
 
-= Manage sites, plans, datastores and virtual machines information
+= Manage sites, resource groups, replication plans, datastores and virtual machines information
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
@@ -14,10 +14,11 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 You can get a quick glance of all your Disaster recovery resources or look at each in detail: 
 
 * Sites
+* Resource groups
 * Replication plans
 * Datastores 
 * Virtual machines
-* Resource groups
+
 
 
 == Manage vCenter sites
@@ -28,6 +29,18 @@ You can edit the vCenter site name and the site type (on-premises or AWS).
 . From the top menu, select *Sites*. 
 . Select the *Actions* option image:../use/icon-vertical-dots.png[Actions menu icon in BlueXP disaster recovery service]  on the right of the vCenter name and select *Edit*. 
 . Edit the vCenter site name and location. 
+
+== Manage resource groups 
+
+While you can add a resource group as part of creating a replication plan, you might find it more convenient to add the groups separately and later use those groups in the plan. 
+
+You can also edit and delete resource groups. 
+
+.Steps 
+
+. From the top menu, select *Resource groups*. 
+. To add a resource group, select *Add group*.  
+. To perform actions with the resource group, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  at the right and select any of the options, such as *Edit resource group* or *Delete resource group*. 
 
 == Manage replication plans 
 
@@ -81,14 +94,3 @@ You can view information about how many virtual machines exist on the source and
 . Select *Virtual machines*. 
 . View the virtual machines information. 
 
-== Manage resource groups 
-
-While you can add a resource group as part of creating a replication plan, you might find it more convenient to add the groups separately and later use those groups in the plan. 
-
-You can also edit and delete resource groups. 
-
-.Steps 
-
-. From the top menu, select *Resource groups*. 
-. To add a resource group, select *Add group*.  
-. To perform actions with the resource group, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  at the right and select any of the options, such as *Edit resource group* or *Delete resource group*. 

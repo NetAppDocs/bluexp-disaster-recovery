@@ -5,7 +5,7 @@ keywords: bluexp, disaster recovery, aws, amazon web services, amazon fsx for ne
 summary: To use BlueXP disaster recovery, perform a few steps to set it up.    
 ---
 
-= Set up BlueXP disaster recovery
+= Set up your infrastructure for BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/get-started/
@@ -37,25 +37,15 @@ https://www.vmware.com/products/vmc-on-aws.html[VMware Cloud on AWS^] provides a
 To configure a VMC environment on AWS, follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html[link^]. A pilot-light cluster can also be used for disaster recovery purposes.
 
 
-== Set up BlueXP disaster recovery 
-The next step is to set up disaster recovery in BlueXP. 
 
-* <<Create a Connector in BlueXP>>.
-* <<Add a BlueXP account>>. 
-//* <<Configure SnapMirror for Amazon FSx for NetApp ONTAP>>.
-* <<Add the on-premises ONTAP storage>> working environment to BlueXP.  
-
-* <<Set up licensing>>.
-
-
-=== Create a Connector in BlueXP
+== Create a Connector in BlueXP
 You need to reach out to your NetApp Sales Rep to try out the BlueXP disaster recovery service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the disaster recovery service. 
 
 To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a connector^]. 
 
 For on-premises to on-premises, use the BlueXP on-premises Connector. For on-premises to AWS, use the BlueXP AWS Connector, which has access to the source on-premises vCenter and the destination on-premises vCenter.
 
-=== Add a BlueXP account
+== Add a BlueXP account
 
 In BlueXP, if you don't already have an account, you'll need to add an account. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html[BlueXP documentation on how to add an account^]. 
 
@@ -74,7 +64,7 @@ In BlueXP, if you don't already have an account, you'll need to add an account. 
 
 //. In BlueXP, discover the provisioned FSx for NetApp ONTAP on an AWS instance and replicate the specified datastore volumes from an on-premises environment to FSx for NetApp ONTAP with the appropriate frequency and NetApp Snapshot copy retention. 
 
-=== Add the on-premises ONTAP storage
+== Add the on-premises ONTAP storage
 
 Add the on-premises ONTAP storage working environment to BlueXP. Add your ONTAP clusters (on-prem or FSx) to BlueXP and ensure the following: 
 
@@ -84,7 +74,7 @@ Add the on-premises ONTAP storage working environment to BlueXP. Add your ONTAP 
 
 See https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^].
 
-=== Set up licensing 
+== Set up licensing 
 
 With BlueXP disaster recovery, you can sign up for a 90-day free trial.
 
