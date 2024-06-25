@@ -45,7 +45,10 @@ NOTE: Disaster recovery volumes in the destination SVM or SVMs should not be cre
 
 * Amazon FSx for ONTAP and AWS credentials must be added to the working environment within the BlueXP workspace that will be used to manage BlueXP disaster recovery.
 
-* BlueXP disaster recovery requires vCenter credentials. You enter the vCenter credentials when you're adding a site in BlueXP disaster recovery. Refer to link:..use/sites-add.html[Adding a site].
+* BlueXP disaster recovery requires vCenter credentials. You enter the vCenter credentials when you're adding a site in BlueXP disaster recovery. 
++
+For a list of vCenter privileges needed, refer to link:../reference/vcenter-privileges.html[vCenter privileges needed for BlueXP disaster recovery]. 
+For instructions on how to add a site, refer to link:../use/sites-add.html[Add a site].
 
 * A BlueXP Connector must be set up in BlueXP. 
  
