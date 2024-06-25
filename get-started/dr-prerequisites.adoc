@@ -45,17 +45,20 @@ NOTE: Disaster recovery volumes in the destination SVM or SVMs should not be cre
 
 * Amazon FSx for ONTAP and AWS credentials must be added to the working environment within the BlueXP workspace that will be used to manage BlueXP disaster recovery.
 
+* BlueXP disaster recovery requires vCenter credentials. You enter the vCenter credentials when you're adding a site in BlueXP disaster recovery. Refer to link:..use/sites-add.html[Adding a site].
+
 * A BlueXP Connector must be set up in BlueXP. 
-* BlueXP disaster recovery requires vCenter credentials. You enter the vCenter credentials when you're adding a site in BlueXP disaster recovery. Refer to link:..use/sites-add.html[Adding a site]. 
-* BlueXP disaster recovery works only with the standard mode Connector deployment. 
-* Type of BlueXP Connector needed:
-** *On-premises to on-premises disaster recovery*: Install the BlueXP on-premises Connector in the disaster recovery site. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises^].
-** *On-premises to AWS*: Install the BlueXP Connector for AWS in your AWS VPC. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-aws.html[Connector installation options in AWS^].
+ 
+** BlueXP disaster recovery works only with the standard mode Connector deployment. 
+** Type of BlueXP Connector needed:
+*** *On-premises to on-premises disaster recovery*: Install the BlueXP on-premises Connector in the disaster recovery site. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises^].
+*** *On-premises to AWS*: Install the BlueXP Connector for AWS in your AWS VPC. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-aws.html[Connector installation options in AWS^].
 +
 TIP: In on-premises to on-premises environments, use the on-premises Connector. In AWS environments, use the AWS Connector. 
 //** The on-premises and cloud Connector should have connectivity to both the on-premises and VMware Cloud (VMC) VCenter with ESXis. This enables the backup, failover, failback and migration features to work properly with the needed networking and script features.
+** The installed BlueXP Connector must be able to access any VMware cluster that BlueXP disaster recovery will manage. 
 * All ONTAP arrays to be managed by BlueXP disaster recovery must be added to any working environment within the BlueXP workspace that will be used to manage BlueXP disaster recovery. 
-* The installed BlueXP Connector must be able to access any VMware cluster that BlueXP disaster recovery will manage. 
+
 
 * Follow the BlueXP prerequisites for https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html[Getting started with BlueXP in standard mode^]. 
 
