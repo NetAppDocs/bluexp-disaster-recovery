@@ -27,6 +27,8 @@ TIP: Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure t
  
 == Set up VMware Cloud for AWS SDDC
 
+Set up VMware Cloud for AWS software-defined data center (SDDC).
+
 * Create an Amazon FSx for ONTAP file system. Provision and configure FSx for ONTAP. Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage built on the popular NetApp ONTAP file system. 
 
 * Follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html[link^] and here https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html[Quick start for Amazon FSx for NetApp ONTAP] to provision and configure FSx for NetApp ONTAP.
@@ -37,7 +39,7 @@ TIP: Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure t
 
 ** Deploy and configure VMware Cloud on AWS.
 
-** Use a VMware account and provision the software-defined data center (SDDC). Ensure that the SDDC has connectivity with FSx for ONTAP.
+** Use a VMware account and provision the SDDC. Ensure that the SDDC has connectivity with FSx for ONTAP.
 
 === Deploy VMware Cloud
 https://www.vmware.com/products/vmc-on-aws.html[VMware Cloud on AWS^] provides a cloud-native experience for VMware-based workloads in the AWS ecosystem. Each VMware software-defined data center (SDDC) runs in an Amazon Virtual Private Cloud (VPC) and provides a full VMware stack (including vCenter Server), NSX-T software-defined networking, vSAN software-defined storage, and one or more ESXi hosts that provide compute and storage resources to the workloads. 

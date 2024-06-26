@@ -19,7 +19,7 @@ Before using BlueXP disaster recovery, you should ensure that your environment m
 
 == ONTAP storage prerequisites
 
-These prerequisites apply to either ONTAP or FSX for ONTAP instances.
+These prerequisites apply to either ONTAP or Amazon FSX for NetApp ONTAP instances.
 
 * Source and destination clusters must have a peer relationship. 
 * The SVM that will host the disaster recovery volumes must exist on the destination cluster.
