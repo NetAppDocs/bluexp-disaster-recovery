@@ -23,7 +23,7 @@ This BlueXP disaster recovery release includes the following updates:
 
 //The three new platforms are: AFF A1K, AFF A90 and AFF A70
 
-* *Support for on-premises to on-premises VMware VMFS datastores*: This release includes a technology preview of support for VMs mounted on VMware vSphere virtual machine file system (VMFS) datastores protected to on-premises storage. With this release, disaster recovery is supported in a technology preview for on-premises VMware workloads to on-premises VMware environment with VMFS datastores. 
+* *Support for on-premises to on-premises VMware VMFS datastores*: This release includes a _technology preview_ of support for VMs mounted on VMware vSphere virtual machine file system (VMFS) datastores protected to on-premises storage. With this release, disaster recovery is supported in a technology preview for on-premises VMware workloads to on-premises VMware environment with VMFS datastores. 
 
 
 * *Replication plan updates*: You can add a replication plan more easily by filtering VMs by datastore on the Applications page and by selecting more target details on the Resource mapping page. 

@@ -19,7 +19,7 @@ BlueXP disaster recovery is a cloud-based disaster recovery service that automat
 * VMware Cloud (VMC) on AWS with Amazon FSx for NetApp ONTAP or
 * Another on-premises, NFS-based VMware environment with ONTAP storage
 
-IMPORTANT: With this release, disaster recovery is supported in a technology preview for on-premises VMware workloads to on-premises VMware environments with VMware vSphere virtual machine file system (VMFS) datastores.
+IMPORTANT: With this release, disaster recovery is supported in a technology preview for on-premises VMware workloads to on-premises VMware environments with VMware vSphere virtual machine file system (VMFS) datastores. NetApp doesn't charge you for any previewed workload capacity.
 
 BlueXP disaster recovery uses ONTAP SnapMirror technology as the replication transport to the disaster recovery site. This enables industry-best storage efficiency (compression and deduplication) on primary and secondary sites. 
 
@@ -51,14 +51,16 @@ NOTE: Configuration of vSphere server is done outside of BlueXP disaster recover
 
 NetApp doesn’t charge you for using the trial version of BlueXP disaster recovery.
 
-The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services Marketplace. 
+The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services or Microsoft Azure Marketplace.
+
+IMPORTANT: Some releases include a technology preview. NetApp doesn't charge you for any previewed workload capacity. See link:../release-notes/dr-whats-new.html[What's new in BlueXP disaster recovery] for information about the latest technology previews. 
 
 == Licensing 
 
 You can use the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace or the Microsoft Azure Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active license for the service in the BlueXP digital wallet.
