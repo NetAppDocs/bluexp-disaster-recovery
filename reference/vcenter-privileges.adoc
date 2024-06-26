@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference/vcenter-privileges.html
 keywords: disaster recovery, bluexp, vcenter,
-summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
+summary: The vCenter account must have a minimum set of vCenter privileges to allow BlueXP disaster recovery to perform its services, such as registering and deregistering datastores, starting and stopping VMs, and reconfiguring virtual machines (VMs). The following table lists all privileges required for BlueXP disaster recovery to interface with a vCenter cluster.
 ---
 
 = vCenter privileges needed for BlueXP disaster recovery

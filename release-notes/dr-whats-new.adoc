@@ -54,7 +54,7 @@ Refer to link:../use/failover.html[Fail over applications to a remote site].
 Refer to link:../use/manage.html[Manage plans].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/manage.html[Manage plans].
 
-* *Updates to prerequisite information*: Information about the BlueXP disaster recovery prerequisites has been updated.
+* *Updates to prerequisite information*: BlueXP disaster recovery prerequisites information has been updated.
 +
 Refer to link:../get-started/dr-prerequisites.html[BlueXP disaster recovery prerequisites]. 
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-prerequisites.html[BlueXP disaster recovery prerequisites]. 
