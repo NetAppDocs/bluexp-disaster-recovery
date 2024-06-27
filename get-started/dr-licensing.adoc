@@ -16,7 +16,8 @@ With BlueXP disaster recovery, you can use different licensing plans including a
 You can use the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace or Microsoft Azure Marketplace.
+//* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace or Microsoft Azure Marketplace.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 //NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
@@ -75,10 +76,9 @@ After the free trial ends, you can either purchase a license from NetApp or subs
 . In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*. 
 //+
 //image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment methods page]
-. Select *Subscribe in AWS Marketplace* or *Subscribe in Azure Marketplace*. 
-. Do one of the following: 
-* In AWS Marketplace, select *View purchase options*. Use AWS Marketplace to subscribe to BlueXP disaster recovery. 
-* In Azure Marketplace, select  
+. Select *Subscribe in AWS Marketplace*. 
+. In AWS Marketplace, select *View purchase options*. Use AWS Marketplace to subscribe to BlueXP disaster recovery. 
+
  
 . When you return to BlueXP disaster recovery, a message states that you are subscribed. 
 +

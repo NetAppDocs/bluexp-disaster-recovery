@@ -51,7 +51,7 @@ NOTE: Configuration of vSphere server is done outside of BlueXP disaster recover
 
 NetApp doesn’t charge you for using the trial version of BlueXP disaster recovery.
 
-The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services or Microsoft Azure Marketplace.
+The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services.
 
 IMPORTANT: Some releases include a technology preview. NetApp doesn't charge you for any previewed workload capacity. See link:../release-notes/dr-whats-new.html[What's new in BlueXP disaster recovery] for information about the latest technology previews. 
 
@@ -60,7 +60,7 @@ IMPORTANT: Some releases include a technology preview. NetApp doesn't charge you
 You can use the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace or the Microsoft Azure Marketplace.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 Licenses for all BlueXP services are managed by the BlueXP digital wallet service. After you set up your BYOL, you can see an active license for the service in the BlueXP digital wallet.
