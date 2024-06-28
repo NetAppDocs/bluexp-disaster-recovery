@@ -22,14 +22,13 @@ link:../get-started/dr-prerequisites.html[Ensure your environment meets these re
  
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up the disaster recovery service
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up the BlueXP disaster recovery service
 
 
-[role="quick-margin-para"]
-link:../get-started/dr-setup.html[Complete steps to set up the service].
+[role="quick-margin-list"]
+* link:../get-started/dr-setup.html[Set up the infrastructure for the service].
 
-[role="quick-margin-para"]
-link:../get-started/dr-licensing.html[Complete steps to set up licensing].
+* link:../get-started/dr-licensing.html[Set up licensing].
 
 
 
@@ -40,12 +39,13 @@ link:../get-started/dr-licensing.html[Complete steps to set up licensing].
 After you set up the service, here's what you might do next. 
 
 [role="quick-margin-list"]
-* link:../use/sites-add.html[Add vCenter sites].
-* link:../use/drplan-create.html[Create a disaster recovery plan].
+* link:../use/sites-add.html[Add your vCenter sites to BlueXP disaster recovery].
+* link:../use/manage.html#manage-resource-groups[Create your first resource group].
+* link:../use/drplan-create.html[Create your first replication plan].
 * link:../use/replicate.html[Replicate applications to another site].
 * link:../use/failover.html[Fail over applications to a remote site].
 * link:../use/failback.html[Fail back applications to the original source site].
-* link:../use/manage.html[Manage sites, plans, datastores, and virtual machines information].
+* link:../use/manage.html[Manage sites, resource groups, and replication plans].
 * link:../use/monitor-jobs.html[Monitor disaster recovery operations].
 
 

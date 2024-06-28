@@ -13,9 +13,6 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
 
-== Failback uses latest Snapshot copy
-
-In the current release, the failback process always uses the latest Snapshot copy. This occurs even if you chose a specific Snapshot copy to use. 
 
 == BlueXP might not discover Amazon FSx for NetApp ONTAP
 

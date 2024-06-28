@@ -90,10 +90,18 @@ TIP: After the failover starts, the recovered VMs can be seen in the vCenter of 
 . Select the replication plan.
 
 . On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Fail over*.
++
+image:dr-plan-failover.png[Fail over page]
 
-. In the Test failover page, enter the replication plan name to confirm and select *Fail over*.  
+. In the Fail over page, either initiate a snapshot now or choose the Snapshot for the datastore from which to recover.  The default is the latest. 
++
+A snapshot of the current source will be taken and replicated to the current destination before the fail over occurs. 
 
-. Choose the Snapshot for the datastore from which to recover.  The default is the latest. 
+. Optionally, select *Force failover* if you want the failover to occur even if an error is detected that would normally prevent the failover from occurring. 
+
+. Type "failover" in the box. 
+
+. Select *Fail over*.
 
 . To check the progress, in the top menu, select *Job monitoring*.
 

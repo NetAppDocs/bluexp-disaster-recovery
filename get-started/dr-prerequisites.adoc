@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: get-started/dr-prerequisites.html
-keywords: what are bluexp disaster recovery requirements, disaster recovery prerequisites
-summary: Get started with BlueXP disaster recovery by verifying support for your environment, network access, login and web browser.
+keywords: what are bluexp disaster recovery requirements, disaster recovery prerequisites, bluexp disaster recovery
+summary: Before using BlueXP disaster recovery, you should ensure that your environment meets the ONTAP storage, VMware vCenter cluster, and BlueXP requirements. 
 ---
 
 = BlueXP disaster recovery prerequisites
@@ -11,32 +11,82 @@ summary: Get started with BlueXP disaster recovery by verifying support for your
 :imagesdir: ../media/get-started/
 
 [.lead]
-Get started by verifying the readiness of your operational environment, login, network access, and web browser.
-
-To use BlueXP disaster recovery, you should ensure that your environment meets the following requirements: 
-
-* On-premises VMware working environment with NetApp storage
-* On AWS: 
-** An Amazon FSx for NetApp ONTAP file system. Refer to Amazon FSx for ONTAP documentation on https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[how to get started^]. 
-
-** A VMware account with a software-defined data center (SDDC) on AWS, also referred to as Virtual Machines Cloud. In the VMware Cloud Console, use the service roles of Administrator and NSX Cloud Administrator. Also use the organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Virtual Machines Cloud documentation^]. 
-
-** Link the SDDC with Amazon FSx for NetApp ONTAP. Refer to https://vmc.techzone.vmware.com/fsx-guide#overview[VMware Cloud on AWS integration with Amazon FSx for NetApp ONTAP^].
+Before using BlueXP disaster recovery, you should ensure that your environment meets the ONTAP storage, VMware vCenter cluster, and BlueXP requirements. 
 
 
-* In BlueXP: 
 
-** Amazon FSx for ONTAP and AWS credentials added to the BlueXP working environment.
+== ONTAP storage prerequisites
 
-** The BlueXP Connector needs to be set up in BlueXP. The on-premises and cloud Connector should have connectivity to both the on-premises and VMware Cloud (VMC) VCenter with ESXis. This enables the backup, failover, failback and migration features to work properly with the needed networking and script features.
-+ 
-The BlueXP Connector requires credentials for both the source and target vCenter servers. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html[BlueXP Quick start^] and https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html[BlueXP networking information^]. 
+These prerequisites apply to either ONTAP or Amazon FSX for NetApp ONTAP instances.
 
-** To ensure that application-consistency processes are successful, ensure the following prerequisites are met: 
+* Source and destination clusters must have a peer relationship. 
+* The SVM that will host the disaster recovery volumes must exist on the destination cluster.
+* The source SVM and destination SVM must have a peer relationship. 
++
+NOTE: Disaster recovery volumes in the destination SVM or SVMs should not be created ahead of time. BlueXP disaster recovery will create the destination volumes as needed for the replication plan.
 
-*** Ensure that VMware tools (or Open VM tools) are running on the VMs that will be protected. 
-*** For Windows VMs running SQL or Oracle or both, the databases should have their VSS Writers enabled and the databases should be in a stable state. 
-*** Oracle databases that are running on a Linux operating system should have the operating system user authentication enabled for the Oracle database SYSDBA role.  
+* If deploying with Amazon FSx for NetApp ONTAP, the following prerequisite applies: 
+** An Amazon FSx for NetApp ONTAP instance to host VMware DR datastores must exist in your VPC. Refer to Amazon FSx for ONTAP documentation on https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html[how to get started^]. 
+
+
+
+== VMware vCenter clusters prerequisites
+
+These prerequisites apply to both on-premises vCenter clusters and to VMware Cloud for AWS software-defined data center (SDDC).
+
+
+* All VMware clusters that you want BlueXP disaster recovery to manage must be hosted on ONTAP volumes.
+* All VMware datastores to be managed by BlueXP disaster recovery must use one of the following protocols: 
+** NFS 
+** VMFS using the iSCSI protocol (currently in a technology preview)
+
+* If you are using VMware Cloud SDDC, these prerequisites apply. 
+** In the VMware Cloud Console, use the service roles of Administrator and NSX Cloud Administrator. Also use the organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Using VMware Cloud Foundations with AWS FSx for NetApp ONTAP documentation^]. 
+
+** Link the VMware Cloud SDDC with Amazon FSx for NetApp ONTAP instance. Refer to https://vmc.techzone.vmware.com/fsx-guide#overview[VMware Cloud on AWS integration with Amazon FSx for NetApp ONTAP deployment information^].
+
+
+
+== BlueXP prerequisites
+
+=== Gather credentials for ONTAP and VMware
+
+* Amazon FSx for ONTAP and AWS credentials must be added to the working environment within the BlueXP workspace that will be used to manage BlueXP disaster recovery.
+
+* BlueXP disaster recovery requires vCenter credentials. You enter the vCenter credentials when you're adding a site in BlueXP disaster recovery. 
++
+For a list of vCenter privileges needed, refer to link:../reference/vcenter-privileges.html[vCenter privileges needed for BlueXP disaster recovery]. 
+For instructions on how to add a site, refer to link:../use/sites-add.html[Add a site].
+
+
+
+=== Add a BlueXP account
+
+In BlueXP, if you don't already have an account, you'll need to add an account. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html[BlueXP documentation on how to add an account^]. 
+
+=== Create a BlueXP Connector
+
+A BlueXP Connector must be set up in BlueXP. When you use the BlueXP Connector, it will include the appropriate capabilities for the disaster recovery service.
+ 
+* BlueXP disaster recovery works only with the standard mode Connector deployment. See https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html[Getting started with BlueXP in standard mode^]. 
+* Type of BlueXP Connector needed:
+** *On-premises to on-premises disaster recovery*: Install the BlueXP on-premises Connector in the disaster recovery site. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises^].
+** *On-premises to AWS*: Install the BlueXP Connector for AWS in your AWS VPC. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-aws.html[Connector installation options in AWS^].
++
+TIP: For on-premises to on-premises, use the BlueXP on-premises Connector. For on-premises to AWS, use the BlueXP AWS Connector, which has access to the source on-premises vCenter and the destination on-premises vCenter.
+//** The on-premises and cloud Connector should have connectivity to both the on-premises and VMware Cloud (VMC) VCenter with ESXis. This enables the backup, failover, failback and migration features to work properly with the needed networking and script features.
+** The installed BlueXP Connector must be able to access any VMware cluster that BlueXP disaster recovery will manage. 
+* All ONTAP arrays to be managed by BlueXP disaster recovery must be added to any working environment within the BlueXP workspace that will be used to manage BlueXP disaster recovery.
++
+See https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]. 
+
+
+== Workload prerequisites
+To ensure that application-consistency processes are successful, apply these prerequisites: 
+
+* Ensure that VMware tools (or Open VM tools) are running on the VMs that will be protected. 
+* For Windows VMs running Microsoft SQL Server or Oracle Database or both, the databases should have their VSS Writers enabled. 
+* Oracle databases that are running on a Linux operating system should have the operating system user authentication enabled for the Oracle database SYSDBA role.  
 
 
 
