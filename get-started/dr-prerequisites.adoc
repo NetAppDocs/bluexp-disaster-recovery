@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: get-started/dr-prerequisites.html
-keywords: what are bluexp disaster recovery requirements, disaster recovery prerequisites
-summary: Get started with BlueXP disaster recovery by verifying support for your environment, network access, login and web browser.
+keywords: what are bluexp disaster recovery requirements, disaster recovery prerequisites, bluexp disaster recovery
+summary: Before using BlueXP disaster recovery, you should ensure that your environment meets the ONTAP storage, VMware vCenter cluster, and BlueXP requirements. 
 ---
 
 = BlueXP disaster recovery prerequisites
@@ -11,9 +11,7 @@ summary: Get started with BlueXP disaster recovery by verifying support for your
 :imagesdir: ../media/get-started/
 
 [.lead]
-Get started by verifying the readiness of your operational environment, login, network access, and web browser.
-
-Before using BlueXP disaster recovery, you should ensure that your environment meets the following requirements. 
+Before using BlueXP disaster recovery, you should ensure that your environment meets the ONTAP storage, VMware vCenter cluster, and BlueXP requirements. 
 
 
 
