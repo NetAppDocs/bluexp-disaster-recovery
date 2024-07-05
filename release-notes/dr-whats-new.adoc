@@ -15,7 +15,7 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
-== 3 July 2024
+== 5 July 2024
 
 This BlueXP disaster recovery release includes the following updates: 
 
@@ -70,7 +70,6 @@ For details about setting up licensing for BlueXP disaster recovery, refer to li
 //For details about setting up licensing for BlueXP disaster recovery, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
-
 
 == 5 March 2024
 This is the General Availability release of BlueXP disaster recovery, which includes the following updates. 
