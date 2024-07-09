@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: use/monitor-jobs.html
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter
-summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor
+summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. You can monitor all disaster recovery jobs and determine their progress.
 ---
 
 = Monitor disaster recovery jobs
@@ -23,35 +23,34 @@ You can monitor all disaster recovery jobs and determine their progress.
 . To refresh information, select *Refresh*. 
 
 
-== Cancel a job
+//== Cancel a job
 
-If a job is in progress and you don't want it to continue, you can cancel it. You might want to cancel a job if it is stuck in the same state and you want to free up the next operation in the queue. You might want cancel a job before it times out.
-
-To cancel a job, you use Swagger. 
-
-.Before you begin
-To cancel a job, you must have the Account ID. 
+//If a job is in progress and you don't want it to continue, you can cancel it. You might want to cancel a job if it is stuck in the same state and you want to free up the next operation in the queue. You might want cancel a job before it times out.
 
 
-.Steps 
-
-. From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
-. From the top menu, select *Job monitoring*. 
+//.Before you begin
+//To cancel a job, you must have the Account ID. 
 
 
-. In the Job monitor page, note the ID of the job you want to cancel. 
+//.Steps 
 
-. Access the BlueXP disaster recovery Swagger URL: https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_[Swagger^].
-+
-"https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_"
-+ 
-image:dr-swagger-job-cancel.png[Swagger page showing how to cancel a job]
-+
-For details about Swagger, see https://swagger.io/docs/[Swagger docs^].
-
-. From Swagger, obtain the security token, also called the _bearer token_, from the Authorize option. 
+//. From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
+//. From the top menu, select *Job monitoring*. 
 
 
-. Enter the Account ID and Job ID. 
-. Select *Try it out*.
+//. In the Job monitor page, note the ID of the job you want to cancel. 
+
+//. Access the BlueXP disaster recovery Swagger URL: https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_[Swagger^].
+//+
+//"https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_"
+//+ 
+//image:dr-swagger-job-cancel.png[Swagger page showing how to cancel a job]
+//+
+//For details about Swagger, see https://swagger.io/docs/[Swagger docs^].
+
+//. From Swagger, obtain the security token, also called the _bearer token_, from the Authorize option. 
+
+
+//. Enter the Account ID and Job ID. 
+//. Select *Try it out*.
 
