@@ -52,7 +52,7 @@ Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.htm
 * *Failover test schedules*: You can now edit the failover tests and set daily, weekly, and monthly schedules for the failover test. 
 +
 //Refer to link:../use/manage.html[Manage plans].
-Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/manage.html[Manage plans].
+Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage plans].
 
 * *Updates to prerequisite information*: BlueXP disaster recovery prerequisites information has been updated.
 +
