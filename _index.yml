@@ -35,10 +35,6 @@ indexpage:
       url: /use/failover.html
     - title: Fail back apps to the original source site
       url: /use/failback.html 
-    - title: Manage sites, plans, datastores, and virtual machines information 
-      url: /use/manage.html
-    - title: Monitor disaster recovery jobs
-      url: /use/monitor-jobs.html 
   - title: Blogs & community
     links:
     - title: NetApp Community
