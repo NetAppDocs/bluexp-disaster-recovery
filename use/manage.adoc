@@ -75,6 +75,16 @@ image:../use/dr-plan-list2.png[Replication plan list]
 .. In the Repeat option, select the daily, weekly, or monthly schedule. 
 .. Select *Save*.
 
+=== Change retention count for failover schedules
+You can change how many datastores are retained. 
+
+. From the top menu, select *Replication plans*. 
+. Select the replication plan, click the *Failover mapping* tab, and click the *Edit* pencil icon. 
+. Click the *Datastores* arrow to expand it. 
++
+image:../use/dr-plan-failover-edit.png[Edit failover mappings page]
+. Change the value of the retention count in the replication plan. 
+
 == View datastores information 
 
 You can view information about how many datastores exist on the source and on the target. 
