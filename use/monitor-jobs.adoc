@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: use/monitor-jobs.html
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp
 summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. You can monitor all disaster recovery jobs and determine their progress.
 ---
 
@@ -25,7 +25,7 @@ You can monitor all disaster recovery jobs and determine their progress.
 
 == Cancel a job
 
-If a job is in progress and you don't want it to continue, you can cancel it. You might want to cancel a job if it is stuck in the same state and you want to free up the next operation in the queue. You might want cancel a job before it times out.
+If a job is in progress or in a queued state and you don't want it to continue, you can cancel it. You might want to cancel a job if it is stuck in the same state and you want to free up the next operation in the queue. You might want cancel a job before it times out.
 
 
 .Steps 
@@ -35,6 +35,8 @@ If a job is in progress and you don't want it to continue, you can cancel it. Yo
 
 
 . In the Job monitor page, note the ID of the job you want to cancel. 
++
+The job must be in an "In progress" or "Queued" state. 
 . In the Actions column, select *Cancel*. 
 
 //. Access the BlueXP disaster recovery Swagger URL: https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_[Swagger^].

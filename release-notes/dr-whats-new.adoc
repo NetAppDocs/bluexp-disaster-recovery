@@ -22,10 +22,10 @@ This BlueXP disaster recovery release includes the following updates:
 +
 NOTE: NetApp doesn't charge you for any previewed workload capacity.
 
-* *Job cancel*: With this release, you can now cancel a job in the Job Monitor UI. Previously, you used a Swagger command. 
+* *Job cancel*: With this release, you can now cancel a job in the Job Monitor UI.  
 +
-For details, see link:../use/monitor-jobs.html[Monitor jobs].
-//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html[Monitor jobs].
+//For details, see link:../use/monitor-jobs.html[Monitor jobs].
+Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html[Monitor jobs].
 
 
 
