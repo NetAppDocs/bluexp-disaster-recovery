@@ -18,7 +18,7 @@ Learn what’s new in BlueXP disaster recovery.
 == 2 August 2024
 This BlueXP disaster recovery release includes the following updates: 
 
-* *Support for on-premises to on-premises VMware VMFS datastores for FC*: This release includes a _technology preview_ of support for VMs mounted on VMware vSphere virtual machine file system (VMFS) datastores for FC protected to on-premises storage. Previously, the service provided a technology preview supporting VMFS datastores for iSCi. With this release, BlueXP disaster recovery supports a technology preview for on-premises VMware workloads to on-premises VMware environment with VMFS datastores for FC. 
+* *Support for on-premises to on-premises VMware VMFS datastores for FC*: This release includes a _technology preview_ of support for VMs mounted on VMware vSphere virtual machine file system (VMFS) datastores for FC protected to on-premises storage. Previously, the service provided a technology preview supporting VMFS datastores for iSCSI. 
 +
 NOTE: NetApp doesn't charge you for any previewed workload capacity.
 
