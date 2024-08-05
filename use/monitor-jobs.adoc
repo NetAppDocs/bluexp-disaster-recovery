@@ -37,7 +37,7 @@ If a job is in progress or in a queued state and you don't want it to continue, 
 . In the Job monitor page, note the ID of the job you want to cancel. 
 +
 The job must be in an "In progress" or "Queued" state. 
-. In the Actions column, select *Cancel*. 
+. In the Actions column, select *Cancel job*. 
 
 //. Access the BlueXP disaster recovery Swagger URL: https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_[Swagger^].
 //+
