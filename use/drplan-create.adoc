@@ -46,7 +46,7 @@ First, you select the source vCenter and then select the destination vCenter.
 
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*.
 
-. From the BlueXP disaster recovery top menu, select *Replication plans*. Or, if you are just beginning to use the service, from the Dashboard, select *Add replication plan*. 
+. From the BlueXP disaster recovery top menu, select *Replication plans* and select *Add*. Or, if you are just beginning to use the service, from the Dashboard, select *Add replication plan*. 
 +
 image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add plan page]
 
@@ -71,10 +71,10 @@ TIP: Each resource group can include one or more virtual machines. The virtual m
 The selected virtual machine is automatically added to group 1 and a new group 2 is started. Each time you add a virtual machine to the last group, another group is added. 
 
 +
-image:dr-plan-create-apps-vms3.png[Screenshot showing the Add replication plan > Applications to replicate page]
+image:dr-plan-create-apps-vms4.png[Screenshot showing the Add replication plan > Applications to replicate page]
 
 . Optionally, do any of the following: 
-** To change groups, click the group *Edit* icon. 
+** To change groups, click the group *Edit* image:icon-pencil.png[Pencil icon] icon. 
 ** To remove a virtual machine from a group, select *X*. 
 ** To move a virtual machine to a different group, drag and drop it in the new group. 
 
@@ -102,46 +102,50 @@ If you want to create a SnapMirror relationship in this service, the cluster and
 +
 image:dr-plan-resource-mapping.png[Replication plan, Resource mapping tab]
 
-. In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each: 
+. In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each.  
+
+. *Compute resources*: Select the down arrow next to *Compute resources*. 
 +
-* *Compute resources*
-** *Source and target datacenters*
-** *Target host* (optional)
-** *Target cluster* (optional)
-** *Target VM folder* (optional): Use this to create a new root folder to store the selected VMs. 
-* *Virtual networks*
+//* *Source and target datacenters*
+//* *Target host* (optional)
+* Source cluster 
+* Target cluster (optional)
+//* *Target VM folder* (optional): Use this to create a new root folder to store the selected VMs. 
+
+. *Virtual networks*: In the Failover mappings tab, select the down arrow next to *Virtual networks*. Enter or select the source virtual LAN and target segment. 
 
 
-. In the Failover mappings tab, select the down arrow to the right of each resource: 
-
-* *Virtual machines*: Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the virtual machine.
+. *Virtual machines*: In the Failover mappings tab, select the down arrow next to *Virtual machines*. 
++
+Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the virtual machine.
 +
 This section might be enabled or disabled depending on your selection. 
 +
 SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
 +
-** *VM CPU and RAM*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
-+
-** *Boot order delay*: Also, you can modify the boot order for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. 
-+
-** *DHCP or static IP*: When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet, gateway, and DNS servers. Additionally, enter credentials for virtual machines. 
+** *IP address type*: When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet, gateway, and DNS servers. Additionally, enter credentials for virtual machines. 
 +
 *** *DHCP*: If you choose this option, you provide just the credentials for the VM. 
 *** *Static IP*: You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address of the VM, subnet mask, DNS, and gateway information. VM guest OS credentials should be supplied to either the global level or at each VM level.
 +
-image:dr-plan-create-mapping-vms.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
+image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
 +
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. 
 +
-* *App-consistent replicas*: Indicate whether to create app-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
+** *Source VM CPU and RAM*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
++
+** *Boot delay*: You can modify the boot order for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. With this field, you can adjust the delay in minutes of the boot action. 
++
+* *Create application-consistent replicas*: Indicate whether to create application-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
 
-* *Datastores*: Based on the selection of virtual machines, datastore mappings are automatically selected.
+. *Datastores*: In the Failover mappings tab, select the down arrow next to *Datastores*.  Based on the selection of virtual machines, datastore mappings are automatically selected.
 +
 This section might be enabled or disabled depending on your selection.
 +
 ** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of Snapshot copies to retain for all datastores. 
+** *Retention count*: Enter the number of snapshots you want to retain. 
 +
-** *SnapMirror relationships*: If a volume has a SnapMirror relationship already established, you can select the corresponding source and target datastores. If you select a volume that does not have a SnapMirror relationship, you can create one now by selecting the working environment and its peer SVM. 
+** *Source and Target datastores*: If a volume has a SnapMirror relationship already established, you can select the corresponding source and target datastores. If you select a volume that does not have a SnapMirror relationship, you can create one now by selecting the working environment and its peer SVM. 
 +
 NOTE: If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery.  
 
