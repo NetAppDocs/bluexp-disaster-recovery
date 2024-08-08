@@ -91,7 +91,7 @@ TIP: After the failover starts, the recovered VMs can be seen in the vCenter of 
 
 . On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Fail over*.
 +
-image:dr-plan-failover.png[Fail over page]
+image:dr-plan-failover2.png[Fail over page]
 
 . In the Fail over page, either initiate a snapshot now or choose the Snapshot for the datastore from which to recover.  The default is the latest. 
 +
