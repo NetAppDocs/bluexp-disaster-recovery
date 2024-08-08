@@ -136,7 +136,7 @@ This can be very helpful when recovering large environments to smaller target cl
 +
 ** *Boot delay*: You can modify the boot order for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. With this field, you can adjust the delay in minutes of the boot action. 
 +
-* *Create application-consistent replicas*: Indicate whether to create application-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
+** *Create application-consistent replicas*: Indicate whether to create application-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
 
 . *Datastores*: In the Failover mappings tab, select the down arrow next to *Datastores*.  Based on the selection of virtual machines, datastore mappings are automatically selected.
 +
