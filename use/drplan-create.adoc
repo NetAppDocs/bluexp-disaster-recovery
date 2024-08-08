@@ -100,7 +100,7 @@ If you want to create a SnapMirror relationship in this service, the cluster and
 
 . In the Resource mapping page, to use the same mappings for both failover and test operations, check the box. 
 +
-image:dr-plan-resource-mapping.png[Replication plan, Resource mapping tab]
+image:dr-plan-resource-mapping2.png[Replication plan, Resource mapping tab]
 
 . In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each.  
 
