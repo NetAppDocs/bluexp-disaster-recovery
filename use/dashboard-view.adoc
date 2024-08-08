@@ -40,10 +40,10 @@ To review replication plan details, select *View all* for a status or *View repl
 
 * *Resource groups*: View the health of your resource groups. A resource group can have one of the following statuses: 
 
-** *Protected VMs*: The VMs are part of a resource group. 
-** *Unprotected VMs*: The VMs are not part of a resource group. 
+* *Protected VMs*: The VMs are part of a resource group. 
+* *Unprotected VMs*: The VMs are not part of a resource group. 
 + 
-To review resource group details, select *View all* for a status or *View resource groups* to see them all.
+To review details, select the *View* link below each. 
 
 * The number of failovers, test failovers, and migrations. For example, if you created two plans and migrated to the destinations, the migration count appears as "2."
 
