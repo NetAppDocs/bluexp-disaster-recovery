@@ -15,6 +15,13 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
+== 2 September 2024
+
+This BlueXP disaster recovery release includes the following updates: 
+
+* 
+
+
 == 2 August 2024
 This BlueXP disaster recovery release includes the following updates: 
 
