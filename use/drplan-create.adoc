@@ -109,7 +109,7 @@ image:dr-plan-resource-mapping2.png[Replication plan, Resource mapping tab]
 //* *Source and target datacenters*
 * Target cluster (optional)
 //* *Target host* (optional)
-* Target VM folder (optional): Use this to create a new root folder to store the selected VMs. 
+* Target VM folder (optional): Create a new root folder to store the selected VMs. 
 
 . *Virtual networks*: In the Failover mappings tab, select the down arrow next to *Virtual networks*. Enter or select the source virtual LAN and target segment. 
 
