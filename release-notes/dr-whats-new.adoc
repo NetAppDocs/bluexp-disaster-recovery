@@ -27,15 +27,26 @@ Here are some additional considerations regarding both FC and iSCSI protocols:
 ** BlueXP disaster recovery supports only a single LUN per ONTAP volume. The volume should not have multiple LUNs. 
 ** For any replication plan, the destination ONTAP volume should use the same protocols as the source ONTAP volume hosting the protected VMs. For example, if the source uses an FC protocol, the destination should also use FC. 
 
-* *Reporting*: 
+* *Reporting*: With this release, you can now generate and download reports to help you analyze your landscape. Predesigned reports include a summary of failovers and failbacks, replication details on all sites, and job details for the past year. 
++
+For details, see link:../use/reports.html[Create disaster recovery reports].
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html[Create disaster recovery reports].
+
+
+* *VM details available for failover, failback, and test failover*: When a failure occurs and you are performing a failover, performaing a failback, or testing the failover, you can now see details of the VMs and identify which VMs did not restart. 
++
+For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/use-overview.html[Use BlueXP disaster recovery overview]. 
+
+* *Folder mapping*: When you are creating a replication plan and you are mapping compute resources, you can now map folders. 
++
+For details, see link:../use/drplan-create.html[Create disaster recovery reports].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 * *Email notifications*: 
 
-* *Alias VMs on target site*: 
 
-* *External trigger for VM boot delay*:
 
-* *Folder mapping*: When you map compute resources, you can now map folders. 
+
 
 
 == 2 August 2024
