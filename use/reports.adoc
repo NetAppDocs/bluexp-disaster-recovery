@@ -14,6 +14,7 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of failovers and failbacks, replication details on all sites, and job details for the past year. You can also create custom reports. 
 
 You can download reports in PDF format. 
+//hidden from left menu. 
 
 .Steps 
 

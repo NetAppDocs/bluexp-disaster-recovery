@@ -105,11 +105,11 @@ image:dr-plan-resource-mapping2.png[Replication plan, Resource mapping tab]
 . In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each.  
 
 . *Compute resources*: Select the down arrow next to *Compute resources*. 
-+
+//+
 //* *Source and target datacenters*
-* Target cluster (optional)
+//* Target cluster (optional)
 //* *Target host* (optional)
-* Target VM folder (optional): Create a new root folder to store the selected VMs. 
+//* Target VM folder (optional): Create a new root folder to store the selected VMs. 
 
 . *Virtual networks*: In the Failover mappings tab, select the down arrow next to *Virtual networks*. Enter or select the source virtual LAN and target segment. 
 
@@ -127,9 +127,10 @@ SnapMirror is at the volume level. So, all virtual machines are replicated to th
 *** *DHCP*: If you choose this option, you provide just the credentials for the VM. 
 *** *Static IP*: You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address of the VM, subnet mask, DNS, and gateway information. VM guest OS credentials should be supplied to either the global level or at each VM level.
 +
-image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
-+
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. 
++
+image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
+
 +
 ** *Source VM CPU and RAM*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
 +
