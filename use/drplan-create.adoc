@@ -20,11 +20,11 @@ You can create a replication plan and also edit schedules for compliance and tes
 == Create the plan
 A wizard takes you through these steps: 
 
-* Select vCenter servers
-* Select the VMs you want to replicate and assign groups
+* Select vCenter servers.
+* Select the VMs you want to replicate and assign groups.
 * Map how resources from the source environment map to the destination. 
-* Identify recurrence 
-* Review the plan
+* Identify recurrence, run a guest-hosted script, set the boot order, and select the recovery point objective.
+* Review the plan.
 
 
 While you are creating the replication plan, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
