@@ -21,7 +21,7 @@ This BlueXP disaster recovery release includes the following update.
 
 * *Support for on-premises to on-premises VMware VMFS datastores*: This release includes support for VMs mounted on VMware vSphere virtual machine file system (VMFS) datastores for iSCSI and FC protected to on-premises storage. Previously, the service provided a _technology preview_ supporting VMFS datastores for iSCSI and FC.  
 +
-Here are some additional considerations regarding both FC and iSCSI protocols: 
+Here are some additional considerations regarding both iSCSI and FC protocols: 
 +
 ** FC support is for client front-end protocols, not for replication. 
 ** BlueXP disaster recovery supports only a single LUN per ONTAP volume. The volume should not have multiple LUNs. 
