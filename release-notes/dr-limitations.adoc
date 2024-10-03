@@ -13,6 +13,9 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the service, or that do not interoperate correctly with it.
 
+== Wait until failback completes before running discovery
+
+After a failover has finished, do not initiate discovery on the source vCenter manually. Wait until the failback has finished and then initiate discovery on the source vCenter.
 
 == BlueXP might not discover Amazon FSx for NetApp ONTAP
 
