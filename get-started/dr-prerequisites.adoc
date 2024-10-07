@@ -49,20 +49,18 @@ These prerequisites apply to both on-premises vCenter clusters and to VMware Clo
 
 == BlueXP prerequisites
 
+=== Get started with BlueXP
+
+If you haven't already done so, https://docs.netapp.com/us-en/bluexp-setup-admin/task-sign-up-saas.html[sign up to BlueXP and create an organization^]
+
 === Gather credentials for ONTAP and VMware
 
-* Amazon FSx for ONTAP and AWS credentials must be added to the working environment within the BlueXP workspace that will be used to manage BlueXP disaster recovery.
+* Amazon FSx for ONTAP and AWS credentials must be added to the working environment within the BlueXP project that will be used to manage BlueXP disaster recovery.
 
 * BlueXP disaster recovery requires vCenter credentials. You enter the vCenter credentials when you're adding a site in BlueXP disaster recovery. 
 +
 For a list of vCenter privileges needed, refer to link:../reference/vcenter-privileges.html[vCenter privileges needed for BlueXP disaster recovery]. 
 For instructions on how to add a site, refer to link:../use/sites-add.html[Add a site].
-
-
-
-=== Add a BlueXP account
-
-In BlueXP, if you don't already have an account, you'll need to add an account. Refer to the https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html[BlueXP documentation on how to add an account^]. 
 
 === Create a BlueXP Connector
 
@@ -76,7 +74,7 @@ A BlueXP Connector must be set up in BlueXP. When you use the BlueXP Connector, 
 TIP: For on-premises to on-premises, use the BlueXP on-premises Connector. For on-premises to AWS, use the BlueXP AWS Connector, which has access to the source on-premises vCenter and the destination on-premises vCenter.
 //** The on-premises and cloud Connector should have connectivity to both the on-premises and VMware Cloud (VMC) VCenter with ESXis. This enables the backup, failover, failback and migration features to work properly with the needed networking and script features.
 ** The installed BlueXP Connector must be able to access any VMware cluster that BlueXP disaster recovery will manage. 
-* All ONTAP arrays to be managed by BlueXP disaster recovery must be added to any working environment within the BlueXP workspace that will be used to manage BlueXP disaster recovery.
+* All ONTAP arrays to be managed by BlueXP disaster recovery must be added to any working environment within the BlueXP project that will be used to manage BlueXP disaster recovery.
 +
 See https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]. 
 
