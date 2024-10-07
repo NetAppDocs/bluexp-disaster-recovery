@@ -101,20 +101,12 @@ After you've purchased your BlueXP disaster recovery license from your NetApp Sa
 
 //You can obtain the NLF either through your NetApp Sales Rep or from the NetApp Support Site. 
 
-You'll need to have the following information before you start:
-
-* BlueXP disaster recovery serial number
-+
-Locate this number from your Sales Order, or contact the account team for this information.
-* BlueXP Account ID
-+
-You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. 
+You'll need the BlueXP disaster recovery serial number. Locate this number from your Sales Order, or contact the account team for this information.
 
 //For private mode site without internet access, use *account-DARKSITE1*.
 
 *Add the license to BlueXP digital wallet*
-After you purchase a BlueXP disaster recovery license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
-
+After you purchase a BlueXP disaster recovery license, you need to add the license to the BlueXP digital wallet.
 
 . After you obtain the license, return to BlueXP disaster recovery. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
 +
