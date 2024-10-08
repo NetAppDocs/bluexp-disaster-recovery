@@ -25,7 +25,7 @@ A BlueXP disaster recovery license is required for complete access. However, you
 For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
 
 
-*How do you access BlueXP Disaster recovery?*
+*How do you access BlueXP disaster recovery?*
 BlueXP disaster recovery does not require any enablement. The disaster recovery option automatically appears on the BlueXP left navigation.  
 
 //*Does this service support a cloud-to-cloud scenario?*  

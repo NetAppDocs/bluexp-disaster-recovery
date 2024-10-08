@@ -38,7 +38,7 @@ These prerequisites apply to both on-premises vCenter clusters and to VMware Clo
 * All VMware clusters that you want BlueXP disaster recovery to manage must be hosted on ONTAP volumes.
 * All VMware datastores to be managed by BlueXP disaster recovery must use one of the following protocols: 
 ** NFS 
-** VMFS using the iSCSI protocol (currently in a technology preview)
+** VMFS using the iSCSI or FC protocol 
 
 * If you are using VMware Cloud SDDC, these prerequisites apply. 
 ** In the VMware Cloud Console, use the service roles of Administrator and NSX Cloud Administrator. Also use the organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Using VMware Cloud Foundations with AWS FSx for NetApp ONTAP documentation^]. 
