@@ -13,19 +13,10 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 [.lead]
 Learn what’s new in BlueXP disaster recovery.
 
-//tag::whats-new[]
-
 == 20 September 2024
 
-This BlueXP disaster recovery release includes the following update. 
+include::_whatsnew/2024-09-20.adoc[]
 
-* *Support for on-premises to on-premises VMware VMFS datastores*: This release includes support for VMs mounted on VMware vSphere virtual machine file system (VMFS) datastores for iSCSI and FC protected to on-premises storage. Previously, the service provided a _technology preview_ supporting VMFS datastores for iSCSI and FC.  
-+
-Here are some additional considerations regarding both iSCSI and FC protocols: 
-+
-** FC support is for client front-end protocols, not for replication. 
-** BlueXP disaster recovery supports only a single LUN per ONTAP volume. The volume should not have multiple LUNs. 
-** For any replication plan, the destination ONTAP volume should use the same protocols as the source ONTAP volume hosting the protected VMs. For example, if the source uses an FC protocol, the destination should also use FC. 
 
 //* *Reporting*: With this release, you can now generate and download reports to help you analyze your landscape. Predesigned reports include a summary of failovers and failbacks, replication details on all sites, and job details for the past year. 
 //+
@@ -43,52 +34,15 @@ Here are some additional considerations regarding both iSCSI and FC protocols:
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 
-
-
-
-
-
-
 == 2 August 2024
-This BlueXP disaster recovery release includes the following updates: 
 
-* *Support for on-premises to on-premises VMware VMFS datastores for FC*: This release includes a _technology preview_ of support for VMs mounted on VMware vSphere virtual machine file system (VMFS) datastores for FC protected to on-premises storage. Previously, the service provided a technology preview supporting VMFS datastores for iSCSI. 
-+
-NOTE: NetApp doesn't charge you for any previewed workload capacity.
+include::_whatsnew/2024-08-02.adoc[]
 
-* *Job cancel*: With this release, you can now cancel a job in the Job Monitor UI.  
-+
 //For details, see link:../use/monitor-jobs.html[Monitor jobs].
-Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html[Monitor jobs].
-
-
 
 == 17 July 2024 
-This BlueXP disaster recovery release includes the following updates: 
 
-* *Failover test schedules*: This release includes updates to the failover test schedule structure, which was needed to support daily and weekly schedules. This update requires that you disable and re-enable all existing replication plans so that you will be able to use the new daily and weekly failover test schedules. This is a one-time requirement.  
-+
-Here's how: 
-+
-. From the top menu, select *Replication plans*. 
-. Select a plan and select the Actions icon to show the drop-down menu. 
-. Select *Disable*. 
-. After a few minutes, select *Enable*.
-
-* *Replication plan updates*: This release includes updates to replication plan data, which resolves a "snapshot not found" issue. This requires that you change the retention count in all replication plans to 1 and initiate an on-demand snapshot. This process creates a new backup and removes all older backups. 
-+
-Here's how: 
-+
-. From the top menu, select *Replication plans*. 
-. Select the replication plan, click the *Failover mapping* tab, and click the *Edit* pencil icon. 
-. Click the *Datastores* arrow to expand it. 
-+
-image:use/dr-plan-failover-edit.png[Edit failover mappings page]
-. Note the value of the retention count in the replication plan. You will need to reinstate this original value when you're finished with these steps. 
-. Reduce the count to 1.
-. Initiate an on-demand snapshot. To do so, on the Replication plan page, select the plan, click the Actions icon, and select *Take snapshot now*. 
-. After the snapshot job completes successfully, increase the count in the replication plan back to its original value that you noted in the first step. 
-. Repeat these steps for all existing replication plans. 
+include::_whatsnew/2024-07-17.adoc[]
 
 == 5 July 2024
 
