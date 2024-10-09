@@ -48,7 +48,8 @@ include::_whatsnew/2024-07-17.adoc[]
 
 This BlueXP disaster recovery release includes the following updates: 
 
-* *Support for AFF A-series*: This release supports the NetApp AFF A-series hardware platforms. 
+=== Support for AFF A-series
+* This release supports the NetApp AFF A-series hardware platforms. 
 
 //The three new platforms are: AFF A1K, AFF A90 and AFF A70
 
@@ -91,7 +92,8 @@ Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-p
 == 15 May 2024 
 This BlueXP disaster recovery release includes the following updates: 
 
-* *Replicating VMware workloads from on-premises to on-premises* is now released as a general availability feature. Previously, it was a technology preview with limited functionality.
+=== Replicating VMware workloads from on-premises to on-premises
+* This is now released as a general availability feature. Previously, it was a technology preview with limited functionality.
 
 * *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial, purchase a pay-as-you-go (PAYGO) subscription with Amazon Marketplace, or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep or from the NetApp Support Site (NSS). 
 +
@@ -106,7 +108,8 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 == 5 March 2024
 This is the General Availability release of BlueXP disaster recovery, which includes the following updates. 
 
-* *Licensing updates*: With BlueXP disaster recovery, you can sign up for a 90-day free trial or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
+=== Licensing updates 
+* With BlueXP disaster recovery, you can sign up for a 90-day free trial or Bring Your Own License (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. BlueXP disaster recovery charges are based on provisioned capacity of datastores. 
 +
 //For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up licensing].
 For details about setting up licensing for BlueXP disaster recovery, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing]. 
@@ -127,7 +130,8 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 
 This BlueXP disaster recovery preview release includes the following updates: 
 
-* *Network enhancement*: With this release, you can now resize the VM CPU and RAM values. You can also now select a network DHCP or static IP address for the VM.  
+=== Network enhancement
+* With this release, you can now resize the VM CPU and RAM values. You can also now select a network DHCP or static IP address for the VM.  
 
 ** DHCP: If you choose this option, you provide credentials for the VM. 
 ** Static IP: You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address, subnet mask, DNS, and gateway information.  
@@ -167,6 +171,7 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use
 == 11 January 2024
 This preview release of BlueXP disaster recovery includes the following updates: 
 
+=== Dashboard more quickly
 * With this release, you can access information on other pages from the Dashboard more quickly. 
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn about BlueXP disaster recovery].
@@ -175,6 +180,7 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 == 20 October 2023 
 This preview release of BlueXP disaster recovery includes the following updates. 
 
+=== Protect on-premises, NFS-based VMware workloads
 Now with BlueXP disaster recovery, you can protect your on-premises, NFS-based VMware workloads against disasters to another on-premises, NFS-based VMware environment in addition to the public cloud. BlueXP disaster recovery orchestrates the completion of the disaster recovery plans.  
 
 NOTE: With this preview offering, NetApp reserves the right to modify offering details, contents and timeline before General Availability.   
@@ -186,7 +192,8 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 This preview release of BlueXP disaster recovery includes the following updates: 
 
-* *Dashboard updates*: You can now click into the options on the Dashboard, making it easier for you to review the information quickly. Also, the Dashboard now shows the status of failovers and migrations.  
+=== Dashboard updates
+* You can now click into the options on the Dashboard, making it easier for you to review the information quickly. Also, the Dashboard now shows the status of failovers and migrations.  
 +
 Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html[View the health of your disaster recovery plans on the Dashboard].
 
@@ -218,6 +225,7 @@ Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-creat
 
 == 1 August 2023
 
+=== BlueXP disaster recovery preview
 BlueXP disaster recovery preview is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery preview, you can protect your on-premises, NFS-based VMware workloads running NetApp storage to VMware Cloud (VMC) on AWS with Amazon FSx for ONTAP. 
 
 NOTE: With this preview offering, NetApp reserves the right to modify offering details, contents and timeline before General Availability.   
@@ -242,6 +250,7 @@ This release includes the following updates:
 
 This is the initial release of BlueXP disaster recovery. 
 
+=== Cloud-based disaster recovery service
 BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. Initially, with the BlueXP disaster recovery preview, you can protect your on-premises, NFS-based VMware workloads running NetApp storage to VMware Cloud (VMC) on AWS with Amazon FSx for ONTAP. 
 
 
