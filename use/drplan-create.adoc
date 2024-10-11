@@ -30,7 +30,7 @@ A wizard takes you through these steps:
 While you are creating the replication plan, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
 
 *** 1 to 1
-*** 1 to many in a fanout architecture
+*** 1 to many in a fan-out architecture
 *** Many to 1 in a Consistency Group
 *** Many to many 
  
@@ -86,6 +86,7 @@ Each virtual machine within a group is started in sequence based on the order he
 
 . Select *Next*. 
 
+
 === Map source resources to the target 
 
 In the Resource mapping step, specify how the resources from the source environment should map to the target.
@@ -105,11 +106,11 @@ image:dr-plan-resource-mapping2.png[Replication plan, Resource mapping tab]
 . In the Failover mappings tab, select the down arrow to the right of each resource and map the resources in each.  
 
 . *Compute resources*: Select the down arrow next to *Compute resources*. 
-//+
-//* *Source and target datacenters*
-//* Target cluster (optional)
-//* *Target host* (optional)
-//* Target VM folder (optional): Create a new root folder to store the selected VMs. 
++
+* *Source and target datacenters*
+* *Target cluster* (optional)
+* *Target host* (optional): After you select the cluster, you can then set this information. 
+* *Target VM folder* (optional): Create a new root folder to store the selected VMs. 
 
 . *Virtual networks*: In the Failover mappings tab, select the down arrow next to *Virtual networks*. Enter or select the source virtual LAN and target segment. 
 
@@ -187,15 +188,15 @@ image:dr-plan-create-recurrence.png[Screenshot showing Add replication plan > Re
 // To adjust the existing storage settings to match this replication interval, check the box. 
 
 
-=== Confirm the replication plan
+=== Review the replication plan
 
-Finally, take a few moments to confirm the replication plan. 
+Finally, take a few moments to review the replication plan. 
 
 TIP: You can later disable or delete the replication plan.
 
 .Steps
 
-. Review information in each tab: Plan Details, Failover Mapping, VMs.  
+. Review information in each tab: Plan Details, Failover Mapping, and VMs.  
 
 . Select *Add plan*. 
 +
