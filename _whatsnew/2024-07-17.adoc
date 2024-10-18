@@ -1,5 +1,3 @@
-This BlueXP disaster recovery release includes the following updates: 
-
 === Failover test schedules 
 This release includes updates to the failover test schedule structure, which was needed to support daily and weekly schedules. This update requires that you disable and re-enable all existing replication plans so that you will be able to use the new daily and weekly failover test schedules. This is a one-time requirement.  
 
