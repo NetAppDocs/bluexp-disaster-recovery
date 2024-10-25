@@ -89,7 +89,7 @@ Each virtual machine within a group is started in sequence based on the order he
 
 === Map source resources to the target 
 
-In the Resource mapping step, specify how the resources from the source environment should map to the target.
+In the Resource mapping step, specify how the resources from the source environment should map to the target. When you create a replication plan, you can set a boot delay for each VM in the plan. This enables you to set a sequence for the VMs to start.
 
 .Before you begin
 
