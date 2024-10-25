@@ -24,13 +24,13 @@ This BlueXP disaster recovery release includes the following updates:
 For details, see link:../use/reports.html[Create disaster recovery reports].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html[Create disaster recovery reports].
 
-* *Folder mapping*: When you create a replication plan and are mapping compute resources, you can now map folders. 
+* *Folder mapping*: When you create a replication plan and map compute resources, you can now map folders. 
 +
 For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 
-* *VM details available for failover, failback, and test failover*: When a failure occurs and you are performing a failover, performing a failback, or testing the failover, you can now see details of the VMs and identify which VMs did not restart. 
+* *VM details available for failover, failback, and test failover*: When a failure occurs and you are starting a failover, performing a failback, or testing the failover, you can now see details of the VMs and identify which VMs did not restart. 
 +
 Refer to link:../use/failover.html[Fail over applications to a remote site].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over applications to a remote site].

@@ -89,7 +89,7 @@ Each virtual machine within a group is started in sequence based on the order he
 
 === Map source resources to the target 
 
-In the Resource mapping step, specify how the resources from the source environment should map to the target. When you create a replication plan, you can set a boot delay for each VM in the plan. This enables you to set a sequence for the VMs to start.
+In the Resource mapping step, specify how the resources from the source environment should map to the target. When you create a replication plan, you can set a boot delay and order for each VM in the plan. This enables you to set a sequence for the VMs to start.
 
 .Before you begin
 
@@ -135,7 +135,16 @@ image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > 
 +
 ** *Source VM CPU and RAM*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
 +
-** *Boot delay*: You can modify the boot order for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. With this field, you can adjust the delay in minutes of the boot action. 
+image:dr-plan-resource-mapping-vm-boot-order.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
++
+** *Boot order*: You can modify the boot order after a failover for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. 
++
+*** Sequential boot: Assign each VM a unique number to boot the in the assigned order, for example, 1,2,3,4,5
+*** Simultaneous boot: Assign the same number to all VMs to boot them at the same time, for example, 1,1,1,1,2,2,3,4,4.
++
+** *Boot delay*: Adjust the delay in minutes of the boot up action. 
++
+TIP: To reset the boot order to the default, select *Reset VM settings to default* and then choose which settings you want to change back to the default. 
 +
 ** *Create application-consistent replicas*: Indicate whether to create application-consistent Snapshot copies. The service will quiesce the application and then take a Snapshot to obtain a consistent state of the application. 
 
