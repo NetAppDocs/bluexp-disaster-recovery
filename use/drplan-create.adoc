@@ -66,7 +66,6 @@ TIP: Each resource group can include one or more virtual machines. The virtual m
 . On the left side of the Applications page, optionally search for datastores. 
 
 . On the left side of the Applications page, select the virtual machines that you want to replicate and assign to the selected group. 
-
 +
 The selected virtual machine is automatically added to group 1 and a new group 2 is started. Each time you add a virtual machine to the last group, another group is added. 
 
@@ -111,6 +110,8 @@ image:dr-plan-resource-mapping2.png[Replication plan, Resource mapping tab]
 * *Target cluster* (optional)
 * *Target host* (optional): After you select the cluster, you can then set this information. 
 * *Target VM folder* (optional): Create a new root folder to store the selected VMs. 
++
+TIP: If a vCenter has a Distributed Resource Scheduler (DRS) configured to manage multiple hosts in a cluster, you don't need to select a host. If you select a host, BlueXP disaster recovery will place all the VMs on the selected host. 
 
 . *Virtual networks*: In the Failover mappings tab, select the down arrow next to *Virtual networks*. Enter or select the source virtual LAN and target segment. 
 
@@ -131,13 +132,14 @@ SnapMirror is at the volume level. So, all virtual machines are replicated to th
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. 
 +
 image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
-
++
+** *Desination VM prefix and suffix*: Under the virtual machines details, you can optionally add a prefix and suffix to the VM name.   
 +
 ** *Source VM CPU and RAM*: Under the Virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
 +
 image:dr-plan-resource-mapping-vm-boot-order.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
 +
-** *Boot order*: You can modify the boot order after a failover for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. 
+** *Boot order*: You can modify the boot order after a failover for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. This is helpful to ensure that all your priority one VMs are running before subsequent priority VMs are started. 
 +
 *** Sequential boot: Assign each VM a unique number to boot the in the assigned order, for example, 1,2,3,4,5
 *** Simultaneous boot: Assign the same number to all VMs to boot them at the same time, for example, 1,1,1,1,2,2,3,4,4.

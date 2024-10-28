@@ -65,7 +65,7 @@ image:../use/dr-plan-list2.png[Replication plan list]
 
 . Return to the list of plans by selecting "Replication plans" in the breadcrumbs at the top left. 
 
-. To perform actions with the plan, from the list of replication plans, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select any of the options, such as *Edit schedules*, *Test failover*, *Fail over*, *Fail back*, *Disable*, *Enable*, or *Delete*. 
+. To perform actions with the plan, from the list of replication plans, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select any of the options, such as *Edit schedules*, *Test failover*, *Fail over*, *Fail back*, *Migrate*, *Take snapshot now*, *Disable*, *Enable*, or *Delete*. 
 
 . To set or change a test failover schedule or set the compliance frequency check, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select *Edit schedules*.
 
@@ -74,6 +74,38 @@ image:../use/dr-plan-list2.png[Replication plan list]
 .. Check *Run test failovers on a schedule*. 
 .. In the Repeat option, select the daily, weekly, or monthly schedule. 
 .. Select *Save*.
+
+=== Reconcile snapshots on demand
+You can reconcile snapshots that are out of sync between the source and target. This might occur if snapshots are deleted on a target outside of BlueXP disaster recovery. The service automatically deletes the snapshot on the source automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites.
+
+.Steps 
+
+. From the top menu, select *Replication plans*. 
++
+image:../use/dr-plan-list2.png[Replication plan list]
+
+. From the list of replication plans, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select *Reconcile snapshots*. 
+
+. Review the reconciliation information. 
+. Select *Reconcile*.
+
+
+=== Delete a replication plan
+You can delete a replication plan if you no longer need it. If you delete a replication plan, you can also delete the primary and secondary snapshots created by the plan. 
+
+.Steps 
+
+. From the top menu, select *Replication plans*. 
++
+image:../use/dr-plan-list2.png[Replication plan list]
+
+. Select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service]  to the right of the plan and select *Delete*. 
+
+. Select whether you want to delete the primary snapshots,  secondary snapshots, or just the metadata created by the plan. 
+
+. Type "delete" to confirm the deletion.
+. Select *Delete*.
+
 
 === Change retention count for failover schedules
 You can change how many datastores are retained. 

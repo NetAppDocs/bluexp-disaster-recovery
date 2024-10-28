@@ -11,10 +11,13 @@ summary: Reviewing disaster recovery reports can help you analyze your disaster 
 :imagesdir: ../media/use/
 
 [.lead]
-Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of test failovers, replication plan details, and jobs on all sites within an account for the past seven days. 
+Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of test failovers, replication plan details, and job details on all sites within an account for the past seven days. 
 
 You can download reports in HTML or JSON format. 
- 
+
+TIP: You can convert the HTML page to a PDF using your browser's options. 
+
+The Download link is valid for two hours. 
 
 .Steps 
  . From the BlueXP left nav, select *Protection* > *Disaster recovery*. 

@@ -24,19 +24,46 @@ This BlueXP disaster recovery release includes the following updates:
 For details, see link:../use/reports.html[Create disaster recovery reports].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html[Create disaster recovery reports].
 
-* *Folder mapping*: When you create a replication plan and map compute resources, you can now map folders. 
+* *30-day free trials*: With this release, you can now sign up for a 30-day free trial of BlueXP disaster recovery. Previously, free trials were for 90 days.
++
+For details, see link:../get-started/dr-licensing.html[Set up licensing].
+//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing].
+
+* *Folder mapping*: When you create a replication plan and map compute resources, you can now map folders so that VMs are recovered in a folder you specify for datacenter, cluster, and host.
 +
 For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
-
 
 * *VM details available for failover, failback, and test failover*: When a failure occurs and you are starting a failover, performing a failback, or testing the failover, you can now see details of the VMs and identify which VMs did not restart. 
 +
 Refer to link:../use/failover.html[Fail over applications to a remote site].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail over applications to a remote site].
 
-* *VM boot delay with ordered boot sequence*: When you create a replication plan, you can now set a boot delay for each VM in the plan. This enables you to set a sequence for the VMs to start.
+* *VM boot delay with ordered boot sequence*: When you create a replication plan, you can now set a boot delay for each VM in the plan. This enables you to set a sequence for the VMs to start to ensure that all your priority one VMs are running before subsequent priority VMs are started. 
++
+For details, see link:../use/drplan-create.html[Create a replication plan].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
+* *VM operating system*: When you create a replication plan, you can now specify the operating system for each VM in the plan. This is helpful in deciding how to group VMs together in a resource group.
++
+For details, see link:../use/drplan-create.html[Create a replication plan].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+
+
+* *VM name aliasing*: When you create a replication plan, you can now add a prefix and suffix to the VM names. This enables you to use a more descriptive name for the VMs in the plan.
++
+For details, see link:../use/drplan-create.html[Create a replication plan].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
+
+* *On-demand snapshot cleanup*: With this release, when you delete a replication plan, you can clean up any snapshots that are no longer needed beyond your specified retention count. Snapshots might accumulate over time when you lower your snapshot retention count, and you can now remove them to free up space.
++
+For details, see link:../use/drplan-create.html[Delete a replication plan].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Delete a replication plan].
+
+* *Reconcile snapshots*: With this release, you can now reconcile snapshots that are out of sync between the source and target. This might occur if snapshots are deleted on a target outside of BlueXP disaster recovery. The service automatically deletes the snapshot on the source automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites.
++
+For details, see link:../use/manage.html[Manage replication plans].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage replication plans].
 
 == 20 September 2024
 
