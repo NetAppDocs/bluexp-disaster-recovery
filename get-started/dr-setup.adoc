@@ -67,7 +67,7 @@ To configure a VMC environment on AWS, follow the steps at this https://docs.net
 
 == Set up licensing 
 
-With BlueXP disaster recovery, you can sign up for a 90-day free trial.
+With BlueXP disaster recovery, you can sign up for a 30-day free trial.
 
 You can purchase one of the following:
 

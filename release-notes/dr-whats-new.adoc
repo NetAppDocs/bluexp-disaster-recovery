@@ -24,7 +24,7 @@ This BlueXP disaster recovery release includes the following updates:
 For details, see link:../use/reports.html[Create disaster recovery reports].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html[Create disaster recovery reports].
 
-* *30-day free trials*: With this release, you can now sign up for a 30-day free trial of BlueXP disaster recovery. Previously, free trials were for 90 days.
+* *30-day free trial*: With this release, you can now sign up for a 30-day free trial of BlueXP disaster recovery. Previously, free trials were for 90 days.
 +
 For details, see link:../get-started/dr-licensing.html[Set up licensing].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing].
