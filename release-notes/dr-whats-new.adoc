@@ -44,7 +44,7 @@ Refer to link:../use/failover.html[Fail over applications to a remote site].
 For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-* *VM operating system*: When you create a replication plan, you can now specify the operating system for each VM in the plan. This is helpful in deciding how to group VMs together in a resource group.
+* *VM operating system information*: When you create a replication plan, you can now see the operating system for each VM in the plan. This is helpful in deciding how to group VMs together in a resource group.
 +
 For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].

@@ -21,7 +21,7 @@ You can create a replication plan and also edit schedules for compliance and tes
 A wizard takes you through these steps: 
 
 * Select vCenter servers.
-* Select the VMs you want to replicate and assign groups.
+* Select the virtual machines (VMs) you want to replicate and assign groups.
 * Map how resources from the source environment map to the destination. 
 * Identify recurrence, run a guest-hosted script, set the boot order, and select the recovery point objective.
 * Review the plan.
@@ -57,29 +57,31 @@ image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add 
 
 === Select applications to replicate and assign resource groups
 
-The next step is to group the required virtual machines into functional resource groups. Resource groups enable you to group a set of dependent virtual machines into logical groups that meet your requirements. For example, groups could contain delayed boot orders that can be run upon recovery.
+The next step is to group the required VMs into functional resource groups. Resource groups enable you to group a set of dependent VMs into logical groups that meet your requirements. For example, groups could contain delayed boot orders that can be run upon recovery.
 
-TIP: Each resource group can include one or more virtual machines. The virtual machines will power on based on the sequence in which you include them here.
+When you select applications in the replication plan, you can see the operating system for each VM in the plan. This is helpful in deciding how to group VMs together in a resource group.
+
+TIP: Each resource group can include one or more VMs. The VMs will power on based on the sequence in which you include them here.
 
 .Steps
 
 . On the left side of the Applications page, optionally search for datastores. 
 
-. On the left side of the Applications page, select the virtual machines that you want to replicate and assign to the selected group. 
+. On the left side of the Applications page, select the VMs that you want to replicate and assign to the selected group. 
 +
-The selected virtual machine is automatically added to group 1 and a new group 2 is started. Each time you add a virtual machine to the last group, another group is added. 
+The selected VM is automatically added to group 1 and a new group 2 is started. Each time you add a VM to the last group, another group is added. 
 
 +
-image:dr-plan-create-apps-vms4.png[Screenshot showing the Add replication plan > Applications to replicate page]
+image:dr-plan-create-apps-vms5.png[Screenshot showing the Add replication plan > Applications to replicate page]
 
 . Optionally, do any of the following: 
 ** To change groups, click the group *Edit* image:icon-pencil.png[Pencil icon] icon. 
-** To remove a virtual machine from a group, select *X*. 
-** To move a virtual machine to a different group, drag and drop it in the new group. 
+** To remove a VM from a group, select *X*. 
+** To move a VM to a different group, drag and drop it in the new group. 
 
 . When you have multiple resource groups, ensure that the sequence of the groups matches the operational sequence that should occur. 
 +
-Each virtual machine within a group is started in sequence based on the order here. Two groups are started in parallel. 
+Each VM within a group is started in sequence based on the order here. Two groups are started in parallel. 
 
 . Optionally, rename the group by clicking the *Edit* icon. 
 
