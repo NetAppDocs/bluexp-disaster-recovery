@@ -20,10 +20,12 @@ TIP: You can convert the HTML page to a PDF using your browser's options.
 The Download link is valid for six hours. 
 
 .Steps 
- . From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
+ . From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Replication plans*. 
 . From the top of the page, select *Create report*.
 . Select the type of file format and the time period within the last 7 days. 
 . Select *Create*. 
+
+NOTE: The report might take a few minutes to display. 
 
 . To download a report, select *Download report* and select it in the administrator's Download folder.  
 

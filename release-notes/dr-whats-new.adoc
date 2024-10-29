@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter, draas
 summary: BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. With BlueXP disaster recovery for VMware, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in public clouds as a disaster recovery site using NetApp cloud storage.
 ---
 
-= What's new
+= What's new in BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
@@ -60,7 +60,7 @@ For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
 
-* *VM name aliasing*: When you create a replication plan, you can now add a prefix and suffix to the VM names. This enables you to use a more descriptive name for the VMs in the plan.
+* *VM name aliasing*: When you create a replication plan, you can now add a prefix and suffix to the VM names on the disaster recovery sit. This enables you to use a more descriptive name for the VMs in the plan.
 +
 For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
@@ -70,7 +70,7 @@ For details, see link:../use/drplan-create.html[Create a replication plan].
 For details, see link:../use/manage.html[Manage sites, resource groups, replication plans, datastores, and virtual machines information].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage sites, resource groups, replication plans, datastores, and virtual machines information].
 
-* *Reconcile snapshots*: With this release, you can now reconcile snapshots that are out of sync between the source and target. This might occur if snapshots are deleted on a target outside of BlueXP disaster recovery. The service automatically deletes the snapshot on the source automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites.
+* *Reconcile snapshots*: With this release, you can now reconcile snapshots that are out of sync between the source and target. This might occur if snapshots are deleted on a target outside of BlueXP disaster recovery. The service deletes the snapshot on the source automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites.
 +
 For details, see link:../use/manage.html[Manage replication plans].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage replication plans].

@@ -41,9 +41,9 @@ You can try BlueXP disaster recovery out by using a 30-day free trial.
 
 NOTE: No capacity limits are enforced during the trial.  
 
-//You can get a license or subscribe at any time and you will not be charged until the 90-day trial ends. To continue after the 90-day trial, you'll need to purchase a BYOL license or PAYGO AWS subscription. 
+//You can get a license or subscribe at any time and you will not be charged until the trial ends. 
 
-You can get a license at any time and you will not be charged until the trial ends. To continue after the trial, you'll need to purchase a BYOL license.
+To continue after the trial, you'll need to purchase a BYOL license or PAYGO AWS subscription. You can get a license at any time and you will not be charged until the trial ends. 
 
 During the trial, you have full functionality. 
 
