@@ -109,7 +109,7 @@ image:dr-plan-resource-mapping2.png[Replication plan, Resource mapping tab]
 . *Compute resources*: Select the down arrow next to *Compute resources*. 
 +
 * *Source and target datacenters*
-* *Target cluster* (optional)
+* *Target cluster* 
 * *Target host* (optional): After you select the cluster, you can then set this information. 
 * *Target VM folder* (optional): Create a new root folder to store the selected VMs. 
 +
