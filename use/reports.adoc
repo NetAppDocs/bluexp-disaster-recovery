@@ -17,7 +17,7 @@ You can download reports in HTML or JSON format.
 
 TIP: You can convert the HTML page to a PDF using your browser's options. 
 
-The Download link is valid for two hours. 
+The Download link is valid for six hours. 
 
 .Steps 
  . From the BlueXP left nav, select *Protection* > *Disaster recovery*. 

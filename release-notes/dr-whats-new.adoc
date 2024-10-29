@@ -15,11 +15,11 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
-== 31 October 2024
+== 30 October 2024
 
 This BlueXP disaster recovery release includes the following updates: 
 
-* *Reporting*: With this release, you can now generate and download reports to help you analyze your landscape. Predesigned reports summarize failovers and failbacks, show replication details on all sites, and show job details for the past year. 
+* *Reporting*: With this release, you can now generate and download reports to help you analyze your landscape. Predesigned reports summarize failovers and failbacks, show replication details on all sites, and show job details for the past seven days. 
 +
 For details, see link:../use/reports.html[Create disaster recovery reports].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html[Create disaster recovery reports].
@@ -28,6 +28,16 @@ For details, see link:../use/reports.html[Create disaster recovery reports].
 +
 For details, see link:../get-started/dr-licensing.html[Set up licensing].
 //Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing].
+
+* *Disable and enable replication plans*: A previous release included updates to the failover test schedule structure, which was needed to support daily and weekly schedules. This update required that you disable and re-enable all existing replication plans so that you will be able to use the new daily and weekly failover test schedules. This is a one-time requirement.  
++
+Here's how: 
++
+. From the top menu, select *Replication plans*. 
+. Select a plan and select the Actions icon to show the drop-down menu. 
+. Select *Disable*. 
+. After a few minutes, select *Enable*.
+
 
 * *Folder mapping*: When you create a replication plan and map compute resources, you can now map folders so that VMs are recovered in a folder you specify for datacenter, cluster, and host.
 +
@@ -55,10 +65,10 @@ For details, see link:../use/drplan-create.html[Create a replication plan].
 For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-* *On-demand snapshot cleanup*: With this release, when you delete a replication plan, you can clean up any snapshots that are no longer needed beyond your specified retention count. Snapshots might accumulate over time when you lower your snapshot retention count, and you can now remove them to free up space.
+* *Clean up old snapshots*: With this release, you can delete any snapshots that are no longer needed beyond your specified retention count. Snapshots might accumulate over time when you lower your snapshot retention count, and you can now remove them to free up space. You can do this anytime on demand or when you delete a replication plan. 
 +
-For details, see link:../use/drplan-create.html[Delete a replication plan].
-//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Delete a replication plan].
+For details, see link:../use/manage.html[Manage sites, resource groups, replication plans, datastores, and virtual machines information].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html[Manage sites, resource groups, replication plans, datastores, and virtual machines information].
 
 * *Reconcile snapshots*: With this release, you can now reconcile snapshots that are out of sync between the source and target. This might occur if snapshots are deleted on a target outside of BlueXP disaster recovery. The service automatically deletes the snapshot on the source automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites.
 +
