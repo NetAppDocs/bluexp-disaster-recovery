@@ -65,17 +65,7 @@ To configure a VMC environment on AWS, follow the steps at this https://docs.net
 
 
 
-== Set up licensing 
 
-With BlueXP disaster recovery, you can sign up for a 30-day free trial.
-
-You can purchase one of the following:
-
-* A pay-as-you-go (PAYGO) subscription with AWS Marketplace
-//* A PAYGO Microsoft Azure Marketplace
-* Bring Your Own License (BYOL), which is a NetApp License File (NLF).  
-
-Refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
 
 
 
