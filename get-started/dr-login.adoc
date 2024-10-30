@@ -27,7 +27,7 @@ The NetApp BlueXP login page appears.
 If this is your first time logging in to this service, the landing page appears and you can sign up for a free trial. 
 
 +
-image:draas-landing3-free-trial.png[Landing page screenshot for BlueXP disaster recovery]
+image:draas-landing4-free-trial.png[Landing page screenshot for BlueXP disaster recovery]
 
 + 
 Otherwise, the BlueXP disaster recovery Dashboard appears. 
