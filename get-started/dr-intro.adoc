@@ -60,7 +60,7 @@ IMPORTANT: Some releases include a technology preview. NetApp doesn't charge you
 
 You can use the following license types:
 
-* Sign up for a 90-day free trial.
+* Sign up for a 30-day free trial.
 * Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
@@ -75,12 +75,12 @@ NOTE: BlueXP disaster recovery charges are based on provisioned capacity of data
 For details about setting up licensing for BlueXP disaster recovery, refer to link:../get-started/dr-licensing.html[Set up BlueXP disaster recovery licensing].
 
 
-== 90-day free trial
-You can try out BlueXP disaster recovery by using a 90-day free trial. 
+== 30-day free trial
+You can try out BlueXP disaster recovery by using a 30-day free trial. 
 
-To continue after the 90-day trial, you'll need to obtain a Pay-as-you-go (PAYGO) subscription from your cloud provider or purchase a BYOL license from NetApp.
+To continue after the 30-day trial, you'll need to obtain a Pay-as-you-go (PAYGO) subscription from your cloud provider or purchase a BYOL license from NetApp.
 
-You can purchase a license at any time and you will not be charged until the 90-day trial ends. 
+You can purchase a license at any time and you will not be charged until the 30-day trial ends. 
 
 
 == How BlueXP disaster recovery works

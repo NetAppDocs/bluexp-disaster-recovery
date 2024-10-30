@@ -21,3 +21,5 @@ entries:
     url: /use/manage.html
   - title: Monitor disaster recovery jobs
     url: /use/monitor-jobs.html 
+  - title: Create disaster recovery reports
+    url: /use/reports.html

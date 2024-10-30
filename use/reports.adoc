@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: use/reports.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp, protection, reports
-summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. You can monitor all disaster recovery jobs and determine their progress.
+summary: Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of failovers and failbacks, replication details on all sites, and job details for the past year. 
 ---
 
 = Create disaster recovery reports
@@ -11,46 +11,60 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 :imagesdir: ../media/use/
 
 [.lead]
-Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of failovers and failbacks, replication details on all sites, and job details for the past year. You can also create custom reports. 
+Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of test failovers, replication plan details, and job details on all sites within an account for the past seven days. 
 
-You can download reports in PDF format. 
-//hidden from left menu. 
+You can download reports in HTML or JSON format. 
+
+TIP: You can convert the HTML page to a PDF using your browser's options. 
+
+The Download link is valid for six hours. 
 
 .Steps 
+ . From the BlueXP left nav, select *Protection* > *Disaster recovery* > *Replication plans*. 
+. From the top of the page, select *Create report*.
+. Select the type of file format and the time period within the last 7 days. 
+. Select *Create*. 
 
-. From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
-. From the top menu, select *Reports*. 
-+
-image:dr-reports.png[Reports page]
-. Before you create or download a report, refresh the data by clicking the *Refresh* option. 
-. Select a report from the *Ready-made* tab or create your own report on the *Custom* tab. 
+NOTE: The report might take a few minutes to display. 
 
-. Download a report by clicking on *Download*. 
-
+. To download a report, select *Download report* and select it in the administrator's Download folder.  
 
 
-== Create your own disaster recovery report
+//.Steps from the Reports menu option
 
-You can create a custom report where you can specify the sites, replication plans, and data. You can specify whether to include failover and failback summaries for the past year, VM details for each replication plan, and job details for each replication plan for the past year. 
+//. From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
+//. From the top menu, select *Reports*. 
+//+
+//image:dr-reports.png[Reports page]
+//. Before you create or download a report, refresh the data by clicking the *Refresh* option. 
+//. Select a report from the *Ready-made* tab or create your own report on the *Custom* tab. 
 
-. From the top menu, select *Reports*. 
-. Before you create a report, refresh the data by clicking the *Refresh* option. 
-. Select the *Custom* tab. 
-. Select *Add* to add a new report. 
-+
-image:dr-reports-add.png[Add custom report dialog]
-. Select the options to customize your report: 
-** Sites
-** Replication plans
-** Data
-*** Summary of failover and failbacks for the past year
-*** VM details for each replication plan
-*** Job details for each replication plan for the past year
+//. Download a report by clicking on *Download*. 
 
-. Select *Add* to add a new report. 
-+
-Your custom report appears on the list of Custom reports. 
-+
-TIP: To see all the sites or plans included in the report, click the number to the right of the report name or plan names. 
 
-. Download your custom report by clicking on *Download*. 
+
+//== Create your own disaster recovery report
+
+//You can create a custom report where you can specify the sites, replication plans, and data. You can specify whether to include failover and failback summaries for the past year, VM details for each replication plan, and job details for each replication plan for the past year. 
+
+//. From the top menu, select *Reports*. 
+//. Before you create a report, refresh the data by clicking the *Refresh* option. 
+//. Select the *Custom* tab. 
+//. Select *Add* to add a new report. 
+//+
+//image:dr-reports-add.png[Add custom report dialog]
+//. Select the options to customize your report: 
+//** Sites
+//** Replication plans
+//** Data
+//*** Summary of failover and failbacks for the past year
+//*** VM details for each replication plan
+//*** Job details for each replication plan for the past year
+
+//. Select *Add* to add a new report. 
+//+
+//Your custom report appears on the list of Custom reports. 
+//+
+//TIP: To see all the sites or plans included in the report, click the number to the right of the report name or plan names. 
+
+//. Download your custom report by clicking on *Download*. 
