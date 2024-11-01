@@ -11,7 +11,7 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 :imagesdir: ../media/use/
 
 [.lead]
-After you’ve added vCenter sites, you’re ready to create a disaster recovery or _replication plan_. Select the source and destination vCenters, pick the resource groups, and group how applications should be restored and powered on. For example, you might group virtual machines associated with one application or you might group applications that have similar tiers. 
+After you’ve added vCenter sites, you’re ready to create a disaster recovery or _replication plan_. Select the source and destination vCenters, pick the resource groups, and group how applications should be restored and powered on. For example, you might group virtual machines (VMs) associated with one application or you might group applications that have similar tiers. 
 
 Such plans are sometimes called _blueprints_. 
 
@@ -21,7 +21,7 @@ You can create a replication plan and also edit schedules for compliance and tes
 A wizard takes you through these steps: 
 
 * Select vCenter servers.
-* Select the virtual machines (VMs) you want to replicate and assign groups.
+* Select the VMs you want to replicate and assign groups.
 * Map how resources from the source environment map to the destination. 
 * Identify recurrence, run a guest-hosted script, set the boot order, and select the recovery point objective.
 * Review the plan.
@@ -33,6 +33,12 @@ While you are creating the replication plan, you can define the SnapMirror relat
 *** 1 to many in a fan-out architecture
 *** Many to 1 in a Consistency Group
 *** Many to many 
+
+When you create the plan, you should follow these guidelines: 
+
+* Use the same credentials for all VMs in the plan.
+* Use the same script for all VMs in the plan.
+* Use the same subnet, DNS, and gateway for all VMs in the plan.
  
 .Before you begin
 
@@ -65,7 +71,8 @@ TIP: Each resource group can include one or more VMs. The VMs will power on base
 
 .Steps
 
-. Optionally, on the left side of the Applications page, filter the VMs by their datastore. 
+. Optionally, on the left side of the Applications page, filter the VMs by their datastore. You can also search for specific VMs by name. 
+
 
 . On the left side of the Applications page, select the VMs that you want to protect and assign to the selected group. 
 +
@@ -120,21 +127,24 @@ TIP: If a vCenter has a Distributed Resource Scheduler (DRS) configured to manag
 +
 If you make any changes from the default settings, you will need to provide credentials. 
 +
-Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the virtual machine.
+The default for the VMs is mapped. Mapping uses the same settings that the VMs use in the production environment (same IP address, subnet mask, and gateway).
++
+Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the VM.
 +
 This section might display different fields depending on your selection. 
 //+
 //SnapMirror is at the volume level. So, all virtual machines are replicated to the replication target. Make sure to select all virtual machines that are part of the datastore. If they are not selected, only the virtual machines that are part of the replication plan are processed.
 +
-** *IP address type*: When you are mapping networking between source and target locations in the virtual machines section of the replication plan, BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet, gateway, and DNS servers. Additionally, enter credentials for virtual machines. 
+** *IP address type*: Reconfigure the VMs configuration to match the target virtual network requirements. BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet mask, gateway, and DNS servers. Additionally, enter credentials for VMs. 
 +
-*** *DHCP*: Select this setting if you want if you would like your VMs to obtain network configuration information from a DHCP server. If you choose this option, you provide just the credentials for the VM. 
+*** *DHCP*: Select this setting if you want your VMs to obtain network configuration information from a DHCP server. If you choose this option, you provide just the credentials for the VM. 
 *** *Static IP*: Select this setting if you want to specify IP configuration information manually. You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address of the VM, subnet mask, DNS, and gateway information. VM guest OS credentials should be supplied to either the global level or at each VM level.
 +
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. 
 +
 image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
 +
+** *Scripts*: You can include custom scripts in .sh, .bat, or .ps1 format as post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script after a failover process. For example, you can use a custom script to resume all database transactions after the failover is complete.
 +
 ** *Target VM prefix and suffix*: Under the virtual machines details, you can optionally add a prefix and suffix to the VM name. 
 ** *Source VM CPU and RAM*: Under the virtual machines details, you can optionally resize the VM CPU and RAM parameters. 
@@ -152,29 +162,30 @@ Boot order numbers apply only within a resource group. If you have a "2" in one 
 +
 TIP: To reset the boot order to the default, select *Reset VM settings to default* and then choose which settings you want to change back to the default. 
 +
-** *Create application-consistent replicas*: Indicate whether to create application-consistent Snapshot copies. The service will quiesce the application and then take a snapshot to obtain a consistent state of the application. This feature is supported with Oracle running on Windows and Linux and SQL Server running on Windows.  
+** *Create application-consistent replicas*: Indicate whether to create application-consistent snapshot copies. The service will quiesce the application and then take a snapshot to obtain a consistent state of the application. This feature is supported with Oracle running on Windows and Linux and SQL Server running on Windows.  
 
-. *Datastores*: In the Failover mappings tab, select the down arrow next to *Datastores*.  Based on the selection of virtual machines, datastore mappings are automatically selected.
+. *Datastores*: Select the down arrow next to *Datastores*.  Based on the selection of VMs, datastore mappings are automatically selected.
 +
 This section might be enabled or disabled depending on your selection.
 +
-** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of Snapshot copies to retain for all datastores. 
+** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of snapshot copies to retain for all datastores. 
 ** *Retention count*: Enter the number of snapshots you want to retain. 
 +
-** *Source and Target datastores*: If a volume has a SnapMirror relationship already established, you can select the corresponding source and target datastores. If you select a volume that does not have a SnapMirror relationship, you can create one now by selecting the working environment and its peer SVM. 
+** *Source and Target datastores*: If multiple (fan-out) SnapMirror relationships exist, you can select the destination to use. If a volume has a SnapMirror relationship already established, the corresponding source and target datastores appear. If a volume that does not have a SnapMirror relationship, you can create one now by selecting a target cluster, a target SVM and providing a volume name. The service will create the volume and SnapMirror relationship. 
 +
 NOTE: If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery.  
-
-* *Consistency Groups*: When you create a replication plan, you can include VMs that are from different volumes and different SVMs. BlueXP disaster recovery creates a Consistency Group Snapshot.
 +
-** If you specify the Recovery Point Objective (RPO), the service schedules a primary backup based on the RPO and updates the secondary destinations.  
-** If the VMs are from same volume and same SVM, then the service performs a standard ONTAP Snapshot and updates the secondary destinations.
-** If the VMs are from different volume and same SVM, the service creates a Consistency Group Snapshot by including all the volumes and updates the secondary destinations.
-** If the VMs are from different volume and different SVM, the service performs a Consistency Group start phase and commit phase Snapshot by including all the volumes in the same or different cluster and updates the secondary destinations.
-** During the failover, you can select any Snapshot. If you select the latest Snapshot, the service creates on on-demand backup, updates the destination, and uses that Snapshot for the failover.
+** When you specify the Recovery Point Objective (RPO), the service schedules a primary backup based on the RPO and updates the secondary destinations.  
+** If the VMs are from same volume and same SVM, then the service performs a standard ONTAP snapshot and updates the secondary destinations.
+** If the VMs are from different volume and same SVM, the service creates a consistency group snapshot by including all the volumes and updates the secondary destinations.
+** If the VMs are from different volume and different SVM, the service performs a consistency group start phase and commit phase snapshot by including all the volumes in the same or different cluster and updates the secondary destinations.
+** During the failover, you can select any snapshot. If you select the latest Snapshot, the service creates on on-demand backup, updates the destination, and uses that Snapshot for the failover.
 
+=== Test the mappings 
 
-. To set different mappings for the test environment, uncheck the box and select the *Test mappings* tab. Go through each tab as before, but this time for the test environment. 
+.Steps
+. To set different mappings for the test environment, uncheck the box and select the *Test mappings* tab. 
+. Go through each tab as before, but this time for the test environment. 
 +
 On the Test mappings tab, the Virtual machines and Datastores mappings are disabled. 
 +
