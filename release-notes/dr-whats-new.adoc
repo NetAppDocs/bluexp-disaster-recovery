@@ -35,9 +35,9 @@ include::_whatsnew/2024-08-02.adoc[]
 
 === Failover test schedules
 This release includes updates to the failover test schedule structure, which was needed to support daily and weekly schedules. This update requires that you disable and re-enable all existing replication plans so that you will be able to use the new daily and weekly failover test schedules. This is a one-time requirement.  
-+
+
 Here's how: 
-+
+
 . From the top menu, select *Replication plans*. 
 . Select a plan and select the Actions icon to show the drop-down menu. 
 . Select *Disable*. 
@@ -45,9 +45,9 @@ Here's how:
 
 === Replication plan updates
 This release includes updates to replication plan data, which resolves a "snapshot not found" issue. This requires that you change the retention count in all replication plans to 1 and initiate an on-demand snapshot. This process creates a new backup and removes all older backups. 
-+
+
 Here's how: 
-+
+
 . From the top menu, select *Replication plans*. 
 . Select the replication plan, click the *Failover mapping* tab, and click the *Edit* pencil icon. 
 . Click the *Datastores* arrow to expand it. 
