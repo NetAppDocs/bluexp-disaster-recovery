@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter, draas
 summary: BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. With BlueXP disaster recovery for VMware, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in public clouds as a disaster recovery site using NetApp cloud storage.
 ---
 
-= What's new
+= What's new in BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/
@@ -13,27 +13,14 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 [.lead]
 Learn what’s new in BlueXP disaster recovery.
 
-// tag::whats-new[]
+//tag::whats-new[]
+
+== 30 October 2024
+include::_whatsnew/2024-10-30.adoc[]
+
 == 20 September 2024
 
 include::_whatsnew/2024-09-20.adoc[]
-
-
-//* *Reporting*: With this release, you can now generate and download reports to help you analyze your landscape. Predesigned reports include a summary of failovers and failbacks, replication details on all sites, and job details for the past year. 
-//+
-//For details, see link:../use/reports.html[Create disaster recovery reports].
-//Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html[Create disaster recovery reports].
-
-
-//* *VM details available for failover, failback, and test failover*: When a failure occurs and you are performing a failover, performing a failback, or testing the failover, you can now see details of the VMs and identify which VMs did not restart. 
-//+
-//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/use-overview.html[Use BlueXP disaster recovery overview]. 
-
-//* *Folder mapping*: When you are creating a replication plan and you are mapping compute resources, you can now map folders. 
-//+
-//For details, see link:../use/drplan-create.html[Create disaster recovery reports].
-//For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
-
 
 == 2 August 2024
 
@@ -41,10 +28,34 @@ include::_whatsnew/2024-08-02.adoc[]
 
 //For details, see link:../use/monitor-jobs.html[Monitor jobs].
 
+//include 3 most recent releases
+//end::whats-new[]
+
 == 17 July 2024 
 
-include::_whatsnew/2024-07-17.adoc[]
-// end::whats-new[]
+* *Failover test schedules*: This release includes updates to the failover test schedule structure, which was needed to support daily and weekly schedules. This update requires that you disable and re-enable all existing replication plans so that you will be able to use the new daily and weekly failover test schedules. This is a one-time requirement.  
++
+Here's how: 
++
+. From the top menu, select *Replication plans*. 
+. Select a plan and select the Actions icon to show the drop-down menu. 
+. Select *Disable*. 
+. After a few minutes, select *Enable*.
+
+* *Replication plan updates*: This release includes updates to replication plan data, which resolves a "snapshot not found" issue. This requires that you change the retention count in all replication plans to 1 and initiate an on-demand snapshot. This process creates a new backup and removes all older backups. 
++
+Here's how: 
++
+. From the top menu, select *Replication plans*. 
+. Select the replication plan, click the *Failover mapping* tab, and click the *Edit* pencil icon. 
+. Click the *Datastores* arrow to expand it. 
+//+
+//image:use/dr-plan-failover-edit.png[Edit failover mappings page]
+. Note the value of the retention count in the replication plan. You will need to reinstate this original value when you're finished with these steps. 
+. Reduce the count to 1.
+. Initiate an on-demand snapshot. To do so, on the Replication plan page, select the plan, click the Actions icon, and select *Take snapshot now*. 
+. After the snapshot job completes successfully, increase the count in the replication plan back to its original value that you noted in the first step. 
+. Repeat these steps for all existing replication plans. 
 
 == 5 July 2024
 
@@ -107,8 +118,7 @@ For details about setting up licensing for BlueXP disaster recovery, refer to li
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn more about BlueXP disaster recovery]. 
 
-//include 3 most recent releases
-//end::whats-new[]
+
 
 == 5 March 2024
 
