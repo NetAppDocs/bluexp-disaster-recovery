@@ -16,15 +16,15 @@ Learn what’s new in BlueXP disaster recovery.
 //tag::whats-new[]
 
 == 30 October 2024
-include::_whatsnew/2024-10-30.adoc[]
+include::../_whatsnew/2024-10-30.adoc[]
 
 == 20 September 2024
 
-include::_whatsnew/2024-09-20.adoc[]
+include::../_whatsnew/2024-09-20.adoc[]
 
 == 2 August 2024
 
-include::_whatsnew/2024-08-02.adoc[]
+include::../_whatsnew/2024-08-02.adoc[]
 
 //For details, see link:../use/monitor-jobs.html[Monitor jobs].
 
