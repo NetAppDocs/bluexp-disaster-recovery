@@ -75,9 +75,9 @@ NOTE: NetApp doesn't charge you for any previewed workload capacity.
 
 
 === Replication plan updates 
-You can add a replication plan more easily by filtering VMs by datastore on the Applications page and by selecti//Refer to link:../use/drplan-create.html[Create a replication plan].
+You can add a replication plan more easily by filtering VMs by datastore on the Applications page and by selecting more target details on the Resource mapping page.
 Refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
-ng more target details on the Resource mapping page. 
+ 
 
 
 === Edit replication plans
