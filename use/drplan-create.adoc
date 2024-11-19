@@ -17,6 +17,8 @@ Such plans are sometimes called _blueprints_.
 
 You can create a replication plan and also edit schedules for compliance and testing. 
 
+You can protect multiple VMs on multiple datastores. BlueXP disaster recovery creates ONTAP Consistency Groups for all ONTAP volumes hosting protected VM datastores. 
+
 == Create the plan
 A wizard takes you through these steps: 
 
@@ -25,14 +27,6 @@ A wizard takes you through these steps:
 * Map how resources from the source environment map to the destination. 
 * Identify recurrence, run a guest-hosted script, set the boot order, and select the recovery point objective.
 * Review the plan.
-
-
-While you are creating the replication plan, you can define the SnapMirror relationship between source and target volumes in one of the following configurations: 
-
-*** 1 to 1
-*** 1 to many in a fan-out architecture
-*** Many to 1 in a Consistency Group
-*** Many to many 
 
 When you create the plan, you should follow these guidelines: 
 
@@ -121,15 +115,17 @@ image:dr-plan-resource-mapping2.png[Replication plan, Resource mapping tab]
 TIP: If a vCenter has a Distributed Resource Scheduler (DRS) configured to manage multiple hosts in a cluster, you don't need to select a host. If you select a host, BlueXP disaster recovery will place all the VMs on the selected host. 
 * *Target VM folder* (optional): Create a new root folder to store the selected VMs. 
 
-. *Virtual networks*: In the Failover mappings tab, select the down arrow next to *Virtual networks*. Select the source virtual LAN and target segment. 
+. *Virtual networks*: In the Failover mappings tab, select the down arrow next to *Virtual networks*. Select the source virtual LAN and target virtual LAN. 
++
+Select the network mapping to the appropriate virtual LAN. The virtual LANs should already be provisioned, so select the appropriate virtual LAN to map the VM.
 
 . *Virtual machines*: In the Failover mappings tab, select the down arrow next to *Virtual machines*. 
 +
-If you make any changes from the default settings, you will need to provide credentials. 
+The default for the VMs is mapped. Default mapping uses the same settings that the VMs use in the production environment (same IP address, subnet mask, and gateway).
 +
-The default for the VMs is mapped. Mapping uses the same settings that the VMs use in the production environment (same IP address, subnet mask, and gateway).
+If you make any changes from the default settings, you must change the Target IP field to "Different from source." 
 +
-Select the network mapping to the appropriate segment. The segments should already be provisioned, so select the appropriate segment to map the VM.
+NOTE: If you change settings to "Different from source," you need to provide VM guest OS credentials. 
 +
 This section might display different fields depending on your selection. 
 //+

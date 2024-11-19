@@ -15,17 +15,32 @@ To use BlueXP disaster recovery, perform a few steps to set it up both in Amazon
 
 TIP: Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
-== Get ready for BlueXP disaster recovery
+== Get ready for BlueXP disaster recovery for both deployments
+
 
 * Verify your production environment. 
 ** Ensure that VMs that you want to protect are hosted on NFS datastores (using ONTAP NFS volumes) or VMFS datastores (using NetApp iSCSI LUNs). 
-** Ensure that you have credentials and access keys for your on-premises ONTAP arrays, vCenters and AWS-hosted VMware cloud instances. 
+** Ensure that you have credentials:
+*** For your on-premises ONTAP arrays and vCenters, you need credentials. 
+*** For onprem to cloud, you need access keys for AWS-hosted VMware cloud instances. 
 * Create or verify your disaster recovery site. 
-** Create or verify your Amazon FSx file system is ready. 
-** Ensure that your source and destination VMs are peered. 
+** Create or verify your destination ONTAP SVM. 
+** Ensure that your source and destination ONTAP SVMs are peered. 
+* Set up vCenter privileges. <link to privileges>.
+* Create a DR-specific user account (not the general admin account) and use these privileges.
+
+== Set up DR for onprem to onprem deployments 
+
+
+== Set up DR for on-premises to AWS
+
+
+* Set up FSx for ONTAP. 
+* Set up VMware Cloud for AWS SDDC. 
+
 
  
-== Set up VMware Cloud for AWS SDDC
+=== Set up VMware Cloud for AWS SDDC
 
 Set up VMware Cloud for AWS software-defined data center (SDDC).
 
@@ -47,15 +62,14 @@ https://www.vmware.com/products/vmc-on-aws.html[VMware Cloud on AWS^] provides a
 To configure a VMC environment on AWS, follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html[link^]. A pilot-light cluster can also be used for disaster recovery purposes.
 
 
+=== Configure SnapMirror for Amazon FSx for NetApp ONTAP
 
-//=== Configure SnapMirror for Amazon FSx for NetApp ONTAP
+The next step is to set up configure SnapMirror for Amazon FSx in BlueXP. 
 
-//The next step is to set up configure SnapMirror for Amazon FSx in BlueXP. 
+Refer to https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html[how to set up an FSx for ONTAP working environment^].
 
-//Refer to https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html[how to set up an FSx for ONTAP working environment^].
-
-//. Add Amazon FSx for NetApp ONTAP to the working environment that is used to manage BlueXP disaster recovery. 
-//. Ensure the following: 
+. Add Amazon FSx for NetApp ONTAP to the working environment that is used to manage BlueXP disaster recovery. 
+. Ensure the following: 
 //** The source and destination clusters are peered. 
 //** The destination SVM is created. 
 //** The source and destination SVMs are peered. 
