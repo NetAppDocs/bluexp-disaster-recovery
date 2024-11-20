@@ -26,7 +26,7 @@ Ensure that the following requirements are met before you set up BlueXP disaster
 ** Ensure that your source and destination ONTAP SVMs are peered.
 * vCenter clusters
 ** Ensure that the VMs you want to protect are hosted on NFS datastores (using ONTAP NFS volumes) or VMFS datastores (using NetApp iSCSI LUNs).
-** Review vCenter privileges required for BlueXP DR. <link to privileges>.
+** Review link:../reference/vcenter-privileges.html[vCenter privileges] required for BlueXP DR. 
 ** Create a disaster recovery user account (not the default vCenter admin account) and assign the vCenter privileges to the account.
 
 
