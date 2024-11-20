@@ -15,57 +15,49 @@ To use BlueXP disaster recovery, perform a few steps to set it up both in Amazon
 
 TIP: Review link:../get-started/dr-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
-== Get ready for BlueXP disaster recovery
+== Get ready for BlueXP disaster recovery for on-premises-to-on-premises protection
 
-* Verify your production environment. 
-** Ensure that VMs that you want to protect are hosted on NFS datastores (using ONTAP NFS volumes) or VMFS datastores (using NetApp iSCSI LUNs). 
-** Ensure that you have credentials and access keys for your on-premises ONTAP arrays, vCenters and AWS-hosted VMware cloud instances. 
-* Create or verify your disaster recovery site. 
-** Create or verify your Amazon FSx file system is ready. 
-** Ensure that your source and destination VMs are peered. 
+Ensure that the following requirements are met before you set up BlueXP disaster recovery for on-premises-to-on-premises protection:
 
+* ONTAP storage
+** Ensure that you have ONTAP credentials.
+** Create or verify your disaster recovery site.
+** Create or verify your destination ONTAP SVM.
+** Ensure that your source and destination ONTAP SVMs are peered.
+* vCenter clusters
+** Ensure that the VMs you want to protect are hosted on NFS datastores (using ONTAP NFS volumes) or VMFS datastores (using NetApp iSCSI LUNs).
+** Review link:../reference/vcenter-privileges.html[vCenter privileges] required for BlueXP DR. 
+** Create a disaster recovery user account (not the default vCenter admin account) and assign the vCenter privileges to the account.
+
+
+== Get ready for BlueXP disaster recovery for on-premises-to-cloud protection using AWS
+
+To set up BlueXP disaster recovery for on-premises-to-cloud protection using AWS, you need to set up the following:
+
+* Set up AWS FSx for NetApp ONTAP
+* Set up VMware Cloud on AWS SDDC
+
+
+=== Set up AWS FSx for NetApp ONTAP
+
+* Create an Amazon FSx for NetApp ONTAP file system. 
+** Provision and configure FSx for ONTAP. Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage, built on the NetApp ONTAP file system.
  
-== Set up VMware Cloud for AWS SDDC
+** Follow the steps in https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html[Technical Report 4938: Mount Amazon FSx ONTAP as an NFS datastore with VMware Cloud on AWS^] and https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html[Quick start for Amazon FSx for NetApp ONTAP] to provision and configure FSx for ONTAP.
+ 
+* Add Amazon FSx for ONTAP to the working environment, and add AWS credentials for FSx for ONTAP.
+* Create or verify your destination ONTAP SVM in AWS FSx for ONTAP instance.
+* Configure replication between your source on-premises ONTAP cluster and your FSx for ONTAP instance in BlueXP. 
 
-Set up VMware Cloud for AWS software-defined data center (SDDC).
 
-* Create an Amazon FSx for ONTAP file system. Provision and configure FSx for ONTAP. Amazon FSx for NetApp ONTAP is a fully managed service that provides highly reliable, scalable, high-performing, and feature-rich file storage built on the popular NetApp ONTAP file system. 
-
-* Follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html[link^] and here https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html[Quick start for Amazon FSx for NetApp ONTAP] to provision and configure FSx for NetApp ONTAP.
-
-* Add Amazon FSx for NetApp ONTAP to the working environment, and add AWS credentials for FSx for ONTAP. 
-
-* In AWS, you'll need to do the following steps: 
-
-** Deploy and configure VMware Cloud on AWS.
-
-** Use a VMware account and provision the SDDC. Ensure that the SDDC has connectivity with FSx for ONTAP.
-
-=== Deploy VMware Cloud
-https://www.vmware.com/products/vmc-on-aws.html[VMware Cloud on AWS^] provides a cloud-native experience for VMware-based workloads in the AWS ecosystem. Each VMware software-defined data center (SDDC) runs in an Amazon Virtual Private Cloud (VPC) and provides a full VMware stack (including vCenter Server), NSX-T software-defined networking, vSAN software-defined storage, and one or more ESXi hosts that provide compute and storage resources to the workloads. 
-
-To configure a VMC environment on AWS, follow the steps at this https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html[link^]. A pilot-light cluster can also be used for disaster recovery purposes.
+Refer to https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html[how to set up an FSx for ONTAP working environment^] for detailed steps.
 
 
 
-//=== Configure SnapMirror for Amazon FSx for NetApp ONTAP
+=== Set up VMware Cloud on AWS SDDC
 
-//The next step is to set up configure SnapMirror for Amazon FSx in BlueXP. 
-
-//Refer to https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html[how to set up an FSx for ONTAP working environment^].
-
-//. Add Amazon FSx for NetApp ONTAP to the working environment that is used to manage BlueXP disaster recovery. 
-//. Ensure the following: 
-//** The source and destination clusters are peered. 
-//** The destination SVM is created. 
-//** The source and destination SVMs are peered. 
-//** The SnapMirror relationship with the ONTAP cluster is in place and that it has a destination of FSx for NetApp ONTAP. 
-
-//. In BlueXP, discover the provisioned FSx for NetApp ONTAP on an AWS instance and replicate the specified datastore volumes from an on-premises environment to FSx for NetApp ONTAP with the appropriate frequency and NetApp Snapshot copy retention. 
-
-
-
-
-
-
+https://www.vmware.com/products/vmc-on-aws.html[VMware Cloud on AWS^] provides a cloud-native experience for VMware-based workloads in the AWS ecosystem. Each VMware software-defined data center (SDDC) runs in an Amazon Virtual Private Cloud (VPC) and provides a full VMware stack (including vCenter Server), NSX-T software-defined networking, vSAN software-defined storage, and one or more ESXi hosts that provide compute and storage resources to the workloads.
+ 
+To configure a VMware Cloud environment on AWS, follow the steps in https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html[Deploy and configure the Virtualization Environment on AWS^]. A pilot-light cluster can also be used for disaster recovery purposes.
+ 
 
