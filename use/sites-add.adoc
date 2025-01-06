@@ -36,8 +36,7 @@ image:vcenter-add.png[Add vCenter server screenshot ]
 +
 NOTE: Self-signed certificates are not as secure as other certificates. If your vCenter is *NOT* configured with certificate authority (CA) certificates, you should check this box; otherwise, the connection to the vCenter will not work.  
 
-* (Applies only to cloud sites) *API token*: Enter the API token to authorize service access for your organization. Create the API token by providing specific organization and service roles. 
-* (Applies only to cloud sites) *Long organization ID*: Enter the unique ID for the organization. You can identify this ID by clicking on the username in the Account section of the BlueXP console.
+
 
 . Select *Add*. 
 +
@@ -46,6 +45,8 @@ Next, you will add a target vCenter.
 . *Target*: 
 
 .. Choose the target site and the location. If the target is cloud, select *AWS*.  
+* (Applies only to cloud sites) *API token*: Enter the API token to authorize service access for your organization. Create the API token by providing specific organization and service roles. 
+* (Applies only to cloud sites) *Long organization ID*: Enter the unique ID for the organization. You can identify this ID by clicking on the username in the Account section of the BlueXP console.
 
 .. Select *Add*. 
 
