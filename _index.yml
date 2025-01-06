@@ -23,7 +23,7 @@ indexpage:
       url: /get-started/dr-faq.html 
   - title: Use BlueXP disaster recovery
     links:
-    - title: Add vCenter sites 
+    - title: Add vCenters to a site
       url: /use/sites-add.html
     - title: Create a disaster recovery plan
       url: /use/drplan-create.html
