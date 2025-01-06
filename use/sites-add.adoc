@@ -2,16 +2,16 @@
 sidebar: sidebar
 permalink: use/sites-add.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter
-summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows.
+summary: Before you can create a disaster recovery plan, you need to add a primary vCenter site and a target vCenter disaster recovery site in BlueXP disaster recovery. 
 ---
 
-= Add vCenter sites
+= Add vCenters to a site
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-Before you can create a disaster recovery plan, you need to add a primary vCenter site and a target vCenter disaster recovery site in BlueXP. 
+Before you can create a disaster recovery plan, you need to add a primary vCenter server to a site and a target vCenter disaster recovery site in BlueXP. 
 
 After they are added, BlueXP disaster recovery performs a deep discovery of the vCenter environments, including vCenter clusters, ESXi hosts, datastores, storage foot print, virtual machine details, SnapMirror replicas, and virtual machine networks.
 
@@ -20,6 +20,8 @@ After they are added, BlueXP disaster recovery performs a deep discovery of the 
 . Log in to BlueXP and select *Protection* > *Disaster recovery* from the left nav. 
 +
 You’ll land on BlueXP disaster recovery Dashboard page. When you first start with the service, you need to add vCenter information. Later, the Dashboard displays data about your sites and replication plans. 
++
+NOTE: Different fields appear depending on the type of site you are adding. 
 
 . *Source*: Select *Discover vCenter servers* to enter information about the source vCenter site.  
 +
@@ -27,14 +29,17 @@ TIP: If some vCenter sites already exist and you want to add more, from the top 
 +
 image:vcenter-add.png[Add vCenter server screenshot ]
 
-.. Add a site, select the BlueXP Connector, and provide vCenter credentials. 
+* Add a site, select the BlueXP Connector, and provide vCenter credentials. 
 
 
-.. To accept self-signed certificates for the source vCenter, check the box. 
+* (Applies only to on-premises sites) To accept self-signed certificates for the source vCenter, check the box. 
 +
 NOTE: Self-signed certificates are not as secure as other certificates. If your vCenter is *NOT* configured with certificate authority (CA) certificates, you should check this box; otherwise, the connection to the vCenter will not work.  
 
-.. Select *Add*. 
+* (Applies only to cloud sites) *API token*: Enter the API token to authorize service access for your organization. Create the API token by providing specific organization and service roles. 
+* (Applies only to cloud sites) *Long organization ID*: Enter the unique ID for the organization. You can identify this ID by clicking on the username in the Account section of the BlueXP console.
+
+. Select *Add*. 
 +
 Next, you will add a target vCenter. 
 

@@ -40,6 +40,7 @@ These prerequisites apply to both on-premises vCenter clusters and to VMware Clo
 ** NFS 
 ** VMFS using the iSCSI or FC protocol 
 
+* VMware vSphere version 7.0 Update 3 (7.0v3) or later
 * If you are using VMware Cloud SDDC, these prerequisites apply. 
 ** In the VMware Cloud Console, use the service roles of Administrator and NSX Cloud Administrator. Also use the organization owner for the Organization role. Refer to https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html[Using VMware Cloud Foundations with AWS FSx for NetApp ONTAP documentation^]. 
 
