@@ -52,6 +52,6 @@ Next, you will add a target vCenter.
 +
 The source and target vCenters appear on the list of sites. 
 +
-image:sites-list.png[Sites page screenshot]
+image:sites-list2.png[Sites page screenshot]
 
 . To see the progress of the operation, from the top menu, select *Job monitoring*. 
