@@ -49,10 +49,8 @@ Next, you will add a target vCenter.
 * (Applies only to cloud sites) *Long organization ID*: Enter the unique ID for the organization. You can identify this ID by clicking on the username in the Account section of the BlueXP console.
 
 .. Select *Add*. 
-
 +
 The source and target vCenters appear on the list of sites. 
-
 +
 image:sites-list.png[Sites page screenshot]
 
