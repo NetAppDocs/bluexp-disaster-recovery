@@ -82,10 +82,10 @@ After the free trial ends, you can either purchase a license from NetApp or subs
  
 . When you return to BlueXP disaster recovery, a message states that you are subscribed. 
 +
-To view subscription details in BlueXP digital wallet, select *View subscription details* and view the active subscription on the *Subscriptions* page. 
+You can view subscription details in BlueXP digital wallet, select *View subscription details* and view the active subscription on the *Marketplace subscriptions* page. 
 
 +
-image:digital-wallet-subscriptions2.png[The BlueXP digital wallet Subscriptions tab]
+
 
 
 == After the trial ends, purchase a BYOL license through NetApp
