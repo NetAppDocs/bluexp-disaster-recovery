@@ -108,15 +108,15 @@ You'll need the BlueXP disaster recovery serial number. Locate this number from 
 *Add the license to BlueXP digital wallet*
 After you purchase a BlueXP disaster recovery license, you need to add the license to the BlueXP digital wallet.
 
+
+
 . After you obtain the license, return to BlueXP disaster recovery. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
 +
 image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment metnods page]
 
 . Select *Add license to BlueXP*. You will be directed to BlueXP digital wallet. 
 +
-. In BlueXP digital wallet, from the *Data services licenses* tab, select *Add License*. 
-. In the Add License page, enter the serial number and NetApp Support Site account information.
-. Select *Add License*. 
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Learn about adding licenses with digital wallet^].
 
 
 
@@ -136,9 +136,8 @@ After you pay for the license and it is registered with the NetApp Support Site,
 
 . If BlueXP can't automatically update the license (for example, when installed in a dark site), then you'll need to manually upload the license file.
 +
-.. You can obtain the license file from the NetApp Support Site.
-.. Access the BlueXP digital wallet.
-.. Select the *Data services licenses* tab, select the *Actions ...* icon for the service serial number you are updating, and select *Update License*.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Learn about updating licenses with digital wallet^].
 
 == End the free trial
 
