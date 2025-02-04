@@ -26,7 +26,7 @@ NOTE: BlueXP disaster recovery charges are based on used capacity of datastores 
 
 //After you set up your BYOL or purchase a subscription in AWS, you can see the license in the BlueXP digital wallet *Data service Licenses* tab or the active subscription in the BlueXP digital wallet *Subscriptions* tab.
 
-After you set up your BYOL, you can see the license in the BlueXP digital wallet *Data service licenses* tab.
+link:https://docs.netapp.com/us-en/bluexp-digital-wallet/concept-digital-wallet.html[Learn more about digital wallet^].
 
 //After the free trial ends or the license or AWS subscription expires, you can still do the following in the service:
 
@@ -82,7 +82,7 @@ After the free trial ends, you can either purchase a license from NetApp or subs
  
 . When you return to BlueXP disaster recovery, a message states that you are subscribed. 
 +
-You can view subscription details in BlueXP digital wallet. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-homepage.html[Learn about digital wallet^].
+You can view subscription details in BlueXP digital wallet. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-homepage.html[Learn more managing subscriptions with digital wallet^].
 
 +
 
