@@ -14,6 +14,12 @@ summary: BlueXP disaster recovery is a cloud-based disaster recovery service tha
 Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
+== 19 February 2025
+Version 4.2 
+
+include::../_whatsnew/2025-02-19.adoc[]
+
+
 
 == 30 October 2024
 include::../_whatsnew/2024-10-30.adoc[]
@@ -22,14 +28,16 @@ include::../_whatsnew/2024-10-30.adoc[]
 
 include::../_whatsnew/2024-09-20.adoc[]
 
+//include 3 most recent releases
+//end::whats-new[]
+
 == 2 August 2024
 
 include::../_whatsnew/2024-08-02.adoc[]
 
 //For details, see link:../use/monitor-jobs.html[Monitor jobs].
 
-//include 3 most recent releases
-//end::whats-new[]
+
 
 == 17 July 2024 
 
