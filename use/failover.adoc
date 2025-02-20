@@ -72,10 +72,10 @@ In case of a disaster, fail over your primary on-premises VMware site on demand 
 
 The failover process involves in the following operations: 
 
-* If you selected the latest Snapshot, the SnapMirror update is performed to replicate the latest changes. 
+* If you selected the latest snapshot, the SnapMirror update is performed to replicate the latest changes. 
 * The source virtual machines are powered down. 
 * The SnapMirror relationship is broken and the target  volume is made read/write. 
-* Based on the selection of the Snapshot, the active file system is restored to the specified Snapshot (latest or selected) 
+* Based on the selection of the snapshot, the active file system is restored to the specified snapshot (latest or selected) 
 * Datastores are created and mounted to the VMware or VMC cluster or host based on the information captured in the replication plan.
 * The target virtual machines are registered and powered on based on the order captured in the Resource groups page.  
 * The SnapMirror relationship is reversed from target to source virtual machine. 
@@ -94,7 +94,7 @@ TIP: After the failover starts, the recovered VMs can be seen in the vCenter of 
 +
 image:dr-plan-failover2.png[Fail over page]
 
-. In the Fail over page, either initiate a snapshot now or choose the Snapshot for the datastore from which to recover.  The default is the latest. 
+. In the Fail over page, either initiate a snapshot now or choose the snapshot for the datastore from which to recover.  The default is the latest. 
 +
 A snapshot of the current source will be taken and replicated to the current destination before the fail over occurs. 
 

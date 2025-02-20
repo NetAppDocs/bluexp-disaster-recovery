@@ -175,7 +175,7 @@ NOTE: If you want to create a SnapMirror relationship in this service, the clust
 ** If the VMs are from same volume and same SVM, then the service performs a standard ONTAP snapshot and updates the secondary destinations.
 ** If the VMs are from different volume and same SVM, the service creates a consistency group snapshot by including all the volumes and updates the secondary destinations.
 ** If the VMs are from different volume and different SVM, the service performs a consistency group start phase and commit phase snapshot by including all the volumes in the same or different cluster and updates the secondary destinations.
-** During the failover, you can select any snapshot. If you select the latest Snapshot, the service creates on on-demand backup, updates the destination, and uses that Snapshot for the failover.
+** During the failover, you can select any snapshot. If you select the latest snapshot, the service creates on on-demand backup, updates the destination, and uses that snapshot for the failover.
 
 === Test the mappings 
 
