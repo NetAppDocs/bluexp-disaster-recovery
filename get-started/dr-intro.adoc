@@ -40,7 +40,7 @@ BlueXP disaster recovery provides you with full use of several NetApp technologi
 
 * Replicate VMware apps on your on-premises production site to a disaster recovery remote site in the cloud or on-premises using SnapMirror replication.
 * Migrate VMware workloads from your original site to another site. 
-* Conduct a failover test; virtual machines are temporarily created. BlueXP disaster recovery makes a new FlexClone volume from the selected Snapshot, and a temporary datastore backing the FlexClone volume is mapped to the ESXi hosts. This process doesn’t consume additional physical capacity on on-premises ONTAP storage or FSx for NetApp ONTAP storage in AWS. The original source volume is not modified and replica jobs can continue even during disaster recovery.
+* Conduct a failover test; virtual machines are temporarily created. BlueXP disaster recovery makes a new FlexClone volume from the selected snapshot, and a temporary datastore backing the FlexClone volume is mapped to the ESXi hosts. This process doesn’t consume additional physical capacity on on-premises ONTAP storage or FSx for NetApp ONTAP storage in AWS. The original source volume is not modified and replica jobs can continue even during disaster recovery.
 * In case of disaster, fail over your primary site on demand to the disaster recovery site, which can be  VMware Cloud on AWS with FSx for NetApp ONTAP or an on-premises VMware environment with ONTAP. 
 * After the disaster has been resolved, fail back on demand from the disaster recovery site to the primary site.
 
@@ -87,7 +87,7 @@ You can purchase a license at any time and you will not be charged until the 30-
 
 BlueXP disaster recovery can recover workloads replicated from an on-premises site to Amazon FSx for ONTAP or to another on-premises site. This service automates the recovery from the SnapMirror level, through virtual machine registration to Virtual Machine Cloud (VMC), and to network mappings directly on the VMware network virtualization and security platform, NSX-T. This feature is included with all Virtual Machine Cloud environments.
 
-BlueXP disaster recovery uses ONTAP SnapMirror technology, which provides highly efficient replication and preserves the ONTAP incremental-forever Snapshot efficiencies. SnapMirror replication ensures that application-consistent Snapshot copies are always in sync and the data is usable immediately after a failover. 
+BlueXP disaster recovery uses ONTAP SnapMirror technology, which provides highly efficient replication and preserves the ONTAP incremental-forever snapshot efficiencies. SnapMirror replication ensures that application-consistent snapshot copies are always in sync and the data is usable immediately after a failover. 
 
 image:dr-architecture-diagram-70-2.png[Diagram showing architecture of the BlueXP disaster recovery for VMware service infrastructure]
 
@@ -99,7 +99,7 @@ When there is a disaster, this service helps you recover virtual machines in the
 
 * The service also lets you fail back virtual machines to the original source location.  
 * You can test the disaster recovery failover process without disrupting the original virtual machines. The test recovers virtual machines to an isolated network by creating a FlexClone of the volume.
-* For the failover or test failover process, you can choose the latest (default) or selected Snapshot from which to recover your virtual machine. 
+* For the failover or test failover process, you can choose the latest (default) or selected snapshot from which to recover your virtual machine. 
 
 
 == Terms that might help you with BlueXP disaster recovery

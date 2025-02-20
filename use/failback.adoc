@@ -12,7 +12,7 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 
 [.lead]
 
-After a disaster has been resolved, fail back from the disaster recovery site to the source site to return to normal operations. You can select the Snapshot from which to recover. 
+After a disaster has been resolved, fail back from the disaster recovery site to the source site to return to normal operations. You can select the snapshot from which to recover. 
 
 In this workflow, BlueXP disaster recovery replicates (resyncs) any changes back to the original source virtual machine before reversing the replication direction. This process starts from a relationship that has completed failing over to a target and involves the following steps:
 
@@ -33,6 +33,6 @@ In this workflow, BlueXP disaster recovery replicates (resyncs) any changes back
 
 . Enter the replication plan name to confirm and start the failback. 
   
-. Choose the Snapshot for the datastore from which to recover.  The default is the latest. 
+. Choose the snapshot for the datastore from which to recover.  The default is the latest. 
 
 . To check the progress, in the top menu, select *Job monitoring*.
