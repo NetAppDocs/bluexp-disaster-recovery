@@ -5,13 +5,13 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. After you’ve added vCenter sites, you’re ready to create a disaster recovery or replication plan. 
 ---
 
-= Create a resource group 
+= Create a resource group to organize VMs together
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-After you’ve added vCenter sites, you might want to create resource groups that group VMs together. Resource groups enable you to group a set of dependent VMs into logical groups that meet your requirements. For example, you might group VMs associated with one application or you might group applications that have similar tiers. As another example, groups could contain delayed boot orders that can be run upon recovery.
+After you’ve added vCenter sites, you might want to create resource groups that group VMs together. Resource groups enable you to organize a set of dependent VMs into logical groups that meet your requirements. For example, you might group VMs associated with one application or you might group applications that have similar tiers. As another example, groups could contain delayed boot orders that can be run upon recovery.
 
 You can create resource groups using the following methods: 
 
