@@ -34,19 +34,19 @@ BlueXP disaster recovery protects VMs by replicating the underlying ONTAP volume
 
 If VMs in the resource group are hosted on different data stores, BlueXP disaster recovery uses one of the following methods to create a data-consistent snapshot of the ONTAP volumes or LUNs.
 
-[cols=2*,options="header",cols="15,65a",width="100%"]
+[cols=2*,options="header",cols="30,65a",width="100%"]
 |===
 | Relative location of FlexVol volumes 
 | Snapshot replica process
 
 
-| Multiple data stores - FlexVol volumes in the same SVM 
+| Multiple data stores - FlexVol volumes in the *same SVM* 
 | * ONTAP consistency group created
 * Snapshots of the consistency group
 * Volume-scoped SnapMirror replication 
 
 
-| Multiple data stores - FlexVol volumes in multiple SVMs 
+| Multiple data stores - FlexVol volumes in *multiple SVMs* 
 | * ONTAP API: cg_start
 * Volume-scoped snapshots of all resource group volumes
 * ONTAP API: cg_end
