@@ -18,7 +18,7 @@ You can create resource groups using the following methods:
 * From the Resource groups tab  
 * While you’re creating a disaster recovery or _replication plan_. If you have a lot of VMs hosted by a source vCenter cluster, it might be easier for you to create the resource groups while you're creating the replication plan. For instructions on creating resource groups while you're creating a replication plan, see link:dr-plan-create.html[Create a replication plan].
 
-TIP: Each resource group can include one or more VMs. The VMs will power on based on the sequence in which you include them in the replication plan.
+TIP: Each resource group can include one or more VMs. The VMs will power on based on the sequence in which you include them in the replication plan. You can change the order by dragging the VMs up or down the resource group list. 
 
 .About resource groups
 
@@ -74,12 +74,13 @@ When you are creating resource groups, you should consider the following issues:
 . Enter a name for the resource group.
 . Select the source vCenter cluster where the VMs are located.
 
-. Optionally, on the left side of the Add resource groups page, filter the VMs by their datastore. You can also search for specific VMs by name. 
-
 
 . On the left side of the Add resource groups page, select the VMs that you want to protect. 
 +
 image:dr-resource-groups-add.png[Screenshot showing the Add resource groups page]
+
+. Optionally, change the order of the VMs on the right by dragging each VM up or down the list. The VMs will power on based on the sequence in which you include them.
+
 
 . Select *Add*.
 
