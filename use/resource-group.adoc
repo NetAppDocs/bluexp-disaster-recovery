@@ -47,8 +47,8 @@ If VMs in the resource group are hosted on different data stores, BlueXP disaste
 
 
 | Multiple data stores - FlexVol volumes in *multiple SVMs* 
-| * ONTAP API: ~cg_start~. Quieces all volumes so snapshots can be taken and initiates volume-scoped snapshots of all resource group volumes.
-* ONTAP API: ~cg_end~. Resumes I/O on all volumes and enables volume-scoped SnapMirror replication after snapshots are taken.
+| * ONTAP API: `cg_start`. Quieces all volumes so snapshots can be taken and initiates volume-scoped snapshots of all resource group volumes.
+* ONTAP API: `cg_end`. Resumes I/O on all volumes and enables volume-scoped SnapMirror replication after snapshots are taken.
 
 |===
 
