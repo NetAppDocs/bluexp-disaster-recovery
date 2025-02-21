@@ -13,7 +13,7 @@ summary: NetApp BlueXP disaster recovery is a cloud-based disaster recovery serv
 [.lead]
 Using BlueXP disaster recovery, you can accomplish the following goals: 
 
-* link:../use/dashboard-view.html[View the health of your disaster recovery plans]
+* link:../use/dashboard-view.html[View the health of your disaster recovery plans].
 * link:../use/sites-add.html[Add vCenter sites].
 * link:../use/resource-group.html[Create resource groups to organize VMs together]
 * link:../use/drplan-create.html[Create a disaster recovery plan].
