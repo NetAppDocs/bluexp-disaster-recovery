@@ -13,16 +13,18 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 [.lead]
 After you’ve added vCenter sites, you might want to create resource groups that group VMs together. Resource groups enable you to organize a set of dependent VMs into logical groups that meet your requirements. For example, you might group VMs associated with one application or you might group applications that have similar tiers. As another example, groups could contain delayed boot orders that can be run upon recovery.
 
+You can group VMs themselves or VMs in datastores. 
+
 You can create resource groups using the following methods: 
 
 * From the Resource groups tab  
 * While you’re creating a disaster recovery or _replication plan_. If you have a lot of VMs hosted by a source vCenter cluster, it might be easier for you to create the resource groups while you're creating the replication plan. For instructions on creating resource groups while you're creating a replication plan, see link:drplan-create.html[Create a replication plan].
 
-TIP: Each resource group can include one or more VMs. The VMs will power on based on the sequence in which you include them in the replication plan. You can change the order by dragging the VMs up or down the resource group list. 
+TIP: Each resource group can include one or more VMs or datastores. The VMs will power on based on the sequence in which you include them in the replication plan. You can change the order by dragging the VMs or datastores up or down the resource group list. 
 
 .About resource groups
 
-Resource groups enable you to combine VMs that are related operationally and need to be protected as a single unit. 
+Resource groups enable you to combine VMs or datastores that include VMs that are related operationally and need to be protected as a single unit. 
 
 For example, a point-of-sale application might consist of several VMs hosting databases, several VMs hosting business logic rules management, and several VMs acting as a webserver-based storefront. It might be beneficial to manage the entire application’s availability with a single protection process by placing these VMs in a single resource group. 
 
