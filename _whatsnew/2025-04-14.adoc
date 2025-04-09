@@ -23,10 +23,13 @@ You can create a resource group with a datastore in the following ways:
 For details, see link:../use/drplan-create.html[Create a replication plan].
 //For details, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
 
-== Notifications of free trial or license expiration
+=== Notifications of free trial or license expiration
 
 This release provides notifications that the free trial will expire in 60 days to ensure you have time to get a license. This release also provides notifications on the day that the license expires.
 
+=== Notification of service updates
+
+With this release, a banner appears at the top to indicate that services are getting upgraded and that the service is placed in maintenance mode. The banner appears when the service is being upgraded and disappears when the upgrade is complete. While you can continue to work in the UI while the upgrade is in progress, you cannot submit new jobs. Scheduled jobs will run after the update is complete and the service returns to production mode. 
 
 
 
