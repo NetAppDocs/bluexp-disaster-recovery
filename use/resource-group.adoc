@@ -11,7 +11,7 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 :imagesdir: ../media/use/
 
 [.lead]
-After you’ve added vCenter sites, you might want to create resource groups that group VMs together. Resource groups enable you to organize a set of dependent VMs into logical groups that meet your requirements. For example, you might group VMs associated with one application or you might group applications that have similar tiers. As another example, groups could contain delayed boot orders that can be run upon recovery.
+After you’ve added vCenter sites, you might want to create resource groups that group VMs together by VMs or by datastores. Resource groups enable you to organize a set of dependent VMs into logical groups that meet your requirements. For example, you might group VMs associated with one application or you might group applications that have similar tiers. As another example, groups could contain delayed boot orders that can be run upon recovery.
 
 You can group VMs themselves or VMs in datastores. 
 
@@ -76,10 +76,13 @@ When you create resource groups, consider the following issues:
 . Enter a name for the resource group.
 . Select the source vCenter cluster where the VMs are located.
 
-
+. Select either *Virtual machines* or *Datastores* depending on how you want to search. 
+. Select the *Add resource groups* tab. The system lists all datastores or VMs in the selected vCenter cluster. If you selected *Datastores*, the system lists all datastores in the selected vCenter cluster. If you selected *Virtual machines*, the system lists all VMs in the selected vCenter cluster.
 . On the left side of the Add resource groups page, select the VMs that you want to protect. 
 +
 image:dr-resource-groups-add.png[Screenshot showing the Add resource groups page]
++
+image:dr-resource-groups-datastores-add.png[Screenshot showing the Add resource groups page]
 
 . Optionally, change the order of the VMs on the right by dragging each VM up or down the list. The VMs will power on based on the sequence in which you include them.
 

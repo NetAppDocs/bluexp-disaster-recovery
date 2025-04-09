@@ -94,7 +94,13 @@ When you create resource groups, consider the following issues:
 The selected resource is automatically added to group 1 and a new group 2 is started. Each time you add a resource to the last group, another group is added. 
 
 +
-image:dr-plan-create-apps-vms5.png[Screenshot showing the Add replication plan > Applications to replicate page]
+image:dr-plan-create-apps-vms6.png[Screenshot showing the Add replication plan > Applications to replicate page]
+
++
+Or, for datastores: 
+
++
+image:dr-plan-create-apps-datastores.png[Screenshot showing the Add replication plan > Applications to replicate page]
 
 . Optionally, do any of the following: 
 ** To change the group's name, click the group *Edit* image:icon-pencil.png[Pencil icon] icon. 
