@@ -12,12 +12,12 @@ For details, see link:../use/sites-add.html[Add vCenter server sites].
 
 === Resource group datastore support 
 
-Previously, you could create resource groups only by VMs. With this release, you can create a resource group by  datastores. When you're creating a replication plan and creating a resource group for that plan, all the VMs in a datastore will be listed. This is useful if you have a large number of VMs and want to group them by datastore. 
+Previously, you could create resource groups only by VMs. With this release, you can create a resource group by datastores. When you're creating a replication plan and creating a resource group for that plan, all the VMs in a datastore will be listed. This is useful if you have a large number of VMs and want to group them by datastore. 
 
 You can create a resource group with a datastore in the following ways:
 
-* When you're adding a resource group, you can see a list of VMs filtered by datastore
-* When you're creating a replication plan
+* When you're adding a resource group using datastores, you can see a list of datastores. You can select one or more datastores to create a resource group.
+* When you're creating a replication plan and creating a resource group within the plan, you can see the VMs in the datastores. 
 
 
 For details, see link:../use/drplan-create.html[Create a replication plan].

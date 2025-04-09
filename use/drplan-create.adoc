@@ -19,11 +19,18 @@ You can create a replication plan and also edit schedules for compliance and tes
 
 You can protect multiple VMs on multiple datastores. BlueXP disaster recovery creates ONTAP Consistency Groups for all ONTAP volumes hosting protected VM datastores. 
 
+VMs can be protected only if the replication plan is in one of the following states: 
+
+* Ready
+* Failback committed
+* Test failover committed
+
+
 == Create the plan
 A wizard takes you through these steps: 
 
 * Select vCenter servers.
-* Select the VMs you want to replicate and assign resource groups.
+* Select the VMs or datastores that you want to replicate and assign resource groups.
 * Map how resources from the source environment map to the destination. 
 * Identify recurrence, run a guest-hosted script, set the boot order, and select the recovery point objective.
 * Review the plan.
@@ -63,9 +70,22 @@ When you select applications in the replication plan, you can see the operating 
 
 TIP: Each resource group can include one or more VMs or datastores. The VMs will power on based on the sequence in which you include them here.
 
+When you create resource groups, consider the following issues: 
+
+* Before you add datastores to resource groups, start a manual discovery or a scheduled discovery of the VMs first. This ensures that the VMs are discovered and listed in the resource group. If you do not trigger a manual discovery, the VMs might not be listed in the resource group.
+* Ensure that there is at least one VM in the datastore. If there are no VMs in the datastore, the datastore will not be discovered.
+* A single datastore should not host VMs protected by more than one replication plan.
+* Do not host protected and unprotected VMs on the same datastore. If protected and unprotected VMs are hosted on the same datastore, the following issues could arise:  
+** Because BlueXP disaster recovery uses SnapMirror and the system replicates entire ONTAP volumes, the used capacity of that volume is used for licensing considerations. In this case, the volume space consumed by both protected and unprotected VMs would be included in this calculation.
+** If the resource group and its associated datastores need to be failed over to the disaster recovery site, any unprotected VMs (VMs not part of the resource group, but hosted on the ONTAP volume) will no longer exist on the source site from the failover process, resulting in failure of unprotected VMs at the source site. Also, BlueXP disaster recovery will not start those unprotected VMs at the failover vCenter site. 
+
+* To have a VM protected, it must be included in a resource group.
+
+*BEST PRACTICE*: Organize your VMs before deploying BlueXP disaster recovery to minimize “datastore sprawl.” Place VMs that need protection on a subset of datastores and place VMs that are not going to be protected on a different subset of datastores. Ensure that the VMs on any given datastore are not protected by different replication plans.
+
 .Steps
 
-. Select *Virtual machines* or *Datastores* 
+. Select *Virtual machines* or *Datastores*. 
 . Optionally search for specific VM or datastore by name. 
 
 
@@ -80,6 +100,8 @@ image:dr-plan-create-apps-vms5.png[Screenshot showing the Add replication plan >
 ** To change the group's name, click the group *Edit* image:icon-pencil.png[Pencil icon] icon. 
 ** To remove a resource from a group, select *X* next to the resource. 
 ** To move a resource to a different group, drag and drop it into the new group. 
++
+TIP: To move a datastore to a different resource group, unselect the unwanted datastore and submit the replication plan. Then, create or edit the other replication plan and reselect the dataastore. 
 
 . When you have multiple resource groups, ensure that the sequence of the groups matches the operational sequence that should occur. 
 +

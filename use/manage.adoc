@@ -32,7 +32,12 @@ You can edit the vCenter site name and the site type (on-premises or AWS).
 
 == Manage resource groups 
 
-While you can add a resource group as part of creating a replication plan, you might find it more convenient to add the groups separately and later use those groups in the plan. 
+While you can add a resource group as part of creating a replication plan, you might find it more convenient to add the groups separately and later use those groups in the plan. You create resource groups by VMs or by datastores.
+
+You can create a resource group by datastores in the following ways:
+
+* When you're adding a resource group using datastores, you can see a list of datastores. You can select one or more datastores to create a resource group.
+* When you're creating a replication plan and creating a resource group within the plan, you can see the VMs in the datastores. 
 
 You can also edit and delete resource groups. 
 
