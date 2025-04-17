@@ -123,11 +123,11 @@ You can stop the free trial at any time or you can wait until it expires.
 +
 image:draas-trial-end3.png[End free trial page]
 
-. If you want to delete all data, check *Delete all data when my trial ends*. 
+. If you want to delete all data, check *Delete data immediately after ending my free trial*. 
 +
 This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
 +
-NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP disaster recovery deletes all of your data. 
+NOTE: If you end the free trial, did not request to delete data and don't purchase a license or subscription, then BlueXP disaster recovery deletes all of your data 60 days after the free trial ends. 
 
 . Type "end trial" in the text box. 
 . Select *End*. 

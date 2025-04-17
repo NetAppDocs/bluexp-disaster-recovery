@@ -13,7 +13,22 @@ summary: Before you can create a disaster recovery plan, you need to add a prima
 [.lead]
 Before you can create a disaster recovery plan, you need to add a primary vCenter server to a site and a target vCenter disaster recovery site in BlueXP. 
 
-After they are added, BlueXP disaster recovery performs a deep discovery of the vCenter environments, including vCenter clusters, ESXi hosts, datastores, storage foot print, virtual machine details, SnapMirror replicas, and virtual machine networks.
+After vCenters are added, BlueXP disaster recovery performs a deep discovery of the vCenter environments, including vCenter clusters, ESXi hosts, datastores, storage foot print, virtual machine details, SnapMirror replicas, and virtual machine networks.
+
+If you added vCenters in previous releases and want to customize the discovery schedule, you must edit the vCenter server site and set the schedule. 
+
+TIP: BlueXP disaster recovery performs discovery once every 24 hours. After setting up a site, you can later edit the vCenter to customize the discovery schedule that meets your needs. For example, if you have a large number of VMs, you can set the discovery schedule to run every 23 hours and 59 minutes. If you have a small number of VMs, you can set the discovery schedule to run every 12 hours. The minimum interval is 30 minutes and the maximum is 24 hours. 
+
+You should first do a few manual discoveries to get the most up-to-date information about your environment. After that, you can set the schedule to run automatically.
+
+Newly added or deleted VMs are recognized in the next scheduled discovery or during an immediate manual discovery. 
+
+VMs can be protected only if the replication plan is in one of the following states: 
+
+* Ready
+* Failback committed
+* Test failover committed
+
 
 .Steps
 
@@ -55,3 +70,38 @@ The source and target vCenters appear on the list of sites.
 image:sites-list2.png[Sites page screenshot]
 
 . To see the progress of the operation, from the top menu, select *Job monitoring*. 
+
+== Edit the vCenter server site and customize the discovery schedule
+
+
+You can edit the vCenter server site to customize the discovery schedule. For example, if you have a large number of VMs, you can set the discovery schedule to run every 23 hours and 59 minutes. If you have a small number of VMs, you can set the discovery schedule to run every 12 hours.
+
+If you added vCenters in previous releases and want to customize the discovery schedule, you must edit the vCenter server site and set the schedule. 
+
+If you don't want to schedule discovery, you can disable the scheduled discovery option and refresh the discovery manually at any time. 
+
+.Steps
+. From the BlueXP disaster recovery menu, select *Sites*.
+
+. Select the site you want to edit.
+. Select the Actions image:icon-vertical-dots.png[Actions icon] icon on the right and select *Edit*.
++
+. In the Edit vCenter server page, edit the fields as needed.
+
+. To customize the discovery schedule, check the *Enable scheduled discovery* box and select the date and time interval you want.
+
++
+
+image:sites-edit-schedule.png[Edit discovery schedule screenshot]
+
+. Select *Save*.
+
+== Refresh discovery manually
+You can refresh the discovery manually at any time. This is useful if you have added or removed VMs and want to update the information in BlueXP disaster recovery.
+
+
+.Steps
+. From the BlueXP disaster recovery menu, select *Sites*.
+
+. Select the site you want to refresh.
+. Select the Actions image:icon-vertical-dots.png[Actions icon] icon on the right and select *Refresh*.
