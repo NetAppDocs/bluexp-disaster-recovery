@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: get-started/dr-intro.html
-keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back
+keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back, vmware cloud
 summary: Disaster recovery to the cloud is a resilient and cost-effective way of protecting workloads against site outages and data corruption events. With BlueXP disaster recovery for VMware, you can replicate your on-premises VMware workloads running ONTAP storage to a VMware software-defined data center in a public cloud using NetApp cloud storage or to another on-premises VMware environment with ONTAP storage as a disaster recovery site.
 
 ---
