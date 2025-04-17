@@ -13,9 +13,8 @@ summary: Reviewing disaster recovery reports can help you analyze your disaster 
 [.lead]
 Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of test failovers, replication plan details, and job details on all sites within an account for the past seven days. 
 
-You can download reports in HTML or JSON format. 
+You can download reports in PDF, HTML, or JSON format. 
 
-TIP: You can convert the HTML page to a PDF using your browser's options. 
 
 The Download link is valid for six hours. 
 
@@ -29,16 +28,6 @@ NOTE: The report might take a few minutes to display.
 . To download a report, select *Download report* and select it in the administrator's Download folder.  
 
 
-//.Steps from the Reports menu option
-
-//. From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
-//. From the top menu, select *Reports*. 
-//+
-//image:dr-reports.png[Reports page]
-//. Before you create or download a report, refresh the data by clicking the *Refresh* option. 
-//. Select a report from the *Ready-made* tab or create your own report on the *Custom* tab. 
-
-//. Download a report by clicking on *Download*. 
 
 
 
