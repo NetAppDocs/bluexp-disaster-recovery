@@ -6,9 +6,9 @@ When a proxy is configured, BlueXP disaster recovery attempts to communicate dir
 
 BlueXP disaster recovery proxy implementation requires port 443 communication between the Connector and any vCenter Servers and ONTAP arrays using an HTTPS protocol. The BlueXP disaster recovery agent within the Connector communicates directly with VMware vSphere, the VC, or ONTAP when performing any actions.
  
-For more information about the intelligent proxy for BlueXP disaster recovery, see link:../get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
+//For more information about the intelligent proxy for BlueXP disaster recovery, see link:../get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
 
-//For more information about the intelligent proxy for BlueXP disaster recovery, see https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
+For more information about the intelligent proxy for BlueXP disaster recovery, see https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
 
 For more information about general proxy set up in BlueXP, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html[Configure a Connector to use a proxy server^].
 
