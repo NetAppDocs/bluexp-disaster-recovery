@@ -1,4 +1,4 @@
-===  Subnet mapping 
+=== Subnet mapping 
 
 With this release, you can manage IP addresses on failover in a new way using subnet mapping, which enables you to add subnets for each vCenter. When you do so, you define the IPv4 CIDR, the default gateway, and the DNS for each virtual network. 
 
@@ -33,3 +33,17 @@ You can establish reverse protection by selecting *Protect resources* from the R
 For details about skipping protection, see  link:../use/failover.html[Fail over applications to a remote site].
 
 //For details skipping protection, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail ovre applications to a remote site].
+
+=== SnapMirror schedule updates in the replication plan
+
+BlueXP disaster recovery now supports the use of external snapshot management solutions such as the native ONTAP SnapMirror policy scheduler or third-party integrations. If every datastore (volume) in the replication plan already has a SnapMirror relationship that is being managed elsewhere, you can use those snapshots as recovery points in BlueXP disaster recovery. 
+
+To configure, in the Replication plan > Resource mapping section, check the *Use platform managed backups and retention schedules* checkbox when configuring the Datastores mapping. 
+
+When selected, BlueXP disaster recovery does not configure a backup schedule. However, you still need to configure a retention schedule because snapshots might still be taken for testing, failover, and failback operations. 
+
+After this is configured, the service doesn't take any regularly scheduled snapshots, but instead relies on the external entity to take and update those snapshots.
+
+For details using external snapshot solutions in the replication plan, see  link:../use/drplan-create.html[Create a replication plan].
+
+//For details skipping protection, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html[Create a replication plan].
