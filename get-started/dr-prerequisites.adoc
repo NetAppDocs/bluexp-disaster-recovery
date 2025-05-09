@@ -80,6 +80,8 @@ TIP: For on-premises to on-premises, use the BlueXP on-premises Connector. For o
 See https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]. 
 
 
+* For information about setting up an intelligent proxy for BlueXP disaster recovery, see link:../get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
+
 == Workload prerequisites
 To ensure that application-consistency processes are successful, apply these prerequisites: 
 

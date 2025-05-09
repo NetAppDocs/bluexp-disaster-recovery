@@ -17,9 +17,15 @@ Learn what’s new in BlueXP disaster recovery.
 
 
 == 16 April 2025
-Version 4.3 
+Version 4.2.2 
 
 include::../_whatsnew/2025-04-14.adoc[]
+
+
+== 10 March 2025 
+Version 4.2.1
+
+include::../_whatsnew/2025-03-10.adoc[]
 
 
 == 19 February 2025
