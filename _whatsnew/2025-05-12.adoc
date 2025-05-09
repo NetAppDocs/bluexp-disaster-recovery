@@ -1,0 +1,35 @@
+===  Subnet mapping 
+
+With this release, you can manage IP addresses on failover in a new way using subnet mapping, which enables you to add subnets for each vCenter. When you do so, you define the IPv4 CIDR, the default gateway, and the DNS for each virtual network. 
+
+Upon failover, BlueXP disaster recovery determines the appropriate IP address of each vNIC by looking at the CIDR provided for the mapped virtual network and uses it to derive the new IP address. 
+
+For example: 
+
+* NetworkA = 10.1.1.0/24
+* NetworkB = 192.168.1.0/24
+
+VM1 has a vNIC (10.1.1.50) that is mapped to NetworkA. 
+NetworkA is mapped to NetworkB in the replication plan settings. 
+
+Upon failover, BlueXP disaster recovery replaces the Network portion of the original IP address (10.1.1.50) and keeps the host address (.50). For VM1, BlueXP disaster recovery looks at the CIDR map for NetworkB and determines that the network address is 192.168.1. The new IP becomes 192.168.1.50. 
+
+In summary, the host address stays the same, while the network address is replaced with whatever is configured in the site subnet mapping. This enables you to manage IP address reassignment upon failover more easily, especially if you have hundreds of networks and thousands of VMs to manage. 
+
+For details about including subnet mapping in your sites, see  link:../use/sites-add.html[Add vCenter server sites].
+
+//For details about including subnet mapping in your sites, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html[Add vCenter server sites].
+
+=== Skip protection 
+
+You can now skip protection so that the service does not automatically create a reverse protection relationship after a replication plan failover. This is useful if you want to perform additional operations on the restored site before you bring it back online within BlueXP disaster recovery. 
+
+When you initiate a failover, the service automatically creates a reverse protection relationship for each volume in the replication plan. This means that the service creates a SnapMirror relationship from the target site back to the source site. The service also automatically reverses the SnapMirror relationship when you initiate a failback.
+
+When initiating a failover, you can now choose a *Skip protection* option. With this, the service does not automatically reverse the SnapMirror relationship. Instead, it leaves the writable volume on both sides of the replication plan. 
+
+You can establish reverse protection by selecting *Protect resources* from the Replication plan Actions menu. This attempts to create a reverse replication relationship for each volume in the plan. You can run this job repeatedly until protection is restored. When protection is restored, you can initiate a failback in the usual way.
+
+For details about skipping protection, see  link:../use/failover.html[Fail over applications to a remote site].
+
+//For details skipping protection, refer to https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html[Fail ovre applications to a remote site].

@@ -92,13 +92,17 @@ TIP: After the failover starts, the recovered VMs can be seen in the vCenter of 
 
 . On the right, select the *Actions* option image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] and select *Fail over*.
 +
-image:dr-plan-failover2.png[Fail over page]
+image:dr-plan-failover3.png[Fail over page]
 
 . In the Fail over page, either initiate a snapshot now or choose the snapshot for the datastore from which to recover.  The default is the latest. 
 +
 A snapshot of the current source will be taken and replicated to the current destination before the fail over occurs. 
 
 . Optionally, select *Force failover* if you want the failover to occur even if an error is detected that would normally prevent the failover from occurring. 
+
+. Optionally, select *Skip protection* if you want the service to not automatically create a reverse SnapMirror protection relationship after a replication plan failover. This is useful if you want to perform additional operations on the restored site before you bring it back online within BlueXP disaster recovery. 
++
+TIP: You can establish reverse protection by selecting *Protect resources* from the Replication plan Actions menu. This attempts to create a reverse replication relationship for each volume in the plan. You can run this job repeatedly until protection is restored. When protection is restored, you can initiate a failback in the usual way.
 
 . Type "failover" in the box. 
 
