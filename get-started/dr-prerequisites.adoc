@@ -80,13 +80,7 @@ TIP: For on-premises to on-premises, use the BlueXP on-premises Connector. For o
 See https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Discover on-premises ONTAP clusters^]. 
 
 
-=== Intelligent proxy support 
-
-The BlueXP Connector for BlueXP disaster recovery supports intelligent proxy. Intelligent proxy is a lightweight, secure, and efficient way to connect your on-premises environment to the BlueXP service. It provides a secure connection between your on-premises environment and the BlueXP service without requiring a VPN or direct internet access. This optimized proxy implementation offloads API traffic within the local network.
-
-BlueXP disaster recovery uses the generic BlueXP proxy configuration to configure the proxy itself. The intelligent proxy is installed on a virtual machine in your on-premises environment. The BlueXP Connector for BlueXP disaster recovery attempts to communicate directly with VMware and uses the intelligent proxy if direct communication fails. 
-
-BlueXP disaster recovery proxy implementation requires port 443 communication between the Connector and any vCenter Servers and ONTAP arrays using an HTTPS protocol. The BlueXP disaster recovery agent within the Connector communicates directly with VMware vSphere, the VC, or ONTAP when performing any actions.
+* For information about setting up an intelligent proxy for BlueXP disaster recovery, see link:../get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
 
 == Workload prerequisites
 To ensure that application-consistency processes are successful, apply these prerequisites: 

@@ -1,15 +1,15 @@
 === Intelligent proxy support 
 
-The BlueXP Connector for BlueXP disaster recovery supports intelligent proxy. Intelligent proxy is a lightweight, secure, and efficient way to connect your on-premises environment to the BlueXP service. It provides a secure connection between your on-premises environment and the BlueXP service without requiring a VPN or direct internet access. This optimized proxy implementation offloads API traffic within the local network.
+The BlueXP Connector supports intelligent proxy. Intelligent proxy is a lightweight, secure, and efficient way to connect your on-premises environment to the BlueXP service. It provides a secure connection between your environment and the BlueXP service without requiring a VPN or direct internet access. This optimized proxy implementation offloads API traffic within the local network.
 
-BlueXP disaster recovery uses the generic BlueXP proxy configuration to configure the proxy itself. The intelligent proxy is installed on a virtual machine in your on-premises environment. The BlueXP Connector for BlueXP disaster recovery attempts to communicate directly with VMware and uses the intelligent proxy if direct communication fails. 
+When a proxy is configured, BlueXP disaster recovery attempts to communicate directly with VMware or ONTAP and uses the configured proxy if direct communication fails.
 
 BlueXP disaster recovery proxy implementation requires port 443 communication between the Connector and any vCenter Servers and ONTAP arrays using an HTTPS protocol. The BlueXP disaster recovery agent within the Connector communicates directly with VMware vSphere, the VC, or ONTAP when performing any actions.
  
 
-For more information about the intelligent proxy for BlueXP disaster recovery, see link:../get-started/dr-prerequisites.html[BlueXP disaster recovery prerequisites].
+For more information about the intelligent proxy for BlueXP disaster recovery, see link:../get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
 
-//For more information about the intelligent proxy for BlueXP disaster recovery, see https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-prerequisites.html[BlueXP disaster recovery prerequisites].
+//For more information about the intelligent proxy for BlueXP disaster recovery, see https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html[Set up your infrastructure for BlueXP disaster recovery].
 
 For more information about the intelligent proxy, see 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html 
