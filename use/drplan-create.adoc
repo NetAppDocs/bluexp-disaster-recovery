@@ -265,7 +265,7 @@ image:dr-plan-list.png[Screenshot showing the list of replication plans]
 .. Select the day of the month and time you want these tests to run. 
 .. Enter the date in yyyy-mm-dd format when you want the test to start. 
 +
-image:dr-plan-schedule-edit.png[Screenshot showing where you can edit schedules]
+image:dr-plan-schedule-edit2.png[Screenshot showing where you can edit schedules]
 
 . *Use ondemand snapshot for scheduled test failover*: To take a new snapshot before initiating the automated test failover, check this box.
 . To clean up the test environment after the failover test finishes, check *Automatically clean up after test failover* and enter the number of minutes you want to wait before the cleanup starts.
