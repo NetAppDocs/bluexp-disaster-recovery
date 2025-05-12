@@ -64,11 +64,11 @@ image:dr-plan-create-name.png[Screenshot showing the Add replication plan > Add 
 
 === Select applications to replicate and assign resource groups
 
-The next step is to group the required VMs or datastores into functional resource groups. Resource groups enable you to group a set of dependent VMs or datastores into logical groups that meet your requirements. For example, groups could contain delayed boot orders that can be run upon recovery.
+The next step is to group the required VMs or datastores into functional resource groups. Resource groups enable you to protect a set of VMs or datastores with a common snapshot. 
 
 When you select applications in the replication plan, you can see the operating system for each VM or datastore in the plan. This is helpful in deciding how to group VMs or datastores together in a resource group.
 
-TIP: Each resource group can include one or more VMs or datastores. The VMs will power on based on the sequence in which you include them here.
+TIP: Each resource group can include one or more VMs or datastores. 
 
 When you create resource groups, consider the following issues: 
 
@@ -81,7 +81,7 @@ When you create resource groups, consider the following issues:
 
 * To have a VM protected, it must be included in a resource group.
 
-*BEST PRACTICE*: Organize your VMs before deploying BlueXP disaster recovery to minimize “datastore sprawl.” Place VMs that need protection on a subset of datastores and place VMs that are not going to be protected on a different subset of datastores. Ensure that the VMs on any given datastore are not protected by different replication plans.
+*BEST PRACTICE*: Organize your VMs before deploying BlueXP disaster recovery to minimize “datastore sprawl.” Place VMs that need protection on a subset of datastores and place VMs that are not going to be protected on a different subset of datastores. Use datastore-based protection to ensure that the VMs on any given datastore are protected.
 
 .Steps
 
@@ -109,9 +109,7 @@ image:dr-plan-create-apps-datastores.png[Screenshot showing the Add replication 
 +
 TIP: To move a datastore to a different resource group, unselect the unwanted datastore and submit the replication plan. Then, create or edit the other replication plan and reselect the dataastore. 
 
-. When you have multiple resource groups, ensure that the sequence of the groups matches the operational sequence that should occur. 
-+
-Each VM within a group is started in sequence based on the order here.  
+
 
 
 . Select *Next*. 
@@ -163,7 +161,7 @@ This section might display different fields depending on your selection.
 ** *IP address type*: Reconfigure the VMs configuration to match the target virtual network requirements. BlueXP disaster recovery offers two options: DHCP or static IP. For static IPs, configure the subnet mask, gateway, and DNS servers. Additionally, enter credentials for VMs. 
 +
 *** *DHCP*: Select this setting if you want your VMs to obtain network configuration information from a DHCP server. If you choose this option, you provide just the credentials for the VM. 
-*** *Static IP*: Select this setting if you want to specify IP configuration information manually. You can select the same or different information from the source VM. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address of the VM, subnet mask, DNS, and gateway information. VM guest OS credentials should be supplied to either the global level or at each VM level.
+*** *Static IP*: Select this setting if you want to specify IP configuration information manually. You can select one of the following: same as source, different from source, or subnet mapping. If you choose the same as the source, you do not need to enter credentials. On the other hand, if you choose to use different information from the source, you can provide the credentials, IP address of the VM, subnet mask, DNS, and gateway information. VM guest OS credentials should be supplied to either the global level or at each VM level.
 +
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. 
 +
@@ -176,12 +174,12 @@ image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > 
 +
 image:dr-plan-resource-mapping-vm-boot-order.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
 +
-** *Boot order*: You can modify the boot order after a failover for all the selected virtual machines across the resource groups. By default, the boot order selected during resource-group selection is used; however, you can make changes at this stage. This is helpful to ensure that all your priority one VMs are running before subsequent priority VMs are started. 
+** *Boot order*: You can modify the boot order after a failover for all the selected virtual machines across the resource groups. By default, all VMs boot together in parallel; however, you can make changes at this stage. This is helpful to ensure that all your priority one VMs are running before subsequent priority VMs are started. 
 +
-Boot order numbers apply only within a resource group. If you have a "2" in one group and a "2" in another group, the VMs in the first group start in their order and the VMs in the second group start in their order.
+Any VMs with the same boot order number will be booted in parallel. 
 +
-*** Sequential boot: Assign each VM a unique number to boot the in the assigned order, for example, 1,2,3,4,5
-*** Simultaneous boot: Assign the same number to all VMs to boot them at the same time, for example, 1,1,1,1,2,2,3,4,4.
+*** Sequential boot: Assign each VM a unique number to boot the in the assigned order, for example, 1,2,3,4,5.
+*** Simultaneous boot: Assign the same number to any VMs to boot them at the same time, for example, 1,1,1,1,2,2,3,4,4.
 +
 ** *Boot delay*: Adjust the delay in minutes of the boot up action. 
 +
@@ -199,20 +197,22 @@ When selected, BlueXP disaster recovery does not configure a backup schedule. Ho
 +
 After this is configured, the service doesn't take any regularly scheduled snapshots, but instead relies on the external entity to take and update those snapshots.
 
-** *RPO*: Enter the Recovery Point Objective (RPO) to indicate the amount of data to recover (measured in time). For example, if you enter an RPO of 60 minutes, the recovery must have data that is not older than 60 minutes at all times. If there is a disaster, you are allowing the loss of up to 60 minutes of data. Also enter the number of snapshot copies to retain for all datastores. 
+** *Start time*: Enter the date and time when you want backups and retention to start running. 
+
+** *Run interval*: Enter the time interval in hours and minutes. For example, if you enter 1 hour, the service will take a snapshot every hour.
+
 ** *Retention count*: Enter the number of snapshots you want to retain. 
 +
 ** *Source and Target datastores*: If multiple (fan-out) SnapMirror relationships exist, you can select the destination to use. If a volume has a SnapMirror relationship already established, the corresponding source and target datastores appear. If a volume that does not have a SnapMirror relationship, you can create one now by selecting a target cluster, a target SVM and providing a volume name. The service will create the volume and SnapMirror relationship. 
 +
 NOTE: If you want to create a SnapMirror relationship in this service, the cluster and its SVM peering should have already been set up outside of BlueXP disaster recovery.  
 +
-** When you specify the Recovery Point Objective (RPO), the service schedules a primary backup based on the RPO and updates the secondary destinations.  
 ** If the VMs are from same volume and same SVM, then the service performs a standard ONTAP snapshot and updates the secondary destinations.
 ** If the VMs are from different volume and same SVM, the service creates a consistency group snapshot by including all the volumes and updates the secondary destinations.
 ** If the VMs are from different volume and different SVM, the service performs a consistency group start phase and commit phase snapshot by including all the volumes in the same or different cluster and updates the secondary destinations.
 ** During the failover, you can select any snapshot. If you select the latest snapshot, the service creates on on-demand backup, updates the destination, and uses that snapshot for the failover.
 
-=== Test the mappings 
+=== Add test failover mappings 
 
 .Steps
 . To set different mappings for the test environment, uncheck the box and select the *Test mappings* tab. 
@@ -222,27 +222,7 @@ On the Test mappings tab, the Virtual machines and Datastores mappings are disab
 +
 TIP: You can later test the entire plan. Right now, you are setting up the mappings for the test environment. 
 
-=== Identify the recurrence 
 
-Select whether you want to migrate data (a one-time move) to another target or replicate it at the SnapMirror frequency. 
-
-If you want to replicate it, identify how often data should be mirrored. 
-
-
-.Steps 
-
-. In the Recurrence page, select *Migrate* or *Replicate*. 
-+
-* *Migrate*: Select to move the application to the target location. 
-* *Replicate*: Keep the target copy up to date with changes from the source copy in a recurring replication. 
-
-+
-image:dr-plan-create-recurrence.png[Screenshot showing Add replication plan > Recurrence]
-
-. Select *Next*. 
-
-
-// To adjust the existing storage settings to match this replication interval, check the box. 
 
 
 === Review the replication plan
@@ -286,7 +266,10 @@ image:dr-plan-list.png[Screenshot showing the list of replication plans]
 .. Enter the date in yyyy-mm-dd format when you want the test to start. 
 +
 image:dr-plan-schedule-edit.png[Screenshot showing where you can edit schedules]
-. To clean up the test environment after the failover test finishes, check *Automatically clean up after test failover*.
+
+. *Use ondemand snapshot for scheduled test failover*: To take a new snapshot before initiating the automated test failover, check this box.
+. To clean up the test environment after the failover test finishes, check *Automatically clean up after test failover* and enter the number of minutes you want to wait before the cleanup starts.
+
 +
 NOTE: This process unregisters the temporary VMs from the test location, deletes the FlexClone volume that was created, and unmounts the temporary datastores. 
 

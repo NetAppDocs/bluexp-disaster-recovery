@@ -81,10 +81,10 @@ For example:
 * NetworkA = 10.1.1.0/24
 * NetworkB = 192.168.1.0/24
 
-VM1 has a vNIC (10.1.1.50) that is mapped to NetworkA. 
+VM1 has a vNIC (10.1.1.50) that is connected to NetworkA. 
 NetworkA is mapped to NetworkB in the replication plan settings. 
 
-Upon failover, BlueXP disaster recovery replaces the Network portion of the original IP address (10.1.1.50) and keeps the host address (.50). For VM1, BlueXP disaster recovery looks at the CIDR map for NetworkB and determines that the network address is 192.168.1. The new IP becomes 192.168.1.50. 
+Upon failover, BlueXP disaster recovery replaces the Network portion of the original IP address (10.1.1) and keeps the host address (.50) of the original IP address (10.1.1.50). For VM1, BlueXP disaster recovery looks at the CIDR settings for NetworkB and uses that the NetworkB network portion 192.168.1 while keeping the host portion (.50) to create the new IP address for VM1. The new IP becomes 192.168.1.50. 
 
 In summary, the host address stays the same, while the network address is replaced with whatever is configured in the site subnet mapping. This enables you to manage IP address reassignment upon failover more easily, especially if you have hundreds of networks and thousands of VMs to manage. 
 
@@ -102,8 +102,7 @@ Using subnet mapping is an optional two-step process:
 image:sites-subnet-add.png[Add subnet mapping screenshot]    
 
 . In the Configure subnet page, enter the following information:    
-.. Network name
-.. Datacenter name
+
 .. Subnet: Enter the IPv4 CIDR for the subnet up to /32.  
 +
 TIP: CIDR notation is a method of specifying IP addresses and their network masks. The /24 denotes the netmask. The number consists of an IP address with the number after the "/" indicating how many bits of the IP address denote the network. For example, 192.168.0.50/24, the IP address is 192.168.0.50 and the total number of bits in the network address is 24. 192.168.0.50 255.255.255.0 becomes 192.168.0.0/24. 

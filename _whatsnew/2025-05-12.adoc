@@ -24,7 +24,7 @@ For details about including subnet mapping in your sites, see  link:../use/sites
 
 You can now skip protection so that the service does not automatically create a reverse protection relationship after a replication plan failover. This is useful if you want to perform additional operations on the restored site before you bring it back online within BlueXP disaster recovery. 
 
-When you initiate a failover, the service automatically creates a reverse protection relationship for each volume in the replication plan if the original source site is online. This means that the service creates a SnapMirror relationship from the target site back to the source site. The service also automatically reverses the SnapMirror relationship when you initiate a failback.
+When you initiate a failover, by default the service automatically creates a reverse protection relationship for each volume in the replication plan, if the original source site is online. This means that the service creates a SnapMirror relationship from the target site back to the source site. The service also automatically reverses the SnapMirror relationship when you initiate a failback.
 
 When initiating a failover, you can now choose a *Skip protection* option. With this, the service does not automatically reverse the SnapMirror relationship. Instead, it leaves the writable volume on both sides of the replication plan. 
 
@@ -36,7 +36,7 @@ For details about skipping protection, see  link:../use/failover.html[Fail over 
 
 === SnapMirror schedule updates in the replication plan
 
-BlueXP disaster recovery now supports the use of external snapshot management solutions such as the native ONTAP SnapMirror policy scheduler or third-party integrations. If every datastore (volume) in the replication plan already has a SnapMirror relationship that is being managed elsewhere, you can use those snapshots as recovery points in BlueXP disaster recovery. 
+BlueXP disaster recovery now supports the use of external snapshot management solutions such as the native ONTAP SnapMirror policy scheduler or third-party integrations with ONTAP. If every datastore (volume) in the replication plan already has a SnapMirror relationship that is being managed elsewhere, you can use those snapshots as recovery points in BlueXP disaster recovery. 
 
 To configure, in the Replication plan > Resource mapping section, check the *Use platform managed backups and retention schedules* checkbox when configuring the Datastores mapping. 
 
