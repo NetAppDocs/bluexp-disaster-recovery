@@ -53,7 +53,7 @@ NOTE: Configuration of vSphere server is done outside of BlueXP disaster recover
 
 NetApp doesn’t charge you for using the trial version of BlueXP disaster recovery.
 
-The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services. In the marketplace, subscribe to "NetApp Intelligent Services".
+The BlueXP disaster recovery service can be used either with a NetApp license or an annual subscription-based plan through Amazon Web Services. 
 
 IMPORTANT: Some releases include a technology preview. NetApp doesn't charge you for any previewed workload capacity. See link:../release-notes/dr-whats-new.html[What's new in BlueXP disaster recovery] for information about the latest technology previews. 
 
