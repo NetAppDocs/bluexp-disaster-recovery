@@ -99,7 +99,10 @@ Using subnet mapping is an optional two-step process:
 
 . From the top BlueXP disaster recovery menu, select *Sites*.
 . From the Actions image:icon-vertical-dots.png[Actions icon] icon on the right, select *Add subnet*.
-
++
+image:dr-sites-submap-menu.png[Add subnet menu screenshot]
++
+The Configure subnet page appears: 
 + 
 image:sites-subnet-add.png[Add subnet mapping screenshot]    
 
@@ -125,14 +128,13 @@ When you create a replication plan, you can select the subnet mapping for the re
 . Complete the fields in the usual way by adding the vCenter servers, selecting the resource groups or applications, and completing the mappings. 
 . In the Replication plan > Resource mapping page, select the *Virtual machines* section. 
 +
-image:dr-plan-create-subnet-mapping.png[Subnet mapping selection screenshot]
+image:dr-plan-vm-subnet-option.png[Subnet mapping selection screenshot]
 
 . In the *Target IP* field, select *Use subnet mapping* from the drop-down list.
++
+NOTE: If there are two VMs (for example, one is Linux and the other is Windows), credentials are needed only for Windows.
 
 . Continue with the creating the replication plan.
-
-
-
 
 
 
