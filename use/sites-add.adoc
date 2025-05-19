@@ -100,7 +100,7 @@ Using subnet mapping is an optional two-step process:
 . From the top BlueXP disaster recovery menu, select *Sites*.
 . From the Actions image:icon-vertical-dots.png[Actions icon] icon on the right, select *Add subnet*.
 +
-image:dr-sites-submap-menu.png[Add subnet menu screenshot]
+image:dr-sites-subnet-menu.png[Add subnet menu screenshot]
 +
 The Configure subnet page appears: 
 + 
