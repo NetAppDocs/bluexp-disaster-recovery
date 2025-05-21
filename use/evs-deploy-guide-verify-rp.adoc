@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: use/evs-deploy-guide-verify-rp.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+
+---
+
+= Verify that everything is working
+
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+After the plan has been added, you will be returned to the Replication plans page where you can view your replication plans and their status (Figure 4).
+
+Figure 4: Replication plans screen image:evs-replication-plan-post-create.png[]
+ 
+DRaaS will perform a series of tests to verify that all the components –- ONTAP cluster, vCenter clusters, and VMs -- are accessible and in the proper state for DRaaS to protect the VMs. This is called a compliance check, and it is run on a regular basis.
+
+From the Replication plans screen, you will see the following information:
+
+* Status of the last compliance check
+
+* The replication plan’s replication state.
+
+* The name of the protected (source) site
+
+* The list of resource groups protected by the replication plan
+
+* The name of the failover (destination) site.

@@ -3,3 +3,45 @@ title: Reference
 entries:
   - title: vCenter privileges required for BlueXP disaster recovery
     url: /reference/vcenter-privileges.html
+  - title: Use BlueXP disaster recovery with Amazon EVS
+    url: /reference/evs-deploy-guide-introduction.html
+    entries: 
+    - title: Solution overview 
+      url: /reference/evs-deploy-guide-solution-overview.html
+    - title: Install the BlueXP Connector
+      url: /reference/evs-deploy-guide-install-connector.html 
+    - title: Configure BlueXP disaster recovery for Amazon EVS
+      entries:
+      - title: Prerequisites for Amazon EVS
+        url: /reference/evs-deploy-guide-config-prereqs.html
+      - title: Add arrays for Amazon EVS
+        url: /reference/evs-deploy-guide-config-add-arrays.html
+      - title: Enable BlueXP disaster recovery for Amazon EVS
+        url: /reference/evs-deploy-guide-enable-draas.html
+      - title: Add sites for Amazon EVS
+        url: /reference/evs-deploy-guide-add-sites.html  
+      - title: Add vCenters for Amazon EVS
+        url: /reference/evs-deploy-guide-add-vcenters.html
+      - title: Create replication plans for Amazon EVS
+        url: /reference/evs-deploy-guide-creating-replication-plans.html
+        entries: 
+        - title: Create a replication plan 1 for Amazon EVS
+          url: /reference/evs-deploy-guide-rp-wiz-01.html
+        - title: Create a replication plan 2 for Amazon EVS
+          url: /reference/evs-deploy-guide-rp-wiz-02.html
+        - title: Create a replication plan 3 for Amazon EVS
+          url: /reference/evs-deploy-guide-rp-wiz-03.html 
+        - title: Create a replication plan 4 for Amazon EVS
+          url: /reference/evs-deploy-guide-rp-wiz-04.html
+        - title: Verify the replication plan for Amazon EVS
+          url: /reference/evs-deploy-guide-verify-rp.html           
+      - title: Perform replication plan operations  
+        url: /reference/evs-deploy-guide-rp-operations.html
+      - title: Conclusion 
+        url: /reference/evs-deploy-guide-closing.html
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+---
+sidebar: sidebar
+permalink: use/evs-deploy-guide-enable-draas.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+
+---
+= Add BlueXP disaster recovery service to your BlueXP account
+
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+BlueXP disaster recovery (DRaaS) is a licensed product offering that must be purchased before it can be used. There are several types of licenses and several ways that licensing can be purchased. A DRaaS license entitles you to protect a specific amount data for a specific span of time. For more information about DRaaS licenses, please visit https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing for BlueXP disaster recovery | NetApp Documentation]. 
+
+== License types
+
+There are two primary license types
+
+* NetApp offers a https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html#try-it-out-using-a-30-day-free-trial[30-day trial license] that can be used to evaluate DRaaS using your ONTAP and VMware resources. This license provides 30 days of use for an unlimited amount of protected capacity.
+
+* A production license must be purchased if protection is desired beyond the 30-day trial period. This license can be purchased through the market places of any of NetApp’s cloud partners, but for this guide, it is recommended to purchase your DRaaS license using the Amazon AWS Marketplace. To learn more about purchasing a license through the Amazon Marketplace, see https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html#after-the-trial-ends-subscribe-through-aws-marketplace[Subscribing through AWS Marketplace].
+
+== Sizing your disaster recovery capacity needs
+
+Before you purchase your license, you will need to understand how much ONTAP storage capacity you need to protect. One of the advantages of using NetApp ONTAP storage is the high efficiency with which NetApp stores your data. All data stored in an ONTAP volume -- such as VMware datastore hosting VMs -- is that the data is stored in a highly efficient manner. ONTAP will default to three types of storage efficiency when writing data to physical storage: compaction, deduplication, and compression.  The net result is storage efficiencies of between 1.5:1 and 4:1 depending on the types of data being stored. In fact, NetApp offers a https://www.netapp.com/media/79014-ng-937-Efficiency-Guarantee-Customer-Flyer.pdf[storage efficiency guarantee] for certain workloads.
+
+For DRaaS, this can be a benefit for you as DRaaS computes capacity for the purposes of licensing after all ONTAP storage efficiencies have been applied. For example, let’s say you have provisioned a 100 terabyte (TiB) NFS datastore within vCenter to host 100 VMs that you want to protect using DRaaS. Additionally, let’s assume when the data is written to the ONTAP volume, automatically applied storage efficiency techniques result in those VMs consuming only 33TiB (3:1 storage efficiency). DRaaS only needs to be licensed for 33TiB…not 100TiB. This can be a very large benefit to the total cost of ownership for your DR solution when compared to other DR solutions.
+
+To determine how much data is being consumed on each volume hosting a VMware datastore to be protected, you can determine the on-disk capacity consumption by running the ONTAP CLI command `volume show-space -volume < _volume name_ > -vserver < _SVM name_ >` for each volume. For example:
+
+----
+cluster1::> volume show-space
+Vserver : vm-nfs-ds1
+Volume  : vol0
+Feature                                    Used      Used%
+-----------------------------          --------     ------
+User Data                               163.4MB         3%
+Filesystem Metadata                       172KB         0%
+Inodes                                   2.93MB         0%
+Snapshot Reserve                        292.9MB         5%
+Total Metadata                            185KB         0%
+Total Used                              459.4MB         8%
+Total Physical Used                     166.4MB         3%
+

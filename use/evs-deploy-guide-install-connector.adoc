@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: use/evs-deploy-guide-install-connector.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+
+---
+= Install the BlueXP Connector
+
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+A Connector is NetApp software running in your cloud or on-premises network. It executes the actions that BlueXP needs to perform to manage your data infrastructure. The Connector constantly polls the BlueXP software as a service layer for any actions that it needs to take.
+
+For BlueXP disaster recovery (DRaaS), the actions that are performed will orchestrate VMware vCenter clusters and ONTAP storage instances using native APIs for each respective service in order to provide protection for production VMs running in an on-premises location. While the connector can be installed in any customer network location, for DRaaS it is recommended that the connector be installed in the DR site as shown in Figure 1. This ensures that in the event of a failure of the primary site, the BlueXP cloud-based console continues to have contact with the connector and can orchestrate the recovery process within that DR site.
+
+For the purposes of using DRaaS, the connector must be installed in standard mode. To learn more about the types of connector installations, visit https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about BlueXP deployment modes | NetApp Documentation].
+
+While the connector is critical to the use of DRaaS, the installation steps to install the connector will be dependent on your specific needs and network configuration. Therefore, it is beyond the scope of this guide to provide specific instructions for installation. The simplest method for installing a connector with Amazon AWS is to use the AWS Marketplace. Instructions for connector installation using the AWS Marketplace can be found in https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html[Create a Connector from the AWS Marketplace | NetApp Documentation].

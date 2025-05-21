@@ -1,0 +1,17 @@
+---
+sidebar: sidebar
+permalink: use/evs-deploy-guide-configure-draas.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+
+---
+
+= Configure disaster recovery with BlueXP disaster recovery
+
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+After the BlueXP Connector has been installed, you need to integrate all the ONTAP storage and VMware vCenter resources that will participate in the DR process. 
+

@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: use/evs-deploy-guide-add-vcenters.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+
+---
+
+= Add on-premises and Amazon EVS vCenter clusters
+
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+With sites created, you now add your vCenter clusters to each site. When we created each site, we indicated what type of site each was. This tells BlueXP disaster recovery what type of access is required for the vCenters hosted in each site type. One of the advantages of Amazon EVS is that there is no real differentiation between an Amazon EVS vCenter and an on-premises vCenter. Both require the same connection and authentication information.
+
+.Steps to add a vCenter to each site
+
+. From the *Sites* tab, click *Add vCenter* for the site you want. 
++
+image:evs-add-vcenter-1.png[]
+ 
+. In the Add vCenter server dialog box, select or provide the following information:
+
+.. The BlueXP connector hosted within your AWS VPC.
+
+.. The IP address or FQDN for the vCenter to be added.
+
+.. If different, change the port value to the TCP port used by your vCenter cluster manager.
+
+.. The vCenter username for the account created earlier that will be used by BlueXP disaster recovery to manage the vCenter.
+
+.. The vCenter password for the provided username.
+
+.. If your company uses an external Certificate Authority (CA) or the vCenter Endpoint Certificate Store to gain access to your vCenters, uncheck the *Use self-signed certificates* checkbox. Otherwise, leave the box checked.
+
+. Click *Add*.
++
+image:evs-add-vcenter-2-3.png[]

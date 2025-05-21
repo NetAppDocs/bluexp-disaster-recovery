@@ -1,0 +1,174 @@
+---
+sidebar: sidebar
+permalink: use/evs-deploy-guide-rp-operations.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+
+---
+
+= Perform replication plan operations
+
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+Use BlueXP disaster recovery with Amazon EVS and Amazon FSx for NetApp ONTAP to perform the following operations: failover, test failover, refresh resources, migrate, take a snapshot now, disable/enable replication plan, clean up old snapshots, reconcile snapshots, delete replication plan, and edit schedules.
+
+== Fail over
+
+The primary operation that you will need to perform is the one you hope never happens…failing over to the DR (destination) datacenter in the event of a catastrophic failure at the production on-premises site.
+
+Failover is a manually initiated process. From the Replication plans page, use the following steps to perform a failover:
+
+. Click on the replication plan's context menu (…) 
+
+. Click on Fail over.
+
++
+image:evs-rp-menu-failover.png[]
+ 
+. If the production (protected) site is not accessible, you will want to select a previously created snapshot as your recovery image. To do this click on the Select radio button
+
+. Select the desired backup to be used for the recovery
+
+. (Optional) Select whether you want DRaaS to force the failover process regardless of the state of the replication plan. This should only be done as a last resort. 
+
+. (Optional) Select whether you want DRaaS to automatically create a reverse protection relationship once the production site has been recovered
+
+. Type the word “Failover” to verify that you would like to proceed
+
+. Click the Failover button.
++
+image:evs-rp-failover-dialog.png[]
+ 
+== Test failover
+
+A test failover is similar to a failover except for two differences.
+
+* The production site is still active and all VMs are still operating as expected
+
+* DRaaS protection of the production VMs continues
+
+This is accomplished by using native ONTAP FlexClone volumes at the destination site. To learn more about test failover, please visit https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html#test-the-failover-process[Fail over applications to a remote site | NetApp Documentation].
+
+The steps for executing a test failover are identical to those used to execute a real failover except that you will use the Test failover operation on the replication plan's context menu.
+ 
+. Click on the replication plan's context menu
+
+. Select Test failover from the context menu.
++
+image:evs-rp-menu-test-failover.png[]
+
+. Decide if you want get the latest state of the production environment (Take snapshot now) or use a previously created replication plan backup (Select)
+
+. If, you chose a previously created backup, then select the desired backup to be used for the recovery
+
+. Type the word “Test failover” to verify that you would like to proceed
+
+. Click Test failover.
++
+image:evs-test-failover-dialog.png[]
+ 
+== Run a compliance check
+
+Compliance checks are run every three hours, by default. At any time, you may wish to manually run a compliance check. To do so, simply select the Run compliance check command from the replication plan's context menu: 
+
+image:evs-rp-menu-compliance-check.png[]
+ 
+You can change how often DRaaS automatically runs compliance checks by using the Edit schedules command from the replication plan's context menu.
+ 
+== Refresh resources
+
+Any time you make changes to your virtual infrastructure -- such as adding/deleting VMs, adding/deleting datastores, or moving VMs between datastores -- you will need to perform a refresh of the impacted vCenter clusters in DRaaS. DRaaS will do this automatically once every 24 hours by default, but a manual refresh will ensure that the latest virtual infrastructure information is available and taken into account for DR protection. There are two places where a refresh will be necessary:
+
+•	vCenter refresh -- Perform a vCenter refresh anytime there are VMs that are added or deleted from or moved out of a vCenter cluster:
+ 
+•	Replication plan refresh -- Perform a replication plan refresh anytime a VM is moved between datastores in the same source vCenter cluster.
+
+image::evs-rp-menu-refresh-resources.png[]
+
+== Migrate
+
+While DRaaS is primarily used for disaster recovery use cases, DRaaS is designed to also enable one-time moves of a set of VMs from the source site to the destination site. This could be for a concerted migration to cloud project or it could be used for disaster avoidance -- such as bad weather, political strife, or other potential temporary catastrophic events. To move the VMs in a replication plan to the destination Amazon EVS cluster, click the Migrate command from the replication plan's context menu:
+
+image::evs-rp-menu-migrate.png[]
+ 
+== Take a snapshot now
+
+At any time, DRaaS allows you to take an immediate snapshot of the replication plan. This snapshot will be included in the DRaaS considerations set by the replication plan's snapshot retention count.
+
+To take an immediate snapshot of the replication plan's resources, click the Take snapshot now command on the replication plan's context menu:
+
+image::evs-rp-menu-take-snapshot-now.png[]
+ 
+== Disable/Enable replication plan
+
+There may be a need to temporarily stop the replication plan to perform some operation or maintenance that could impact the replication process. DRaaS provides a method to stop and start replication. 
+
+To temporarily stop replication, click the Disable command on the replication plan;s context menu. 
+
+To restart replication, click on the Enable command on the replication plan's context menu.  When the replication plan is active, the Enable command will be grayed out. When the replication plan is disabled, the Disable command will be grayed out.
+
+image::evs-rp-menu-disable-enable.png[]
+ 
+== Clean up old snapshots
+
+There may be a need to clean up older snapshots that have been retained on the source and destination sites. This can happen if the replication plan's snapshot retention count is altered. 
+
+To remove these older snapshots manually, use the replication plan's Clean up old snapshots command from the replication plan's context menu.
+
+image::evs-rp-menu-cleanup-old-snapshots.png[]
+ 
+== Reconcile snapshots
+
+Because DRaaS is orchestrating ONTAP volume snapshots, it is possible for an ONTAP storage administrator to directly delete snapshots using either ONTAP System Manager, the ONTAP CLI, or the ONTAP REST APIs without DRaaS knowledge. DRaaS automatically deletes any snapshots on the source that are not on the destination cluster automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites. To delete snapshots from the source cluster that do not exist on the destination cluster, use the Reconcile snapshots command from the replication plan's context menu.
+
+image::evs-rp-menu-reconcile-snapshots.png[]
+ 
+== Delete replication plan
+
+If the replication plan is no longer needed, it can be deleted. To delete the replication plan, select the Delete command from the replication plan's context menu.
+
+image::evs-rp-menu-delete.png[]
+
+== Edit schedules
+
+There are two operations that are performed automatically on a regular schedule: test failovers and compliance checks. To change these schedules for either of these two operations, click on the Edit schedules command for the replication plan:
+
+image::evs-rp-menu-edit-schedules.png[]
+
+=== Change compliance check interval
+
+By default, compliance checks are performed every three hours. DRaaS allows you to change this to any interval between 30 minutes and 24 hours. To change this interval change the Frequency field in the Edit schedules dialog box:
+
+image::evs-rp-edit-compliance-check-schedule.png[]
+
+=== Schedule automated test failovers
+
+Test failovers are manually executed by default. DRaaS provides a mechanism to schedule automatic test failovers to provide you with a tool for ensuring that your replication plans perform as expected. To learn more about the test failover process, please visit https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html#test-the-failover-process[Test the failover process|NetApp Documentation].
+
+To configure automated test failovers:
+
+. Click the Run test failovers on a schedule checkbox
+
+. (Optional) Check the Use on-demand-snapshot for scheduled test failover
+
+. Select an interval type in the Repeat drop-down
+
+. Select when to perform the test failover
+
+.. Weekly: select the Day of the Week
+
+.. Monthly: select the day of the month
+
+. Choose the time of day to run the test failover
+
+. Chose the start date
+
+. Decide if you want DRaaS to automatically clean up the test environment and how long you would like the test environment to run before the clean up process starts.
+
+. Click Save
+
+image::evs-rp-edit-schedule-test-failover.png[]
+

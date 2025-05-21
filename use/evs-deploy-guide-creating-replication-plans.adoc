@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: use/evs-deploy-guide-creating-replication-plans.html
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+
+---
+
+= Create replication plans
+
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/use/
+
+[.lead]
+Now that we have vCenters to protect on the on-premises site and we have an Amazon EVS site configured to use Amazon FSxN that we can use as a DR destination, we can now create a replication plan (RP) to protect any set of VMs hosted on the vCenter cluster within our on-premises site. 
+
+To start the replication plan creation process:
+
+. From any BlueXP disaster recovery screen, click on the Replication plans tab. 
++
+image:evs-create-rp-1.png[]
+
+. From the Replication plans screen, click on Add.
++
+image:evs-create-rp-2.png[]
+
+This opens the Create replication plan wizard.
