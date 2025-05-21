@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: use/evs-deploy-guide-create-rp-wiz-01.html
+permalink: reference/evs-deploy-guide-create-rp-wiz-01.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
 summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
 

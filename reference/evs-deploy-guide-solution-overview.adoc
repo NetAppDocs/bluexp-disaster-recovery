@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: use/sites-add.html
+permalink: reference/sites-add.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
 summary: Solution Overview of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
 
