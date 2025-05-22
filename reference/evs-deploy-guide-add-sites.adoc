@@ -13,12 +13,12 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 :imagesdir: ../media/use/
 
 [.lead]
-Before you can protect your VM infrastructure, the BlueXP disaster recovery service needs to know which VMware vCenter clusters are hosting the VMs to be protected and where those vCenters are located. The first step to providing this information to the service is to create a site to represent the source and destination datacenters. A site is a failure domain or a recovery domain. 
+Before you can protect your VM infrastructure, the BlueXP disaster recovery service needs to know which VMware vCenter clusters are hosting the VMs to be protected and where those vCenters are located. The first step is to create a site to represent the source and destination datacenters. A site is a failure domain or a recovery domain. 
 
 You need to create the following: 
 
 * A site to represent each production datacenter where your production vCenter clusters reside
-* A site for your Amazon EVS/Amazon FSxN cloud datacenter
+* A site for your Amazon EVS/Amazon FSx for NetApp ONTAP cloud datacenter
 
 == Create on-premises sites
 
@@ -30,7 +30,9 @@ Create a production vCenter site.
 +
 image:evs-create-site-op-1.png[Sites tab]
 
-. From the Sites tab, click *Add*. image:evs-create-site-op-2.png[Add option on the Sites tab]
+. From the Sites tab, click *Add*. 
++
+image:evs-create-site-op-2.png[Add option on the Sites tab]
 
 . In the Add site dialog box, provide a site name. 
 
@@ -44,7 +46,7 @@ If you have other production vCenter sites, you can add them using the same step
 
 == Create Amazon cloud sites
 
-Create a DR site for Amazon EVS using Amazon FSxN storage.
+Create a DR site for Amazon EVS using Amazon FSx for NetApp ONTAP storage.
 
 . From any page in BlueXP disaster recovery, select the *Sites* tab.
 +
