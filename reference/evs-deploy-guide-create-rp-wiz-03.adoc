@@ -31,7 +31,7 @@ The first three types of information are required for each VM. The datastore map
 . From the *Replication plan* page, continue to the *Resource mapping* section.
 . The *Resource mapping* page opens.
 +
-image:evs-create-rp-wiz-c0.png[]
+image:evs-create-rp-wiz-c0.png[Create replication plan, resource mapping page]
 
 . To open each category of mappings required, click the down arrow (*v*) beside the section.
 
@@ -51,7 +51,7 @@ Since there is the possibility that a site could host multiple virtual datacente
 . (Optional) You can provide the name of a top-level vCenter folder to place the VM registrations into. This is strictly for your organizational needs and is not required. 
 
 +
-image:evs-create-rp-wiz-c-compute-resources-1-4.png[]
+image:evs-create-rp-wiz-c-compute-resources-1-4.png[Create replication plan, compute resources]
  
 
 == Virtual network mapping
@@ -64,7 +64,7 @@ Each VM can have one or more virtual NICs connected to virtual networks within t
 
 . Repeat the previous step for each source virtual network listed. 
 +
-image:evs-create-rp-wiz-C-network-resources-1-2.png[]
+image:evs-create-rp-wiz-C-network-resources-1-2.png[Create replication plan, network resources]
  
 == Define options for VM reconfiguration during failover
 
@@ -90,7 +90,7 @@ For this guide, we assume that the source and destination IP configuration are t
 
 . Select the type of IP addressing to use for failed over VMs.
 
-. (Optional) Provide a VM renaming scheme for restarted VMs by providing an optional prefix and suffix value. image:evs-create-rp-wiz-c-vm-resources-network-1-2.png[]
+. (Optional) Provide a VM renaming scheme for restarted VMs by providing an optional prefix and suffix value. image:evs-create-rp-wiz-c-vm-resources-network-1-2.png[Create replication plan, network resources]
  
 === VM compute resource reconfiguration
 
@@ -102,7 +102,7 @@ There are several options for reconfiguring VM compute resources. BlueXP disaste
 
 . (Optional) Modify the amount of virtual DRAM each VM should be configured to use. This may be needed if your DR vCenter cluster hosts do not have as much physical DRAM as the source vCenter cluster hosts.
 +
-image:evs-create-rp-wiz-c-vm-resources-cpu-mem-1-2.png[]
+image:evs-create-rp-wiz-c-vm-resources-cpu-mem-1-2.png[Create replication plan, VM resources]
  
 === Boot order
 
@@ -114,7 +114,7 @@ BlueXP disaster recovery supports ordered restart of VMs based on a boot order f
 
 2.	(Optionally) Provide a delay to be used between each VM restart. The time is injected after this VM’s restart has completed and before the VM(s) with the next higher boot order number. This number is in minutes. 
 
-image:evs-create-rp-wiz-c-vm-resources-boot-delay-1-2.png[]
+image:evs-create-rp-wiz-c-vm-resources-boot-delay-1-2.png[Create replication plan, boot order]
  
 === Custom guest OS operations
 
@@ -136,7 +136,7 @@ BlueXP disaster recovery supports performing some guest OS operations for each V
 
 * An application-consistent snapshot needs to be performed
 
-image:evs-create-rp-wiz-c-vm-resources-ac-scripts-creds-1-2.png[]
+image:evs-create-rp-wiz-c-vm-resources-ac-scripts-creds-1-2.png[Create replication plan, custom guest OS operations]
  
 == Datastore mapping
 
@@ -160,6 +160,6 @@ In addition, you can optionally customize which data LIFs (logical interfaces) t
 
 . (Optional) Select an export policy for any NFS volumes. If not selected, the default export policy is used
 +
-image:evs-create-rp-wiz-c-datastore-mapping.png[]
+image:evs-create-rp-wiz-c-datastore-mapping.png[Create replication plan, datastore mapping]
  
 

@@ -12,7 +12,9 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 :imagesdir: ../media/use/
 
 [.lead]
-BlueXP disaster recovery is a licensed product offering that must be purchased before it can be used. There are several types of licenses and several ways that you can purchase licenses. A license entitles you to protect a specific amount data for a specific span of time. For more information about BlueXP disaster recovery licenses, see link:get-started/dr-licensing.html[Set up licensing for BlueXP disaster recovery]. 
+BlueXP disaster recovery is a licensed product offering that must be purchased before it can be used. There are several types of licenses and several ways that you can purchase licenses. A license entitles you to protect a specific amount data for a specific span of time. 
+
+For more information about BlueXP disaster recovery licenses, see link:../get-started/dr-licensing.html[Set up licensing for BlueXP disaster recovery]. 
 
 == License types
 
@@ -20,7 +22,7 @@ There are two primary license types:
 
 * NetApp offers a link:get-started/dr-licensing.html#try-it-out-using-a-30-day-free-trial[30-day trial license] that you can use to evaluate BlueXP disaster recovery using your ONTAP and VMware resources. This license provides 30 days of use for an unlimited amount of protected capacity.
 
-* A production license must be purchased if you want DR protection beyond the 30-day trial period. This license can be purchased through the marketplaces of any of NetApp’s cloud partners, but for this guide, we recommend that you purchase your *NetApp Intelligent Services* license for BlueXP disaster recovery using the Amazon AWS Marketplace. To learn more about purchasing a license through the Amazon Marketplace, see link:get-started/dr-licensing.html#after-the-trial-ends-subscribe-through-aws-marketplace[Subscribe through AWS Marketplace].
+* A production license must be purchased if you want DR protection beyond the 30-day trial period. This license can be purchased through the marketplaces of any of NetApp’s cloud partners, but for this guide, we recommend that you purchase your *NetApp Intelligent Services* license for BlueXP disaster recovery using the Amazon AWS Marketplace. To learn more about purchasing a license through the Amazon Marketplace, see link:../get-started/dr-licensing.html[Subscribe through AWS Marketplace].
 
 == Size your disaster recovery capacity needs
 

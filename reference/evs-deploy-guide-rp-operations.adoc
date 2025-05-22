@@ -53,7 +53,7 @@ A test failover is similar to a failover except for two differences.
 
 * BlueXP disaster recovery protection of the production VMs continues.
 
-This is accomplished by using native ONTAP FlexClone volumes at the destination site. To learn more about test failover, see link:/use/failover.html#test-the-failover-process[Fail over applications to a remote site | NetApp Documentation].
+This is accomplished by using native ONTAP FlexClone volumes at the destination site. To learn more about test failover, see link:../use/failover.html[Fail over applications to a remote site | NetApp Documentation].
 
 The steps for executing a test failover are identical to those used to execute a real failover except that you use the Test failover operation on the replication plan's context menu.
 
@@ -172,7 +172,7 @@ image::evs-rp-edit-compliance-check-schedule.png[Compliance check schedule]
 
 === Schedule automated test failovers
 
-Test failovers are manually executed by default. BlueXP disaster recovery provides a mechanism to schedule automatic test failovers to provide you with a tool for ensuring that your replication plans perform as expected. To learn more about the test failover process, see link:/use/failover.html#test-the-failover-process[Test the failover process].
+Test failovers are manually executed by default. BlueXP disaster recovery provides a mechanism to schedule automatic test failovers to provide you with a tool for ensuring that your replication plans perform as expected. To learn more about the test failover process, see link:../use/failover.html[Test the failover process].
 
 .Steps to schedule test failovers
 
