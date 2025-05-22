@@ -64,7 +64,7 @@ Each VM can have one or more virtual NICs connected to virtual networks within t
 
 . Repeat the previous step for each source virtual network listed. 
 +
-image:evs-create-rp-wiz-C-network-resources-1-2.png[Create replication plan, network resources]
+image:evs-create-rp-wiz-c-network-resources-1-2.png[Create replication plan, network resources]
  
 == Define options for VM reconfiguration during failover
 
@@ -90,7 +90,9 @@ For this guide, we assume that the source and destination IP configuration are t
 
 . Select the type of IP addressing to use for failed over VMs.
 
-. (Optional) Provide a VM renaming scheme for restarted VMs by providing an optional prefix and suffix value. image:evs-create-rp-wiz-c-vm-resources-network-1-2.png[Create replication plan, network resources]
+. (Optional) Provide a VM renaming scheme for restarted VMs by providing an optional prefix and suffix value. 
++
+image:evs-create-rp-wiz-c-vm-resources-network-1-2.png[Create replication plan, network resources]
  
 === VM compute resource reconfiguration
 
