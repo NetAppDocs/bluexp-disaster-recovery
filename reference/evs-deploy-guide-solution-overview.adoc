@@ -15,7 +15,7 @@ summary: Solution Overview of BlueXP disaster recovery using Amazon EVS and Amaz
 [.lead]
 BlueXP disaster recovery is a value-added service hosted within the BlueXP software-as-a-service environment. As such, it depends on the core BlueXP architecture to perform its services. There are several main components that come together to create a DR service for VMware protection within BlueXP. 
 
-For a complete overview of the BlueXP disaster recovery solution, see link:/get-started/dr-intro.html[Learn about BlueXP disaster recovery for VMware].
+For a complete overview of the BlueXP disaster recovery solution, see link:../get-started/dr-intro.html[Learn about BlueXP disaster recovery for VMware].
 
 If you want to protect your on-premises VMware hosted virtual machines to Amazon AWS, the service supports backing up to Amazon EVS with Amazon FSx for NetApp ONTAP storage hosted datastores. The following figure shows how the service works to protect your VMs with Amazon EVS.
 
