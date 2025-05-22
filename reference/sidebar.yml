@@ -11,7 +11,7 @@ entries:
     - title: Install the BlueXP Connector
       url: /reference/evs-deploy-guide-install-connector.html 
     - title: Configure BlueXP disaster recovery for Amazon EVS
-      url: /reference/evs-deploy-guide-configure-draas.html
+      url: /reference/evs-deploy-guide-config-draas.html
       entries:
       - title: Prerequisites for Amazon EVS
         url: /reference/evs-deploy-guide-config-prereqs.html
