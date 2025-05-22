@@ -1,20 +1,26 @@
 ---
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-create-rp-wiz-04.html
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, netapp, ontap
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSx for NetApp ONTAP. After you have added all the replication plan information in BlueXP disaster recovery, verify that the information you entered is correct.
 
 ---
 
-= Add replication plan: Step 4 - Verify settings
+= Add replication plan: Step 4 - Verify settings in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-After you have added all the replication plan information, click *Save* to review your settings before activating the replication plan. You can click on each tab to review the settings and make any changes on any tab by clicking on the pencil icon.
+After you have added all the replication plan information in BlueXP disaster recovery, verify that the information you entered is correct. 
 
-Figure 3: Replication plan settings review image:evs-create-rp-wiz-c-verify.png[]
+.Steps
+
+. Click *Save* to review your settings before activating the replication plan. 
++
+You can click on each tab to review the settings and make any changes on any tab by clicking on the pencil icon.
++
+Replication plan settings review image:evs-create-rp-wiz-c-verify.png[Replication plan settings review]
  
-When you are satisfied that all settings are correct, click on Add plan at the bottom of the screen.
+. When you are satisfied that all settings are correct, click *Add plan* at the bottom of the screen.

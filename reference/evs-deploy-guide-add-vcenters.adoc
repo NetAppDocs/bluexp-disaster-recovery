@@ -2,24 +2,24 @@
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-add-vcenters.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.With sites created, you now add your vCenter clusters to each site in BlueXP disaster recovery. When we created each site, we indicated what type of site each was. This tells BlueXP disaster recovery what type of access is required for the vCenters hosted in each site type. One of the advantages of Amazon EVS is that there is no real differentiation between an Amazon EVS vCenter and an on-premises vCenter. Both require the same connection and authentication information.
 
 ---
 
-= Add on-premises and Amazon EVS vCenter clusters
+= Add on-premises and Amazon EVS vCenter clusters in BlueXP disaster recoveryWith sites created, you now add your vCenter clusters to each site in BlueXP disaster recovery. When we created each site, we indicated what type of site each was. This tells BlueXP disaster recovery what type of access is required for the vCenters hosted in each site type. One of the advantages of Amazon EVS is that there is no real differentiation between an Amazon EVS vCenter and an on-premises vCenter. Both require the same connection and authentication information.
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-With sites created, you now add your vCenter clusters to each site. When we created each site, we indicated what type of site each was. This tells BlueXP disaster recovery what type of access is required for the vCenters hosted in each site type. One of the advantages of Amazon EVS is that there is no real differentiation between an Amazon EVS vCenter and an on-premises vCenter. Both require the same connection and authentication information.
+
 
 .Steps to add a vCenter to each site
 
 . From the *Sites* tab, click *Add vCenter* for the site you want. 
 +
-image:evs-add-vcenter-1.png[]
+image:evs-add-vcenter-1.png[Add vCenter option]
  
 . In the Add vCenter server dialog box, select or provide the following information:
 
@@ -37,4 +37,4 @@ image:evs-add-vcenter-1.png[]
 
 . Click *Add*.
 +
-image:evs-add-vcenter-2-3.png[]
+image:evs-add-vcenter-2-3.png[Add vCenter dialog box]

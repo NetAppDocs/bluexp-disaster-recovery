@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-rp-operations.html
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, netapp, ontap
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSx for NetApp ONTAP. Use BlueXP disaster recovery with Amazon EVS and Amazon FSx for NetApp ONTAP to perform the following operations: failover, test failover, refresh resources, migrate, take a snapshot now, disable/enable replication plan, clean up old snapshots, reconcile snapshots, delete replication plan, and edit schedules.
 
 ---
 
@@ -29,7 +29,7 @@ Failover is a manually initiated process.
 
 . Click *Fail over*.
 +
-image:evs-rp-menu-failover.png[]
+image:evs-rp-menu-failover.png[Failover menu option]
  
 . If the production (protected) site is not accessible, select a previously created snapshot as your recovery image. To do this, click *Select*.
 
@@ -43,7 +43,7 @@ image:evs-rp-menu-failover.png[]
 
 . Click *Failover*.
 +
-image:evs-rp-failover-dialog.png[]
+image:evs-rp-failover-dialog.png[Failover dialog box]
  
 == Test failover
 
@@ -62,7 +62,7 @@ The steps for executing a test failover are identical to those used to execute a
 
 . Select *Test failover* from the menu.
 +
-image:evs-rp-menu-test-failover.png[]
+image:evs-rp-menu-test-failover.png[Test failover menu option]
 
 . Decide if you want get the latest state of the production environment (Take snapshot now) or use a previously created replication plan backup (Select)
 
@@ -72,7 +72,7 @@ image:evs-rp-menu-test-failover.png[]
 
 . Click *Test failover*.
 +
-image:evs-test-failover-dialog.png[]
+image:evs-test-failover-dialog.png[Test failover dialog box]
  
 == Run a compliance check
 
@@ -82,7 +82,7 @@ Compliance checks are run every three hours, by default. At any time, you might 
 
 . Select the *Run compliance check* option from the replication plan's Actions menu: 
 +
-image:evs-rp-menu-compliance-check.png[]
+image:evs-rp-menu-compliance-check.png[Run compliance check menu option]
  
 . To change how often BlueXP disaster recovery automatically runs compliance checks, select *Edit schedules* option from the replication plan's Actions menu.
  
@@ -96,7 +96,7 @@ There are two instances where a refresh is necessary:
  
 •	Replication plan refresh: Perform a replication plan refresh anytime a VM is moved between datastores in the same source vCenter cluster.
 
-image::evs-rp-menu-refresh-resources.png[]
+image::evs-rp-menu-refresh-resources.png[Refresh resources menu option]
 
 == Migrate
 
@@ -105,7 +105,7 @@ While BlueXP disaster recovery is primarily used for disaster recovery use cases
 
 . To move the VMs in a replication plan to the destination Amazon EVS cluster, click *Migrate* from the replication plan's Actions menu:
 +
-image::evs-rp-menu-migrate.png[]
+image::evs-rp-menu-migrate.png[Migrate menu option]
  
 == Take a snapshot now
 
@@ -114,7 +114,7 @@ At any time, DRaaS allows you to take an immediate snapshot of the replication p
 
 . To take an immediate snapshot of the replication plan's resources, click  *Take snapshot now* on the replication plan's Actions menu:
 +
-image::evs-rp-menu-take-snapshot-now.png[]
+image::evs-rp-menu-take-snapshot-now.png[Take snapshot now menu option]
  
 == Disable or enable replication plan
 
@@ -127,7 +127,7 @@ There may be a need to temporarily stop the replication plan to perform some ope
 +
 When the replication plan is active, the Enable command is grayed out. When the replication plan is disabled, the Disable command is grayed out.
 +
-image::evs-rp-menu-disable-enable.png[]
+image::evs-rp-menu-disable-enable.png[Disable/Enable menu option]
  
 == Clean up old snapshots
 
@@ -136,7 +136,7 @@ There may be a need to clean up older snapshots that have been retained on the s
 
 . To remove these older snapshots manually, select *Clean up old snapshots* from the replication plan's Actions menu.
 +
-image::evs-rp-menu-cleanup-old-snapshots.png[]
+image::evs-rp-menu-cleanup-old-snapshots.png[Clean up old snapshots menu option]
  
 == Reconcile snapshots
 
@@ -144,7 +144,7 @@ Because the service orchestrates ONTAP volume snapshots, it is possible for an O
 
 . To delete snapshots from the source cluster that do not exist on the destination cluster, select *Reconcile snapshots*  from the replication plan's Actions menu.
 +
-image::evs-rp-menu-reconcile-snapshots.png[]
+image::evs-rp-menu-reconcile-snapshots.png[Reconcile snapshots menu option]
  
 == Delete replication plan
 
@@ -152,7 +152,7 @@ If the replication plan is no longer needed, you can delete it.
 
 . To delete the replication plan, select *Delete* from the replication plan's context menu.
 +
-image::evs-rp-menu-delete.png[]
+image::evs-rp-menu-delete.png[Delete menu option]
 
 == Edit schedules
 
@@ -160,7 +160,7 @@ There are two operations that are performed automatically on a regular schedule:
 
 . To change these schedules for either of these two operations, click *Edit schedules* for the replication plan.
 +
-image::evs-rp-menu-edit-schedules.png[]
+image::evs-rp-menu-edit-schedules.png[Edit schedules menu option]
 
 === Change compliance check interval
 
@@ -168,7 +168,7 @@ By default, compliance checks are performed every three hours. DRaaS allows you 
 
 . To change this interval change the Frequency field in the Edit schedules dialog box:
 +
-image::evs-rp-edit-compliance-check-schedule.png[]
+image::evs-rp-edit-compliance-check-schedule.png[Compliance check schedule]
 
 === Schedule automated test failovers
 
@@ -195,5 +195,5 @@ Test failovers are manually executed by default. BlueXP disaster recovery provid
 
 . Click *Save*.
 +
-image::evs-rp-edit-schedule-test-failover.png[]
+image::evs-rp-edit-schedule-test-failover.png[Edit schedule test failover]
 

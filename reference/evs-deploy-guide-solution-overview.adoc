@@ -6,22 +6,22 @@ summary: Solution Overview of BlueXP disaster recovery using Amazon EVS and Amaz
 
 ---
 
-= Solution overview
+= Solution overview of BlueXP disaster recovery using Amazon EVS and Amazon FSs for NetApp ONTAP
 
 :hardbreaks-option:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-BlueXP disaster recovery is a value-added service hosted within the BlueXP software-as-a-service environment. As such, it depends on the core BlueXP architecture to perform its services. There are several main components that come together to create a DR service for VMware protection within BlueXP. For a complete overview of the BlueXP disaster recovery solution, see link:/get-started/dr-intro.html[Learn about BlueXP disaster recovery for VMware].
+BlueXP disaster recovery is a value-added service hosted within the BlueXP software-as-a-service environment. As such, it depends on the core BlueXP architecture to perform its services. There are several main components that come together to create a DR service for VMware protection within BlueXP. 
 
-If you want to protect your on-premises VMware hosted virtual machines to Amazon AWS, the service now supports backing up to Amazon EVS with Amazon FSx for NetApp ONTAP storage hosted datastores. To get a better understanding of how the service works to protect your VMs with Amazon EVS, refer to Figure 1 below.
+For a complete overview of the BlueXP disaster recovery solution, see link:/get-started/dr-intro.html[Learn about BlueXP disaster recovery for VMware].
 
-Figure 1: Overview of BlueXP disaster recovery using Amazon EVS and FSx for ONTAP
-image:evs-soloverview-evs.png[Overview of BlueXP disaster recovery using Amazon EVS and FSx for ONTAP
-]
+If you want to protect your on-premises VMware hosted virtual machines to Amazon AWS, the service supports backing up to Amazon EVS with Amazon FSx for NetApp ONTAP storage hosted datastores. The following figure shows how the service works to protect your VMs with Amazon EVS.
 
-[start=1] 
+Overview of BlueXP disaster recovery using Amazon EVS and FSx for ONTAP
+image:evs-soloverview-evs.png[Overview of BlueXP disaster recovery using Amazon EVS and FSx for ONTAP]
+
 . Amazon EVS is deployed in your account in a single Availability Zone (AZ) configuration and within the your Virtual Private Cloud (VPC).
 . An Amazon FSxN file system is deployed in the same AZ as the Amazon EVS deployment. The filesystem is connected to Amazon EVS either directly through an Elastic Network Interface (ENI), a VPC peer connection, or an AmazonTransit Gateway.
 . The NetApp BlueXP Connector is installed in your VPC. The BlueXP Connector hosts multiple data management services (called agents), including the BlueXP disaster recovery agent that will manage DR of the VMware infrastructure on both your local physical datacenters and your Amazon AWS hosted resources.

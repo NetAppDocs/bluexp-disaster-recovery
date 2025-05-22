@@ -2,18 +2,18 @@
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-create-rp-wiz-01.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+summary: First, using BlueXP disaster recovery provide a replication plan name and select the source and destination vCenters for the replication.
 
 ---
 
-= Add replication plan: Step 1 - Select vCenters
+= Add replication plan: Step 1 - Select vCenters in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-First, provide a replication plan name and select the source and destination vCenters for the replication. 
+First, using BlueXP disaster recovery provide a replication plan name and select the source and destination vCenters for the replication. 
 
 
 
@@ -27,5 +27,5 @@ Only alpha-numeric characters and underscores (_) are allowed for replication pl
 
 . Click *Next*.
 +
-image:evs-create-rp-wiz-a-1-4.png[]
+image:evs-create-rp-wiz-a-1-4.png[Create replication plan, select vCenters]
  

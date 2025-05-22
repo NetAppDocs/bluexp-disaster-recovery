@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-introduction.html
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, netapp, ontap 
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSx for NetApp ONTAP.
 
 ---
 

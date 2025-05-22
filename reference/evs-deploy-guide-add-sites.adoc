@@ -2,11 +2,11 @@
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-add-sites.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+summary: Before you can protect your VM infrastructure, the BlueXP disaster recovery service needs to know which VMware vCenter clusters are hosting the VMs to be protected and where those vCenters are located. The first step is to create a site to represent the source and destination datacenters. A site is a failure domain or a recovery domain.
 
 ---
 
-= Create your sites
+= Create your sites in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
@@ -40,7 +40,7 @@ image:evs-create-site-op-2.png[Add option on the Sites tab]
 
 . Click *Add*.
 +
-image:evs-create-site-op-3-5.png[]
+image:evs-create-site-op-3-5.png[Create site dialog box]
  
 If you have other production vCenter sites, you can add them using the same steps.
 

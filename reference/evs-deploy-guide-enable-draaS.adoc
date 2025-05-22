@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-enable-draas.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSx for NetApp ONTAP. BlueXP disaster recovery is a licensed product offering that must be purchased before it can be used. There are several types of licenses and several ways that you can purchase licenses. 
 
 ---
 = Add BlueXP disaster recovery service to your BlueXP account

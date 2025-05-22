@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-install-connector.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSxN.
+summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSx for NetApp ONTAP. While the Connector can be installed in any of your network locations, for BlueXP disaster recovery we recommend that you install the Connector in the DR site. This ensures that in the event of a failure of the primary site, the BlueXP cloud-based console UI continues to have contact with the Connector and can orchestrate the recovery process within that DR site.
 
 ---
-= Install the BlueXP Connector
+= Install the BlueXP Connector for BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
@@ -14,7 +14,7 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 [.lead]
 A Connector is NetApp software running in your cloud or on-premises network. It executes the actions that BlueXP needs to perform to manage your data infrastructure. The Connector constantly polls the BlueXP software as a service layer for any actions that it needs to take.
 
-For the BlueXP disaster recovery service, the actions that are performed  orchestrate VMware vCenter clusters and ONTAP storage instances using native APIs for each respective service to provide protection for production VMs running in an on-premises location. While the Connector can be installed in any customer network location, for BlueXP disaster recovery we recommend that you install the Connector in the DR site as shown in Figure 1. This ensures that in the event of a failure of the primary site, the BlueXP cloud-based console UI continues to have contact with the Connector and can orchestrate the recovery process within that DR site.
+For the BlueXP disaster recovery service, the actions that are performed orchestrate VMware vCenter clusters and ONTAP storage instances using native APIs for each respective service to provide protection for production VMs running in an on-premises location. While the Connector can be installed in any of your network locations, for BlueXP disaster recovery we recommend that you install the Connector in the DR site. This ensures that in the event of a failure of the primary site, the BlueXP cloud-based console UI continues to have contact with the Connector and can orchestrate the recovery process within that DR site.
 
 For the purposes of using the service, the Connector must be installed in standard mode. To learn more about the types of connector installations, visit https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn about BlueXP deployment modes | NetApp Documentation^].
 

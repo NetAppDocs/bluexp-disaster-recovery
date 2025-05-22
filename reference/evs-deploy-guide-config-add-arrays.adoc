@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference/evs-deploy-guide-config-add-arrays.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSx for NetApp ONTAP.
+summary: Before using BlueXP disaster recovery, you must add on-premises and cloud-hosted storage instances to the BlueXP working environment. 
 
 ---
-= Add on-premises arrays to the BlueXP working environment
+= Add on-premises arrays to the BlueXP working environment for BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
@@ -27,15 +27,15 @@ Add on-premises ONTAP storage resources to your BlueXP working environment.
 
 . From the BlueXP Canvas, click *Add Working Environment*.
 +
-image:evs-canvas-add-working-env-1.png[]
+image:evs-canvas-add-working-env-1.png[Add working environment]
  
 . From the Add Working Environment page, click the *On-Premises* card.
 + 
-image:evs-canvas-add-working-env-2.png[]
+image:evs-canvas-add-working-env-2.png[Add working environment image]
 
 . Click *Discover*  on the On-Premises ONTAP card.
 +
-image:evs-canvas-add-working-env-3.png[]
+image:evs-canvas-add-working-env-3.png[Add working environment image]
 
  
 . On the Discover Cluster page, enter the following information:
@@ -46,7 +46,7 @@ image:evs-canvas-add-working-env-3.png[]
 
 . Click *Discover* at the bottom of the page.
 +
-image:evs-canvas-add-working-env-4-5.png[]
+image:evs-canvas-add-working-env-4-5.png[Add working environment image]
  
 . Repeat steps 1-5 for each ONTAP array that will be hosting vCenter datastores.
 
@@ -57,16 +57,16 @@ Next, add an Amazon FSx for NetApp ONTAP storage resources to your BlueXP workin
 . From the BlueXP Canvas, click *Add Working Environment*.
 
 +
-image:evs-canvas-add-working-env-1.png[]
+image:evs-canvas-add-working-env-1.png[Add working environment image]
  
 . From the Add Working Environment page, click the *Amazon Web Services* card.
 +
-image:evs-canvas-add-working-evs-2.png[]
+image:evs-canvas-add-working-evs-2.png[Add working environment image]
 
 . Click the *Discover Existing* link on the Amazon FSx for ONTAP card.
 
 +
-image:evs-canvas-add-working-evs-3.png[]
+image:evs-canvas-add-working-evs-3.png[Add working environment image]
 
 . Select the credentials and AWS region hosting the FSx for ONTAP instance.
 
@@ -74,6 +74,6 @@ image:evs-canvas-add-working-evs-3.png[]
 
 . Click *Discover* at the bottom of the page.
 +
-image:evs-needs-updates-canvas-add-working-evs-4-5.png[]
+image:evs-needs-updates-canvas-add-working-evs-4-5.png[Add working environment image]
  
-. Repeat steps 1-6 for each FSx for ONTAP instance that will be hosting vCenter datastores.
+. Repeat steps 1-6 for each FSx for ONTAP instance that will host vCenter datastores.
