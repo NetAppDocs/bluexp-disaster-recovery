@@ -26,7 +26,6 @@ entries:
       - title: Add vCenters for Amazon EVS
         url: /reference/evs-deploy-guide-add-vcenters.html
     - title: Create replication plans for Amazon EVS
-      url: /reference/evs-deploy-guide-creating-replication-plans.html
       entries: 
       - title: Create replication plans for Amazon EVS overview
         url: /reference/evs-deploy-guide-creating-replication-plans.html  
