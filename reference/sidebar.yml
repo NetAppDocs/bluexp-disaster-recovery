@@ -36,10 +36,10 @@ entries:
         url: /reference/evs-deploy-guide-create-rp-wiz-04.html
       - title: Verify the replication plan for Amazon EVS
         url: /reference/evs-deploy-guide-verify-rp.html           
-      - title: Perform replication plan operations  
-        url: /reference/evs-deploy-guide-rp-operations.html
-      - title: Conclusion 
-        url: /reference/evs-deploy-guide-closing.html
+    - title: Perform replication plan operations  
+      url: /reference/evs-deploy-guide-rp-operations.html
+    - title: Conclusion 
+      url: /reference/evs-deploy-guide-closing.html
 
 
 
