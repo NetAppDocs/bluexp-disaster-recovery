@@ -12,7 +12,7 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 :imagesdir: ../media/use/
 
 [.lead]
-There are several prerequisites that need to be satisfied before you continue. 
+You should ensure that several prerequisites are met before you continue to configure Amazon EVS. 
 
 Specifically, do the following:
 
@@ -20,9 +20,9 @@ Specifically, do the following:
 
 . Create a vCenter user account with the specific VMware privileges required for DRaaS to perform the necessary operations. 
 +
-It is not recommended to use the default administrator@vsphere.com administrator account, but to create a BlueXP disaster recovery specific user account on all vCenter clusters that will participate in the DR process. The specific privileges required are listed in vCenter privileges needed for BlueXP disaster recovery | NetApp Documentation.
+We do not recommend using the default administrator@vsphere.com administrator account. Instead, you should create a BlueXP disaster recovery specific user account on all vCenter clusters that will participate in the DR process. For a list of specific privileges required, see link:vcenter-privileges.html[vCenter privileges needed for BlueXP disaster recovery]. 
 
-. Ensure that all vCenter datastores that will be hosting VMs protected by BlueXP disaster recovery are located on NetApp ONTAP storage resources. The service currently support NFS datastores and VMFS datastores hosted on iSCSI or Fibre Channel connected LUNs.
+. Ensure that all vCenter datastores that will be hosting VMs protected by BlueXP disaster recovery are located on NetApp ONTAP storage resources. The service supports NFS datastores and VMFS datastores hosted on iSCSI or Fibre Channel connected LUNs.
 
 . Ensure that your Amazon EVS vCenter is connected to an Amazon FSx for NetApp ONTAP storage cluster.
 
