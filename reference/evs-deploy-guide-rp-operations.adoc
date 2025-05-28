@@ -23,9 +23,12 @@ Failover is a manually initiated process.
 
 .Steps to access the failover operation
 
+. From the BlueXP left navigation, select *Protection* > *Disaster Recovery*.
+
 . From the BlueXP disaster recovery menu, select *Replication plans*. 
 
 .Steps to perform a failover
+
 . From the Replication plans page, click on the replication plan's Actions option image:icon-horizontal-dots.png[Horizontal dots for Actions menu].  
 
 . Click *Fail over*.
@@ -81,6 +84,8 @@ Compliance checks are run every three hours, by default. At any time, you might 
 
 .Steps 
 
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
+
 . Select the *Run compliance check* option from the replication plan's Actions menu: 
 +
 image:evs-rp-menu-compliance-check.png[Run compliance check menu option]
@@ -103,15 +108,22 @@ image::evs-rp-menu-refresh-resources.png[Refresh resources menu option]
 
 While BlueXP disaster recovery is primarily used for disaster recovery use cases, it can also enable one-time moves of a set of VMs from the source site to the destination site. This could be for a concerted migration to cloud project or it could be used for disaster avoidance -- such as bad weather, political strife, or other potential temporary catastrophic events. 
 
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
+
 
 . To move the VMs in a replication plan to the destination Amazon EVS cluster, click *Migrate* from the replication plan's Actions menu:
 +
 image::evs-rp-menu-migrate.png[Migrate menu option]
+
+. Enter information in the Migrate dialog box. 
+
+
  
 == Take a snapshot now
 
 At any time, you can take an immediate snapshot of the replication plan. This snapshot is included in the BlueXP disaster recovery considerations set by the replication plan's snapshot retention count.
 
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
 
 . To take an immediate snapshot of the replication plan's resources, click  *Take snapshot now* on the replication plan's Actions menu:
 +
@@ -134,6 +146,7 @@ image::evs-rp-menu-disable-enable.png[Disable/Enable menu option]
 
 You might want to clean up older snapshots that have been retained on the source and destination sites. This can happen if the replication plan's snapshot retention count is altered. 
 
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
 
 . To remove these older snapshots manually, select *Clean up old snapshots* from the replication plan's Actions menu.
 +
@@ -143,6 +156,9 @@ image::evs-rp-menu-cleanup-old-snapshots.png[Clean up old snapshots menu option]
 
 Because the service orchestrates ONTAP volume snapshots, it is possible for an ONTAP storage administrator to directly delete snapshots using either ONTAP System Manager, the ONTAP CLI, or the ONTAP REST APIs without the service's knowledge. The service automatically deletes any snapshots on the source that are not on the destination cluster automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites. 
 
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
+
+
 . To delete snapshots from the source cluster that do not exist on the destination cluster, select *Reconcile snapshots*  from the replication plan's Actions menu.
 +
 image::evs-rp-menu-reconcile-snapshots.png[Reconcile snapshots menu option]
@@ -150,6 +166,8 @@ image::evs-rp-menu-reconcile-snapshots.png[Reconcile snapshots menu option]
 == Delete replication plan
 
 If the replication plan is no longer needed, you can delete it. 
+
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
 
 . To delete the replication plan, select *Delete* from the replication plan's context menu.
 +
@@ -159,6 +177,8 @@ image::evs-rp-menu-delete.png[Delete menu option]
 
 Two operations are performed automatically on a regular schedule: test failovers and compliance checks. 
 
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
+
 . To change these schedules for either of these two operations, click *Edit schedules* for the replication plan.
 +
 image::evs-rp-menu-edit-schedules.png[Edit schedules menu option]
@@ -167,8 +187,9 @@ image::evs-rp-menu-edit-schedules.png[Edit schedules menu option]
 
 By default, compliance checks are performed every three hours. You can change this to any interval between 30 minutes and 24 hours. 
 
-. To change this interval, change the Frequency field in the Edit schedules dialog box:
-+
+
+To change this interval, change the Frequency field in the Edit schedules dialog box:
+
 image::evs-rp-edit-compliance-check-schedule.png[Compliance check schedule]
 
 === Schedule automated test failovers
@@ -176,6 +197,9 @@ image::evs-rp-edit-compliance-check-schedule.png[Compliance check schedule]
 Test failovers are manually executed by default. You can schedule automatic test failovers, which helps ensure that your replication plans perform as expected. To learn more about the test failover process, see link:../use/failover.html[Test the failover process].
 
 .Steps to schedule test failovers
+
+. Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
+. Select *Run failover*. 
 
 . Click the *Run test failovers on a schedule* checkbox.
 

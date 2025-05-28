@@ -26,6 +26,8 @@ Create a production vCenter site.
 
 .Steps 
 
+. From the BlueXP left navigation, select *Protection* > *Disaster Recovery*.
+
 . From any page in BlueXP disaster recovery, select the *Sites* tab.
 +
 image:evs-create-site-op-1.png[Sites tab]
