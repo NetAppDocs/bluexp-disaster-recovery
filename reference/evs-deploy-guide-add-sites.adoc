@@ -6,7 +6,7 @@ summary: Before you can protect your VM infrastructure, the BlueXP disaster reco
 
 ---
 
-= Add sites for Amazon EVS in BlueXP disaster recovery
+= Add sites in BlueXP disaster recovery for Amazon EVS 
 
 :hardbreaks:
 :icons: font
