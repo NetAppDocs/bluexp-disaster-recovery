@@ -6,14 +6,14 @@ summary: First, using BlueXP disaster recovery provide a replication plan name a
 
 ---
 
-= Add replication plan: Step 1 - Select vCenters in BlueXP disaster recovery
+= Create a replication plan: Step 1 - Select vCenters in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-First, using BlueXP disaster recovery provide a replication plan name and select the source and destination vCenters for the replication. 
+First, using BlueXP disaster recovery, provide a replication plan name and select the source and destination vCenters for the replication. 
 
 
 

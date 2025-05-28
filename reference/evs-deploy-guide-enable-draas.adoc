@@ -50,3 +50,5 @@ Total Used                          459.4MB         8%
 Total Physical Used                 166.4MB         3%
 
 ----
+
+. Note the *Total Physical Used* value for each volume. This is the amount of data that BlueXP disaster recovery needs to protect, and it is the value that you will use to determine how much capacity you need to license.

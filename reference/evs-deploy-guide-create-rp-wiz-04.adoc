@@ -6,20 +6,20 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 
 ---
 
-= Add replication plan: Step 4 - Verify settings in BlueXP disaster recovery
+= Create a replication plan: Step 4 - Verify settings in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-After you have added all the replication plan information in BlueXP disaster recovery, verify that the information you entered is correct. 
+After you add the replication plan information in BlueXP disaster recovery, verify that the information you entered is correct. 
 
 .Steps
 
 . Click *Save* to review your settings before activating the replication plan. 
 +
-You can click on each tab to review the settings and make any changes on any tab by clicking on the pencil icon.
+You can click on each tab to review the settings and make changes on any tab by clicking on the pencil icon.
 +
 Replication plan settings review image:evs-create-rp-wiz-c-verify.png[Replication plan settings review]
  

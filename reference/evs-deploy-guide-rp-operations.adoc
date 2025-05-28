@@ -17,11 +17,12 @@ Use BlueXP disaster recovery with Amazon EVS and Amazon FSx for NetApp ONTAP to 
 
 == Fail over
 
-The primary operation that you might need to perform is the one you hope never happens…failing over to the DR (destination) datacenter in the event of a catastrophic failure at the production on-premises site.
+The primary operation that you might need to perform is the one you hope never happens: failing over to the DR (destination) datacenter in the event of a catastrophic failure at the production on-premises site.
 
 Failover is a manually initiated process. 
 
 .Steps to access the failover operation
+
 . From the BlueXP disaster recovery menu, select *Replication plans*. 
 
 .Steps to perform a failover
@@ -92,7 +93,7 @@ Any time you make changes to your virtual infrastructure -- such as adding or de
 
 There are two instances where a refresh is necessary:
 
-•	vCenter refresh: Perform a vCenter refresh anytime there are VMs that are added or deleted from or moved out of a vCenter cluster:
+•	vCenter refresh: Perform a vCenter refresh anytime VMs are added or deleted from or moved out of a vCenter cluster:
  
 •	Replication plan refresh: Perform a replication plan refresh anytime a VM is moved between datastores in the same source vCenter cluster.
 
@@ -109,7 +110,7 @@ image::evs-rp-menu-migrate.png[Migrate menu option]
  
 == Take a snapshot now
 
-At any time, DRaaS allows you to take an immediate snapshot of the replication plan. This snapshot will be included in the DRaaS considerations set by the replication plan's snapshot retention count.
+At any time, you can take an immediate snapshot of the replication plan. This snapshot is included in the BlueXP disaster recovery considerations set by the replication plan's snapshot retention count.
 
 
 . To take an immediate snapshot of the replication plan's resources, click  *Take snapshot now* on the replication plan's Actions menu:
@@ -118,20 +119,20 @@ image::evs-rp-menu-take-snapshot-now.png[Take snapshot now menu option]
  
 == Disable or enable replication plan
 
-There may be a need to temporarily stop the replication plan to perform some operation or maintenance that could impact the replication process. The service provides a method to stop and start replication. 
+You might need to temporarily stop the replication plan to perform some operation or maintenance that could impact the replication process. The service provides a method to stop and start replication. 
 
 
 . To temporarily stop replication, select *Disable* on the replication plan's Actions menu. 
 
 . To restart replication, select *Enable* on the replication plan's Actions menu.  
 +
-When the replication plan is active, the Enable command is grayed out. When the replication plan is disabled, the Disable command is grayed out.
+When the replication plan is active, the *Enable* command is grayed out. When the replication plan is disabled, the *Disable* command is grayed out.
 +
 image::evs-rp-menu-disable-enable.png[Disable/Enable menu option]
  
 == Clean up old snapshots
 
-There may be a need to clean up older snapshots that have been retained on the source and destination sites. This can happen if the replication plan's snapshot retention count is altered. 
+You might want to clean up older snapshots that have been retained on the source and destination sites. This can happen if the replication plan's snapshot retention count is altered. 
 
 
 . To remove these older snapshots manually, select *Clean up old snapshots* from the replication plan's Actions menu.
@@ -156,7 +157,7 @@ image::evs-rp-menu-delete.png[Delete menu option]
 
 == Edit schedules
 
-There are two operations that are performed automatically on a regular schedule: test failovers and compliance checks. 
+Two operations are performed automatically on a regular schedule: test failovers and compliance checks. 
 
 . To change these schedules for either of these two operations, click *Edit schedules* for the replication plan.
 +
@@ -164,15 +165,15 @@ image::evs-rp-menu-edit-schedules.png[Edit schedules menu option]
 
 === Change compliance check interval
 
-By default, compliance checks are performed every three hours. DRaaS allows you to change this to any interval between 30 minutes and 24 hours. 
+By default, compliance checks are performed every three hours. You can change this to any interval between 30 minutes and 24 hours. 
 
-. To change this interval change the Frequency field in the Edit schedules dialog box:
+. To change this interval, change the Frequency field in the Edit schedules dialog box:
 +
 image::evs-rp-edit-compliance-check-schedule.png[Compliance check schedule]
 
 === Schedule automated test failovers
 
-Test failovers are manually executed by default. BlueXP disaster recovery provides a mechanism to schedule automatic test failovers to provide you with a tool for ensuring that your replication plans perform as expected. To learn more about the test failover process, see link:../use/failover.html[Test the failover process].
+Test failovers are manually executed by default. You can schedule automatic test failovers, which helps ensure that your replication plans perform as expected. To learn more about the test failover process, see link:../use/failover.html[Test the failover process].
 
 .Steps to schedule test failovers
 

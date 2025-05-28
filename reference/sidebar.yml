@@ -29,13 +29,13 @@ entries:
       entries: 
       - title: Create replication plans for Amazon EVS overview
         url: /reference/evs-deploy-guide-creating-replication-plans.html  
-      - title: Create a replication plan 1 for Amazon EVS
+      - title: Create a replication plan Step 1 for Amazon EVS
         url: /reference/evs-deploy-guide-create-rp-wiz-01.html
-      - title: Create a replication plan 2 for Amazon EVS
+      - title: Create a replication plan Step 2 for Amazon EVS
         url: /reference/evs-deploy-guide-create-rp-wiz-02.html
-      - title: Create a replication plan 3 for Amazon EVS
+      - title: Create a replication plan Step 3 for Amazon EVS
         url: /reference/evs-deploy-guide-create-rp-wiz-03.html 
-      - title: Create a replication plan 4 for Amazon EVS
+      - title: Create a replication plan Step 4 for Amazon EVS
         url: /reference/evs-deploy-guide-create-rp-wiz-04.html
       - title: Verify the replication plan for Amazon EVS
         url: /reference/evs-deploy-guide-verify-rp.html           

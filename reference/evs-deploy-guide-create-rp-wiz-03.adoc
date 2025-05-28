@@ -6,23 +6,23 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 
 ---
 
-= Add replication plan: Step 3 - Map resources in BlueXP disaster recovery
+= Create a replication plan: Step 3 - Map resources in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-After you have a list of VMs to be protected, BlueXP disaster recovery requires that you provide failover mapping and VM configuration information to use during a failover. 
+After you have a list of VMs that should be protected, provide failover mapping and VM configuration information to use during a failover. 
 
-Four primary types of information need to be mapped:
+You need to map four primary types of information:
 
 * Compute resources
 * Virtual networks
 * VM reconfiguration
 * Datastore mapping
 
-The first three types of information are required for each VM. The datastore mapping is required for each datastore that hosts VMs to be protected.
+Each VM requires the first three types of information. The datastore mapping is required for each datastore that hosts VMs to be protected.
 
 * The sections with the caution icon (image:evs-caution-icon.png[25,25]) require that you provide mapping information. 
 * The section marked with the check icon (image:evs-check-icon.png[25,25]) have been mapped or have default mappings. You should review them to make sure that the current configuration meets your requirements.
@@ -38,17 +38,17 @@ image:evs-create-rp-wiz-c0.png[Create replication plan, resource mapping page]
 
 == Compute resource mapping
 
-Since there is the possibility that a site could host multiple virtual datacenters and multiple vCenter clusters, DRaaS needs to be told which vCenter cluster to recover VMs on in the event of a failover. Use the following steps to map compute resources:
+Because a site could host multiple virtual datacenters and multiple vCenter clusters, you need to identify which vCenter cluster to recover VMs on in the event of a failover. 
 
-.Steps
+.Steps to map compute resources
 
-. Select the desired virtual datacenter from the list of datacenters located at the DR site.
+. Select the virtual datacenter from the list of datacenters located at the DR site.
 
-. Select the specific cluster to host the datastores and VMs from the list of clusters within the virtual datacenter selected.
+. Select the cluster to host the datastores and VMs from the list of clusters within the selected virtual datacenter.
 
-. (Optional) Select a target host in the target cluster. This step is not required as BlueXP disaster recovery will select the first host added to the cluster in vCenter. At that point, the VMs will either continue to run on that ESXi host or VMware DRS will move the VM to a different ESXi host as needed based on DRS rules configured.
+. (Optional) Select a target host in the target cluster. This step is not required because BlueXP disaster recovery selects the first host added to the cluster in vCenter. At that point, the VMs either continue to run on that ESXi host or VMware DRS moves the VM to a different ESXi host as needed based on DRS rules configured.
 
-. (Optional) You can provide the name of a top-level vCenter folder to place the VM registrations into. This is strictly for your organizational needs and is not required. 
+. (Optional) Provide the name of a top-level vCenter folder to place the VM registrations into. This is for your organizational needs and is not required. 
 
 +
 image:evs-create-rp-wiz-c-compute-resources-1-4.png[Create replication plan, compute resources]
@@ -56,7 +56,7 @@ image:evs-create-rp-wiz-c-compute-resources-1-4.png[Create replication plan, com
 
 == Virtual network mapping
 
-Each VM can have one or more virtual NICs connected to virtual networks within the vCenter network infrastructure. To ensure that each VM is properly connected to the desired networks upon restarting in the DR site, BlueXP disaster recovery requires you to tell it which DR site virtual networks to connect these VMs. It does this by mapping each virtual network in the on-premises site to an associated network on the DR site. 
+Each VM can have one or more virtual NICs connected to virtual networks within the vCenter network infrastructure. To ensure that each VM is properly connected to the desired networks upon restarting in the DR site, identify which DR site virtual networks to connect these VMs. It does this by mapping each virtual network in the on-premises site to an associated network on the DR site. 
 
 .Select which destination virtual network to map each source virtual network
 
@@ -84,7 +84,7 @@ Supported IP address types are static and DHCP. For static IP addresses, you hav
 
 After it is configured, Subnet mapping uses the same unit component of the IP address for both source and destination VM configuration but will replace the subnet component of the IP address based on the provided CIDR information. This feature also requires that both the source and destination virtual networks have the same IP address class (the `/xx` component of the CIDR). This ensures that there are enough IP addresses available at the destination site to host all of the protected VMs.
 
-For this guide, we assume that the source and destination IP configuration are the same and do not require any additional reconfiguration. 
+For this EVS setup, we assume that the source and destination IP configuration are the same and do not require any additional reconfiguration. 
 
 .Make changes to network settings reconfiguration
 
@@ -112,10 +112,10 @@ BlueXP disaster recovery supports ordered restart of VMs based on a boot order f
 
 .Modify the boot order settings
 
-1.	(Optionally) Modify the order you would like your VMs to be restarted. This field takes any numeric value. BlueXP disaster recovery tries to restart VMs that have the same numeric value in parallel. 
+. (Optionally) Modify the order you would like your VMs to be restarted. This field takes any numeric value. BlueXP disaster recovery tries to restart VMs that have the same numeric value in parallel. 
 
-2.	(Optionally) Provide a delay to be used between each VM restart. The time is injected after this VM’s restart has completed and before the VM(s) with the next higher boot order number. This number is in minutes. 
-
+. (Optionally) Provide a delay to be used between each VM restart. The time is injected after this VM’s restart has completed and before the VM(s) with the next higher boot order number. This number is in minutes. 
++
 image:evs-create-rp-wiz-c-vm-resources-boot-delay-1-2.png[Create replication plan, boot order]
  
 === Custom guest OS operations
@@ -134,19 +134,19 @@ BlueXP disaster recovery supports performing some guest OS operations for each V
 
 . Certain configuration changes require user credentials with adequate permissions to perform the operations. Provide credentials in the following cases:
 
-* A script is to be executed within the VM by the guest OS
+* A script will be executed within the VM by the guest OS.
 
-* An application-consistent snapshot needs to be performed
+* An application-consistent snapshot needs to be performed.
 
 image:evs-create-rp-wiz-c-vm-resources-ac-scripts-creds-1-2.png[Create replication plan, custom guest OS operations]
  
 == Datastore mapping
 
-The final step in creating a replication plan is telling BlueXP disaster recovery how ONTAP should protect the datastores. These settings define the replication plans recovery point objective (RPO), how many backups should be maintained, and where to replicate each vCenter datastore’s hosting ONTAP volumes. 
+The final step in creating a replication plan is identifying how ONTAP should protect the datastores. These settings define the replication plans recovery point objective (RPO), how many backups should be maintained, and where to replicate each vCenter datastore’s hosting ONTAP volumes. 
 
-By default, BlueXP disaster recovery manages its own snapshot replication schedule, but optionally, you can specify that you would like to use the existing SnapMirror replication policy schedule for datastore protection.
+By default, BlueXP disaster recovery manages its own snapshot replication schedule; however optionally, you can specify that you would like to use the existing SnapMirror replication policy schedule for datastore protection.
 
-In addition, you can optionally customize which data LIFs (logical interfaces) to use and what export policy to use. If these settings are not provided, BlueXP disaster recovery uses all data LIFs associated with the appropriate protocol (NFS, iSCSI, or FC) and uses the default export policy for NFS volumes.
+In addition, you can optionally customize which data LIFs (logical interfaces) to use and which export policy to use. If you don't provide these settings, BlueXP disaster recovery uses all data LIFs associated with the appropriate protocol (NFS, iSCSI, or FC) and uses the default export policy for NFS volumes.
 
 .To configure datastore (volume) mapping
 

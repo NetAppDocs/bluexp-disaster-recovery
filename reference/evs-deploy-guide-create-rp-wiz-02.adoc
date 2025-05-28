@@ -6,7 +6,7 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 
 ---
 
-= Add replication plan: Step 2 - Select VM resources in BlueXP disaster recovery
+= Create a replication plan: Step 2 - Select VM resources in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
@@ -23,7 +23,7 @@ There are several ways to select VMs for protection:
 
 * *Select entire vCenter datastores*: If you have a lot of VMs to protect with this replication plan, it may not be as efficient to select individual VMs. Because BlueXP disaster recovery uses volume-based SnapMirror replication to protect the VMs, all VMs residing on a datastore will be replicated as part of the volume. In most cases, you should have BlueXP disaster recovery protect and restart any VMs located on the datastore. Use this option to tell the service to add any VMs hosted on a selected datastore to the list of protected VMs.
 
-For this guided instruction, we will select the entire vCenter datastore. 
+For this guided instruction, we select the entire vCenter datastore. 
 
 .Steps to access this page: 
 . From the *Replication plan* page, continue to the *Applications* section.
