@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: Before using BlueXP disaster recovery, you must add on-premises and cloud-hosted storage instances to the BlueXP working environment. 
 
 ---
-= Add on-premises arrays to the BlueXP working environment for BlueXP disaster recovery
+= Add on-premises arrays to the BlueXP working environment for Amazon EVS with BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font

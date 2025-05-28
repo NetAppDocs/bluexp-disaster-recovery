@@ -19,11 +19,11 @@ entries:
         url: /reference/evs-deploy-guide-config-prereqs.html
       - title: Add arrays for Amazon EVS
         url: /reference/evs-deploy-guide-config-add-arrays.html
-      - title: Enable BlueXP disaster recovery for Amazon EVS
+      - title: Add BlueXP disaster recovery for Amazon EVS
         url: /reference/evs-deploy-guide-enable-draas.html
-      - title: Add sites for Amazon EVS
+      - title: Add BlueXP disaster recovery for Amazon EVS
         url: /reference/evs-deploy-guide-add-sites.html  
-      - title: Add vCenters for Amazon EVS
+      - title: Add vCenter clusters for Amazon EVS
         url: /reference/evs-deploy-guide-add-vcenters.html
     - title: Create replication plans for Amazon EVS
       entries: 

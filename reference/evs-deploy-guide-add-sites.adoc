@@ -6,14 +6,14 @@ summary: Before you can protect your VM infrastructure, the BlueXP disaster reco
 
 ---
 
-= Create your sites in BlueXP disaster recovery
+= Add sites for Amazon EVS in BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-Before you can protect your VM infrastructure, the BlueXP disaster recovery service needs to know which VMware vCenter clusters are hosting the VMs to be protected and where those vCenters are located. The first step is to create a site to represent the source and destination datacenters. A site is a failure domain or a recovery domain. 
+Before you can protect your VM infrastructure, identify which VMware vCenter clusters are hosting the VMs to be protected and where those vCenters are located. The first step is to create a site to represent the source and destination datacenters. A site is a failure domain or a recovery domain. 
 
 You need to create the following: 
 

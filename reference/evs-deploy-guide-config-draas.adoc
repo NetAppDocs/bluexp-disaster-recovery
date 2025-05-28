@@ -6,12 +6,12 @@ summary: After the BlueXP Connector has been installed, you need to integrate al
 
 ---
 
-= Configure disaster recovery with BlueXP disaster recovery
+= Configure BlueXP disaster recovery for Amazon EVS overview
 
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-After the BlueXP Connector has been installed, you need to integrate all the ONTAP storage and VMware vCenter resources that will participate in the DR process. 
+After the BlueXP Connector has been installed, you need to integrate all the ONTAP storage and VMware vCenter resources that will participate in the DR process with BlueXP disaster recovery. 
 

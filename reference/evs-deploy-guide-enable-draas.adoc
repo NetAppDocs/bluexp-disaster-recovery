@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FSx for NetApp ONTAP. BlueXP disaster recovery is a licensed product offering that must be purchased before it can be used. There are several types of licenses and several ways that you can purchase licenses. 
 
 ---
-= Add BlueXP disaster recovery service to your BlueXP account
+= Add BlueXP disaster recovery service to your BlueXP account for Amazon EVS
 
 :hardbreaks:
 :icons: font
