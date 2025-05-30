@@ -24,3 +24,6 @@ You can click on each tab to review the settings and make changes on any tab by 
 Replication plan settings review image:evs-create-rp-wiz-c-verify.png[Replication plan settings review]
  
 . When you are satisfied that all settings are correct, click *Add plan* at the bottom of the screen.
+
+
+Continue with link:evs-deploy-guide-verify-rp.html[Verify the replication plan].

@@ -40,3 +40,6 @@ image:evs-create-rp-wiz-b-1-4.png[Replication plan, Applications page]
 . (Optionally) Rename the resource group to a suitable name by clicking on the pencil icon next to the resource group name.
 
 . Click *Next*.
+
+
+Continue with link:evs-deploy-guide-create-rp-wiz-03.html[Create replication plan wizard Step 3].

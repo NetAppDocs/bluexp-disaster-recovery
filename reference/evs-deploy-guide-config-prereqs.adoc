@@ -24,7 +24,7 @@ We do not recommend using the default administrator@vsphere.com administrator ac
 
 * Ensure that all vCenter datastores that will be hosting VMs protected by BlueXP disaster recovery are located on NetApp ONTAP storage resources. 
 +
-The service supports NFS datastores and VMFS datastores hosted on iSCSI-connected LUNs. The service supports NFS and VMFS on iSCSI (and not FC) when using Amazon FSx on NetApp ONTAP. While the service supports FC, Amazon FSx for NetApp ONTAP does not.
+The service supports NFS and VMFS on iSCSI (and not FC) when using Amazon FSx on NetApp ONTAP. While the service supports FC, Amazon FSx for NetApp ONTAP does not.
 
 * Ensure that your Amazon EVS vCenter is connected to an Amazon FSx for NetApp ONTAP storage cluster.
 

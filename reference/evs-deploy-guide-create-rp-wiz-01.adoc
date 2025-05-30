@@ -28,4 +28,7 @@ Only alpha-numeric characters and underscores (_) are allowed for replication pl
 . Click *Next*.
 +
 image:evs-create-rp-wiz-a-1-4.png[Create replication plan, select vCenters]
+
+
+Continue with link:evs-deploy-guide-create-rp-wiz-02.html[Create replication plan wizard Step 2].
  

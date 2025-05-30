@@ -26,3 +26,5 @@ image:evs-create-rp-1.png[replication plans tab]
 image:evs-create-rp-2.png[Replication plans screen]
 
 This opens the Create replication plan wizard.
+
+Continue with link:evs-deploy-guide-create-rp-wiz-01.html[Create replication plan wizard Step 1].

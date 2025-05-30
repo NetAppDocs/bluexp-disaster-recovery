@@ -163,5 +163,8 @@ In addition, you can optionally customize which data LIFs (logical interfaces) t
 . (Optional) Select an export policy for any NFS volumes. If not selected, the default export policy is used
 +
 image:evs-create-rp-wiz-c-datastore-mapping.png[Create replication plan, datastore mapping]
+
+
+Continue with link:evs-deploy-guide-create-rp-wiz-04.html[Create replication plan wizard Step 4].
  
 
