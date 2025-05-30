@@ -17,7 +17,7 @@ Select the virtual machines to be protected using BlueXP disaster recovery.
 
 There are several ways to select VMs for protection:
 
-* *Select individual VMs*: Clicking on the Virtual machines button enables you to select individual VMs to protect. As you select each VM, it is added to a default resource group located on the right-hand side of the screen. 
+* *Select individual VMs*: Clicking on the *Virtual machines* button enables you to select individual VMs to protect. As you select each VM, the service adds it to a default resource group located on the right-hand side of the screen. 
 
 * *Select previously created resource groups*: You can create custom resource groups beforehand using the Resource group tab at the top of the BlueXP disaster recovery UI. This is not a requirement as you can use the other two methods to create a resource group as part of the replication plan process. For details, see link:../use/drplan-create.html[Create a replication plan].
 
@@ -25,9 +25,10 @@ There are several ways to select VMs for protection:
 
 For this guided instruction, we select the entire vCenter datastore. 
 
-.Steps to access this page: 
+.Steps to access this page
+
 . From the *Replication plan* page, continue to the *Applications* section.
-. The *Applications* page opens.
+. Review the information in the *Applications* page that opens.
 +
 image:evs-create-rp-wiz-b-1-4.png[Replication plan, Applications page]
 
@@ -35,7 +36,7 @@ image:evs-create-rp-wiz-b-1-4.png[Replication plan, Applications page]
 
 . Click *Datastores*. 
 
-. Click on the checkboxes beside each datastore to be protected.
+. Click on the checkboxes beside each datastore you want to protect.
 
 . (Optionally) Rename the resource group to a suitable name by clicking on the pencil icon next to the resource group name.
 

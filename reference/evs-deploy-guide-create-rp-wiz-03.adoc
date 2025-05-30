@@ -13,7 +13,7 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 :imagesdir: ../media/use/
 
 [.lead]
-After you have a list of VMs that should be protected, provide failover mapping and VM configuration information to use during a failover. 
+After you have a list of VMs that you want to protect, provide failover mapping and VM configuration information to use during a failover. 
 
 You need to map four primary types of information:
 
@@ -25,11 +25,11 @@ You need to map four primary types of information:
 Each VM requires the first three types of information. The datastore mapping is required for each datastore that hosts VMs to be protected.
 
 * The sections with the caution icon (image:evs-caution-icon.png[25,25]) require that you provide mapping information. 
-* The section marked with the check icon (image:evs-check-icon.png[25,25]) have been mapped or have default mappings. You should review them to make sure that the current configuration meets your requirements.
+* The section marked with the check icon (image:evs-check-icon.png[25,25]) have been mapped or have default mappings. Review them to make sure that the current configuration meets your requirements.
 
-.Steps to access this page: 
+.Steps to access this page 
 . From the *Replication plan* page, continue to the *Resource mapping* section.
-. The *Resource mapping* page opens.
+. Review the information on the *Resource mapping* page that opens.
 +
 image:evs-create-rp-wiz-c0.png[Create replication plan, resource mapping page]
 
@@ -54,9 +54,9 @@ Because a site could host multiple virtual datacenters and multiple vCenter clus
 image:evs-create-rp-wiz-c-compute-resources-1-4.png[Create replication plan, compute resources]
  
 
-== Virtual network mapping
+== Map virtual network resources
 
-Each VM can have one or more virtual NICs connected to virtual networks within the vCenter network infrastructure. To ensure that each VM is properly connected to the desired networks upon restarting in the DR site, identify which DR site virtual networks to connect these VMs. It does this by mapping each virtual network in the on-premises site to an associated network on the DR site. 
+Each VM can have one or more virtual NICs connected to virtual networks within the vCenter network infrastructure. To ensure that each VM is properly connected to the desired networks upon restarting in the DR site, identify which DR site virtual networks to connect these VMs. Do this by mapping each virtual network in the on-premises site to an associated network on the DR site. 
 
 .Select which destination virtual network to map each source virtual network
 
@@ -68,23 +68,23 @@ image:evs-create-rp-wiz-c-network-resources-1-2.png[Create replication plan, net
  
 == Define options for VM reconfiguration during failover
 
-Each VM may need to be modified to work correctly in the DR vCenter site. The Virtual machines section allows you to provide the necessary modifications.
+Each VM might require modifications to work correctly in the DR vCenter site. The Virtual machines section enables you to provide the necessary changes.
 
-By default, BlueXP disaster recovery uses the same settings for each VM as used on the source on-premises site. This assumes that VMs will use the same IP address, virtual CPU and virtual DRAM configuration. 
+By default, BlueXP disaster recovery uses the same settings for each VM as used on the source on-premises site. This assumes that VMs will use the same IP address, virtual CPU, and virtual DRAM configuration. 
 
 === Network reconfiguration
 
 Supported IP address types are static and DHCP. For static IP addresses, you have the following Target IP settings:
 
-* *Same as source*: As the name suggests, the service uses the same IP address on the destination VM as was used on the VM at the source site. This requires that the virtual networks that were mapped in the previous step are configured for the same subnet settings.
+* *Same as source*: As the name suggests, the service uses the same IP address on the destination VM that was used on the VM at the source site. This requires that you configure the virtual networks that were mapped in the previous step for the same subnet settings.
 
-* *Different from source*: The service provides a set of IP address fields for each VM that must be configured for the appropriate subnet used on the destination virtual network mapped in the previous section. For each VM you must provide an IP address, subnet mask, DNS, and default gateway values. There is also an option to use the same subnet mask, DNS, and gateway settings for all VMs to simplify the process when all VMs attach to the same subnet.
+* *Different from source*: The service provides a set of IP address fields for each VM that must be configured for the appropriate subnet used on the destination virtual network, which you mapped in the previous section. For each VM you must provide an IP address, subnet mask, DNS, and default gateway values. Optionally, use the same subnet mask, DNS, and gateway settings for all VMs to simplify the process when all VMs attach to the same subnet.
 
-* *Subnet mapping*: This option reconfigures each VM's IP address based on the destination virtual network's CIDR configuration. To use this feature, you need to ensure that each vCenter's virtual networks have a defined CIDR setting within DRaaS. This can be done by modifying the vCenter information in the Sites tab. 
+* *Subnet mapping*: This option reconfigures each VM's IP address based on the destination virtual network's CIDR configuration. To use this feature, ensure that each vCenter's virtual networks have a defined CIDR setting within the service, as changed in the vCenter information in the Sites tab. 
 
-After it is configured, Subnet mapping uses the same unit component of the IP address for both source and destination VM configuration but will replace the subnet component of the IP address based on the provided CIDR information. This feature also requires that both the source and destination virtual networks have the same IP address class (the `/xx` component of the CIDR). This ensures that there are enough IP addresses available at the destination site to host all of the protected VMs.
+After you configure subnets, Subnet mapping uses the same unit component of the IP address for both source and destination VM configuration, but replaces the subnet component of the IP address based on the provided CIDR information. This feature also requires that both the source and destination virtual networks have the same IP address class (the `/xx` component of the CIDR). This ensures that there are enough IP addresses available at the destination site to host all of the protected VMs.
 
-For this EVS setup, we assume that the source and destination IP configuration are the same and do not require any additional reconfiguration. 
+For this EVS setup, we assume that the source and destination IP configurations are the same and do not require any additional reconfiguration. 
 
 .Make changes to network settings reconfiguration
 
@@ -100,15 +100,15 @@ There are several options for reconfiguring VM compute resources. BlueXP disaste
 
 .Specify any VM configuration changes
 
-. (Optional) Modify the number of virtual CPUs each VM should be configured to use. This may be needed if your DR vCenter cluster hosts do not have as many CPU cores as the source vCenter cluster.
+. (Optional) Modify the number of virtual CPUs each VM should use. This might be needed if your DR vCenter cluster hosts do not have as many CPU cores as the source vCenter cluster.
 
-. (Optional) Modify the amount of virtual DRAM each VM should be configured to use. This may be needed if your DR vCenter cluster hosts do not have as much physical DRAM as the source vCenter cluster hosts.
+. (Optional) Modify the amount of virtual DRAM each VM should use. This might be needed if your DR vCenter cluster hosts do not have as much physical DRAM as the source vCenter cluster hosts.
 +
 image:evs-create-rp-wiz-c-vm-resources-cpu-mem-1-2.png[Create replication plan, VM resources]
  
 === Boot order
 
-BlueXP disaster recovery supports ordered restart of VMs based on a boot order field. This field is used to indicate how the VMs in each resource group start. Those VMs with the same value in the Boot order field boot in parallel.
+BlueXP disaster recovery supports an ordered restart of VMs based on a boot order field. The Boot order field indicates how the VMs in each resource group start. Those VMs with the same value in the Boot order field boot in parallel.
 
 .Modify the boot order settings
 
@@ -130,7 +130,7 @@ BlueXP disaster recovery supports performing some guest OS operations for each V
 
 . (Optional) Check the *Create application consistent replicas* checkbox if the VM is hosting an Oracle or SQL Server database.
 
-. (Optional) If custom actions need to be taken within the guest OS as part of the startup process, upload a script for any VMs. If a single script must be run in all VMs, use the checkbox highlighted and complete the fields presented.
+. (Optional) To take custom actions within the guest OS as part of the startup process, upload a script for any VMs. To run a single script in all VMs, use the checkbox highlighted and complete the fields.
 
 . Certain configuration changes require user credentials with adequate permissions to perform the operations. Provide credentials in the following cases:
 
@@ -140,13 +140,13 @@ BlueXP disaster recovery supports performing some guest OS operations for each V
 
 image:evs-create-rp-wiz-c-vm-resources-ac-scripts-creds-1-2.png[Create replication plan, custom guest OS operations]
  
-== Datastore mapping
+== Map datastores
 
 The final step in creating a replication plan is identifying how ONTAP should protect the datastores. These settings define the replication plans recovery point objective (RPO), how many backups should be maintained, and where to replicate each vCenter datastore’s hosting ONTAP volumes. 
 
-By default, BlueXP disaster recovery manages its own snapshot replication schedule; however optionally, you can specify that you would like to use the existing SnapMirror replication policy schedule for datastore protection.
+By default, BlueXP disaster recovery manages its own snapshot replication schedule; however, optionally, you can specify that you would like to use the existing SnapMirror replication policy schedule for datastore protection.
 
-In addition, you can optionally customize which data LIFs (logical interfaces) to use and which export policy to use. If you don't provide these settings, BlueXP disaster recovery uses all data LIFs associated with the appropriate protocol (NFS, iSCSI, or FC) and uses the default export policy for NFS volumes.
+In addition, you can optionally customize which data LIFs (logical interfaces) and export policy to use. If you don't provide these settings, BlueXP disaster recovery uses all data LIFs associated with the appropriate protocol (NFS, iSCSI, or FC) and uses the default export policy for NFS volumes.
 
 .To configure datastore (volume) mapping
 
