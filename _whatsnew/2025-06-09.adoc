@@ -1,10 +1,10 @@
-== BlueXP access role needed
+=== BlueXP access role needed
 
 You now need one of the following access roles to view, discover, or manage BlueXP disaster recovery: Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, Disaster recovery application admin, or Disaster recovery read-only user.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
-== Windows Local Administrator Password Solution (LAPS) support
+=== Windows Local Administrator Password Solution (LAPS) support
 
 Windows Local Administrator Password Solution (Windows LAPS) is a Windows feature that automatically manages and backs up the password of a local administrator account on Active directory.
  
