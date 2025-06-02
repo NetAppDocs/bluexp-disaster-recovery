@@ -1,9 +1,8 @@
 ---
 sidebar: sidebar
-permalink: dr-reference-roles.html
+permalink: reference/dr-reference-roles.html
 keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back, vmware cloud, netapp intelligent services
 summary: BlueXP disaster recovery uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses roles that are specific to BlueXP disaster recovery.
-
 ---
 
 = BlueXP disaster recovery role-based access to features
