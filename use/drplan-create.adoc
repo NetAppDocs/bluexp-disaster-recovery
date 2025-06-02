@@ -189,6 +189,8 @@ NOTE: If there are two VMs (for example, one is Linux and the other is Windows),
 
 * *Use Windows LAPS*: If you are using Windows Local Administrator Password Solution (Windows LAPS), check this box. This option is available only if you have selected the *Static IP* option. When you check this box, you do not need to provide a password for each of your virtual machines. Instead, you provide the domain controller details.
 +
+If you do not use Windows LAPS, then the VM is a Windows VM and the credentials option on the VM row is enabled. You can provide the credentials for the VM.
++
 * *Scripts*: You can include custom scripts in .sh, .bat, or .ps1 format as post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script after a failover process. For example, you can use a custom script to resume all database transactions after the failover is complete.
 +
 * *Target VM prefix and suffix*: Under the virtual machines details, you can optionally add a prefix and suffix to the VM name. 
