@@ -121,6 +121,11 @@ TIP: CIDR notation is a method of specifying IP addresses and their network mask
 
 When you create a replication plan, you can select the subnet mapping for the replication plan.
 
+Using subnet mapping is an optional two-step process: 
+
+* First, add the subnet mapping for each vCenter site.
+* Second, in the replication plan, indicate that you want to use subnet mapping.
+
 .Steps
 
 . From the BlueXP disaster recovery top menu, select *Replication plans*.
