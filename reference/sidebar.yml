@@ -3,3 +3,7 @@ title: Reference
 entries:
   - title: vCenter privileges required for BlueXP disaster recovery
     url: /reference/vcenter-privileges.html
+  - title: BlueXP disaster recovery roles and privileges
+    url: /reference/dr-reference-roles.html
+
+
