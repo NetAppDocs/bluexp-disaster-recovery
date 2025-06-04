@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: Before you can create a disaster recovery plan, you need to add a primary vCenter site and a target vCenter disaster recovery site in BlueXP disaster recovery. 
 ---
 
-= Add vCenters to a site
+= Add vCenters to a site in BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
