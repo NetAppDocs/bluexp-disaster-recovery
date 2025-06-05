@@ -13,6 +13,8 @@ summary: Before you can create a disaster recovery plan, you need to add a prima
 [.lead]
 Before you can create a disaster recovery plan, you need to add a primary vCenter server to a site and a target vCenter disaster recovery site in BlueXP. 
 
+TIP: Ensure that both the source and destination vCenters use the same BlueXP Connector. 
+
 After vCenters are added, BlueXP disaster recovery performs a deep discovery of the vCenter environments, including vCenter clusters, ESXi hosts, datastores, storage foot print, virtual machine details, SnapMirror replicas, and virtual machine networks.
 
 If you added vCenters in previous releases and want to customize the discovery schedule, you must edit the vCenter server site and set the schedule. 
