@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: Using BlueXP disaster recovery, you can replicate VMware apps on your source site to a disaster recovery remote site in the cloud using SnapMirror replication.
 ---
 
-= Replicate applications to another site
+= Replicate applications to another site with BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/

@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. After you’ve added vCenter sites, you’re ready to create a disaster recovery or replication plan. 
 ---
 
-= Create a replication plan 
+= Create a replication plan in BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
@@ -175,7 +175,21 @@ This section might display different fields depending on your selection.
 +
 This can be very helpful when recovering large environments to smaller target clusters or for conducting disaster recovery tests without having to provision a one-to-one physical VMware infrastructure. 
 +
-image:dr-plan-create-mapping-vms2.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
+image:dr-plan-vm-subnet-option2.png[Screenshot showing Add replication plan > Resource mapping > virtual machines] 
+
+
+* *Target IP* field, select one of the following: 
+** *Same as source*
+** *Different from source* 
+** *Subnet mapping*: Select this option if you want to map the source subnet to a different target subnet. You can select the source subnet and then select the target subnet. This is useful when you want to change the IP address of the VM in the target environment.
++
+NOTE: Using subnet mapping is an optional two-step process: First, add the subnet mapping for each vCenter site in the Sites tab. Second, in the replication plan, indicate that you want to use subnet mapping.
++
+NOTE: If there are two VMs (for example, one is Linux and the other is Windows), credentials are needed only for Windows.
+
+* *Use Windows LAPS*: If you are using Windows Local Administrator Password Solution (Windows LAPS), check this box. This option is available only if you have selected the *Static IP* option. When you check this box, you do not need to provide a password for each of your virtual machines. Instead, you provide the domain controller details.
++
+If you do not use Windows LAPS, then the VM is a Windows VM and the credentials option on the VM row is enabled. You can provide the credentials for the VM.
 +
 * *Scripts*: You can include custom scripts in .sh, .bat, or .ps1 format as post failover processes. With custom scripts, you can have BlueXP disaster recovery run your script after a failover process. For example, you can use a custom script to resume all database transactions after the failover is complete.
 +
