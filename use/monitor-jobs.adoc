@@ -5,13 +5,13 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. You can monitor all disaster recovery jobs and determine their progress.
 ---
 
-= Monitor disaster recovery jobs
+= Monitor BlueXP disaster recovery jobs
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-You can monitor all disaster recovery jobs and determine their progress. 
+You can monitor all BlueXP disaster recovery jobs and determine their progress. 
 
 .Steps 
 

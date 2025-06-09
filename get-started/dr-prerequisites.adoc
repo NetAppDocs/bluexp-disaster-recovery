@@ -68,6 +68,7 @@ For instructions on how to add a site, refer to link:../use/sites-add.html[Add a
 A BlueXP Connector must be set up in BlueXP. When you use the BlueXP Connector, it will include the appropriate capabilities for the disaster recovery service.
  
 * BlueXP disaster recovery works only with the standard mode Connector deployment. See https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html[Getting started with BlueXP in standard mode^]. 
+* Ensure that both the source and destination vCenters use the same BlueXP Connector. 
 * Type of BlueXP Connector needed:
 ** *On-premises to on-premises disaster recovery*: Install the BlueXP on-premises Connector in the disaster recovery site. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html[Install and set up a Connector on premises^].
 ** *On-premises to AWS*: Install the BlueXP Connector for AWS in your AWS VPC. Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-aws.html[Connector installation options in AWS^].
