@@ -32,7 +32,7 @@ Create a production vCenter site.
 +
 image:evs-create-site-op-1.png[Sites tab]
 
-. From the Sites tab, click *Add*. 
+. From the Sites tab, select *Add*. 
 +
 image:evs-create-site-op-2.png[Add option on the Sites tab]
 
@@ -40,7 +40,7 @@ image:evs-create-site-op-2.png[Add option on the Sites tab]
 
 . Select “On-prem” as the Location.
 
-. Click *Add*.
+. Select *Add*.
 +
 image:evs-create-site-op-3-5.png[Create site dialog box]
  
@@ -54,7 +54,7 @@ Create a DR site for Amazon EVS using Amazon FSx for NetApp ONTAP storage.
 +
 image:evs-create-site-op-1.png[Sites tab]
  
-. From the Sites tab, click *Add*.
+. From the Sites tab, select *Add*.
 +
 image:evs-create-site-aws-2.png[Add option on the Sites page]
  
@@ -62,7 +62,7 @@ image:evs-create-site-aws-2.png[Add option on the Sites page]
 
 . Select "AWS-EVS" as the Location.
 
-. Click *Add*.
+. Select *Add*.
 +
 image:evs-create-site-aws-3-5.png[Add dialog box]
 

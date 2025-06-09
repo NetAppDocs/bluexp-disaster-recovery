@@ -13,7 +13,7 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 :imagesdir: ../media/use/
 
 [.lead]
-After the plan has been added, you return to the Replication plans page where you can view your replication plans and their status. You should verify that the replication plan is in the *Healthy* state. If it is not, you should check the status of the replication plan and correct any issues before proceeding.
+After you add the replication plan in BlueXP disaster recovery, you return to the Replication plans page where you can view your replication plans and their status. You should verify that the replication plan is in the *Healthy* state. If it is not, you should check the status of the replication plan and correct any issues before proceeding.
 
 Figure: Replication plans page image:evs-replication-plan-post-create.png[Replication plans page]
  

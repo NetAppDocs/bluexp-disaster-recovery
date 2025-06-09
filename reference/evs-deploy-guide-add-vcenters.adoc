@@ -17,7 +17,7 @@ With sites created, you now add your vCenter clusters to each site in BlueXP dis
 
 .Steps to add a vCenter to each site
 
-. From the *Sites* tab, click *Add vCenter* for the site you want. 
+. From the *Sites* tab, select *Add vCenter* for the site you want. 
 +
 image:evs-add-vcenter-1.png[Add vCenter option]
  
@@ -35,6 +35,6 @@ image:evs-add-vcenter-1.png[Add vCenter option]
 
 .. If your company uses an external Certificate Authority (CA) or the vCenter Endpoint Certificate Store to gain access to your vCenters, uncheck the *Use self-signed certificates* checkbox. Otherwise, leave the box checked.
 
-. Click *Add*.
+. Select *Add*.
 +
 image:evs-add-vcenter-2-3.png[Add vCenter dialog box]

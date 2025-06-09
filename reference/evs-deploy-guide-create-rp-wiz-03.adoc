@@ -13,7 +13,7 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 :imagesdir: ../media/use/
 
 [.lead]
-After you have a list of VMs that you want to protect, provide failover mapping and VM configuration information to use during a failover. 
+After you have a list of VMs that you want to protect using BlueXP disaster recovery, provide failover mapping and VM configuration information to use during a failover. 
 
 You need to map four primary types of information:
 
@@ -22,7 +22,7 @@ You need to map four primary types of information:
 * VM reconfiguration
 * Datastore mapping
 
-Each VM requires the first three types of information. The datastore mapping is required for each datastore that hosts VMs to be protected.
+Each VM requires the first three types of information. Datastore mapping is required for each datastore that hosts VMs to be protected.
 
 * The sections with the caution icon (image:evs-caution-icon.png[25,25]) require that you provide mapping information. 
 * The section marked with the check icon (image:evs-check-icon.png[25,25]) have been mapped or have default mappings. Review them to make sure that the current configuration meets your requirements.
@@ -33,7 +33,7 @@ Each VM requires the first three types of information. The datastore mapping is 
 +
 image:evs-create-rp-wiz-c0.png[Create replication plan, resource mapping page]
 
-. To open each category of mappings required, click the down arrow (*v*) beside the section.
+. To open each category of mappings required, select the down arrow (*v*) beside the section.
 
 
 == Compute resource mapping
@@ -46,9 +46,13 @@ Because a site could host multiple virtual datacenters and multiple vCenter clus
 
 . Select the cluster to host the datastores and VMs from the list of clusters within the selected virtual datacenter.
 
-. (Optional) Select a target host in the target cluster. This step is not required because BlueXP disaster recovery selects the first host added to the cluster in vCenter. At that point, the VMs either continue to run on that ESXi host or VMware DRS moves the VM to a different ESXi host as needed based on DRS rules configured.
+. (Optional) Select a target host in the target cluster. 
++
+This step is not required because BlueXP disaster recovery selects the first host added to the cluster in vCenter. At that point, the VMs either continue to run on that ESXi host or VMware DRS moves the VM to a different ESXi host as needed based on DRS rules configured.
 
-. (Optional) Provide the name of a top-level vCenter folder to place the VM registrations into. This is for your organizational needs and is not required. 
+. (Optional) Provide the name of a top-level vCenter folder to place the VM registrations into. 
++
+This is for your organizational needs and is not required. 
 
 +
 image:evs-create-rp-wiz-c-compute-resources-1-4.png[Create replication plan, compute resources]

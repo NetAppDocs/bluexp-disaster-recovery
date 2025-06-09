@@ -17,11 +17,11 @@ After you have vCenters to protect on the on-premises site and you have an Amazo
 
 .To start the replication plan creation process:
 
-. From any BlueXP disaster recovery screen, click the *Replication plans* tab. 
+. From any BlueXP disaster recovery screen, select the *Replication plans* tab. 
 +
 image:evs-create-rp-1.png[replication plans tab]
 
-. From the Replication plans screen, click *Add*.
+. From the Replication plans screen, select *Add*.
 +
 image:evs-create-rp-2.png[Replication plans screen]
 

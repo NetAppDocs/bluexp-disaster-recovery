@@ -13,7 +13,7 @@ summary: Solution Overview of BlueXP disaster recovery using Amazon EVS and Amaz
 :imagesdir: ../media/use/
 
 [.lead]
-BlueXP disaster recovery is a value-added service hosted within the BlueXP software-as-a-service environment. which depends on the core BlueXP architecture. Several main components comprise the DR service for VMware protection within BlueXP. 
+BlueXP disaster recovery is a value-added service hosted within the BlueXP software-as-a-service environment, which depends on the core BlueXP architecture. Several main components comprise the DR service for VMware protection within BlueXP. 
 
 For a complete overview of the BlueXP disaster recovery solution, see link:../get-started/dr-intro.html[Learn about BlueXP disaster recovery for VMware].
 

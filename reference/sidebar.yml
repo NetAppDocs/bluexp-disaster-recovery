@@ -41,8 +41,7 @@ entries:
         url: /reference/evs-deploy-guide-verify-rp.html           
     - title: Perform replication plan operations  
       url: /reference/evs-deploy-guide-rp-operations.html
-    - title: Conclusion 
-      url: /reference/evs-deploy-guide-closing.html
+
 
 
 

@@ -6,7 +6,7 @@ summary: Introduction of BlueXP disaster recovery using Amazon EVS and Amazon FS
 
 ---
 
-= Perform replication plan operations
+= Perform replication plan operations with BlueXP disaster recovery
 
 :hardbreaks:
 :icons: font
@@ -29,13 +29,13 @@ Failover is a manually initiated process.
 
 .Steps to perform a failover
 
-. From the Replication plans page, click on the replication plan's Actions option image:icon-horizontal-dots.png[Horizontal dots for Actions menu].  
+. From the Replication plans page, select the replication plan's Actions option image:icon-horizontal-dots.png[Horizontal dots for Actions menu].  
 
-. Click *Fail over*.
+. Select *Fail over*.
 +
 image:evs-rp-menu-failover.png[Failover menu option]
  
-. If the production (protected) site is not accessible, select a previously created snapshot as your recovery image. To do this, click *Select*.
+. If the production (protected) site is not accessible, select a previously created snapshot as your recovery image. To do this, select *Select*.
 
 . Select the backup to be used for the recovery.
 
@@ -45,7 +45,7 @@ image:evs-rp-menu-failover.png[Failover menu option]
 
 . Type the word “Failover” to verify that you would like to proceed.
 
-. Click *Failover*.
+. Select *Failover*.
 +
 image:evs-rp-failover-dialog.png[Failover dialog box]
  
@@ -53,7 +53,7 @@ image:evs-rp-failover-dialog.png[Failover dialog box]
 
 A test failover is similar to a failover except for two differences.
 
-* The production site is still active and all VMs are still operating as expected
+* The production site is still active and all VMs are still operating as expected.
 
 * BlueXP disaster recovery protection of the production VMs continues.
 
@@ -62,7 +62,7 @@ This is accomplished by using native ONTAP FlexClone volumes at the destination 
 The steps for executing a test failover are identical to those used to execute a real failover except that you use the Test failover operation on the replication plan's context menu.
 
 .Steps  
-. Click on the replication plan's Actions option image:icon-horizontal-dots.png[Horizontal dots for Actions menu].   
+. Select the replication plan's Actions option image:icon-horizontal-dots.png[Horizontal dots for Actions menu].   
 
 . Select *Test failover* from the menu.
 +
@@ -74,7 +74,7 @@ image:evs-rp-menu-test-failover.png[Test failover menu option]
 
 . Type the word “Test failover” to verify that you would like to proceed.
 
-. Click *Test failover*.
+. Select *Test failover*.
 +
 image:evs-test-failover-dialog.png[Test failover dialog box]
  
@@ -111,7 +111,7 @@ While BlueXP disaster recovery is primarily used for disaster recovery use cases
 . Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
 
 
-. To move the VMs in a replication plan to the destination Amazon EVS cluster, click *Migrate* from the replication plan's Actions menu:
+. To move the VMs in a replication plan to the destination Amazon EVS cluster, select *Migrate* from the replication plan's Actions menu:
 +
 image::evs-rp-menu-migrate.png[Migrate menu option]
 
@@ -125,7 +125,7 @@ At any time, you can take an immediate snapshot of the replication plan. This sn
 
 . Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
 
-. To take an immediate snapshot of the replication plan's resources, click  *Take snapshot now* on the replication plan's Actions menu:
+. To take an immediate snapshot of the replication plan's resources, select  *Take snapshot now* on the replication plan's Actions menu:
 +
 image::evs-rp-menu-take-snapshot-now.png[Take snapshot now menu option]
  
@@ -179,7 +179,7 @@ Two operations are performed automatically on a regular schedule: test failovers
 
 . Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
 
-. To change these schedules for either of these two operations, click *Edit schedules* for the replication plan.
+. To change these schedules for either of these two operations, select *Edit schedules* for the replication plan.
 +
 image::evs-rp-menu-edit-schedules.png[Edit schedules menu option]
 
@@ -201,7 +201,7 @@ Test failovers are manually executed by default. You can schedule automatic test
 . Select the *Actions* option  image:../use/icon-horizontal-dots.png[Actions menu icon in BlueXP disaster recovery service] next to the replication plan.
 . Select *Run failover*. 
 
-. Click the *Run test failovers on a schedule* checkbox.
+. Check the *Run test failovers on a schedule* checkbox.
 
 . (Optional) Check the *Use on-demand-snapshot for scheduled test failover*.
 
@@ -218,7 +218,7 @@ Test failovers are manually executed by default. You can schedule automatic test
 
 . Decide if you want the service to automatically clean up the test environment and how long you would like the test environment to run before the clean up process starts.
 
-. Click *Save*.
+. Select *Save*.
 +
 image::evs-rp-edit-schedule-test-failover.png[Edit schedule test failover]
 

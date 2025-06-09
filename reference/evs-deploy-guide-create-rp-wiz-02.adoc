@@ -34,13 +34,13 @@ image:evs-create-rp-wiz-b-1-4.png[Replication plan, Applications page]
 
 .Steps to select the datastore or datastores:
 
-. Click *Datastores*. 
+. Select *Datastores*. 
 
-. Click on the checkboxes beside each datastore you want to protect.
+. Check the checkboxes beside each datastore you want to protect.
 
-. (Optionally) Rename the resource group to a suitable name by clicking on the pencil icon next to the resource group name.
+. (Optionally) Rename the resource group to a suitable name by selecting the pencil icon next to the resource group name.
 
-. Click *Next*.
+. Select *Next*.
 
 
 Continue with link:evs-deploy-guide-create-rp-wiz-03.html[Create replication plan wizard Step 3].
