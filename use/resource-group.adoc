@@ -5,7 +5,7 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery service that automates disaster recovery workflows. After you’ve added vCenter sites, you’re ready to create a disaster recovery or replication plan. 
 ---
 
-= Create a resource group to organize VMs together
+= Create a resource group to organize VMs together in BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/

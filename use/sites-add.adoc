@@ -5,13 +5,15 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: Before you can create a disaster recovery plan, you need to add a primary vCenter site and a target vCenter disaster recovery site in BlueXP disaster recovery. 
 ---
 
-= Add vCenters to a site
+= Add vCenters to a site in BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
 Before you can create a disaster recovery plan, you need to add a primary vCenter server to a site and a target vCenter disaster recovery site in BlueXP. 
+
+TIP: Ensure that both the source and destination vCenters use the same BlueXP Connector. 
 
 After vCenters are added, BlueXP disaster recovery performs a deep discovery of the vCenter environments, including vCenter clusters, ESXi hosts, datastores, storage foot print, virtual machine details, SnapMirror replicas, and virtual machine networks.
 
@@ -120,6 +122,11 @@ TIP: CIDR notation is a method of specifying IP addresses and their network mask
 === Select subnet mapping for a replication plan
 
 When you create a replication plan, you can select the subnet mapping for the replication plan.
+
+Using subnet mapping is an optional two-step process: 
+
+* First, add the subnet mapping for each vCenter site.
+* Second, in the replication plan, indicate that you want to use subnet mapping.
 
 .Steps
 

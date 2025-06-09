@@ -5,13 +5,13 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of failovers and failbacks, replication details on all sites, and job details for the past year. 
 ---
 
-= Create disaster recovery reports
+= Create BlueXP disaster recovery reports
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-Reviewing disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of test failovers, replication plan details, and job details on all sites within an account for the past seven days. 
+Reviewing BlueXP disaster recovery reports can help you analyze your disaster recovery preparedness. Predesigned reports include a summary of test failovers, replication plan details, and job details on all sites within an account for the past seven days. 
 
 You can download reports in PDF, HTML, or JSON format. 
 

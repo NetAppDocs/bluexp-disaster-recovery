@@ -5,13 +5,13 @@ keywords: disaster recovery, bluexp disaster recovery, failover, failback, repli
 summary: You can get a quick glance of all your BlueXP disaster recovery resources and manage vCenter sites, resource groups, and replication plans.
 ---
 
-= Manage sites, resource groups, replication plans, datastores and virtual machines information
+= Manage sites, resource groups, replication plans, datastores and virtual machines information with BlueXP disaster recovery
 :hardbreaks:
 :icons: font
 :imagesdir: ../media/use/
 
 [.lead]
-You can get a quick glance of all your Disaster recovery resources or look at each in detail: 
+You can get a quick glance of all your BlueXP disaster recovery resources or look at each in detail: 
 
 * Sites
 * Resource groups
