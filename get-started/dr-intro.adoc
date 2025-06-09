@@ -21,12 +21,14 @@ BlueXP disaster recovery is a cloud-based disaster recovery service that automat
 
 //IMPORTANT: With this release, disaster recovery is supported in a technology preview for on-premises VMware workloads to on-premises VMware environments with VMware vSphere virtual machine file system (VMFS) datastores. NetApp doesn't charge you for any previewed workload capacity.
 
-//NOTE: THIS DOCUMENTATION REGARDING EVS IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
+NOTE: THIS DOCUMENTATION REGARDING AWS EVS IS PROVIDED AS A TECHNOLOGY PREVIEW. With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability. For details, see link:../reference/evs-deploy-guide-introduction.html[Introduction of BlueXP disaster recovery using Amazon Elastic VMware Service and Amazon FSx for NetApp ONTAP].
 
 BlueXP disaster recovery uses ONTAP SnapMirror technology as the replication transport to the disaster recovery site. This enables industry-best storage efficiency (compression and deduplication) on primary and secondary sites. 
 
 
-image:draas-onprem-to-cloud-onprem.png[Diagram showing components of the BlueXP disaster recovery for VMware]
+//image:draas-onprem-to-cloud-onprem.png[Diagram showing components of the BlueXP disaster recovery for VMware]
+
+image:../use/evs-bluexp-architecture.png[Diagram showing components of the BlueXP disaster recovery for VMware]
 
 == Benefits of using BlueXP disaster recovery for VMware
 
@@ -47,6 +49,7 @@ BlueXP disaster recovery provides you with full use of several NetApp technologi
 * After the disaster has been resolved, fail back on demand from the disaster recovery site to the primary site.
 *Group VMs or datastores into logical resource groups for efficient management. 
 
+image:../use/evs-use-cases.png[Diagram showing use cases for BlueXP disaster recovery for VMware]
 
 NOTE: Configuration of vSphere server is done outside of BlueXP disaster recovery in vSphere Server. 
 
