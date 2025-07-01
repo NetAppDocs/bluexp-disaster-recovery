@@ -15,6 +15,17 @@ Learn what’s new in BlueXP disaster recovery.
 
 //tag::whats-new[]
 
+
+== 30 June 2025
+Version 4.2.4P2
+
+include::../_whatsnew/2025-06-30.adoc[]
+
+== 23 June 2025
+Version 4.2.4P1
+
+include::../_whatsnew/2025-06-23.adoc[]
+
 == 9 June 2025
 Version 4.2.4
 
