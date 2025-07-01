@@ -18,7 +18,7 @@ The service uses the following roles that are specific to BlueXP disaster recove
 * *Disaster recovery admin*: Perform any actions in BlueXP disaster recovery.
 * *Disater recovery failover admin*: Perform failover and migrate actions in BlueXP disaster recovery. 
 * *Disaster recovery application admin*: Create and modify replication plans and start test failovers. 
-* *Disaster recovery read-only user*: View information in BlueXP disaster recovery, but cannot perform any actions.
+* *Disaster recovery read-only viewer*: View information in BlueXP disaster recovery, but cannot perform any actions.
 
 
 The BlueXP platform for all BlueXP services uses the following types of roles: 
