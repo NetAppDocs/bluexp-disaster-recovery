@@ -15,6 +15,9 @@ Before you can create a disaster recovery plan, you need to add a primary vCente
 
 After vCenters are added, BlueXP disaster recovery performs a deep discovery of the vCenter environments, including vCenter clusters, ESXi hosts, datastores, storage foot print, virtual machine details, SnapMirror replicas, and virtual machine networks.
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Disaster recovery admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 If you added vCenters in previous releases and want to customize the discovery schedule, you must edit the vCenter server site and set the schedule. 
 
 TIP: BlueXP disaster recovery performs discovery once every 24 hours. After setting up a site, you can later edit the vCenter to customize the discovery schedule that meets your needs. For example, if you have a large number of VMs, you can set the discovery schedule to run every 23 hours and 59 minutes. If you have a small number of VMs, you can set the discovery schedule to run every 12 hours. The minimum interval is 30 minutes and the maximum is 24 hours. 

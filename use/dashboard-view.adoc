@@ -13,6 +13,9 @@ summary: NetApp BlueXP disaster recovery is a cloud-based disaster recovery serv
 [.lead]
 Using the BlueXP disaster recovery Dashboard, you can determine the health of your disaster recovery sites and replication plans. You can quickly ascertain which sites and plans are healthy, disconnected, or degraded. 
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery application admin, or Disaster recovery viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 .Steps 
 
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*.

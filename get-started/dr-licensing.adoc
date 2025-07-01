@@ -13,6 +13,9 @@ summary: With BlueXP disaster recovery, you can use different licensing plans in
 [.lead]
 With BlueXP disaster recovery, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 You can use the following license types:
 
 * Sign up for a 30-day free trial.
