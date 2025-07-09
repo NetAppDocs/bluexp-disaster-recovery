@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference/dr-reference-roles.html
 keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back, vmware cloud, netapp intelligent services
-summary: BlueXP disaster recovery uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses roles that are specific to BlueXP disaster recovery.
+summary: BlueXP disaster recovery employs roles to govern the access that each user has to specific features and actions.
 ---
 
 = BlueXP disaster recovery role-based access to features
@@ -16,21 +16,12 @@ BlueXP disaster recovery employs roles to govern the access that each user has t
 The service uses the following roles that are specific to BlueXP disaster recovery. 
 
 * *Disaster recovery admin*: Perform any actions in BlueXP disaster recovery.
-* *Disater recovery failover admin*: Perform failover and migrate actions in BlueXP disaster recovery. 
+* *Disaster recovery failover admin*: Perform failover and migrate actions in BlueXP disaster recovery. 
 * *Disaster recovery application admin*: Create and modify replication plans and start test failovers. 
-* *Disaster recovery read-only viewer*: View information in BlueXP disaster recovery, but cannot perform any actions.
+* *Disaster recovery viewer*: View information in BlueXP disaster recovery, but cannot perform any actions.
+    
 
-
-The BlueXP platform for all BlueXP services uses the following types of roles: 
- 
-* *Platform roles* allow you to manage users, assign them to resources and give them roles along with other platform-wide actions. 
- 
-* *Data services roles* are limited to only a specific data service. You can have mulitple data services roles depending on your job. BlueXP disaster recovery is one of the BlueXP data services. 
-
-Other BlueXP platform roles are treated as viewers in BlueXP disaster recovery. 
-
-
-For details about all BlueXP platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
+These roles are specific to BlueXP disaster recovery and are not the same as the platform roles that are used in BlueXP. For details about all BlueXP platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
 
 The following table indicates the actions that each BlueXP disaster recovery role can perform. 
 
