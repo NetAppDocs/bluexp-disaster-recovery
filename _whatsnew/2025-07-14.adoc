@@ -1,0 +1,27 @@
+=== User roles in BlueXP disaster recovery
+
+BlueXP disaster recovery now employs roles to govern the access that each user has to specific features and actions. 
+
+The service uses the following roles that are specific to BlueXP disaster recovery. 
+
+* *Disaster recovery admin*: Perform any actions in BlueXP disaster recovery.
+* *Disaster recovery failover admin*: Perform failover and migrate actions in BlueXP disaster recovery. 
+* *Disaster recovery application admin*: Create and modify replication plans and start test failovers. 
+* *Disaster recovery viewer*: View information in BlueXP disaster recovery, but cannot perform any actions.
+
+For details, see  link:../reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
+
+//For details, see  https://docs.netapp.com/us-en/bluexp-disaster-recovery/reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
+
+=== Other updates in BlueXP disaster recovery 
+
+* Discovery improvements
+* Log improvements 
+* Enhanced network discovery
+* UI alignment improvements
+* Scalability improvements, memory optimization, and performance optimization
+
+* When a VM is deleted in the vCenter, BlueXP disaster recovery now automatically removes it from the replication plan.
+* In some situations after a failback operation, the igroup was left behind after the operation completed. This update removes the igroup if it is stale.
+
+* If the NFS FQDN was used in the replication plan, BlueXP disaster recovery now resolves it to an IP address. This update is useful if the FQDN is not resolvable in the disaster recovery site.
