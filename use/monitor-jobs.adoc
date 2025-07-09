@@ -13,6 +13,10 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 [.lead]
 You can monitor all BlueXP disaster recovery jobs and determine their progress. 
 
+== View jobs 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery application admin, or Disaster recovery viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 .Steps 
 
 . From the BlueXP left nav, select *Protection* > *Disaster recovery*. 
@@ -27,6 +31,8 @@ You can monitor all BlueXP disaster recovery jobs and determine their progress.
 
 If a job is in progress or in a queued state and you don't want it to continue, you can cancel it. You might want to cancel a job if it is stuck in the same state and you want to free up the next operation in the queue. You might want cancel a job before it times out.
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 .Steps 
 

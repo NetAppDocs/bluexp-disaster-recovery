@@ -13,6 +13,9 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 [.lead]
 After you’ve added vCenter sites, you might want to create resource groups that group VMs together by VMs or by datastores. Resource groups enable you to organize a set of dependent VMs into logical groups that meet your requirements. For example, you might group VMs associated with one application or you might group applications that have similar tiers. As another example, groups could contain delayed boot orders that can be run upon recovery.
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 You can group VMs themselves or VMs in datastores. 
 
 You can create resource groups using the following methods: 

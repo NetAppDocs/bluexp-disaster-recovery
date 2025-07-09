@@ -24,6 +24,9 @@ You can get a quick glance of all your BlueXP disaster recovery resources or loo
 == Manage vCenter sites
 You can edit the vCenter site name and the site type (on-premises or AWS).
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Disaster recovery admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 .Steps 
 
 . From the top menu, select *Sites*. 
@@ -33,6 +36,9 @@ You can edit the vCenter site name and the site type (on-premises or AWS).
 == Manage resource groups 
 
 While you can add a resource group as part of creating a replication plan, you might find it more convenient to add the groups separately and later use those groups in the plan. You create resource groups by VMs or by datastores.
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 You can create a resource group by datastores in the following ways:
 
@@ -50,6 +56,9 @@ You can also edit and delete resource groups.
 == Manage replication plans 
 
 You can disable, enable and delete replication plans. You can change schedules. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 * If you want to pause a replication plan temporarily, you can disable it and later enable it. 
 * If you no longer need the plan, you can delete it.
@@ -83,6 +92,9 @@ image:../use/dr-plan-list2.png[Replication plan list]
 === Reconcile snapshots on demand
 You can reconcile snapshots that are out of sync between the source and target. This might occur if snapshots are deleted on a target outside of BlueXP disaster recovery. The service automatically deletes the snapshot on the source automatically every 24 hours. However, you can perform this on demand. This feature enables you to ensure that the snapshots are consistent across all sites.
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 .Steps 
 
 . From the top menu, select *Replication plans*. 
@@ -97,6 +109,9 @@ image:../use/dr-plan-list2.png[Replication plan list]
 
 === Delete a replication plan
 You can delete a replication plan if you no longer need it. If you delete a replication plan, you can also delete the primary and secondary snapshots created by the plan. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 .Steps 
 
@@ -113,7 +128,11 @@ image:../use/dr-plan-list2.png[Replication plan list]
 
 
 === Change retention count for failover schedules
+
 You can change how many datastores are retained. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, or Disaster recovery application admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 . From the top menu, select *Replication plans*. 
 . Select the replication plan, click the *Failover mapping* tab, and click the *Edit* pencil icon. 
@@ -127,6 +146,9 @@ image:../use/dr-plan-failover-edit.png[Edit failover mappings page]
 
 You can view information about how many datastores exist on the source and on the target. 
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, Disaster recovery application admin, or Disaster recovery viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 
 . From the top menu, select *Dashboard*. 
 . Select the vCenter in the site row. 
@@ -136,6 +158,9 @@ You can view information about how many datastores exist on the source and on th
 == View virtual machines information 
 
 You can view information about how many virtual machines exist on the source and on the target along with CPU, memory, and available capacity. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, Disaster recovery application admin, or Disaster recovery viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 . From the top menu, select *Dashboard*. 
 . Select the vCenter in the site row. 

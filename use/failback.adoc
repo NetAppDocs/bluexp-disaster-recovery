@@ -13,6 +13,9 @@ summary: The NetApp BlueXP disaster recovery is a cloud-based disaster recovery 
 [.lead]
 After a disaster has been resolved, fail back from the disaster recovery site to the source site to return to normal operations. You can select the snapshot from which to recover. 
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, or Disaster recovery failover admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 In this workflow, BlueXP disaster recovery replicates (resyncs) any changes back to the original source virtual machine before reversing the replication direction. This process starts from a relationship that has completed failing over to a target and involves the following steps:
 
 * On the target site, the virtual machines are powered off and unregistered, and volumes are unmounted.  
