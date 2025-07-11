@@ -20,8 +20,8 @@ For details, see  link:../reference/dr-reference-roles.html[User roles and permi
 * Enhanced network discovery
 * Scalability improvements:
 ** Filtering for the required metadata instead of all the details
-** Discovery improvements to make the VM discovery similar across datacenters
-** Memory optimization and performance optimization for data retrieval
+** Discovery improvements to retrieve and update VM resources faster
+** Memory optimization and performance optimization for data retrieval and data updates
 ** vCenter SDK client creation and pool management improvements
 
 * Stale data management on the next scheduled or manual discovery:
