@@ -9,7 +9,7 @@ The service uses the following roles that are specific to BlueXP disaster recove
 * *Disaster recovery application admin*: Create and modify replication plans and start test failovers. 
 * *Disaster recovery viewer*: View information in BlueXP disaster recovery, but cannot perform any actions.
 
-If you are configuring BlueXP disaster recovery for the first time, you must have the *SnapCenterAdmin* permission or have the *Organization Admin* role. 
+If you are clicking on the BlueXP disaster recovery service and configuring it for the first time, you must have the *SnapCenterAdmin* permission or have the *Organization Admin* role. 
 
 //For details, see  link:../reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
 
