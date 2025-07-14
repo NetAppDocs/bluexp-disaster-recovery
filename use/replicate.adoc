@@ -13,6 +13,12 @@ summary: Using BlueXP disaster recovery, you can replicate VMware apps on your s
 [.lead]
 Using BlueXP disaster recovery, you can replicate VMware apps on your source site to a disaster recovery remote site in the cloud using SnapMirror replication.
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, or Disaster recovery failover admin role. 
+
+link:../reference/dr-reference-roles.html[Learn about user roles and permissions in BlueXP disaster recovery].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 TIP: After you create the disaster recovery plan, identify the recurrence in the wizard, and initiate a replication to a disaster recovery site, every 30 minutes BlueXP disaster recovery verifies that the replication is actually occurring according to the plan. You can monitor the progress in the Job Monitor page. 
 
 .Before you begin

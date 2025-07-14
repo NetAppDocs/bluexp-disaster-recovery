@@ -2,7 +2,9 @@ section: reference
 title: Reference
 entries:
   - title: vCenter privileges required for BlueXP disaster recovery
-    url: /reference/vcenter-privileges.html
+    url: /reference/vcenter-privileges.html    
+  - title: BlueXP disaster recovery roles and privileges
+    url: /reference/dr-reference-roles.html
   - title: Use BlueXP disaster recovery with Amazon EVS
     entries: 
     - title: BlueXP disaster recovery with Amazon EVS overview
@@ -41,8 +43,6 @@ entries:
         url: /reference/evs-deploy-guide-verify-rp.html           
     - title: Perform replication plan operations  
       url: /reference/evs-deploy-guide-rp-operations.html
-
-
 
 
 
