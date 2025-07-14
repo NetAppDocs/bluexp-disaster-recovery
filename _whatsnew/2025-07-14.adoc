@@ -11,9 +11,12 @@ The service uses the following roles that are specific to BlueXP disaster recove
 
 If you are configuring BlueXP disaster recovery for the first time, you must have the *SnapCenterAdmin* permission or have the *Organization Admin* role. 
 
-For details, see  link:../reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
+//For details, see  link:../reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
 
-//For details, see  https://docs.netapp.com/us-en/bluexp-disaster-recovery/reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
+For details, see  https://docs.netapp.com/us-en/bluexp-disaster-recovery/reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 
 === Other updates in BlueXP disaster recovery 
 
@@ -29,7 +32,7 @@ For details, see  link:../reference/dr-reference-roles.html[User roles and permi
 ** When a datastore or network is deleted in the vCenter, BlueXP disaster recovery now deletes it from the replication plan and resource group. 
 ** When a cluster, host, or datacenter is deleted in the vCenter, BlueXP disaster recovery now deletes it from the replication plan and resource group.
 
-* You can now access Swagger documentation in Private mode. 
+* You can now access Swagger documentation in your browser's incognito mode. You can access it from within BlueXP disaster recovery from the Settings option > API Documentation or directly at the following URL https://snapcenter.cloudmanager.cloud.netapp.com/api/api-doc/draas[Swagger documentation].
 * In some situations after a failback operation, the iGroup was left behind after the operation completed. This update removes the iGroup if it is stale.
 
 
