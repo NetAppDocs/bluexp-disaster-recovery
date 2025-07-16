@@ -15,6 +15,13 @@ After you’ve added vCenter sites, you’re ready to create a disaster recovery
 
 Such plans are sometimes called _blueprints_. 
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, Disaster recovery admin, Disaster recovery failover admin, or Disaster recovery application admin role. 
+
+link:../reference/dr-reference-roles.html[Learn about user roles and permissions in BlueXP disaster recovery].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+
 You can create a replication plan and also edit schedules for compliance and testing. 
 
 You can protect multiple VMs on multiple datastores. BlueXP disaster recovery creates ONTAP Consistency Groups for all ONTAP volumes hosting protected VM datastores. 
