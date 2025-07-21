@@ -18,7 +18,7 @@ After you install the BlueXP Connector, you need to integrate all the ONTAP stor
 * link:evs-deploy-guide-config-prereqs.html[Prerequisites for Amazon EVS with BlueXP disaster recovery]
 * link:evs-deploy-guide-config-add-arrays.html[Add ONTAP storage arrays to BlueXP disaster recovery]
 * link:evs-deploy-guide-enable-draas.html[Enable BlueXP disaster recovery for Amazon EVS]
-* link:evs-deploy-guide-config-add-sites.html[Add vCenter sites to BlueXP disaster recovery]
-* link:evs-deploy-guide-config-add-vcenters.html[Add vCenter clusters to BlueXP disaster recovery]
+* link:evs-deploy-guide-config-add-arrays.html[Add vCenter sites to BlueXP disaster recovery]
+* link:evs-deploy-guide-add-vcenters.html[Add vCenter clusters to BlueXP disaster recovery]
 
 
