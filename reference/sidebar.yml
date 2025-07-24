@@ -19,7 +19,7 @@ entries:
         url: /reference/evs-deploy-guide-config-draas.html
       - title: Prerequisites for Amazon EVS
         url: /reference/evs-deploy-guide-config-prereqs.html
-      - title: Add arrays for Amazon EVS
+      - title: Add ONTAP storage arrays for Amazon EVS
         url: /reference/evs-deploy-guide-config-add-arrays.html
       - title: Add BlueXP disaster recovery for Amazon EVS
         url: /reference/evs-deploy-guide-enable-draas.html

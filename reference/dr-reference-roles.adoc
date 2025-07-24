@@ -8,7 +8,7 @@ summary: BlueXP disaster recovery employs roles to govern the access that each u
 = BlueXP disaster recovery role-based access to features
 :hardbreaks:
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/use
 
 [.lead]
 BlueXP disaster recovery employs roles to govern the access that each user has to specific features and actions. 
