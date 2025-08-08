@@ -8,7 +8,7 @@ This release includes the following updates:
 * Added support for a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services in the Azure Marketplace and added a link to the Azure Marketplace in the free trial dialog. 
 +
 For details, see  link:../get-started/dr-intro.html#licensing[BlueXP disaster recovery licensing] and link:../get-started/dr-licensing.html[Set up licensing for BlueXP disaster recovery].
-//+
-//For details, see https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html#licensing[BlueXP disaster recovery licensing] and https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing for BlueXP disaster recovery].
++
+For details, see https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html#licensing[BlueXP disaster recovery licensing] and https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html[Set up licensing for BlueXP disaster recovery].
 
 //For details, see  link:../reference/dr-reference-roles.html[User roles and permissions in BlueXP disaster recovery].
