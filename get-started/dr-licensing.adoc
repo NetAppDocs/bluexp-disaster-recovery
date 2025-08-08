@@ -19,11 +19,11 @@ Organization admin, Folder or project admin, Disaster recovery admin, or Disaste
 link:../reference/dr-reference-roles.html[Learn about user roles and permissions in BlueXP disaster recovery].
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
-You can use the following license types:
+*Licensing options*
+You can use the following licensing options:
 
 * Sign up for a 30-day free trial.
-//* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace or Microsoft Azure Marketplace.
-* Purchase a pay-as-you-go (PAYGO) subscription to *NetApp Intelligent Services* with Amazon Web Services (AWS) Marketplace.
+* Purchase a pay-as-you-go (PAYGO) subscription to *NetApp Intelligent Services* with Amazon Web Services (AWS) Marketplace or to Microsoft Azure Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 //NOTE: BlueXP disaster recovery charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
@@ -74,16 +74,19 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 For details, see link:../use/sites-add.html[Add vCenter sites].
 
 
-== After the trial ends, subscribe through AWS Marketplace
+== After the trial ends, subscribe through one of the Marketplaces
 
-After the free trial ends, you can either purchase a license from NetApp or subscribe to *NetApp Intelligent Services* through AWS Marketplace. This procedure provides a high level overview of how to subscribe directly in the AWS Marketplace. 
+After the free trial ends, you can either purchase a license from NetApp or subscribe to *NetApp Intelligent Services* through AWS Marketplace or Microsoft Azure Marketplace. This procedure provides a high level overview of how to subscribe directly in one of the Marketplaces. 
 
 .Steps
-. In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*. 
-//+
-//image:draas-license-subscribe2.png[The BlueXP disaster recovery Payment methods page]
-. Select *Subscribe in AWS Marketplace*. 
-. Use AWS Marketplace to subscribe to *NetApp Intelligent Services* and *BlueXP disaster recovery*. 
+. In the BlueXP disaster recovery, you see a message that the free trial is expiring. In the message, select *Subscribe or purchase a license*.
++
+Or, from the top right, select *View payment methods*. 
++
+image:dr-licensing-payment-methods.png[The BlueXP disaster recovery Payment methods page]
+
+. Select *Subscribe in AWS Marketplace* or *Subscribe in Azure Marketplace*. 
+. Use AWS Marketplace or Microsoft Azure Marketplaceto subscribe to *NetApp Intelligent Services* and *BlueXP disaster recovery*. 
 
  
 . When you return to BlueXP disaster recovery, a message states that you are subscribed. 
